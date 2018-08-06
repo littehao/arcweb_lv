@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _097b29ae = () => import('../pages/pc/index.vue' /* webpackChunkName: "pages/pc/index" */).then(m => m.default || m)
+const _2bee7ccc = () => import('../pages/home/index.vue' /* webpackChunkName: "pages/home/index" */).then(m => m.default || m)
 const _705f93ec = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
@@ -65,9 +65,9 @@ export function createRouter () {
     scrollBehavior,
     routes: [
 		{
-			path: "/pc",
-			component: _097b29ae,
-			name: "pc"
+			path: "/home",
+			component: _2bee7ccc,
+			name: "home"
 		},
 		{
 			path: "/",
