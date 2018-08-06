@@ -1,12 +1,14 @@
 # arcweb_ssr_lv
 
-> My awe-inspiring Nuxt.js project
+> 基于vue nuxt.js ssr 项目
+
+运行项目前 请运行npm install 安装相关依赖
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ yarn install
+$ yarn install  
 
 # serve with hot reload at localhost:3000
 $ yarn run dev
