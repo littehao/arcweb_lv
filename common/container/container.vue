@@ -8,11 +8,11 @@
         name: "Container"
     }
 </script>
-<style  lang="less">
+<style  lang="scss">
 
  .container{
    height: 100%;
-  // width: @container-width;
+   width:$container-width;
    margin-right: auto;
    margin-left: auto;
    //background-color: @body-background;

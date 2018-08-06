@@ -10,7 +10,7 @@
     }
 </script>
 
-<style  lang="less">
+<style  lang="scss">
  .test{
    //background-color: @body-background;
  }
