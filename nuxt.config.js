@@ -36,9 +36,9 @@ module.exports = {
   */
   css: [
     {
-      src: 'styles/index.less',
+      src: '@/styles/index.less',
       lang: 'less'
-    }
+    },
   ],
   axios: {
     proxy: true
@@ -53,6 +53,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/index'
   ],
 
   /*
@@ -61,7 +62,12 @@ module.exports = {
   modules: [
     '@nuxtjs/axios'
   ],
-
+  // loader:[
+  //   {
+  //     test:/\.less$/,
+  //     loaders:'style-loader!css-loader!less-loader'
+  //   }
+  // ],
   /*
   ** Build configuration
   */

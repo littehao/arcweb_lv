@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="test">
       000
     </div>
 </template>
@@ -10,6 +10,8 @@
     }
 </script>
 
-<style scoped>
-
+<style  lang="less">
+ .test{
+   //background-color: @body-background;
+ }
 </style>
