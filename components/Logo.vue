@@ -26,6 +26,7 @@
   width: 0;
   height: 0;
 }
+
 .Triangle--one
 {
   border-left: 105px solid transparent;
