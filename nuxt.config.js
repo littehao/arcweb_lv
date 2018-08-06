@@ -35,10 +35,10 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    // {
-    //   src: '@/styles/index.less',
-    //   lang: 'less'
-    // },
+    {
+      src: '~styles/normalize.css',
+
+    },
   ],
   axios: {
     proxy: true
