@@ -12,9 +12,9 @@
     }
 </script>
 
-<style  lang="less">
- @header-height:80px;
+<style  lang="scss">
+ $header-height:80px;
   .header{
-    height:@header-height;
+    height:$header-height;
   }
 </style>
