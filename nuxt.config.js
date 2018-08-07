@@ -36,9 +36,8 @@ module.exports = {
   */
   css: [
     {
-      src: '@/styles/index.scss',
-      lang: 'scss'
-    },
+      src: '~styles/normalize.css', 
+    }
   ],
   axios: {
     proxy: true
