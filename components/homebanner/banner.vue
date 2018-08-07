@@ -58,13 +58,14 @@
         mounted(){
             var box=document.getElementById("lv-banner");
             let offsetconf = 10;
+            box.style.height=window.screen.height-80+'px';
             let that = this;
-            setTimeout(() => {
-                this.animated = false;
-                box.addEventListener("mousemove",function(ev){
-                    that.eventListener(ev,this,offsetconf)
-                }, false);
-            },5000)
+            // setTimeout(() => {
+            //     this.animated = false;
+            //     box.addEventListener("mousemove",function(ev){
+            //         that.eventListener(ev,this,offsetconf)
+            //     }, false);
+            // },5000)
 
             window.onscroll = function (e){
                 console.log(e)
@@ -79,7 +80,9 @@
         methods:{
             eventListener(ev,_this,offsetconf){//函数
                 if(this.checkHover(ev,_this)){
-                    var ev=ev||window.event;
+                 // console.log('------------1')
+
+                  var ev=ev||window.event;
                     var mousex=ev.pageX/offsetconf;
                     var mousey=ev.pageY/offsetconf;
                     var pageW=document.documentElement.clientWidth/2/offsetconf;
@@ -93,8 +96,10 @@
                 }
             },
             checkHover(e, target) {//劫持mousemove
-                if (this.getEvent(e).type == "mousemove") {
-                    return !this.contains(target, this.getEvent(e).relatedTarget
+              if (this.getEvent(e).type == "mousemove") {
+               // console.log('------------1')
+
+                return !this.contains(target, this.getEvent(e).relatedTarget
                             || this.getEvent(e).fromElement)
                             && !((this.getEvent(e).relatedTarget || this.getEvent(e).fromElement) === target);
                 } else {
@@ -137,7 +142,7 @@
             padding-top:131px;
             img{
                 animation-delay:0.2s;
-                -webkit-animation-delay:0.2s; 
+                -webkit-animation-delay:0.2s;
             }
         }
         .lv-banner-title{
@@ -147,13 +152,13 @@
                 color:#fff;
                 margin-bottom:10px;
                 animation-delay:0.6s;
-                -webkit-animation-delay:0.6s; 
+                -webkit-animation-delay:0.6s;
             }
             p{
                 font-size:19px;
                 color:#fff;
                 animation-delay:1s;
-                -webkit-animation-delay:1s; 
+                -webkit-animation-delay:1s;
             }
         }
     }
@@ -228,7 +233,7 @@
         right:316px;
         background-image: url(~assets/images/home/sy_yuansu_1.png);
         animation-delay:2.2s;
-        -webkit-animation-delay:2.2s; 
+        -webkit-animation-delay:2.2s;
     }
     .fl-part2{
         width:225px;
@@ -237,7 +242,7 @@
         right:190px;
         background-image: url(~assets/images/home/sy_yuansu_2.png);
         animation-delay:1.8s;
-        -webkit-animation-delay:1.8s; 
+        -webkit-animation-delay:1.8s;
     }
     .fl-part3{
         width:397px;
@@ -246,7 +251,7 @@
         right:193px;
         background-image: url(~assets/images/home/sy_yuansu_3.png);
         animation-delay:1.4s;
-        -webkit-animation-delay:1.4s; 
+        -webkit-animation-delay:1.4s;
     }
 
     .fr-part1{
@@ -256,7 +261,7 @@
         left:358px;
         background-image: url(~assets/images/home/sy_yuansu_4.png);
         animation-delay:2.6s;
-        -webkit-animation-delay:2.6s; 
+        -webkit-animation-delay:2.6s;
     }
     .fr-part2{
         width:215px;
@@ -265,7 +270,7 @@
         left:389px;
         background-image: url(~assets/images/home/sy_yuansu_5.png);
         animation-delay:2.2s;
-        -webkit-animation-delay:2.2s; 
+        -webkit-animation-delay:2.2s;
     }
     .fr-part3{
         width:354px;
@@ -274,7 +279,7 @@
         left:161px;
         background-image: url(~assets/images/home/sy_yuansu_6.png);
         animation-delay:1.8s;
-        -webkit-animation-delay:1.8s; 
+        -webkit-animation-delay:1.8s;
     }
     .fr-part4{
         width:470px;
@@ -283,7 +288,7 @@
         left:161px;
         background-image: url(~assets/images/home/sy_yuansu_7.png);
         animation-delay:1.4s;
-        -webkit-animation-delay:1.4s; 
+        -webkit-animation-delay:1.4s;
     }
 }
 @keyframes fadeInLeft {

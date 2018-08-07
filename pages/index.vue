@@ -69,13 +69,15 @@
               <div class="card-info section-card4">
 
                 <div class="card-info-right img-content ">
-                  <img  src="../assets/images/home/Screen1.png" alt="">
+                  <img  class=" sj" src="../assets/images/home/sy_sj_3.png" alt="">
+                  <img  class="ipad" src="../assets/images/home/sy_sj_2.png" alt="">
+
                 </div>
                 <div class="card-info-left text-content">
-                  <h2 class="title">定义博娱新时代</h2>
+                  <h2 class="title">全球博娱游戏直播的开创者</h2>
                   <h3 class="subtitle">Live Video </h3>
                   <p class="content-info">
-                    独特的玩家大神排行榜，根椐胜率、连中、中奖金额等进行相应排行，对于上榜玩家有特权免费或收费分享其注单，引领其他玩家跟单购买，对于认证大神分享的注单有权要求跟单者打赏或分享利润分红，玩家可根椐情况随时打赏主播，钻石礼物、现金礼物随意送。彩播后续还将继续完善产品，更多好玩有趣的功能持续更新中
+                    专业的培训让主播熟悉三大彩种的玩法，并可亲自下注带领玩家下注，对下注号码提供专业的分析，以供玩家参考，中奖号码播报，开奖倒计时提醒玩家下注，玩家中奖发送贺彩，语音播报中奖信息，满足玩家虚荣心理，调动其他玩家的下注热情，对于下注额度达到一定金额，进行相应表演，增强彩票玩法的娱乐性与互动性。
                   </p>
                 </div>
               </div>
@@ -96,6 +98,48 @@
               </div>
             </Container>
           </div>
+        </div>
+        <div id="footer-section">
+          <Container>
+             <div class="footer-content">
+               <div class="language">
+
+               </div>
+               <ul class="list">
+                 <li>
+                   <nuxt-link  target="_blank" to="/">首页</nuxt-link>
+                 </li>
+                 <li>
+                   <nuxt-link  target="_blank" to="/">关于我们</nuxt-link>
+                 </li>
+                 <li>
+                   <nuxt-link  target="_blank" to="/">联系我们</nuxt-link>
+                 </li>
+                 <li>
+                   <nuxt-link  target="_blank" to="/">演示站</nuxt-link>
+                 </li>
+                 <li>
+                   <nuxt-link  target="_blank" to="/">合作</nuxt-link>
+                 </li>
+               </ul>
+               <ul class="list">
+                 <li>
+                   <nuxt-link  target="_blank" to="/">产品优势</nuxt-link>
+                 </li>
+                 <li>
+                   <nuxt-link  target="_blank" to="/">互动棋牌</nuxt-link>
+
+                 </li>
+                 <li>
+                   <nuxt-link  target="_blank" to="/">类目</nuxt-link>
+                 </li>
+                 <li>
+                   <nuxt-link  target="_blank" to="/">其他</nuxt-link>
+
+                 </li>
+               </ul>
+             </div>
+          </Container>
         </div>
         <img src="../assets/images/home/BG_1.png" class="section-content-pic" alt="">
         <img src="../assets/images/home/BG.png" class="section-content-bottompic" alt="">
@@ -121,7 +165,7 @@ export default {
     background-color: $body-background;
   }
 #home{
-  /*height: 100%;*/
+  //height: 100%;
   width: 100%;
   background-color: $body-background;
   padding-top: 80px;
@@ -159,7 +203,7 @@ export default {
       }
       .mobeil{
         top: 80px;
-        left: 30px;
+        left: 150px;
       }
 
     }
@@ -178,23 +222,21 @@ export default {
   .section-content-pic{
     position: absolute;
     top: $section-1+200;
-    /*width: 100%;*/
     right: -55%;
-    //transform: translateX(-50%);
     z-index: 0;
   }
   .section-content-bottompic{
     position: absolute;
     bottom:0;
     left: 0;
-   // transform: translateY(-50%);
     z-index: 0;
     width: 100%;
   }
    .section-btn{
      position: relative;
      z-index: 1;
-     /*height: 300px;*/
+     height: auto;
+     margin-top: 30px;
      .btn{
        display: block;
        margin: 0 auto;
@@ -278,8 +320,8 @@ export default {
         position: absolute;
       }
       .tx1{
-        top: 80px;
-        right: 0px;
+        top: 100px;
+        left: 290px;
         width: 282px;
 
       }
@@ -292,12 +334,12 @@ export default {
       .tx3{
         top: -15px;
         width: 182px;
-        left: 200px;
+        left: 210px;
 
       }
       .tx4{
-        bottom: -55px;
-        right: 220px;
+        bottom: -60px;
+        left: 180px;
         width: 182px;
       }
     }
@@ -336,20 +378,54 @@ export default {
       height: $section-1;
       margin-top: 100px;
       overflow:hidden;
-      .section-card3{
+      .section-card4{
         margin-top: 50px;
 
       }
-      .card-pic{
-        text-align: center;
-
-        img{
-          position: relative;
-          top: 50%;
-          transform: translateY(-50%);
-        }
+      .ipad,.sj{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      .sj{
+        width: 185px;
+      }
+      .ipad{
+        left:185px;
+        bottom: 0;
       }
 
+    }
+  }
+  #footer-section{
+    position: relative;
+    z-index: 1;
+    height: auto;
+    .footer-content{
+      width: 100%;
+      display:flex;
+      align-items: start;
+      justify-content: start;
+      padding: 20px 0;
+      height: 220px;
+    }
+    .language{
+      width: 200px;
+    }
+    .list{
+      min-width: 150px;
+      max-width: 200px;
+      height: auto;
+      li{
+        a{
+          width: 100%;
+          line-height: 25px;
+          text-align: left;
+          font-size: $font-size-large;
+          color:#7887A7;
+
+        }
+      }
     }
   }
 
