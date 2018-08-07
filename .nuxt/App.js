@@ -3,6 +3,8 @@ import NuxtLoading from './components/nuxt-loading.vue'
 
 import '../styles/normalize.css'
 
+import '../node_modules/iview/dist/styles/iview.css'
+
 
 let layouts = {
 

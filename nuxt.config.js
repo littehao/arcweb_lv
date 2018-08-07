@@ -37,7 +37,8 @@ module.exports = {
   css: [
     {
       src: '~styles/normalize.css',
-    }
+    },
+    { src: 'iview/dist/styles/iview.css'}
   ],
   axios: {
     proxy: true
@@ -52,7 +53,10 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/index'
+    {
+      src: '~/plugins/index',
+      ssr: false
+    }
   ],
 
   /*
