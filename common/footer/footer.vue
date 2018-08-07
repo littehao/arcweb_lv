@@ -1,7 +1,7 @@
 <template>
    <footer class="footer">
      <Container>
-       <p>LVTV-the inventor of live egaming system Copyright © 2017-2018 System All Rights Reserved</p>
+       <p><span>LVTV-the inventor of live egaming system Copyright</span> <img src="../../assets/images/public/logo.png" alt="">  <span>© 2017-2018 System All Rights Reserved</span></p>
 
      </Container>
    </footer>
@@ -9,7 +9,7 @@
 
 <script>
     export default {
-        name: "lvfooter"
+        
     }
 </script>
 
@@ -25,9 +25,23 @@
 
     width: 100%;
     text-align: center;
-    color: $footer-text-color;
-    font-size: $font-size-base;
-    line-height: $footer-height;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+      display: inline-block;
+      height: 100%;
+      color: $footer-text-color;
+      font-size: $font-size-base;
+      line-height: $footer-height;
+    }
+    img{
+      position: relative;
+      display: inline-block;
+      width: 100px;
+      height: auto;
+      margin: 0 10px;
+    }
   }
 }
 </style>
