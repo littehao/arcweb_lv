@@ -1,6 +1,18 @@
 <template>
     <section id="home">
       <lv-banner></lv-banner>
+      <div id="content">
+        <Container>
+          <div class="card-info">
+            <div class="card-info-left">
+
+            </div>
+            <div class="card-info-right">
+
+            </div>
+          </div>
+        </Container>
+      </div>
     </section>
 </template>
 
@@ -20,5 +32,20 @@ export default {
   width: 100%;
   background-color: $body-background;
   padding-top: 80px;
+  #content{
+    height: auto;
+    width: 100%;
+    .card-info{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-left{
+      
+      }
+      &-right{
+
+      }
+    }
+  }
 }
 </style>
