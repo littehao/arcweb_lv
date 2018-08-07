@@ -3,7 +3,7 @@
       <Container>
         <div class="content">
           <div class="logo">
-
+            <img src="../../assets/images/public/logo.png" alt="">
           </div>
           <nav class="nav">
             <ul class="nav-list">
@@ -25,7 +25,7 @@
 
 <script>
     export default {
-        name: "header"
+        // name: "header"
     }
 </script>
 
@@ -45,9 +45,12 @@
     }
     .logo{
       height: 100%;
-      width: 140px;
+      width: 150px;
       margin-right: 50px;
-
+     img{
+       width: 100%;
+       margin-top: 15px;
+     }
     }
     .nav{
       height: 100%;
