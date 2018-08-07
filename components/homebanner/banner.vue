@@ -22,6 +22,11 @@
                     <h3 class="animated fadeInUp">Live Video</h3>
                     <p class="animated fadeInUp">一站式综合博娱直播系统的开创者与定义者</p>
                 </div>
+                <div class="control-down">
+                    <div class="down-page" style="display:block;">
+                        <i class="icon-darr"></i>
+                    </div>
+                </div>
             </div>
         </Container>
     </div>
@@ -60,14 +65,16 @@
                     that.eventListener(ev,this,offsetconf)
                 }, false);
             },5000)
+
+            window.onscroll = function (e){
+                console.log(e)
+            }
         },
         beforeDestroy(){
             var box=document.getElementById("lv-banner");
             let offsetconf = 10;
             let that = this;
-            box.removeEventListener("mousemove",function(ev){//销毁
-                that.eventListener(ev,this,offsetconf)
-            },false);
+            box.removeEventListener("mousemove",this,false);
         },
         methods:{
             eventListener(ev,_this,offsetconf){//函数
@@ -114,13 +121,13 @@
 .lv-banner{
     width:100%;
     min-width:$container-width;
-    height:790px;
-    background:url(~assets/images/sy_banner_1.png) center;
+    height:100%;
+    background:url(~assets/images/home/sy_banner_1.png) center;
     background-size:cover;
     position: relative;
     .lv-banner-info{
         width:100%;
-        height:720px;
+        height:100%;
         position: absolute;
         top:0;
         left:0;
@@ -148,6 +155,36 @@
                 animation-delay:1s;
                 -webkit-animation-delay:1s; 
             }
+        }
+    }
+    .control-down{
+        width: 51px;
+        height: 57px;
+        position: absolute;
+        top: 89%;
+        left: 50%;
+        z-index: 999;
+        margin: 0 0 0 -25px;
+        cursor: pointer;
+        text-align: center;
+        .down-page {
+            width: 51px;
+            height: 57px;
+            background-position: 0 -83px;
+            display: none;
+            animation: wave 1.5s both infinite;
+            transition: all 1s;
+            .icon-darr {
+                margin: 20px 0 0;
+                width: 29px;
+                height: 17px;
+                background-image: url(~assets/images/home/down.png);
+                background-repeat: no-repeat;
+                background-position:center;
+                background-size:100%;
+                display: inline-block
+            }
+
         }
     }
     .lv-banner-main{
@@ -182,14 +219,14 @@
         position: absolute;
         background-repeat: no-repeat;
         backface-visibility:hidden;
-        transition: all 0.4s linear;
+        transition: all 0.2s linear;
     }
     .fl-part1{
         width:383px;
         height:465px;
         top:48px;
         right:316px;
-        background-image: url(~assets/images/sy_yuansu_1.png);
+        background-image: url(~assets/images/home/sy_yuansu_1.png);
         animation-delay:2.2s;
         -webkit-animation-delay:2.2s; 
     }
@@ -198,7 +235,7 @@
         height:396px;
         top:146px;
         right:190px;
-        background-image: url(~assets/images/sy_yuansu_2.png);
+        background-image: url(~assets/images/home/sy_yuansu_2.png);
         animation-delay:1.8s;
         -webkit-animation-delay:1.8s; 
     }
@@ -207,7 +244,7 @@
         height:470px;
         top:263px;
         right:193px;
-        background-image: url(~assets/images/sy_yuansu_3.png);
+        background-image: url(~assets/images/home/sy_yuansu_3.png);
         animation-delay:1.4s;
         -webkit-animation-delay:1.4s; 
     }
@@ -217,7 +254,7 @@
         height:427px;
         top:70px;
         left:358px;
-        background-image: url(~assets/images/sy_yuansu_4.png);
+        background-image: url(~assets/images/home/sy_yuansu_4.png);
         animation-delay:2.6s;
         -webkit-animation-delay:2.6s; 
     }
@@ -226,7 +263,7 @@
         height:413px;
         top:170px;
         left:389px;
-        background-image: url(~assets/images/sy_yuansu_5.png);
+        background-image: url(~assets/images/home/sy_yuansu_5.png);
         animation-delay:2.2s;
         -webkit-animation-delay:2.2s; 
     }
@@ -235,7 +272,7 @@
         height:546px;
         top:158px;
         left:161px;
-        background-image: url(~assets/images/sy_yuansu_6.png);
+        background-image: url(~assets/images/home/sy_yuansu_6.png);
         animation-delay:1.8s;
         -webkit-animation-delay:1.8s; 
     }
@@ -244,7 +281,7 @@
         height:286px;
         top:477px;
         left:161px;
-        background-image: url(~assets/images/sy_yuansu_7.png);
+        background-image: url(~assets/images/home/sy_yuansu_7.png);
         animation-delay:1.4s;
         -webkit-animation-delay:1.4s; 
     }
@@ -295,6 +332,16 @@
 
 .fadeInUp {
     animation-name: fadeInUp
+}
+
+@keyframes wave {
+    0%,100% {
+        transform: translate3d(0,0,0)
+    }
+
+    50% {
+        transform: translate3d(0,15px,0)
+    }
 }
 
 .animated {
