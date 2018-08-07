@@ -9,7 +9,7 @@
 <style lang="scss">
   body{
     height: 100%;
-    width: 100%;
+    /*width: 100%;*/
     &:after{
       content: '';
       clear: both;
@@ -22,7 +22,7 @@
   }
   html,#__nuxt,#__layout,.layout{
     height: 100%;
-    width: 100%;
+    /*width: 100%;*/
   }
 html
 {
