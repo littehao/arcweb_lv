@@ -7,7 +7,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title:'LV',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -36,7 +36,7 @@ module.exports = {
   */
   css: [
     {
-      src: '~styles/normalize.css', 
+      src: '~styles/normalize.css',
     }
   ],
   axios: {

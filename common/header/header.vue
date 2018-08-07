@@ -7,15 +7,10 @@
           </div>
           <nav class="nav">
             <ul class="nav-list">
-              <li class="item active">
-                <nuxt-link to="/">首页</nuxt-link>
+              <li class="item "  :class="{active:active==index}" v-for="(item,index) of router" :key="index">
+                <nuxt-link class="nav-link" target="_blank" :to="item.path">{{item.title}}</nuxt-link>
               </li>
-              <li class="item ">
-                <nuxt-link to="/">游戏分类</nuxt-link>
-              </li>
-              <li class="item ">
-                <nuxt-link to="/">关于</nuxt-link>
-              </li>
+
             </ul>
           </nav>
         </div>
@@ -25,22 +20,73 @@
 
 <script>
     export default {
-      
+      data(){
+        return {
+          active:0,
+          router:[
+            {
+              title:'首页',
+              path:'/'
+            },
+            {
+              title:'产品种类',
+              path:'/classproduct'
+            },
+            {
+              title:'内容制作',
+              path:'/content'
+            },
+            {
+              title:'服务支持',
+              path:'/service'
+            },
+            {
+              title:'关于我们',
+              path:'/about'
+            },
+            {
+              title:'合作联系',
+              path:'/contactus'
+            },
+            {
+              title:'演示站',
+              path:'/demostation'
+            },
+          ]
+        }
+      },
+      methods:{
+        mapRouter(){
+          let path=this.$route.path;
+         let test= this.router.findIndex((item,index)=>{
+           return path==item.path
+
+          })
+          this.active=test
+        }
+      },
+      mounted(){
+        this.mapRouter()
+      }
     }
 </script>
 
 <style  lang="scss">
  $header-height:80px;
   .header{
+    position: fixed;
+    top: 0;
+    left: 0;
     height:$header-height;
     width: 100%;
-    background-color: $body-background;
+    background-color:transparent;
+    z-index: 200;
     .content{
       width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: left;
+      justify-content: space-between;
 
     }
     .logo{
@@ -55,7 +101,7 @@
     .nav{
       height: 100%;
       max-width: 1000px;
-      margin-left: 350px;
+      /*margin-left: 350px;*/
       &-list{
         width: 100%;
         height: 100%;
@@ -71,7 +117,7 @@
         white-space: nowrap;
         margin: 0 5px;
 
-       .nuxt-link-active{
+       .nav-link{
          display: inline-block;
          height: 40px;
          min-width: 100px;
@@ -93,7 +139,7 @@
             height: 3px;
             background-color: $border-color-active;
           }
-        .nuxt-link-active{
+        .nav-link{
           color:$text-color;
 
           border-radius: 50px;

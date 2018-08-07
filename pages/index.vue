@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <section id="home">
       <lv-banner></lv-banner>
-    </div>
+    </section>
 </template>
 
 <script>
@@ -15,5 +15,10 @@ export default {
 </script>
 
 <style lang="scss">
-
+#home{
+  height: 100%;
+  width: 100%;
+  background-color: $body-background;
+  padding-top: 80px;
+}
 </style>

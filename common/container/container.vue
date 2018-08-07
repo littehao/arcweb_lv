@@ -15,6 +15,8 @@
    width:$container-width;
    margin-right: auto;
    margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
    //background-color: @body-background;
  }
 </style>
