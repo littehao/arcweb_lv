@@ -5,7 +5,6 @@
 </template>
 
 <script>
-// import lvBanner from '~components/indexbanner/banner'
 export default {
     name: "index"
 }

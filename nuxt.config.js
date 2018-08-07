@@ -35,10 +35,10 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    // {
-    //   src: '@/styles/index.less',
-    //   lang: 'less'
-    // },
+    {
+      src: '@/styles/index.scss',
+      lang: 'scss'
+    },
   ],
   axios: {
     proxy: true

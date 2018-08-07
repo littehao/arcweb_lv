@@ -1,17 +1,19 @@
 <template>
-    <div class="test">
-      000
+    <div>
+      <lv-banner></lv-banner>
     </div>
 </template>
 
 <script>
-    export default {
-        name: "index"
+import lvBanner from '~/components/homebanner/banner'
+export default {
+    name: "index",
+    components:{
+        lvBanner
     }
+}
 </script>
 
-<style  lang="scss">
- .test{
-   //background-color: @body-background;
- }
+<style lang="scss">
+
 </style>
