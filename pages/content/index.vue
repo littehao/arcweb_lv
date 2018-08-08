@@ -75,21 +75,87 @@
               </div>
           </Container>
       </div>
+      <div class="lv-celebrity">
+       <Container>
+          <div class="lv-celebrity-section">
+            <h3 class="celebrity-title">LV签约网红主持人</h3>
+            <Force :height="650" :width="1200" :nodes="nodes" :edges="edges"></Force>
+          </div>
+       </Container>
+      </div>
     </div>
 </template>
 
 <script>
     export default {
+      asyncData ({ app,params }) {
+        console.log(app)
+        return app.$axios.get(`/OpenAPI/V1/Nav/getListByItemId`,{type:'hot'})
+          .then((res) => {
+           // console.log(res,'------')
+            return { data: res.data.data }
+          })
+      },
         data(){
             return {
                 height:0,
                 value1: 0,
+               nodes:[],
+               edges:[]
+          //      nodes:[
+          //       {name:"湖南邵阳",'img':require('../../assets/images/avatar/tx_3.png')},
+          //       {name:"山东莱州",'img':require('../../assets/images/avatar/tx_3.png')},
+          //       {name:"广东阳江",'img':require('../../assets/images/avatar/tx_3.png')},
+          //       {name:"山东枣庄",'img':require('../../assets/images/avatar/tx_3.png')},
+          //       {name:"泽",'img':require('../../assets/images/avatar/tx_3.png')},
+          //       {name:"恒",'img':require('../../assets/images/avatar/tx_3.png')},
+          //       {name:"鑫",'img':require('../../assets/images/avatar/tx_3.png')},
+          //       {name:"明山",'img':require('../../assets/images/avatar/tx_3.png')},
+          //       {name:"班长",'img':require('../../assets/images/avatar/tx_3.png')}
+          //     ],
+          //
+          // edges:[
+          //   {source:0,target:4,relation:"籍贯",value:1.3},
+          //   {source:4,target:5,relation:"舍友",value:1},
+          //   {source:4,target:6,relation:"舍友",value:1},
+          //   {source:4,target:7,relation:"舍友",value:1},
+          //   {source:1,target:6,relation:"籍贯",value:2},
+          //   {source:2,target:5,relation:"籍贯",value:0.9},
+          //   {source:3,target:7,relation:"籍贯",value:1},
+          //   {source:5,target:6,relation:"同学",value:1.6},
+          //   {source:6,target:7,relation:"朋友",value:0.7},
+          //   {source:6,target:8,relation:"职责",value:2}
+          //]
+            }
+        },
+          methods:{
+
+            mapData(){
+              let nodes=[]
+              let edges=[]
+              this.data.anchor_list.map((item,index)=>{
+                let no={
+                  img:item.avatar,
+                  index:index
+                }
+               let redom={
+                 source:Math.floor(Math.random()*this.data.anchor_list.length),
+                 target:Math.floor(Math.random()*this.data.anchor_list.length),
+                 value:(Math.random()*3).toFixed(1)
+               }
+                nodes.push(no)
+                edges.push(redom)
+              })
+              this.nodes=nodes;
+              this.edges=edges
             }
         },
         created(){
-
+         // this.getdata()
         },
         mounted(){
+          //console.log(this)
+            this.mapData()
             this.height = document.documentElement.clientHeight;
         }
     }
@@ -107,7 +173,7 @@
             width:100%;
             height:100%;
             position: relative;
-            .img{   
+            .img{
                 position: absolute;
                 bottom:0;
                 left:45%;
@@ -149,6 +215,26 @@
                 width:25%;
             }
         }
+    }
+    .lv-celebrity{
+      height: 860px;
+      width: 100%;
+      background-image: url("../../assets/images/content/nrzz_bj_2.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      .lv-celebrity-section{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .celebrity-title{
+          height: 40px;
+          line-height: 40px;
+          margin-top: 55px;
+          color: $title-color;
+          font-size: $font-size-base*2;
+          text-align: center;
+        }
+      }
     }
 }
 </style>

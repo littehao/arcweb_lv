@@ -44,9 +44,10 @@ module.exports = {
     proxy: true
   },
   proxy: {
-    '/OpenAPI/V1': {
-      target: 'https://api.testfordemo.com',
-      pathRewrite: { '^/OpenAPI/V1': '' }
+    '/OpenAPI': {
+      target:'https://api.testfordemo.com',
+      ws: false,
+
     }
   },
   /*
