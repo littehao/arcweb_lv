@@ -4,7 +4,7 @@ import config from './config'
 
 const service = axios.create(config)
 if (process.server) {
-  config.baseURL = `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}`
+  config.baseURL = `https://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}`
 }
 // POST 传参序列化
 service.interceptors.request.use(

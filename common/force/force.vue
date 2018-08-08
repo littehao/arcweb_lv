@@ -1,6 +1,6 @@
 <template>
     <div class="force">
-      <svg ref="svg" height="500" width="600"></svg>
+      <svg ref="svg" :height="height" :width="width"></svg>
     </div>
 </template>
 
@@ -21,11 +21,11 @@
          },
          imgwidth:{
            type:[Number],
-           default:50
+           default:100
          },
         radius:{
           type:[Number],
-          default:30
+          default:40
         },
         linecolor:{
           type:[String],
@@ -61,43 +61,44 @@
             img_w=this.imgwidth,
             img_h=this.imgwidth,
             linecolor=this.linecolor,
-            imageKeys=this.imageKeys;
+            imageKeys=this.imageKeys,
+            nodes=this.nodes,
+            edges=this.edges;
+            //  let nodes=[
+            //     {name:"湖南邵阳",'img':require('../../assets/images/avatar/tx_3.png')},
+            //     {name:"山东莱州",'img':require('../../assets/images/avatar/tx_3.png')},
+            //     {name:"广东阳江",'img':require('../../assets/images/avatar/tx_3.png')},
+            //     {name:"山东枣庄",'img':require('../../assets/images/avatar/tx_3.png')},
+            //     {name:"泽",'img':require('../../assets/images/avatar/tx_3.png')},
+            //     {name:"恒",'img':require('../../assets/images/avatar/tx_3.png')},
+            //     {name:"鑫",'img':require('../../assets/images/avatar/tx_3.png')},
+            //     {name:"明山",'img':require('../../assets/images/avatar/tx_3.png')},
+            //     {name:"班长",'img':require('../../assets/images/avatar/tx_3.png')}
+            //   ],
+            //    edges=[
+            //      {source:0,target:4,relation:"籍贯",value:1.3},
+            //      {source:4,target:5,relation:"舍友",value:1},
+            //      {source:4,target:6,relation:"舍友",value:1},
+            //      {source:4,target:7,relation:"舍友",value:1},
+            //      {source:1,target:6,relation:"籍贯",value:2},
+            //      {source:2,target:5,relation:"籍贯",value:0.9},
+            //      {source:3,target:7,relation:"籍贯",value:1},
+            //      {source:5,target:6,relation:"同学",value:1.6},
+            //      {source:6,target:7,relation:"朋友",value:0.7},
+            //      {source:6,target:8,relation:"职责",value:2}
+            //    ]
+
           let svg = d3.select("svg")
           let width = svg.attr("width")
           let height = svg.attr("height")
           let g = svg.append("g").attr("transform","translate("+marge.top+","+marge.left+")");
-
+          console.log(width,height)
           //准备数据
-          var nodes = [
-            {name:"湖南邵阳",'img':require('../../assets/images/avatar/tx_3.png')},
-            {name:"山东莱州",'img':require('../../assets/images/avatar/tx_3.png')},
-            {name:"广东阳江",'img':require('../../assets/images/avatar/tx_3.png')},
-            {name:"山东枣庄",'img':require('../../assets/images/avatar/tx_3.png')},
-            {name:"泽",'img':require('../../assets/images/avatar/tx_3.png')},
-            {name:"恒",'img':require('../../assets/images/avatar/tx_3.png')},
-            {name:"鑫",'img':require('../../assets/images/avatar/tx_3.png')},
-            {name:"明山",'img':require('../../assets/images/avatar/tx_3.png')},
-            {name:"班长",'img':require('../../assets/images/avatar/tx_3.png')}
-          ];
-
-          var edges = [
-            {source:0,target:4,relation:"籍贯",value:1.3},
-            {source:4,target:5,relation:"舍友",value:1},
-            {source:4,target:6,relation:"舍友",value:1},
-            {source:4,target:7,relation:"舍友",value:1},
-            {source:1,target:6,relation:"籍贯",value:2},
-            {source:2,target:5,relation:"籍贯",value:0.9},
-            {source:3,target:7,relation:"籍贯",value:1},
-            {source:5,target:6,relation:"同学",value:1.6},
-            {source:6,target:7,relation:"朋友",value:0.7},
-            {source:6,target:8,relation:"职责",value:2}
-          ];
-
           //新建一个力导向图
           var forceSimulation = d3.forceSimulation()
             .force("link",d3.forceLink())
-            .force('collide', d3.forceCollide().radius(() => 30))
-            .force("charge",d3.forceManyBody().strength(-500))
+            .force('collide', d3.forceCollide())
+            .force("charge",d3.forceManyBody().strength(-400))
             .force("center",d3.forceCenter());;
 
           //初始化力导向图，也就是传入数据
@@ -108,7 +109,7 @@
           forceSimulation.force("link")
             .links(edges)
             .distance(function(d){//每一边的长度
-              return d.value*60;
+              return d.value*150;
             })
           //设置图形的中心位置
           forceSimulation.force("center")
@@ -118,7 +119,7 @@
           //绘制边
           var links = g.append("g")
             .selectAll("line")
-            .data(this.edges)
+            .data(edges)
             .enter()
             .append("line")
             .attr("stroke",function(d,i){
@@ -128,7 +129,7 @@
 
           //绘制节点
           var gs = g.selectAll("image")
-            .data(this.nodes)
+            .data(nodes)
             .enter()
             .append("circle")
             .attr("class", "circleImg")
@@ -183,12 +184,18 @@
         }
       },
       mounted(){
-         if (this.edges.leading>0&&this.nodes.length>0){
-           this.init()
-         }
+         //if (this.edges.leading>0&&this.nodes.length>0){
+           //this.init()
+         //}
       },
       created(){
 
+      },
+      watch:{
+          'edges':function () {
+            this.init()
+            console.log('--------',this.edges,this.nodes)
+          }
       },
       beforeDestroy(){
 
@@ -199,8 +206,7 @@
 
 <style  lang="scss">
 .force{
-  width: 1200px;
-  height: 500px;
+  width: 100%;
   margin: 0 auto;
   nodetext {
     font-size: 12px ;
@@ -216,8 +222,8 @@
   }
 
   .circleImg {
-    /*stroke: #ff7f0e;*/
-    /*stroke-width: 1.5px;*/
+    //stroke: #ff7f0e;
+    stroke-width: 1.5px;
   }
 }
 </style>
