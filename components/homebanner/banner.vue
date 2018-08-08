@@ -58,7 +58,7 @@
         mounted(){
             var box=document.getElementById("lv-banner");
             let offsetconf = 10;
-            box.style.height=window.screen.height-80+'px';
+            box.style.height= document.documentElement.clientHeight-80+'px';
             let that = this;
             // setTimeout(() => {
             //     this.animated = false;
@@ -130,6 +130,7 @@
     background:url(~assets/images/home/sy_banner_1.png) center;
     background-size:cover;
     position: relative;
+    overflow:hidden;
     .lv-banner-info{
         width:100%;
         height:100%;

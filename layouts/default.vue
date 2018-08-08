@@ -8,7 +8,8 @@
 
 <style lang="scss">
   body{
-   min-width:$container-width;
+    height: 100%;
+    min-width:$container-width;
     &:after{
       content: '';
       clear: both;
