@@ -1,6 +1,6 @@
 <template>
   <!--<Affix @on-change="change" >-->
-    <header class="header" >
+    <header class="header" id="header">
       <Container>
         <div class="content">
           <div class="logo">
@@ -11,7 +11,6 @@
               <li class="item "  :class="{active:active==index}" v-for="(item,index) of router" :key="index">
                 <nuxt-link class="nav-link"  :to="item.path">{{item.title}}</nuxt-link>
               </li>
-
             </ul>
           </nav>
         </div>
@@ -75,6 +74,16 @@
       },
       mounted(){
         this.mapRouter()
+        let tt = document.documentElement.clientHeight;
+        window.onscroll = function(){
+            var t = document.documentElement.scrollTop || document.body.scrollTop; 
+            var top_div = document.getElementById( "header" );
+            if( t >= tt ) {
+                top_div.style.background = "#27272E";
+            } else {
+                top_div.style.background = "transparent";
+            }
+        }
       },
       watch:{
         '$route.path':function () {
@@ -100,8 +109,8 @@
     background-color:transparent;
 
     z-index: 200;
-
-    .content{
+    transition: all 0.3s linear;
+    .content{ 
       width: 100%;
       height: 100%;
       display: flex;
@@ -159,9 +168,11 @@
             height: 3px;
             background-color: $border-color-active;
           }
+        
+      }
+      .item:hover{
         .nav-link{
           color:$text-color;
-
           border-radius: 50px;
           background-color: $active-background;
         }

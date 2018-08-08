@@ -344,6 +344,13 @@
             .item{
                 width:25%;
                 padding:0 35px;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                img{
+                    width:100%;
+                    display:block;
+                    transition: all 0.3s linear;
+                }
                 .intro{
                     .name{
                         font-size:$font-size-small * 2;
@@ -352,6 +359,12 @@
                     .info{
                         font-size:$font-size-large;
                     }
+                }
+                &:hover{
+                    transform: translateY(-5px);
+                }
+                &:hover img{
+                    box-shadow: 0 0 10px #101010;
                 }
             }
         }
@@ -403,6 +416,13 @@
                 width:33.3%;
                 padding:0 48px;
                 margin-bottom:50px;
+                position: relative;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                will-change: transform;
+                transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+                transition: all 0.2s linear;
+                cursor: pointer;
                 .item-t{
                     width:300px;
                     height:300px;
@@ -424,15 +444,16 @@
                         height:100%;
                         z-index: 1;
                         -webkit-backface-visibility: hidden;
-                        backface-visibility: hidden
+                        backface-visibility: hidden;
+                        transition: banckground 0.2s linear;
                     }
                     .shadow.deg135{
                         background-image: -webkit-linear-gradient(135deg,rgba(0,0,0,0.9),transparent 40%);
                         background-image: linear-gradient(135deg,rgba(0,0,0,0.9),transparent 40%);
                     }
                     .shadow.deg225{
-                        background-image: -webkit-linear-gradient(135deg,rgba(0,0,0,0.9),transparent 40%);
-                        background-image: linear-gradient(135deg,rgba(0,0,0,0.9),transparent 40%);
+                        background-image: -webkit-linear-gradient(225deg,rgba(0,0,0,0.9),transparent 40%);
+                        background-image: linear-gradient(225deg,rgba(0,0,0,0.9),transparent 40%);
                     }
                     .info{
                         position: absolute;
@@ -447,6 +468,29 @@
                             font-size:28px;
                         }
                     }
+                    &:after{
+                        display:block;
+                        content:"";
+                        width:100%;
+                        height:22px;
+                        background:url(~assets/images/content/floating-card-shadow.png) no-repeat;
+                        background-size:100%;
+                        position: absolute;
+                        top:100%;
+                        left:0;
+                        z-index:-1;
+                    }
+                }
+                &:hover{
+                    transform: rotateX(10deg) rotateY(5deg);
+                }
+                &:hover .shadow.deg135{
+                    background-image: -webkit-linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
+                    background-image: linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
+                }
+                &:hover .shadow.deg225{
+                    background-image: -webkit-linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
+                    background-image: linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
                 }
             }
         }
