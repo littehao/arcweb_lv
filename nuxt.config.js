@@ -22,15 +22,7 @@ module.exports = {
   ** Customize the progress-bar color
   */
   loading: { color: '#FFFFFF' },
-  // router: {
-  //   extendRoutes (routes) {
-  //     routes.push({
-  //       name: 'custom',
-  //       path: '/',
-  //       component: resolve(__dirname, 'pages/404.vue')
-  //     })
-  //   }
-  // },
+
   /*
   ** Global CSS
   */
@@ -66,12 +58,10 @@ module.exports = {
   modules: [
     '@nuxtjs/axios'
   ],
-  // loader:[
-  //   {
-  //     test:/\.less$/,
-  //     loaders:'style-loader!css-loader!less-loader'
-  //   }
-  // ],
+  //解决页面js预加载
+  render: {
+    resourceHints: false
+  },
   /*
   ** Build configuration
   */
