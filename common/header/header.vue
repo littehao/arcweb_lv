@@ -1,5 +1,6 @@
 <template>
-    <header class="header">
+  <!--<Affix @on-change="change" >-->
+    <header class="header" >
       <Container>
         <div class="content">
           <div class="logo">
@@ -8,7 +9,7 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class="item "  :class="{active:active==index}" v-for="(item,index) of router" :key="index">
-                <nuxt-link class="nav-link" target="_blank" :to="item.path">{{item.title}}</nuxt-link>
+                <nuxt-link class="nav-link"  :to="item.path">{{item.title}}</nuxt-link>
               </li>
 
             </ul>
@@ -16,6 +17,8 @@
         </div>
       </Container>
     </header>
+  <!--</Affix>-->
+
 </template>
 
 <script>
@@ -52,7 +55,8 @@
               title:'演示站',
               path:'/demostation'
             },
-          ]
+          ],
+          bgstatus:false
         }
       },
       methods:{
@@ -63,24 +67,40 @@
 
           })
           this.active=test
+        },
+        change(status){
+          this.bgstatus=status
+          alert(status)
         }
       },
       mounted(){
         this.mapRouter()
+      },
+      watch:{
+        '$route.path':function () {
+          this.mapRouter()
+        }
       }
     }
 </script>
 
 <style  lang="scss">
  $header-height:80px;
+ .header.bg{
+   background-color:transparent;
+
+ }
   .header{
     position: fixed;
     top: 0;
     left: 0;
     height:$header-height;
     width: 100%;
+    //background-color: $body-background;
     background-color:transparent;
+
     z-index: 200;
+
     .content{
       width: 100%;
       height: 100%;

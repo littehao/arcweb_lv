@@ -117,12 +117,12 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" >
   $card-height:385px;
   $section-1:620px;
-  body{
-    background-color: $body-background;
-  }
+.layout{
+  background-color:  $body-background;
+}
 #home{
   //height: 100%;
   width: 100%;

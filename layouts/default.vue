@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <Header></Header>
+    <Lheader></Lheader>
     <nuxt/>
     <Footer></Footer>
   </div>
@@ -9,8 +9,7 @@
 <style lang="scss">
   body{
     height: 100%;
-    /*width: 100%;*/
-    min-width:1200px;
+    min-width:$container-width;
     &:after{
       content: '';
       clear: both;
