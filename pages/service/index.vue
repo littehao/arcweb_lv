@@ -1,6 +1,7 @@
 <template>
     <div>
       服务和支持
+      <Force></Force>
     </div>
 </template>
 

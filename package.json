@@ -16,7 +16,8 @@
     "axios": "^0.18.0",
     "iview": "^3.0.0",
     "koa": "^2.3.0",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "d3": "^5.5.0"
   },
   "devDependencies": {
     "@nuxtjs/axios": "^5.3.1",
@@ -24,6 +25,7 @@
     "babel-eslint": "^8.2.1",
     "cross-env": "^5.0.1",
     "css-loader": "^1.0.0",
+
     "eslint": "^5.0.1",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-standard": "^3.1.0",

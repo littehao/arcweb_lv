@@ -5,11 +5,13 @@ import Lheader from './header/header'
 import Footer from './footer/footer'
 import Container from './container/container'
 import Card from './card/card'
+import Force from './force/force'
 const  component={
   Lheader,
   Footer,
   Container,
-  Card
+  Card,
+  Force
 }
 
 const common={
