@@ -3,15 +3,15 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _1aa8f24c = () => import('../pages/service/index.vue' /* webpackChunkName: "pages/service/index" */).then(m => m.default || m)
-const _72a6ee30 = () => import('../pages/home/index.vue' /* webpackChunkName: "pages/home/index" */).then(m => m.default || m)
-const _3ed8e0c4 = () => import('../pages/content/index.vue' /* webpackChunkName: "pages/content/index" */).then(m => m.default || m)
-const _ed29dc70 = () => import('../pages/classproduct/index.vue' /* webpackChunkName: "pages/classproduct/index" */).then(m => m.default || m)
-const _23abff9c = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
-const _02911e62 = () => import('../pages/classgame/index.vue' /* webpackChunkName: "pages/classgame/index" */).then(m => m.default || m)
-const _f8f9edba = () => import('../pages/contactus/index.vue' /* webpackChunkName: "pages/contactus/index" */).then(m => m.default || m)
-const _51ed5e16 = () => import('../pages/demostation/index.vue' /* webpackChunkName: "pages/demostation/index" */).then(m => m.default || m)
-const _056203b4 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _d875f9a0 = () => import('../pages/service/index.vue' /* webpackChunkName: "pages/service/index" */).then(m => m.default || m)
+const _2bee7ccc = () => import('../pages/home/index.vue' /* webpackChunkName: "pages/home/index" */).then(m => m.default || m)
+const _fca5e818 = () => import('../pages/content/index.vue' /* webpackChunkName: "pages/content/index" */).then(m => m.default || m)
+const _48c0499c = () => import('../pages/classproduct/index.vue' /* webpackChunkName: "pages/classproduct/index" */).then(m => m.default || m)
+const _63029a08 = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
+const _8139a0b6 = () => import('../pages/classgame/index.vue' /* webpackChunkName: "pages/classgame/index" */).then(m => m.default || m)
+const _442ec7f9 = () => import('../pages/contactus/index.vue' /* webpackChunkName: "pages/contactus/index" */).then(m => m.default || m)
+const _d2b68128 = () => import('../pages/demostation/index.vue' /* webpackChunkName: "pages/demostation/index" */).then(m => m.default || m)
+const _705f93ec = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
 
@@ -73,47 +73,47 @@ export function createRouter () {
     routes: [
 		{
 			path: "/service",
-			component: _1aa8f24c,
+			component: _d875f9a0,
 			name: "service"
 		},
 		{
 			path: "/home",
-			component: _72a6ee30,
+			component: _2bee7ccc,
 			name: "home"
 		},
 		{
 			path: "/content",
-			component: _3ed8e0c4,
+			component: _fca5e818,
 			name: "content"
 		},
 		{
 			path: "/classproduct",
-			component: _ed29dc70,
+			component: _48c0499c,
 			name: "classproduct"
 		},
 		{
 			path: "/about",
-			component: _23abff9c,
+			component: _63029a08,
 			name: "about"
 		},
 		{
 			path: "/classgame",
-			component: _02911e62,
+			component: _8139a0b6,
 			name: "classgame"
 		},
 		{
 			path: "/contactus",
-			component: _f8f9edba,
+			component: _442ec7f9,
 			name: "contactus"
 		},
 		{
 			path: "/demostation",
-			component: _51ed5e16,
+			component: _d2b68128,
 			name: "demostation"
 		},
 		{
 			path: "/",
-			component: _056203b4,
+			component: _705f93ec,
 			name: "index"
 		}
     ],
