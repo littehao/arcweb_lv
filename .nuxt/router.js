@@ -8,7 +8,6 @@ const _72a6ee30 = () => import('../pages/home/index.vue' /* webpackChunkName: "p
 const _3ed8e0c4 = () => import('../pages/content/index.vue' /* webpackChunkName: "pages/content/index" */).then(m => m.default || m)
 const _ed29dc70 = () => import('../pages/classproduct/index.vue' /* webpackChunkName: "pages/classproduct/index" */).then(m => m.default || m)
 const _23abff9c = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
-const _02911e62 = () => import('../pages/classgame/index.vue' /* webpackChunkName: "pages/classgame/index" */).then(m => m.default || m)
 const _f8f9edba = () => import('../pages/contactus/index.vue' /* webpackChunkName: "pages/contactus/index" */).then(m => m.default || m)
 const _51ed5e16 = () => import('../pages/demostation/index.vue' /* webpackChunkName: "pages/demostation/index" */).then(m => m.default || m)
 const _056203b4 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
@@ -95,11 +94,6 @@ export function createRouter () {
 			path: "/about",
 			component: _23abff9c,
 			name: "about"
-		},
-		{
-			path: "/classgame",
-			component: _02911e62,
-			name: "classgame"
 		},
 		{
 			path: "/contactus",
