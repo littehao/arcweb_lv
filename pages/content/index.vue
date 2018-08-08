@@ -77,21 +77,119 @@
                     </div>
                   </div>
               </div>
-              
           </Container>
           <div class="line" style="bottom:303px;"></div>
           <div class="line" style="bottom:281px;"></div>
           <div class="line" style="bottom:259px;"></div>
           <div class="line" style="bottom:239px;"></div>
       </div>
-      <div class="lv-celebrity">
+      <!-- <div class="lv-celebrity">
        <Container>
           <div class="lv-celebrity-section">
             <h3 class="celebrity-title">LV签约网红主持人</h3>
             <Force :height="660" :width="1200" :nodes="nodes" :edges="edges"></Force>
           </div>
        </Container>
+      </div> -->
+      <div class="lv-channel">
+          <Container>
+              <h3 class="title">LVTV 专属频道</h3>
+              <div class="channel-list">
+                  <div class="item">
+                      <div class="item-t">
+                          <div class="avatar"><img src="~assets/images/content/lvtv_wdpd.png" alt=""></div>
+                          <div class="bag-opa"></div>
+                          <span class="shadow deg135"></span>
+                          <div class="info">
+                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <p class="caption">舞蹈频道</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="item-t">
+                          <div class="avatar"><img src="~assets/images/content/lvtv_yypd.png" alt=""></div>
+                          <div class="bag-opa"></div>
+                          <span class="shadow deg225"></span>
+                          <div class="info">
+                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <p class="caption">音乐频道</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="item-t">
+                          <div class="avatar"><img src="~assets/images/content/lvtv_djpd.png" alt=""></div>
+                          <div class="bag-opa"></div>
+                          <span class="shadow deg135"></span>
+                          <div class="info">
+                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <p class="caption">电竞频道</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="item-t">
+                          <div class="avatar"><img src="~assets/images/content/lvtv_typd.png" alt=""></div>
+                          <div class="bag-opa"></div>
+                          <span class="shadow deg225"></span>
+                          <div class="info">
+                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <p class="caption">体育频道</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="item-t">
+                          <div class="avatar"><img src="~assets/images/content/lvtv_cppd.png" alt=""></div>
+                          <div class="bag-opa"></div>
+                          <span class="shadow deg135"></span>
+                          <div class="info">
+                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <p class="caption">彩票频道</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="item-t">
+                          <div class="avatar"><img src="~assets/images/content/lvtv_zhpd.png" alt=""></div>
+                          <div class="bag-opa"></div>
+                          <span class="shadow deg135"></span>
+                          <div class="info">
+                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <p class="caption">综合频道</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </Container>
       </div>
+      <div class="lv-starteam">
+          <Container>
+               <div class="lv-starteam-bg">
+                   <h3 class="title">专业的造星团队</h3>
+                    <div class="lv-starteam-content">
+                        <div class="left">
+                            <h2>钻石级导师开启你的追梦之旅</h2>
+                                <p>多维度的训练方式，专业的经纪团队，多渠道的商演机会，工业化的造星工厂</p>
+                                <p>如果你有极强的表现欲望</p>
+                                <p>如果你热爱游戏，唱歌，跳舞</p>
+                                <p>如果你有特殊才艺或技能</p>
+                                <p>如果你想实现梦想</p>
+                                <p>请与我们联络</p>
+                                <div class="link"><nuxt-link to="">申请加入LV</nuxt-link></div>
+                        </div>
+                        <div class="right">
+                            <img class="img1" src="~assets/images/content/zxtd_3.png" alt="">
+                            <img class="img2" src="~assets/images/content/zxtd_4.png" alt="">
+                            <img class="img3" src="~assets/images/content/zxtd_1.png" alt="">
+                            <img class="img4" src="~assets/images/content/zxtd_2.png" alt="">
+                        </div>
+                    </div>
+               </div>
+          </Container>
+      </div>
+      <footerlink></footerlink>
     </div>
 </template>
 
@@ -169,7 +267,7 @@
         },
         mounted(){
           //console.log(this)
-            this.mapData()
+            // this.mapData()
             this.height = document.documentElement.clientHeight;
             var mySwiper = new Swiper('.swiper-container', {
                 autoplay:{
@@ -246,6 +344,13 @@
             .item{
                 width:25%;
                 padding:0 35px;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                img{
+                    width:100%;
+                    display:block;
+                    transition: all 0.3s linear;
+                }
                 .intro{
                     .name{
                         font-size:$font-size-small * 2;
@@ -254,6 +359,12 @@
                     .info{
                         font-size:$font-size-large;
                     }
+                }
+                &:hover{
+                    transform: translateY(-5px);
+                }
+                &:hover img{
+                    box-shadow: 0 0 10px #101010;
                 }
             }
         }
@@ -285,6 +396,167 @@
           text-align: center;
         }
       }
+    }
+    .lv-channel{
+        width:100%;
+        height:876px;
+        background:$body-background;
+        padding:50px 0;
+        color:#fff;
+        .title{
+            text-align: center;
+            font-size:$font-size-base * 2;
+            margin-bottom:53px;
+        }
+        .channel-list{
+            width:100%;
+            display: flex;
+            flex-wrap: wrap;
+            .item{
+                width:33.3%;
+                padding:0 48px;
+                margin-bottom:50px;
+                position: relative;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                will-change: transform;
+                transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+                transition: all 0.2s linear;
+                cursor: pointer;
+                .item-t{
+                    width:300px;
+                    height:300px;
+                    position: relative;
+                    .bag-opa{
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        width:100%;
+                        height:100%;
+                        background:#000;
+                        opacity: 0.2;
+                    }
+                    .shadow{
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        width:100%;
+                        height:100%;
+                        z-index: 1;
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
+                        transition: banckground 0.2s linear;
+                    }
+                    .shadow.deg135{
+                        background-image: -webkit-linear-gradient(135deg,rgba(0,0,0,0.9),transparent 40%);
+                        background-image: linear-gradient(135deg,rgba(0,0,0,0.9),transparent 40%);
+                    }
+                    .shadow.deg225{
+                        background-image: -webkit-linear-gradient(225deg,rgba(0,0,0,0.9),transparent 40%);
+                        background-image: linear-gradient(225deg,rgba(0,0,0,0.9),transparent 40%);
+                    }
+                    .info{
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        width:100%;
+                        height:100%;
+                        text-align: center;
+                        padding-top:118px;
+                        .caption{
+                            margin-top:58px;
+                            font-size:28px;
+                        }
+                    }
+                    &:after{
+                        display:block;
+                        content:"";
+                        width:100%;
+                        height:22px;
+                        background:url(~assets/images/content/floating-card-shadow.png) no-repeat;
+                        background-size:100%;
+                        position: absolute;
+                        top:100%;
+                        left:0;
+                        z-index:-1;
+                    }
+                }
+                &:hover{
+                    transform: rotateX(10deg) rotateY(5deg);
+                }
+                &:hover .shadow.deg135{
+                    background-image: -webkit-linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
+                    background-image: linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
+                }
+                &:hover .shadow.deg225{
+                    background-image: -webkit-linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
+                    background-image: linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
+                }
+            }
+        }
+    }
+    .lv-starteam{
+        width:100%;
+        height:860px;
+        padding-top:90px;
+        background: #0d0d11;
+        color:#fff;
+        .title{
+            font-size:28px;
+            text-align: center;
+        }
+        .lv-starteam-bg{
+            width:100%;
+            height:100%;
+            background: url(~assets/images/content/nrzz_wzbj.png) no-repeat 180px 150px  #0d0d11;
+            overflow:hidden;
+        }
+        .lv-starteam-content{
+            width:100%;
+            margin-top:73px;
+            .left{
+                width:680px;
+                float:left;
+                h2{
+                    font-size:40px;
+                    margin-bottom:25px;
+                }
+                p{
+                    font-size:20px;
+                    margin-bottom:25px;
+                }
+                .link{
+                    margin-top:80px;
+                    a{
+                        display: block;
+                        width:245px;
+                        height:65px;
+                        background:#FFE95C;
+                        border-radius:50px;
+                        text-align: center;
+                        line-height: 65px;
+                        color:#000;
+                        font-size:20px;
+                    }
+                }
+            }
+            .right{
+                width:500px;
+                float:right;
+                .img1{
+                    transform: translateX(20px);
+                }
+                .img2{
+                    transform: translate(50px,-20px);
+                }
+                .img3{
+                    transform: translateX(-80px);
+                }
+                .img4{
+                    transform: translate(230px,-300px);
+                }
+            }
+        }
     }
 }
 </style>

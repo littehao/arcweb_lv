@@ -60,16 +60,20 @@
             let offsetconf = 10;
             box.style.height= document.documentElement.clientHeight-80+'px';
             let that = this;
-            // setTimeout(() => {
-            //     this.animated = false;
-            //     box.addEventListener("mousemove",function(ev){
-            //         that.eventListener(ev,this,offsetconf)
-            //     }, false);
-            // },5000)
-
-            window.onscroll = function (e){
-                console.log(e)
-            }
+            var move = true;
+            setTimeout(() => {
+                this.animated = false;
+                box.addEventListener("mousemove",function(ev){
+                    if(move){
+                        move = false;
+                        setTimeout(() => {
+                            that.eventListener(ev,this,offsetconf)
+                            move = true;
+                        },400)
+                    }
+                    
+                }, false);
+            },5000)
         },
         beforeDestroy(){
             var box=document.getElementById("lv-banner");
@@ -79,9 +83,6 @@
         },
         methods:{
             eventListener(ev,_this,offsetconf){//函数
-                if(this.checkHover(ev,_this)){
-                 // console.log('------------1')
-
                   var ev=ev||window.event;
                     var mousex=ev.pageX/offsetconf;
                     var mousey=ev.pageY/offsetconf;
@@ -89,34 +90,10 @@
                     var pageH=document.documentElement.clientHeight/2/offsetconf;
                     var placex=(mousex-pageW);
                     var placey=(mousey-pageH);
-                    this.style1['transform'] = 'translate3d('+(-placex-20)+'px,'+(-placey)+'px,0)';
-                    this.style2['transform'] = 'translate3d('+(-placex-15)+'px,'+(-placey)+'px,0)';
-                    this.style3['transform'] = 'translate3d('+(-placex-10)+'px,'+(-placey)+'px,0)';
-                    this.style4['transform'] = 'translate3d('+(-placex-5)+'px,'+(-placey)+'px,0)';
-                }
-            },
-            checkHover(e, target) {//劫持mousemove
-              if (this.getEvent(e).type == "mousemove") {
-               // console.log('------------1')
-
-                return !this.contains(target, this.getEvent(e).relatedTarget
-                            || this.getEvent(e).fromElement)
-                            && !((this.getEvent(e).relatedTarget || this.getEvent(e).fromElement) === target);
-                } else {
-                    return !this.contains(target, this.getEvent(e).relatedTarget
-                            || this.getEvent(e).toElement)
-                            && !((this.getEvent(e).relatedTarget || this.getEvent(e).toElement) === target);
-                }
-            },
-            contains(parentNode, childNode) {
-                if (parentNode.contains) {
-                    return parentNode != childNode && parentNode.contains(childNode);
-                } else {
-                    return !!(parentNode.compareDocumentPosition(childNode) & 16);
-                }
-            },
-            getEvent(e) {
-                return e || window.event;
+                    this.style1['transform'] = 'translate3d('+(-placex-30)+'px,'+(-placey - 30)+'px,0)';
+                    this.style2['transform'] = 'translate3d('+(-placex-20)+'px,'+(-placey - 20)+'px,0)';
+                    this.style3['transform'] = 'translate3d('+(-placex-10)+'px,'+(-placey - 10)+'px,0)';
+                    this.style4['transform'] = 'translate3d('+(-placex)+'px,'+(-placey)+'px,0)';
             }
         }
     }
@@ -225,7 +202,7 @@
         position: absolute;
         background-repeat: no-repeat;
         backface-visibility:hidden;
-        transition: all 0.2s linear;
+        transition: all 0.4s linear;
     }
     .fl-part1{
         width:383px;
