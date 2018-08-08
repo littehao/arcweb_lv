@@ -1,9 +1,5 @@
 <template>
-<<<<<<< HEAD
-    <div>
-      服务和支持
-      <Force></Force>
-=======
+
     <div class="lv-service">
         <div class="lv-service-banner" :style="style">
             <Container>
@@ -81,7 +77,6 @@
                 </ul>
              </Container>
         </div>
->>>>>>> 19059b109843369d0eec17ac2243d4124db1e5aa
     </div>
 </template>
 
