@@ -197,14 +197,14 @@
     import Swiper from 'swiper';
     import 'swiper/dist/css/swiper.min.css';
     export default {
-      asyncData ({ app,params }) {
-        //console.log(app)
-        return app.$axios.get(`/OpenAPI/V1/Nav/getListByItemId`,{type:'hot'})
-          .then((res) => {
-           // console.log(res,'------')
-            return { data: res.data.data }
-          })
-      },
+    //   asyncData ({ app,params }) {
+    //     //console.log(app)
+    //     return app.$axios.get(`/OpenAPI/V1/Nav/getListByItemId`,{type:'hot'})
+    //       .then((res) => {
+    //        // console.log(res,'------')
+    //         return { data: res.data.data }
+    //       })
+    //   },
         data(){
             return {
                 height:0,
