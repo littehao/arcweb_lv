@@ -1,8 +1,8 @@
 <template>
     <div class="lv-classproduct">
         <div class="lv-classproduct-content1">
-            <div class="lv-classproduct-banner">
-                <img src="~assets/images/classproduct/banner.png" alt="">
+            <div class="lv-classproduct-banner" :style="style">
+                <!-- <img src="~assets/images/classproduct/banner.png" alt=""> -->
             </div>
             <div class="classproduct-part">
                 <Container>
@@ -45,7 +45,7 @@
                                 <div class="title">
                                     <span>02</span>
                                     <div>
-                                        <h3>棋牌游戏</h3>
+                                        <h3>街机电玩</h3>
                                         <p>Live Video</p>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@
                                 <div class="title">
                                     <span>03</span>
                                     <div>
-                                        <h3>棋牌游戏</h3>
+                                        <h3>经典老虎机</h3>
                                         <p>Live Video</p>
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@
                                 <div class="title">
                                     <span>04</span>
                                     <div>
-                                        <h3>棋牌游戏</h3>
+                                        <h3>数字彩票</h3>
                                         <p>Live Video</p>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
                                 <div class="title">
                                     <span>05</span>
                                     <div>
-                                        <h3>棋牌游戏</h3>
+                                        <h3>LV抓抓乐</h3>
                                         <p>Live Video</p>
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@
                                 <div class="title">
                                     <span>06</span>
                                     <div>
-                                        <h3>棋牌游戏</h3>
+                                        <h3>LV推推乐</h3>
                                         <p>Live Video</p>
                                     </div>
                                 </div>
@@ -183,7 +183,16 @@
 
 <script>
 export default {
-    name: "index",
+    data(){
+        return {
+            style:{
+                height:0,
+            }
+        }
+    },
+    mounted(){
+        this.style.height = document.documentElement.clientHeight + 'px';
+    }
 }
 </script>
 
@@ -197,6 +206,8 @@ export default {
         background-size:100%;
         .lv-classproduct-banner{
             width:100%;
+            background:url(~assets/images/classproduct/banner.png) no-repeat center bottom;
+            background-size:cover;
             img{
                 width:100%;
                 display: block;

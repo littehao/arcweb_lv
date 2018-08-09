@@ -102,7 +102,7 @@
                           <div class="bag-opa"></div>
                           <span class="shadow deg135"></span>
                           <div class="info">
-                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                             <p class="caption">舞蹈频道</p>
                           </div>
                       </div>
@@ -113,7 +113,7 @@
                           <div class="bag-opa"></div>
                           <span class="shadow deg225"></span>
                           <div class="info">
-                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                             <p class="caption">音乐频道</p>
                           </div>
                       </div>
@@ -124,7 +124,7 @@
                           <div class="bag-opa"></div>
                           <span class="shadow deg135"></span>
                           <div class="info">
-                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                             <p class="caption">电竞频道</p>
                           </div>
                       </div>
@@ -135,7 +135,7 @@
                           <div class="bag-opa"></div>
                           <span class="shadow deg225"></span>
                           <div class="info">
-                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                             <p class="caption">体育频道</p>
                           </div>
                       </div>
@@ -146,7 +146,7 @@
                           <div class="bag-opa"></div>
                           <span class="shadow deg135"></span>
                           <div class="info">
-                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                             <p class="caption">彩票频道</p>
                           </div>
                       </div>
@@ -157,7 +157,7 @@
                           <div class="bag-opa"></div>
                           <span class="shadow deg135"></span>
                           <div class="info">
-                            <div class="img"><img src="~assets/images/content/shape.png" alt=""></div>
+                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                             <p class="caption">综合频道</p>
                           </div>
                       </div>
@@ -198,14 +198,14 @@
     import Swiper from 'swiper';
     import 'swiper/dist/css/swiper.min.css';
     export default {
-      asyncData ({ app,params }) {
-        //console.log(app)
-        return app.$axios.get(`/OpenAPI/V1/Nav/getListByItemId`,{type:'hot'})
-          .then((res) => {
-           // console.log(res,'------')
-            return { data: res.data.data }
-          })
-      },
+    //   asyncData ({ app,params }) {
+    //     //console.log(app)
+    //     return app.$axios.get(`/OpenAPI/V1/Nav/getListByItemId`,{type:'hot'})
+    //       .then((res) => {
+    //        // console.log(res,'------')
+    //         return { data: res.data.data }
+    //       })
+    //   },
         data(){
             return {
                 height:0,
