@@ -191,7 +191,7 @@ export default {
         }
     },
     mounted(){
-        this.style.height = window.screen.height + 'px';
+        this.style.height = document.documentElement.clientHeight + 'px';
     }
 }
 </script>
