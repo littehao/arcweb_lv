@@ -7,8 +7,8 @@
                         <div class="lv-slide-content">
                             <img class="img" src="~assets/images/content/nrzz_rw_1.png" alt="">
                             <div class="text">
-                                <h3>网红主播造星计划</h3>
-                                <p>专业经济团队，工业化造星</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经济团队，工业化造星</p>
                             </div>
                         </div>
                     </div>
@@ -16,8 +16,8 @@
                         <div class="lv-slide-content">
                             <img class="img" src="~assets/images/content/nrzz_rw_2.png" alt="">
                             <div class="text">
-                                <h3>网红主播造星计划</h3>
-                                <p>专业经济团队，工业化造星</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经济团队，工业化造星</p>
                             </div>
                         </div>
                     </div>
@@ -25,8 +25,8 @@
                         <div class="lv-slide-content">
                             <img class="img" src="~assets/images/content/nrzz_rw_3.png" alt="">
                             <div class="text">
-                                <h3>网红主播造星计划</h3>
-                                <p>专业经济团队，工业化造星</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经济团队，工业化造星</p>
                             </div>
                         </div>
                     </div>
@@ -195,6 +195,9 @@
 </template>
 
 <script>
+    import $ from 'jquery'
+    import 'animate.css'
+    import * as swiperAni from '../../plugins/swiper.animate.min.js'
     import Swiper from 'swiper';
     import 'swiper/dist/css/swiper.min.css';
     export default {
@@ -240,7 +243,6 @@
             }
         },
           methods:{
-
             mapData(){
               let nodes=[]
               let edges=[]
@@ -261,6 +263,21 @@
 
               this.nodes=nodes;
               this.edges=edges
+            },
+            revealOnScroll(tt,t){
+                $(".revealOnScroll:not(.animated)").each(function () {
+                    var $this = $(this), 
+                        offsetTop = $this.offset().top; 
+                    if(t + tt > offsetTop) { 
+                        if ($this.data('timeout')) { 
+                            window.setTimeout(function(){
+                                $this.addClass('animated ' + $this.data('animation')); 
+                            }, parseInt($this.data('timeout')));
+                        } else {
+                            $this.addClass('animated ' + $this.data('animation'));
+                        } 
+                    }   
+                })
             }
         },
         created(){
@@ -269,6 +286,7 @@
         mounted(){
           //console.log(this)
             // this.mapData()
+            console.log(swiperAni)
             this.height = document.documentElement.clientHeight;
             var mySwiper = new Swiper('.swiper-container', {
                 autoplay:{
@@ -280,8 +298,37 @@
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
+                on:{
+                    init: function(){
+                        swiperAni.swiperAnimateCache(this); //隐藏动画元素 
+                        swiperAni.swiperAnimate(this); //初始化完成开始动画
+                    }, 
+                    slideChangeTransitionEnd: function(){ 
+                        swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                    } 
+                }
             })
-        }
+
+            let tt = document.documentElement.clientHeight;
+            let that = this;
+            let win_height_padded = tt * 1.1;
+            window.addEventListener('scroll',function(){
+                var t = document.documentElement.scrollTop || document.body.scrollTop; 
+                var top_div = document.getElementById( "header" );
+                if( t >= tt ) {
+                    top_div.style.background = "#27272E";
+                } else {
+                    top_div.style.background = "transparent";
+                }
+                let bgtop =  t/5;
+                that.style.backgroundPosition = '50% '+ -bgtop + 'px'; 
+
+                that.revealOnScroll(tt,t);
+            },false)
+        },
+        beforeDestroy(){
+            window.removeEventListener("scroll",this,false);
+        },
     }
 </script>
 

@@ -5,8 +5,8 @@
             <Container>
                 <div class="lv-service-content">
                     <div>
-                        <h3>Live Video</h3>
-                        <p>一站式综合博娱直播系统的开创者与定义者</p>
+                        <h3 class="animated fadeInUp">Live Video</h3>
+                        <p class="animated fadeInUp" >一站式综合博娱直播系统的开创者与定义者</p>
                     </div>
                 </div>
                 <div class="control-down">
@@ -82,6 +82,8 @@
 </template>
 
 <script>
+    import $ from 'jquery'
+    import 'animate.css'
     export default {
         name: "service",
         data(){
@@ -93,6 +95,40 @@
         },
         mounted(){
             this.style.height = document.documentElement.clientHeight + 'px';
+            let tt = document.documentElement.clientHeight;
+            let that = this;
+            let win_height_padded = tt * 1.1;
+            window.addEventListener('scroll',function(){
+                var t = document.documentElement.scrollTop || document.body.scrollTop; 
+                var top_div = document.getElementById( "header" );
+                if( t >= tt ) {
+                    top_div.style.background = "#27272E";
+                } else {
+                    top_div.style.background = "transparent";
+                }
+
+                that.revealOnScroll(tt,t);
+            },false)
+        },
+        beforeDestroy(){
+            window.removeEventListener("scroll",this,false);
+        },
+        methods:{
+            revealOnScroll(tt,t){
+                $(".revealOnScroll:not(.animated)").each(function () {
+                    var $this = $(this), 
+                        offsetTop = $this.offset().top; 
+                    if(t + tt > offsetTop) { 
+                        if ($this.data('timeout')) { 
+                            window.setTimeout(function(){
+                                $this.addClass('animated ' + $this.data('animation')); 
+                            }, parseInt($this.data('timeout')));
+                        } else {
+                            $this.addClass('animated ' + $this.data('animation'));
+                        } 
+                    }   
+                })
+            }
         }
     }
 </script>
