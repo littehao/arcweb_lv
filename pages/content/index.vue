@@ -34,7 +34,7 @@
                 <div class="swiper-button-prev swiper-button-white"></div>
                 <div class="swiper-button-next swiper-button-white"></div>
             </div>
-          
+
       </div>
       <div class="lv-content-star">
           <Container>
@@ -83,14 +83,14 @@
           <div class="line" style="bottom:259px;"></div>
           <div class="line" style="bottom:239px;"></div>
       </div>
-      <!-- <div class="lv-celebrity">
+       <div class="lv-celebrity">
        <Container>
           <div class="lv-celebrity-section">
             <h3 class="celebrity-title">LV签约网红主持人</h3>
             <Force :height="660" :width="1200" :nodes="nodes" :edges="edges"></Force>
           </div>
        </Container>
-      </div> -->
+      </div>
       <div class="lv-channel">
           <Container>
               <h3 class="title">LVTV 专属频道</h3>
@@ -194,11 +194,11 @@
 </template>
 
 <script>
-    import Swiper from 'swiper'; 
+    import Swiper from 'swiper';
     import 'swiper/dist/css/swiper.min.css';
     export default {
       asyncData ({ app,params }) {
-        console.log(app)
+        //console.log(app)
         return app.$axios.get(`/OpenAPI/V1/Nav/getListByItemId`,{type:'hot'})
           .then((res) => {
            // console.log(res,'------')
