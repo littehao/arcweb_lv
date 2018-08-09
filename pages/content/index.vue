@@ -87,7 +87,8 @@
        <Container>
           <div class="lv-celebrity-section">
             <h3 class="celebrity-title">LV签约网红主持人</h3>
-            <Force :height="660" :width="1200" :nodes="nodes" :edges="edges"></Force>
+            <img src="../../assets/images/content/force.png" alt="">
+            <!--<Force :height="660" :width="1200" :nodes="nodes" :edges="edges"></Force>-->
           </div>
        </Container>
       </div>

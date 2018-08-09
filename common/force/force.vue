@@ -45,7 +45,7 @@
         },
         marge:{
           type:[Object],
-          default:()=>({top:200,bottom:80,left:200,right:80})
+          default:()=>({top:60,bottom:80,left:60,right:80})
         }
       },
       data(){
@@ -55,53 +55,38 @@
       },
       methods:{
         random(){
-          return Number((Math.random()*1).toFixed(1))
+          return Number((Math.random()*0).toFixed(1))
         },
         test(){
           let edges=[
             { source:0,target:1,value:this.random()},
             { source:0,target:2,value:this.random()},
-            { source:0,target:3,value:this.random()},
-            { source:0,target:4,value:this.random()},
+            { source:1,target:2,value:this.random()},
+            // { source:2,target:3,value:this.random()},
+            { source:1,target:3,value:this.random()},
             { source:1,target:5,value:this.random()},
+            { source:2,target:4,value:this.random()},
             { source:2,target:5,value:this.random()},
-            { source:2,target:5,value:this.random()},
-            { source:3,target:4,value:this.random()},
-            { source:5,target:8,value:this.random()},
-            { source:5,target:9,value:this.random()},
-            { source:6,target:7,value:this.random()},
-            { source:7,target:8,value:this.random()},
-            { source:2,target:8,value:this.random()},
+            { source:4,target:5,value:this.random()},
+            { source:3,target:5,value:this.random()},
             { source:3,target:8,value:this.random()},
-            { source:5,target:8,value:this.random()},
-            { source:6,target:8,value:this.random()},
-            { source:8,target:9,value:this.random()},
-            { source:8,target:10,value:this.random()},
-            { source:8,target:11,value:this.random()},
-            { source:2,target:11,value:this.random()},
-            { source:3,target:9,value:this.random()},
-            { source:9,target:11,value:this.random()},
-            { source:9,target:12,value:this.random()},
-            { source:9,target:13,value:this.random()},
-            { source:8,target:13,value:this.random()},
-            { source:10,target:6,value:this.random()},
-            { source:10,target:2,value:this.random()},
-            { source:5,target:12,value:this.random()},
-            { source:5,target:13,value:this.random()},
-            { source:9,target:14,value:this.random()},
-            { source:9,target:15,value:this.random()},
-            { source:9,target:16,value:this.random()},
-            { source:4,target:15,value:this.random()},
-            { source:1,target:15,value:this.random()},
-            { source:1,target:16,value:this.random()},
-            { source:1,target:17,value:this.random()},
-            { source:2,target:18,value:this.random()},
-            { source:2,target:19,value:this.random()},
-            { source:3,target:19,value:this.random()},
+            { source:3,target:10,value:this.random()},
+            // { source:3,target:11,value:this.random()},
+            // { source:5,target:6,value:this.random()},
+            // { source:5,target:8,value:this.random()},
+            // { source:4,target:6,value:this.random()},
+            // { source:6,target:7,value:this.random()},
+            // { source:6,target:8,value:this.random()},
+            // { source:6,target:9,value:this.random()},
 
-
-
-
+            // { source:7,target:8,value:this.random()},
+            // { source:7,target:9,value:this.random()},
+            // { source:7,target:10,value:this.random()},
+            // { source:8,target:11,value:this.random()},
+            // { source:8,target:12,value:this.random()},
+            // { source:8,target:13,value:this.random()},
+            // { source:12,target:13,value:this.random()},
+            // { source:12,target:7,value:this.random()},
 
           ];
 
@@ -158,15 +143,16 @@
           let svg = d3.select("svg")
           let width = svg.attr("width")
           let height = svg.attr("height")
+
           let g = svg.append("g").attr("transform","translate("+marge.top+","+marge.left+")");
-          console.log(width,height)
+        //  console.log(width,height)
           //准备数据
           //新建一个力导向图
           var forceSimulation = d3.forceSimulation()
             .force("link",d3.forceLink())
-            .force('collide', d3.forceCollide())
-            .force("charge",d3.forceManyBody().strength(-1000))
-            .force("center",d3.forceCenter());;
+            .force('collide',d3.forceCollide())
+            .force("charge",d3.forceManyBody().strength(-500))
+            .force("center",d3.forceCenter());
 
           //初始化力导向图，也就是传入数据
           //生成节点数据
@@ -178,10 +164,10 @@
             .distance(function(d){//每一边的长度
               return d.value*150;
             })
-          //设置图形的中心位置
+          // //设置图形的中心位置
           forceSimulation.force("center")
-            .x(600/2)
-            .y(500/2);
+            .x(width/2)
+            .y(height/2);
           //有了节点和边的数据后，我们开始绘制
           //绘制边
           var links = g.append("g")
@@ -221,7 +207,8 @@
               .on("start",started)
               .on("drag",dragged)
               .on("end",ended)
-            );
+          );
+
           function ticked(){
             links.attr("x1",function(d){return d.source.x;})
               .attr("y1",function(d){return d.source.y;})
@@ -231,7 +218,7 @@
           }
           function started(d){
             if(!d3.event.active){
-              forceSimulation.alphaTarget(.8).restart();
+              forceSimulation.alphaTarget(0.5).restart();
             }
             d.fx = d.x;
             d.fy = d.y;
@@ -252,8 +239,8 @@
       },
       mounted(){
          //if (this.edges.leading>0&&this.nodes.length>0){
-           this.init()
-           console.log(this.test())
+           //this.init()
+           //console.log(this.test())
          //}
       },
       created(){
