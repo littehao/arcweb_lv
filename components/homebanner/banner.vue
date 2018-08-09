@@ -77,8 +77,6 @@
         },
         beforeDestroy(){
             var box=document.getElementById("lv-banner");
-            let offsetconf = 10;
-            let that = this;
             box.removeEventListener("mousemove",this,false);
         },
         methods:{

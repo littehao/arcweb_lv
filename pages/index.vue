@@ -1,5 +1,5 @@
 <template>
-    <section id="home">
+    <section id="home" :style="trans">
       <lv-banner></lv-banner>
       <div class="section-content">
         <div id="content-1">
@@ -18,6 +18,10 @@
               </div>
             </div>
           </Container>
+          <div class="mask-wrap">
+              <div class="mask"></div>
+              <div class="mask-detail" :style="style"></div>
+          </div>
         </div>
         <div id="content-2">
           <Container>
@@ -113,6 +117,46 @@ export default {
     name: "index",
     components:{
         lvBanner
+    },
+    data(){
+        return {
+            style:{
+                backgroundPosition:'50% 0',
+            },
+            trans:{
+                transform:'translate3d(0,0,0)',
+            }
+        }
+    },
+    mounted(){
+        // let tt = document.documentElement.clientHeight;
+        // let datel = 0;
+        // let that = this;
+        // // let scrollflag = true;
+        // window.addEventListener('scroll',function(){
+        //     var t = document.documentElement.scrollTop || document.body.scrollTop; 
+        //     var top_div = document.getElementById( "header" );
+        //     if( t >= tt ) {
+        //         top_div.style.background = "#27272E";
+        //     } else {
+        //         top_div.style.background = "transparent";
+        //     }
+        //     let bgtop =  t/5;
+        //     that.style.backgroundPosition = '50% '+ -bgtop + 'px'; 
+        //     console.log(t)
+        //     // if(t > datel){//向下
+        //     //     if(t > 10 && t < tt){
+        //     //         that.trans['transform'] = 'translate3d(0px,'+ -tt+'px,0)';
+        //     //     }
+        //     // }else{//向上
+        //     //     console.log(t <= tt)
+        //     //     if(t <= tt){
+        //     //         that.trans['transform'] = 'translate3d(0px,0px,0)';
+        //     //     }
+        //     // }
+        //     datel = t;
+        // },false)
+
     }
 }
 </script>
@@ -128,6 +172,7 @@ export default {
   width: 100%;
   background-color: $body-background;
   padding-top: 80px;
+  transition: all 0.5s linear;
   .card-info{
     display: flex;
     align-items: center;
@@ -238,9 +283,9 @@ export default {
      }
    }
   #content-1{
-    height: auto;
+    height: 711px;
     width: 100%;
-    background-image: url("../assets/images/home/sy_bj_1.png") ;
+    // background-image: url("../assets/images/home/sy_bj_1.png") ;
     background-repeat: no-repeat;
     background-size: 110%;
     background-position: center 0;
@@ -251,10 +296,30 @@ export default {
       margin-top: 100px;
       overflow:hidden;
       .section-card1{
-        margin-top: 50px;
-
+        margin-top: 150px;
       }
-
+    }
+    .mask-wrap{
+        .mask{
+            width:100%;
+            height:100%;
+            background:url("~assets/images/home/homebgop.png") no-repeat center top;
+            background-size:cover;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 1;
+        }
+        .mask-detail{
+            width:100%;
+            height:100%;
+            background:url("~assets/images/home/homebg.png") no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+            position: absolute;
+            top:0;
+            left:0;
+        }
     }
   }
   #content-2{

@@ -52,7 +52,7 @@
             },
             {
               title:'演示站',
-              path:'/demostation'
+              path:'/'
             },
           ],
           bgstatus:false
@@ -75,7 +75,8 @@
       mounted(){
         this.mapRouter()
         let tt = document.documentElement.clientHeight;
-        window.onscroll = function(){
+        let datel = 0;
+        window.addEventListener('scroll',function(){
             var t = document.documentElement.scrollTop || document.body.scrollTop; 
             var top_div = document.getElementById( "header" );
             if( t >= tt ) {
@@ -83,7 +84,13 @@
             } else {
                 top_div.style.background = "transparent";
             }
-        }
+            if(t > datel){
+              // console.log('向下')
+            }else{
+              // console.log('向上')
+            }
+            datel = t;
+        },false)
       },
       watch:{
         '$route.path':function () {
