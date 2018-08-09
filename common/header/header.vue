@@ -75,8 +75,8 @@
       },
       mounted(){
         this.mapRouter()
-        // let tt = document.documentElement.clientHeight;
-        // let datel = 0;
+        let tt = document.documentElement.clientHeight;
+        let datel = 0;
         // window.addEventListener('scroll',function(){
         //     var t = document.documentElement.scrollTop || document.body.scrollTop;
         //     var top_div = document.getElementById( "header" );
