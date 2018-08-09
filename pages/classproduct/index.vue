@@ -3,6 +3,7 @@
         <div class="lv-classproduct-content1">
             <div class="lv-classproduct-banner" :style="style">
                 <!-- <img src="~assets/images/classproduct/banner.png" alt=""> -->
+                <div class="productbtn"><nuxt-link to="/"><img src="~assets/images/classproduct/productbtn.png" alt=""></nuxt-link></div>
             </div>
             <div class="classproduct-part">
                 <Container>
@@ -202,15 +203,25 @@ export default {
     min-width:1200px;
     .lv-classproduct-content1{
         width:100%;
-        background:url(~assets/images/classproduct/bg.png) no-repeat center bottom #1C1C23;
+        background:url(~assets/images/classproduct/bg.png) no-repeat center top #1C1C23;
         background-size:100%;
         .lv-classproduct-banner{
             width:100%;
-            background:url(~assets/images/classproduct/banner.png) no-repeat center bottom;
-            background-size:cover;
-            img{
+            background:url(~assets/images/classproduct/productbg.png) no-repeat center 100px;
+            background-size:100%;
+            position: relative;
+            .productbtn{
+                position: absolute;
+                bottom: 50px;
+                left:0;
                 width:100%;
-                display: block;
+                text-align: center;
+                img{
+                    width:186px;
+                    height:70px;
+                    display:block;
+                    margin:0 auto;
+                }
             }
         }
         .part{
