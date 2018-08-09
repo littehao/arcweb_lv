@@ -9,11 +9,15 @@
 
 <script>
     export default {
-        
+        data(){
+          return{
+
+          }
+        }
     }
 </script>
 
-<style scoped lang="scss">
+<style  lang="scss">
   $footer-height:45px;
   $footer-bg:#0F0E0C;
   $footer-text-color:#2A4560;

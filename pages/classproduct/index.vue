@@ -191,7 +191,7 @@ export default {
         }
     },
     mounted(){
-        this.style.height = document.documentElement.clientHeight + 'px';
+        this.style.height = window.screen.height + 'px';
     }
 }
 </script>
@@ -314,6 +314,6 @@ export default {
         .item{
             margin-right: 65px;
         }
-    } 
+    }
 }
 </style>

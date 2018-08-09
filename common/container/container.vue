@@ -1,11 +1,12 @@
 <template>
     <div class="container">
+      <span></span>
       <slot></slot>
     </div>
 </template>
 <script>
     export default {
-        name: "Container"
+        name: "container"
     }
 </script>
 <style  lang="scss">

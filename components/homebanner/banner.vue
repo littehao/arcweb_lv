@@ -71,7 +71,7 @@
                             move = true;
                         },400)
                     }
-                    
+
                 }, false);
             },5000)
         },
@@ -97,7 +97,7 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .lv-banner{
     width:100%;
     min-width:$container-width;
