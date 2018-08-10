@@ -286,7 +286,6 @@
         mounted(){
           //console.log(this)
             // this.mapData()
-            console.log(swiperAni)
             this.height = document.documentElement.clientHeight;
             var mySwiper = new Swiper('.swiper-container', {
                 autoplay:{
@@ -320,8 +319,6 @@
                 } else {
                     top_div.style.background = "transparent";
                 }
-                let bgtop =  t/5;
-                that.style.backgroundPosition = '50% '+ -bgtop + 'px'; 
 
                 that.revealOnScroll(tt,t);
             },false)

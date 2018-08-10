@@ -22,11 +22,7 @@
                     <h3 class="animated fadeInUp">Live Video</h3>
                     <p class="animated fadeInUp">一站式综合博娱直播系统的开创者与定义者</p>
                 </div>
-                <div class="control-down">
-                    <div class="down-page" style="display:block;">
-                        <i class="icon-darr"></i>
-                    </div>
-                </div>
+                <slot></slot>
             </div>
         </Container>
     </div>
@@ -81,7 +77,7 @@
         },
         methods:{
             eventListener(ev,_this,offsetconf){//函数
-                  var ev=ev||window.event;
+                    var ev=ev||window.event;
                     var mousex=ev.pageX/offsetconf;
                     var mousey=ev.pageY/offsetconf;
                     var pageW=document.documentElement.clientWidth/2/offsetconf;
@@ -92,7 +88,8 @@
                     this.style2['transform'] = 'translate3d('+(-placex-20)+'px,'+(-placey - 20)+'px,0)';
                     this.style3['transform'] = 'translate3d('+(-placex-10)+'px,'+(-placey - 10)+'px,0)';
                     this.style4['transform'] = 'translate3d('+(-placex)+'px,'+(-placey)+'px,0)';
-            }
+            },
+            
         }
     }
 </script>

@@ -9,7 +9,7 @@
                         <p class="animated fadeInUp" >一站式综合博娱直播系统的开创者与定义者</p>
                     </div>
                 </div>
-                <div class="control-down">
+                <div class="control-down" @click="controldown">
                     <div class="down-page">
                         <i class="icon-darr"></i>
                     </div>
@@ -128,6 +128,10 @@
                         } 
                     }   
                 })
+            },
+            controldown(){
+                let tt = document.documentElement.clientHeight;
+                $('html,body').animate({scrollTop:tt},500);
             }
         }
     }
