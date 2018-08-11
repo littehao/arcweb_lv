@@ -178,7 +178,7 @@
                                 <p>如果你有特殊才艺或技能</p>
                                 <p>如果你想实现梦想</p>
                                 <p>请与我们联络</p>
-                                <div class="link"><nuxt-link to="">申请加入LV</nuxt-link></div>
+                                <div class="link"><nuxt-link to="/contactus">申请加入LV</nuxt-link></div>
                         </div>
                         <div class="right">
                             <img class="img1" src="~assets/images/content/zxtd_3.png" alt="">
@@ -286,7 +286,6 @@
         mounted(){
           //console.log(this)
             // this.mapData()
-            console.log(swiperAni)
             this.height = document.documentElement.clientHeight;
             var mySwiper = new Swiper('.swiper-container', {
                 autoplay:{
@@ -320,8 +319,6 @@
                 } else {
                     top_div.style.background = "transparent";
                 }
-                let bgtop =  t/5;
-                that.style.backgroundPosition = '50% '+ -bgtop + 'px'; 
 
                 that.revealOnScroll(tt,t);
             },false)
