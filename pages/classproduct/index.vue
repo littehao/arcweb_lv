@@ -38,7 +38,7 @@
             <div class="classproduct-part1">
                 <Container>
                     <div class="part">
-                        <div class="classproduct-right revealOnScroll" data-animation="slideInRight">
+                        <div class="classproduct-right revealOnScroll" data-animation="fadeInLeft">
                             <img src="~assets/images/classproduct/yxfl_2.png" alt="">
                         </div>
                         <div class="classproduct-left">
@@ -94,7 +94,7 @@
             <div class="classproduct-part2">
                 <Container>
                     <div class="part">
-                        <div class="classproduct-right revealOnScroll" data-animation="slideInRight">
+                        <div class="classproduct-right revealOnScroll" data-animation="fadeInLeft">
                             <img src="~assets/images/classproduct/yxfl_4.png" alt="">
                         </div>
                         <div class="classproduct-left">
@@ -150,7 +150,7 @@
             <div class="classproduct-part2">
                 <Container>
                     <div class="part">
-                        <div class="classproduct-right revealOnScroll" data-animation="slideInRight">
+                        <div class="classproduct-right revealOnScroll" data-animation="fadeInLeft">
                             <img src="~assets/images/classproduct/yxfl_6.png" alt="">
                         </div>
                         <div class="classproduct-left">
@@ -185,7 +185,11 @@
 <script>
 import $ from 'jquery'
 import 'animate.css'
+import { mapGetters } from 'vuex'
 export default {
+    layout (context) {
+        return context.userAgent;
+    },
     data(){
         return {
             style:{
@@ -193,7 +197,16 @@ export default {
             }
         }
     },
+    computed:{
+        ...mapGetters([
+            'getAgent'
+        ])  
+    },
     mounted(){
+        if(this.getAgent == 'mobile'){
+            window.location.href = '/'
+        }
+
         this.style.height = document.documentElement.clientHeight + 'px';
         let tt = document.documentElement.clientHeight;
         let that = this;

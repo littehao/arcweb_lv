@@ -105,8 +105,11 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex'
     export default {
-        name: "about",
+        layout (context) {
+            return context.userAgent;
+        },
         data(){
             return {
                 style:{
@@ -114,7 +117,15 @@
                 }
             }
         },
+        computed:{
+            ...mapGetters([
+                'getAgent'
+            ])  
+        },
         mounted(){
+            if(this.getAgent == 'mobile'){
+                window.location.href = '/'
+            }
             this.style.height = document.documentElement.clientHeight + 'px';
         }
     }

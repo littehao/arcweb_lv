@@ -1,7 +1,6 @@
 <template>
     <div class="contactus">
-        <Container>
-          <div class="contactus-content">
+        <div class="contactus-content">
             <h1 class="form-title">联系我们</h1>
             <p class="form-info">请在以下填写您的个人资料，或直接通过本公司电子邮箱地址：market@livevideo.com 进行联系！</p>
             <div class="form">
@@ -52,7 +51,6 @@
               </Form>
             </div>
           </div>
-        </Container>
     </div>
 </template>
 
@@ -73,7 +71,7 @@
                   email: null,//邮箱
                   othercall:null,//其他联系方式
                   program:[],//合适方案
-                  message:'',//留言
+                  message:null,//留言
                 }
             }
         },
@@ -83,21 +81,15 @@
             ])  
         },
         mounted(){
-            if(this.getAgent == 'mobile'){
+            if(this.getAgent == 'default'){
                 window.location.href = '/'
             }
             this.style.height = document.documentElement.clientHeight + 'px';
         },
         methods:{
-          async getData (formTop) {
-            await this.$http.get(`https://api.testfordemo.com/OpenAPI/v1/Config/contactUs`,{formTop})
-            .then((res)=>{
-              console.log(res)
-            })
-          },
           submit(){
-            this.getData(this.formTop);
-          },
+            console.log(this.formTop.program)
+          }
         }
     }
 </script>
@@ -120,18 +112,21 @@
      }
      .form-info{
        color:$text-color-white;
-      font-size: $font-size-large;
+       font-size: $font-size-large;
        line-height: 25px;
        text-align: center;
        margin-bottom: 25px;
+       width:90%;
+       margin:0 auto;
+       word-break:break-all; 
      }
      .form{
-       width: 660px;
+       width: 90%;
        height: auto;
        margin: 0 auto;
        border-radius: 4px;
-       background: rgba(255,255,255,.3);
-       padding:50px;
+       background: rgba(255,255,255,.1);
+       padding:30px 20px;
        .form-item-label{
          color: $text-color-white;
          font-size: $font-size-large;
@@ -158,7 +153,7 @@
             background-color: transparent;
           }
           .ivu-checkbox-wrapper{
-            margin-right: 200px;
+            margin-right: 70px;
           }
         }
        }

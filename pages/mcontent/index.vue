@@ -31,13 +31,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-prev swiper-button-white"></div>
-                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-pagination"></div>
             </div>
-
       </div>
       <div class="lv-content-star">
-          <Container>
+          <div>
               <h3 class="title">LV特邀明星</h3>
               <div class="star-list">
                   <div class="item">
@@ -77,120 +75,117 @@
                     </div>
                   </div>
               </div>
-          </Container>
-          <div class="line" style="bottom:303px;"></div>
-          <div class="line" style="bottom:281px;"></div>
-          <div class="line" style="bottom:259px;"></div>
-          <div class="line" style="bottom:239px;"></div>
+          </div>
+          <div class="line" style="bottom:400px;"></div>
+          <div class="line" style="bottom:380px;"></div>
+          <div class="line" style="bottom:360px;"></div>
+          <div class="line" style="bottom:340px;"></div>
+          <div class="line" style="bottom:160px;left:10%;"></div>
+          <div class="line" style="bottom:140px;left:10%;"></div>
+          <div class="line" style="bottom:120px;left:10%;"></div>
+          <div class="line" style="bottom:100px;left:10%;"></div>
       </div>
        <div class="lv-celebrity">
-       <Container>
-          <div class="lv-celebrity-section">
+           <div class="lv-celebrity-section">
             <h3 class="celebrity-title">LV签约网红主持人</h3>
-            <img src="../../assets/images/content/force.png" alt="">
+            <img style="width:100%;" src="../../assets/images/content/mforce.png" alt="">
             <!--<Force :height="660" :width="1200" :nodes="nodes" :edges="edges"></Force>-->
           </div>
-       </Container>
       </div>
       <div class="lv-channel">
-          <Container>
-              <h3 class="title">LVTV 专属频道</h3>
-              <div class="channel-list">
-                  <div class="item">
-                      <div class="item-t">
-                          <div class="avatar"><img src="~assets/images/content/lvtv_wdpd.png" alt=""></div>
-                          <div class="bag-opa"></div>
-                          <span class="shadow deg135"></span>
-                          <div class="info">
-                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                            <p class="caption">舞蹈频道</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="item-t">
-                          <div class="avatar"><img src="~assets/images/content/lvtv_yypd.png" alt=""></div>
-                          <div class="bag-opa"></div>
-                          <span class="shadow deg225"></span>
-                          <div class="info">
-                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                            <p class="caption">音乐频道</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="item-t">
-                          <div class="avatar"><img src="~assets/images/content/lvtv_djpd.png" alt=""></div>
-                          <div class="bag-opa"></div>
-                          <span class="shadow deg135"></span>
-                          <div class="info">
-                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                            <p class="caption">电竞频道</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="item-t">
-                          <div class="avatar"><img src="~assets/images/content/lvtv_typd.png" alt=""></div>
-                          <div class="bag-opa"></div>
-                          <span class="shadow deg225"></span>
-                          <div class="info">
-                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                            <p class="caption">体育频道</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="item-t">
-                          <div class="avatar"><img src="~assets/images/content/lvtv_cppd.png" alt=""></div>
-                          <div class="bag-opa"></div>
-                          <span class="shadow deg135"></span>
-                          <div class="info">
-                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                            <p class="caption">彩票频道</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="item-t">
-                          <div class="avatar"><img src="~assets/images/content/lvtv_zhpd.png" alt=""></div>
-                          <div class="bag-opa"></div>
-                          <span class="shadow deg135"></span>
-                          <div class="info">
-                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                            <p class="caption">综合频道</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </Container>
+        <h3 class="title">LVTV 专属频道</h3>
+        <div class="channel-list">
+            <div class="item">
+                <div class="item-t">
+                    <div class="avatar"><img src="~assets/images/content/lvtv_wdpd.png" alt=""></div>
+                    <div class="bag-opa"></div>
+                    <span class="shadow deg135"></span>
+                    <div class="info">
+                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">舞蹈频道</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-t">
+                    <div class="avatar"><img src="~assets/images/content/lvtv_yypd.png" alt=""></div>
+                    <div class="bag-opa"></div>
+                    <span class="shadow deg225"></span>
+                    <div class="info">
+                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">音乐频道</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-t">
+                    <div class="avatar"><img src="~assets/images/content/lvtv_djpd.png" alt=""></div>
+                    <div class="bag-opa"></div>
+                    <span class="shadow deg135"></span>
+                    <div class="info">
+                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">电竞频道</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-t">
+                    <div class="avatar"><img src="~assets/images/content/lvtv_typd.png" alt=""></div>
+                    <div class="bag-opa"></div>
+                    <span class="shadow deg225"></span>
+                    <div class="info">
+                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">体育频道</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-t">
+                    <div class="avatar"><img src="~assets/images/content/lvtv_cppd.png" alt=""></div>
+                    <div class="bag-opa"></div>
+                    <span class="shadow deg135"></span>
+                    <div class="info">
+                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">彩票频道</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-t">
+                    <div class="avatar"><img src="~assets/images/content/lvtv_zhpd.png" alt=""></div>
+                    <div class="bag-opa"></div>
+                    <span class="shadow deg135"></span>
+                    <div class="info">
+                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">综合频道</p>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
       <div class="lv-starteam">
-          <Container>
-               <div class="lv-starteam-bg">
-                   <h3 class="title">专业的造星团队</h3>
-                    <div class="lv-starteam-content">
-                        <div class="left">
-                            <h2>钻石级导师开启你的追梦之旅</h2>
-                                <p>多维度的训练方式，专业的经纪团队，多渠道的商演机会，工业化的造星工厂</p>
-                                <p>如果你有极强的表现欲望</p>
-                                <p>如果你热爱游戏，唱歌，跳舞</p>
-                                <p>如果你有特殊才艺或技能</p>
-                                <p>如果你想实现梦想</p>
-                                <p>请与我们联络</p>
-                                <div class="link"><nuxt-link to="/contactus">申请加入LV</nuxt-link></div>
-                        </div>
-                        <div class="right">
-                            <img class="img1" src="~assets/images/content/zxtd_3.png" alt="">
-                            <img class="img2" src="~assets/images/content/zxtd_4.png" alt="">
-                            <img class="img3" src="~assets/images/content/zxtd_1.png" alt="">
-                            <img class="img4" src="~assets/images/content/zxtd_2.png" alt="">
-                        </div>
-                    </div>
-               </div>
-          </Container>
+         <div class="lv-starteam-bg">
+            <h3 class="title">专业的造星团队</h3>
+            <div class="lv-starteam-content">
+                <div class="right">
+                    <img class="img1" src="~assets/images/content/zxtd_3.png" alt="">
+                    <img class="img2" src="~assets/images/content/zxtd_4.png" alt="">
+                    <img class="img3" src="~assets/images/content/zxtd_1.png" alt="">
+                    <img class="img4" src="~assets/images/content/zxtd_2.png" alt="">
+                </div>
+                <div class="left">
+                    <h2>钻石级导师开启你的追梦之旅</h2>
+                        <p>多维度的训练方式，专业的经纪团队，多渠道的商演机会，工业化的造星工厂</p>
+                        <p>如果你有极强的表现欲望</p>
+                        <p>如果你热爱游戏，唱歌，跳舞</p>
+                        <p>如果你有特殊才艺或技能</p>
+                        <p>如果你想实现梦想</p>
+                        <p>请与我们联络</p>
+                        <div class="link"><nuxt-link to="/contactus">申请加入LV</nuxt-link></div>
+                </div>
+            </div>
+        </div>
       </div>
-      <footerlink></footerlink>
     </div>
 </template>
 
@@ -202,14 +197,6 @@
     import 'swiper/dist/css/swiper.min.css';
     import { mapGetters } from 'vuex'
     export default {
-    //   asyncData ({ app,params }) {
-    //     //console.log(app)
-    //     return app.$axios.get(`/OpenAPI/V1/Nav/getListByItemId`,{type:'hot'})
-    //       .then((res) => {
-    //        // console.log(res,'------')
-    //         return { data: res.data.data }
-    //       })
-    //   },
         layout (context) {
             return context.userAgent;
         },
@@ -219,31 +206,6 @@
                 value1: 0,
                 nodes:[],
                 edges:[]
-            //      nodes:[
-            //       {name:"湖南邵阳",'img':require('../../assets/images/avatar/tx_3.png')},
-            //       {name:"山东莱州",'img':require('../../assets/images/avatar/tx_3.png')},
-            //       {name:"广东阳江",'img':require('../../assets/images/avatar/tx_3.png')},
-            //       {name:"山东枣庄",'img':require('../../assets/images/avatar/tx_3.png')},
-            //       {name:"泽",'img':require('../../assets/images/avatar/tx_3.png')},
-            //       {name:"恒",'img':require('../../assets/images/avatar/tx_3.png')},
-            //       {name:"鑫",'img':require('../../assets/images/avatar/tx_3.png')},
-            //       {name:"明山",'img':require('../../assets/images/avatar/tx_3.png')},
-            //       {name:"班长",'img':require('../../assets/images/avatar/tx_3.png')}
-            //     ],
-            //
-            // edges:[
-            //   {source:0,target:4,relation:"籍贯",value:1.3},
-            //   {source:4,target:5,relation:"舍友",value:1},
-            //   {source:4,target:6,relation:"舍友",value:1},
-            //   {source:4,target:7,relation:"舍友",value:1},
-            //   {source:1,target:6,relation:"籍贯",value:2},
-            //   {source:2,target:5,relation:"籍贯",value:0.9},
-            //   {source:3,target:7,relation:"籍贯",value:1},
-            //   {source:5,target:6,relation:"同学",value:1.6},
-            //   {source:6,target:7,relation:"朋友",value:0.7},
-            //   {source:6,target:8,relation:"职责",value:2}
-            //]
-
             }
         },
         computed:{
@@ -251,28 +213,7 @@
                 'getAgent'
             ])  
         },
-          methods:{
-            mapData(){
-              let nodes=[]
-              let edges=[]
-              this.data.anchor_list.map((item,index)=>{
-                let no={
-                  img:item.avatar,
-                  index:index
-                }
-               let redom={
-                 source:Math.floor(Math.random()*this.data.anchor_list.length),
-                 target:Math.floor(Math.random()*this.data.anchor_list.length),
-                 value:(Math.random()*3).toFixed(1)
-               }
-                nodes.push(no)
-                edges.push(redom)
-              })
-              console.log(JSON.stringify(nodes))
-
-              this.nodes=nodes;
-              this.edges=edges
-            },
+        methods:{
             revealOnScroll(tt,t){
                 $(".revealOnScroll:not(.animated)").each(function () {
                     var $this = $(this), 
@@ -289,26 +230,21 @@
                 })
             }
         },
-        created(){
-         // this.getdata()
-        },
         mounted(){
-          //console.log(this)
-            // this.mapData()
-            if(this.getAgent == 'mobile'){
+            if(this.getAgent == 'default'){
                 window.location.href = '/'
             }
             this.height = document.documentElement.clientHeight;
             var mySwiper = new Swiper('.swiper-container', {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
                 autoplay:{
                     delay:5000
                 },
                 speed:500,
                 loop:true,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
                 on:{
                     init: function(){
                         swiperAni.swiperAnimateCache(this); //隐藏动画元素 
@@ -325,12 +261,6 @@
             let win_height_padded = tt * 1.1;
             window.addEventListener('scroll',function(){
                 var t = document.documentElement.scrollTop || document.body.scrollTop; 
-                var top_div = document.getElementById( "header" );
-                if( t >= tt ) {
-                    top_div.style.background = "#27272E";
-                } else {
-                    top_div.style.background = "transparent";
-                }
 
                 that.revealOnScroll(tt,t);
             },false)
@@ -352,6 +282,15 @@
         .swiper-container{
             width:100%;
             height:100%;
+            .swiper-pagination-bullet{
+                border:1px solid #fff;
+                border-radius:50%;
+                background:transparent;
+                opacity:1;
+            }
+            .swiper-pagination-bullet-active{
+                background:#fff;
+            }
         }
         .lv-slide-content{
             width:100%;
@@ -360,8 +299,8 @@
             .img{
                 position: absolute;
                 bottom:0;
-                left:45%;
-                margin-left:-250px;
+                left:0;
+                width:100%;
             }
             .text{
                 width:100%;
@@ -399,10 +338,11 @@
             position: relative;
             z-index: 11;;
             .item{
-                width:25%;
-                padding:0 35px;
+                width:50%;
+                padding:0 20px;
                 cursor: pointer;
                 transition: all 0.3s linear;
+                margin-bottom:20px;
                 img{
                     width:100%;
                     display:block;
@@ -410,11 +350,11 @@
                 }
                 .intro{
                     .name{
-                        font-size:$font-size-small * 2;
+                        font-size:16px;
                         margin-right:15px;
                     }
                     .info{
-                        font-size:$font-size-large;
+                        font-size:14px;
                     }
                 }
                 &:hover{
@@ -428,13 +368,13 @@
         .line{
             position: absolute;
             left:0;
-            width:100%;
+            width:90%;
             height:2px;
             background:#D8D8D8;
         }
     }
     .lv-celebrity{
-      height: 860px;
+      height: 660px;
       width: 100%;
       background-image: url("../../assets/images/content/nrzz_bj_2.png");
       background-size: cover;
@@ -470,8 +410,7 @@
             display: flex;
             flex-wrap: wrap;
             .item{
-                width:33.3%;
-                padding:0 48px;
+                width:50%;
                 margin-bottom:50px;
                 position: relative;
                 -webkit-transform-style: preserve-3d;
@@ -481,9 +420,15 @@
                 transition: all 0.2s linear;
                 cursor: pointer;
                 .item-t{
-                    width:300px;
-                    height:300px;
+                    width:100%;
                     position: relative;
+                    .avatar{
+                        width:100%;
+                        img{
+                            width:100%;
+                            display:block;
+                        }
+                    }
                     .bag-opa{
                         position: absolute;
                         top:0;
@@ -519,10 +464,10 @@
                         width:100%;
                         height:100%;
                         text-align: center;
-                        padding-top:118px;
+                        padding-top:30px;
                         .caption{
-                            margin-top:58px;
-                            font-size:28px;
+                            margin-top:20px;
+                            font-size:24px;
                         }
                     }
                     &:after{
@@ -550,12 +495,18 @@
                     background-image: linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
                 }
             }
+            .item:nth-child(2n+1){
+                padding:0px 10px 0px 20px;
+            }
+            .item:nth-child(2n){
+                padding:0px 20px 0px 10px;
+            }
         }
     }
     .lv-starteam{
         width:100%;
-        height:860px;
         padding-top:90px;
+        padding-bottom:50px;
         background: #0d0d11;
         color:#fff;
         .title{
@@ -572,45 +523,50 @@
             width:100%;
             margin-top:73px;
             .left{
-                width:680px;
-                float:left;
+                width:100%;
+                padding:0 20px;
                 h2{
-                    font-size:40px;
+                    font-size:24px;
                     margin-bottom:25px;
                 }
                 p{
-                    font-size:20px;
-                    margin-bottom:25px;
+                    font-size:16px;
+                    margin-bottom:15px;
                 }
                 .link{
-                    margin-top:80px;
+                    margin-top:-80px;
+                    text-align: right;
                     a{
-                        display: block;
-                        width:245px;
-                        height:65px;
+                        display:inline-block;
+                        width:120px;
+                        height:35px;
                         background:#FFE95C;
                         border-radius:50px;
                         text-align: center;
-                        line-height: 65px;
+                        line-height: 35px;
                         color:#000;
-                        font-size:20px;
+                        font-size:14px;
                     }
                 }
             }
             .right{
-                width:500px;
-                float:right;
+                width:100%;
+                margin-bottom:50px;
                 .img1{
-                    transform: translateX(20px);
+                    transform: translateX(30%);
+                    width:45%;
                 }
                 .img2{
-                    transform: translate(50px,-20px);
+                    transform: translate(50%,-20px);
+                    width:35%;
                 }
                 .img3{
-                    transform: translateX(-80px);
+                    transform: translateX(10px);
+                    width:45%;
                 }
                 .img4{
-                    transform: translate(230px,-300px);
+                    transform: translate(20%);
+                    width:42%;
                 }
             }
         }

@@ -84,6 +84,7 @@
 <script>
     import $ from 'jquery'
     import 'animate.css'
+    import { mapGetters } from 'vuex'
     export default {
         name: "service",
         data(){
@@ -93,7 +94,15 @@
                 }
             }
         },
+        computed:{
+            ...mapGetters([
+                'getAgent'
+            ])  
+        },
         mounted(){
+            if(this.getAgent == 'mobile'){
+                window.location.href = '/'
+            }
             this.style.height = document.documentElement.clientHeight + 'px';
             let tt = document.documentElement.clientHeight;
             let that = this;

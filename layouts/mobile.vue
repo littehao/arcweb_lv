@@ -1,6 +1,8 @@
 <template>
-    <div>
-      <nuxt/>
+    <div class="layout">
+        <Mheader></Mheader>
+        <nuxt/>
+        <Mfooter></Mfooter>
     </div>
 </template>
 
