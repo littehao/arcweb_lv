@@ -8,22 +8,22 @@
               <Form :model="formTop" label-position="top">
                 <FormItem >
                   <p name="label" class="form-item-label">姓名<span class="form-item-required">*</span></p>
-                  <Input v-model="formTop.name"></Input>
+                  <Input v-model="formTop.name" type="text"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">电话号码 </p>
+                  <p name="label" class="form-item-label">电话号码<span class="form-item-required">*</span></p>
 
-                  <Input v-model="formTop.tel"></Input>
+                  <Input v-model="formTop.tel" type="text" :number="true"></Input>
                 </FormItem>
                 <FormItem >
                   <p name="label" class="form-item-label">电子邮件 <span class="form-item-required">*</span></p>
 
-                  <Input v-model="formTop.email"></Input>
+                  <Input v-model="formTop.email" type="email"></Input>
                 </FormItem>
                 <FormItem >
                   <p name="label" class="form-item-label">其他联系方式 </p>
 
-                  <Input v-model="formTop.othercall"></Input>
+                  <Input v-model="formTop.othercall" type="text"></Input>
                 </FormItem>
                 <FormItem >
                   <p name="label" class="form-item-label">合作方案 <span class="form-item-required">*</span></p>
@@ -41,13 +41,11 @@
                   </div>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">留言 </p>
-
-                  <Input v-model="formTop.message" type="textarea" :autosize="{minRows: 5,maxRows: 8}"></Input>
+                  <p name="label" class="form-item-label">留言<span class="form-item-required">*</span></p>
+                  <Input v-model="formTop.message" type="textarea" :rows="rows" :autosize="false"></Input>
                 </FormItem>
                 <FormItem >
                   <Button  class="form-btn" @click="submit">提交</Button>
-
                 </FormItem>
               </Form>
             </div>
@@ -64,6 +62,7 @@
         },
         data(){
             return {
+                rows:8,
                 style:{
                     height:0,
                 },
@@ -89,14 +88,27 @@
             this.style.height = document.documentElement.clientHeight + 'px';
         },
         methods:{
-          async getData (formTop) {
-            await this.$http.get(`https://api.testfordemo.com/OpenAPI/v1/Config/contactUs`,{formTop})
+          asyncData (params) {
+           return this.$http.get(`/OpenAPI/v1/Config/contactUs`,this.formTop)
             .then((res)=>{
               console.log(res)
-            })
+              if(res){
+                    if(res.code == 1){
+                        this.$Message.error(res.msg)
+                    }else{
+                        this.$Message.success('提交成功');
+                    }
+              }else{
+                this.$Message.success('接口请求错误');
+              }
+            })  
           },
           submit(){
-            this.getData(this.formTop);
+            if(!this.formTop.name || !this.formTop.email || !this.formTop.email || !this.formTop.program || !this.formTop.message){
+              this.$Message.error('*为必填内容')
+              return;
+            }
+            this.asyncData();
           },
         }
     }

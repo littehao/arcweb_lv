@@ -203,7 +203,7 @@
     import { mapGetters } from 'vuex'
     export default {
     //   asyncData ({ app,params }) {
-    //     //console.log(app)
+    //     console.log(app)
     //     return app.$axios.get(`/OpenAPI/V1/Nav/getListByItemId`,{type:'hot'})
     //       .then((res) => {
     //        // console.log(res,'------')
