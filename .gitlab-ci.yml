@@ -13,7 +13,7 @@ DeployToProduction:
  tags: ["nginx", "production"]
 
  script:
-   - cd /opt/www/arcweb_lv && git pull && chown -R www-data:www-data *
+   - cd /opt/www/arcweb_lv && git pull origin Production && chown -R www-data:www-data *
    - docker exec -t $(docker ps | grep node  | awk '{print $1}') ash -c "cd /opt/www/arcweb_lv/ && npm install && npm run build"
    - docker exec -t $(docker ps | grep node  | awk '{print $1}') ash -c "pm2 reload index"
 
