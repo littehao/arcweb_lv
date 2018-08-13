@@ -13,6 +13,7 @@
   </div>
 </template>
 <script>
+  import $ from 'jquery'
   import lvBanner from '~/components/homebanner/banner'
   export default {
     components: {
