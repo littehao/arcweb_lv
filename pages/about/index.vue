@@ -127,7 +127,22 @@
                 window.location.href = '/'
             }
             this.style.height = document.documentElement.clientHeight + 'px';
-        }
+
+            window.addEventListener('scroll',function(){
+                var t = document.documentElement.scrollTop || document.body.scrollTop; 
+                var top_div = document.getElementById( "header" );
+                if( t >= 80 ) {
+                    top_div.style.background = "#27272E";
+                } else {
+                    top_div.style.background = "transparent";
+                }
+            },false)
+        },
+        beforeDestroy(){
+            if (window.removeEventListener) {
+                window.removeEventListener("scroll",this,false);
+            }
+        },
     }
 </script>
 

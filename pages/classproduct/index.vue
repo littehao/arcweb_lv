@@ -62,6 +62,8 @@
                         </div>
                     </div>
                 </Container>
+                <div class="classproduct-part1-bg1"></div>
+                <div class="classproduct-part1-bg2"></div>
             </div>
             <div class="classproduct-part2">
                 <Container>
@@ -284,12 +286,29 @@ export default {
         position: relative;
         z-index: 1;
         .classproduct-part1{
-            background:url(~assets/images/classproduct/yxfl_ys_3.png) no-repeat;
             background-position:-100px top;
             background-size:100%;
             padding-top:100px;
             position: relative;
             z-index: 10;
+            .classproduct-part1-bg1{
+                width:100%;
+                height:100%;
+                background:url(~assets/images/classproduct/yxfl_ys_3.png) no-repeat;
+                background-size:cover;
+                position: absolute;
+                top:0;
+                left:0;
+            }
+            .classproduct-part1-bg2{
+                width:100%;
+                height:100%;
+                background:url(~assets/images/classproduct/homebgop.png) no-repeat;
+                background-size:cover;
+                position: absolute;
+                top:0;
+                left:0;
+            }
         }
         .classproduct-part2{
             position: relative;
