@@ -42,6 +42,7 @@ body{
   html,#__nuxt,#__layout,.layout{
     height: 100%;
     /*width: 100%;*/
+    background:#1c1c23;
   }
 html
 {
