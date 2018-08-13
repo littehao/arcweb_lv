@@ -1,10 +1,40 @@
 <template>
   <div class="layout">
     <Lheader></Lheader>
+    <lv-banner v-if="show" v-model="show">
+      <div class="control-down" @click="controldown">
+          <div class="down-page" style="display:block;">
+              <i class="icon-darr"></i>
+          </div>
+      </div>
+    </lv-banner>
     <nuxt/>
     <Lfooter></Lfooter>
   </div>
 </template>
+<script>
+  import lvBanner from '~/components/homebanner/banner'
+  export default {
+    components: {
+      lvBanner
+    },
+    computed:{
+      show(){
+        if(this.$route.name == 'index'){
+          return true;
+        }else{
+          return false;
+        }
+      }
+    },
+    methods:{
+      controldown(){
+          let tt = document.documentElement.clientHeight;
+          $('html,body').animate({scrollTop:tt},500);
+      }
+    }
+  }
+</script>
 
 <style lang="scss">
   body{
@@ -41,11 +71,4 @@ html
 
 
 </style>
-<script>
-  // import Header from "../common/header/header";
-  export default {
-    components: {
-      // Header
-    }
-  }
-</script>
+

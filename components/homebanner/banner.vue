@@ -30,6 +30,12 @@
 
 <script type="text/javascript">
     export default {
+        porps:{
+            value:{
+                type:Boolean,
+                default:false
+            }
+        },
         data(){
             return {
                 animated:true,
@@ -53,7 +59,7 @@
         },
         mounted(){
             var box=document.getElementById("lv-banner");
-            box.style.height= document.documentElement.clientHeight+'px';
+            // box.style.height= document.documentElement.clientHeight+'px';
             let offsetconf = 10;
             let that = this;
             var move = true;
@@ -72,9 +78,11 @@
             },5000)
         },
         beforeDestroy(){
-            var box=document.getElementById("lv-banner");
-            if (box.removeEventListener) {
-                box.removeEventListener("mousemove",this,false);
+            if(this.value){
+                var box=document.getElementById("lv-banner");
+                if (box.removeEventListener) {
+                    box.removeEventListener("mousemove",this,false);
+                }
             }
         },
         methods:{

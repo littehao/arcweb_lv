@@ -1,12 +1,12 @@
 <template>
     <section id="home" :style="trans">
-      <lv-banner>
+      <!-- <lv-banner>
             <div class="control-down" @click="controldown">
                 <div class="down-page" style="display:block;">
                     <i class="icon-darr"></i>
                 </div>
             </div>
-      </lv-banner>
+      </lv-banner> -->
       <div class="section-content">
         <div id="content-1">
           <Container>
@@ -175,10 +175,6 @@ export default {
                 }   
             })
         },
-        controldown(){
-            let tt = document.documentElement.clientHeight;
-            $('html,body').animate({scrollTop:tt},500);
-        }
     }
 }
 </script>
