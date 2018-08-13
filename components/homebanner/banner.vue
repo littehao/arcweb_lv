@@ -121,16 +121,22 @@
         left:0;
         text-align: center;
         z-index:2;
+        background:url(~assets/images/home/light.png) no-repeat 45% top;
         .lv-banner-logo{
-            padding-top:31%;
-            background:url(~assets/images/home/light.png) no-repeat 45% top;
+            position: absolute;
+            width:100%;
+            left:0;
+            bottom:50%;
             img{
                 animation-delay:0.2s;
                 -webkit-animation-delay:0.2s;
             }
         }
         .lv-banner-title{
-            margin-top:25px;
+            position: absolute;
+            width:100%;
+            left:0;
+            bottom:40%;
             h3{
                 font-size:38px;
                 color:#fff;

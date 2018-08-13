@@ -53,21 +53,25 @@ export default {
             color:#fff;
             background:url(~assets/images/home/light.png) no-repeat 43% top;
             background-size:55%;
+            position: relative;
+            z-index: 2;
             .logo{
                 width:20%;
                 animation-delay:0.4s;
                 -webkit-animation-delay:0.4s;
             }
             .title{
-                font-size:18px;
+                font-size:20px;
                 margin-bottom:5px;
                 animation-delay:0.6s;
                 -webkit-animation-delay:0.6s;
+                font-weight: 600;
             }
             .info{
-                font-size:14px;
+                font-size:16px;
                 animation-delay:11s;
                 -webkit-animation-delay:1s;
+                font-weight: 600;
             }
         }
         .m-banner-img{
