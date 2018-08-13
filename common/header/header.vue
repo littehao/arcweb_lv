@@ -28,7 +28,7 @@
           active:0,
           router:[
             {
-              title:'首页',
+              title:'首页1',
               path:'/'
             },
             {
