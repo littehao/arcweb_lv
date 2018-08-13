@@ -120,7 +120,9 @@
             },false)
         },
         beforeDestroy(){
-            window.removeEventListener("scroll",this,false);
+            if (window.removeEventListener) {
+                window.removeEventListener("scroll",this,false);
+            }
         },
         methods:{
             revealOnScroll(tt,t){

@@ -73,7 +73,9 @@
         },
         beforeDestroy(){
             var box=document.getElementById("lv-banner");
-            // box.removeEventListener("mousemove",this,false);
+            if (box.removeEventListener) {
+                box.removeEventListener("mousemove",this,false);
+            }
         },
         methods:{
             eventListener(ev,_this,offsetconf){//函数
