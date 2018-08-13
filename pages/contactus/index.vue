@@ -117,7 +117,8 @@
 <style  lang="scss">
  .contactus{
    width: 100%;
-   background-image: url("../../assets/images/contactus/lxwm_bj.png");
+   background: url("../../assets/images/contactus/lxwm_bj.png") no-repeat center;
+   background-size:cover;
    .contactus-content{
      height: auto;
      width: 100%;

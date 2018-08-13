@@ -53,8 +53,8 @@
         },
         mounted(){
             var box=document.getElementById("lv-banner");
-            let offsetconf = 10;
             box.style.height= document.documentElement.clientHeight+'px';
+            let offsetconf = 10;
             let that = this;
             var move = true;
             setTimeout(() => {
