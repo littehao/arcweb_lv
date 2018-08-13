@@ -96,14 +96,14 @@
         </div>
         <div class="section-btn">
           <Container>
-            <button class="btn" type="button">立即体验</button>
+            <button class="btn" type="button" onclick="window.open('https://www.solantec.net/','_blank')">立即体验</button>
           </Container>
           <div class="customer">
             <Container>
               <div class="customer-info">
                 <h2>如果您在Live Video遇到任何问题<br/>
                   请点击右方按钮联系我们24小时在线客服</h2>
-                <nuxt-link  target="_blank" to="/">联系客服</nuxt-link>
+                <nuxt-link  target="_blank" to="/contactus">联系客服</nuxt-link>
 
               </div>
             </Container>

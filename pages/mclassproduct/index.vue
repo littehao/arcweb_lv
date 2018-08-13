@@ -3,7 +3,7 @@
         <div class="lv-classproduct-content1">
             <div class="lv-classproduct-banner" :style="style">
                 <!-- <img src="~assets/images/classproduct/banner.png" alt=""> -->
-                <div class="productbtn"><nuxt-link to="/"><img src="~assets/images/classproduct/productbtn.png" alt=""></nuxt-link></div>
+                <div class="productbtn"><a target="_blank" href="https://m.katoong.com/"><img src="~assets/images/classproduct/productbtn.png" alt=""></a></div>
             </div>
             <div class="classproduct-part">
                 <div class="part">

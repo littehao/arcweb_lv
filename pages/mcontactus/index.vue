@@ -96,6 +96,12 @@
                         this.$Message.error(res.msg)
                     }else{
                         this.$Message.success('提交成功');
+                        this.formTop.name = '';
+                        this.formTop.email = '';
+                        this.formTop.tel = '';
+                        this.formTop.program = [];
+                        this.formTop.message = '';
+                        this.formTop.othercall = '';
                     }
               }else{
                   this.$Message.success('接口请求错误');
