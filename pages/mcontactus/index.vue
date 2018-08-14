@@ -87,8 +87,8 @@
             this.style.height = document.documentElement.clientHeight + 'px';
         },
         methods:{
-         asyncData (params) {
-           return this.$http.get(`/OpenAPI/v1/Config/contactUs`,this.formTop)
+         getData (params) {
+           return axios.post(`https://api.katoong.com/OpenAPI/v1/Config/contactUs`,this.formTop)
             .then((res)=>{
               console.log(res)
               if(res){
@@ -104,7 +104,7 @@
                         this.formTop.othercall = '';
                     }
               }else{
-                  this.$Message.success('接口请求错误');
+                this.$Message.success('接口请求错误');
               }
             })  
           },
@@ -113,7 +113,11 @@
               this.$Message.error('*为必填内容')
               return;
             }
-            this.asyncData();
+            if(isNaN(this.formTop.tel)){
+                this.$Message.error('手机号必须是数字')
+                return;
+            }
+            this.getData();
           },
         }
     }

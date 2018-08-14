@@ -2,7 +2,7 @@
     <div class="contactus">
         <Container>
           <div class="contactus-content">
-            <h1 class="form-title">联系我们2</h1>
+            <h1 class="form-title">联系我们</h1>
             <p class="form-info">请在以下填写您的个人资料，或直接通过本公司电子邮箱地址：market@livevideo.com 进行联系！</p>
             <div class="form">
               <Form :model="formTop" label-position="top">
@@ -56,6 +56,7 @@
 
 <script>
     import { mapGetters } from 'vuex'
+    import axios from 'axios'
     export default {
         layout (context) {
             return context.userAgent;
@@ -104,8 +105,8 @@
             }
         },
         methods:{
-          asyncData (params) {
-           return this.$http.get(`/OpenAPI/v1/Config/contactUs`,this.formTop)
+          getData (params) {
+           return axios.get(`https://api.katoong.com/OpenAPI/v1/Config/contactUs`,this.formTop)
             .then((res)=>{
               console.log(res)
               if(res){
@@ -130,7 +131,7 @@
               this.$Message.error('*为必填内容')
               return;
             }
-            this.asyncData();
+            this.getData();
           },
         }
     }
