@@ -19,7 +19,7 @@
                 </div>
                 <div class="card-info-right img-content" >
                   <img class="pc revealOnScroll" data-animation="fadeInRight" data-timeout="0" src="../../assets/images/home/sy_dn_1.png" alt="">
-                  <img class="mobeil revealOnScroll" data-animation="fadeInRight" data-timeout="0" src="../../assets/images/home/sy_sj_1.png" alt="">
+                  <!-- <img class="mobeil revealOnScroll" data-animation="fadeInRight" data-timeout="0" src="../../assets/images/home/sy_sj_1.png" alt=""> -->
                 </div>
               </div>
             </div>
