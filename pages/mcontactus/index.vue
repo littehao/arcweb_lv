@@ -72,7 +72,8 @@
                   othercall:null,//其他联系方式
                   program:[],//合适方案
                   message:null,//留言
-                }
+                },
+                http:''
             }
         },
         computed:{
@@ -81,17 +82,18 @@
             ])  
         },
         mounted(){
+            let NODE_ENV=process.env.NODE_ENV=='development';
+            let hosttest=location.host=='arc_h5.testfordemo.com';
+            this.http = NODE_ENV?'https://api.testfordemo.com':hosttest?'https://api.testfordemo.com':'https://api.katoong.com';
             if(this.getAgent == 'default'){
                 window.location.href = '/'
             }
             this.style.height = document.documentElement.clientHeight + 'px';
         },
         methods:{
-         getData () {
-           return axios.get(`https://api.katoong.com/OpenAPI/v1/Config/contactUs`,{
-               params:this.formTop
-           })
-            .then((res)=>{
+         getData(){
+            this.$jsonp(`${this.http}/OpenAPI/v1/Config/contactUs`,this.formTop)
+            .then( res => {
               console.log(res)
               if(res){
                     if(res.code == 1){
@@ -108,7 +110,7 @@
               }else{
                 this.$Message.success('接口请求错误');
               }
-            })  
+            })
           },
           submit(){
             if(!this.formTop.name || !this.formTop.tel || !this.formTop.email || !this.formTop.program || !this.formTop.message){

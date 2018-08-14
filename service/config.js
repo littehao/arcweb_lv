@@ -21,5 +21,5 @@ export default {
   }),
   httpsAgent: new https.Agent({
     keepAlive: true
-  })
+  }),
 }
