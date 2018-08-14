@@ -5,7 +5,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <img class="img" src="~assets/images/content/nrzz_rw_1.png" alt="">
+                            <img class="img" src="~assets/images/content/nrzz_rw_1.png" alt="" style="width:45%">
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经纪团队，工业化造星</p>
@@ -14,7 +14,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <img class="img" src="~assets/images/content/nrzz_rw_2.png" alt="">
+                            <img class="img" src="~assets/images/content/nrzz_rw_2.png" alt="" style="width:30%">
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经纪团队，工业化造星</p>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <img class="img" src="~assets/images/content/nrzz_rw_3.png" alt="">
+                            <img class="img" src="~assets/images/content/nrzz_rw_3.png" alt="" style="width:42%">
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经纪团队，工业化造星</p>
@@ -300,9 +300,10 @@
             }
             this.height = document.documentElement.clientHeight;
             var mySwiper = new Swiper('.swiper-container', {
-                autoplay:{
-                    delay:5000
-                },
+                // autoplay:{
+                //     delay:5000
+                // },
+                autoplay:false,
                 speed:500,
                 loop:true,
                 navigation: {
@@ -369,7 +370,7 @@
                 width:100%;
                 height:120px;
                 position: absolute;
-                bottom:160px;
+                bottom:45%;
                 left:0;
             }
             h3{

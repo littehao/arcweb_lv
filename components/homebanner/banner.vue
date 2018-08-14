@@ -126,7 +126,7 @@
             position: absolute;
             width:100%;
             left:0;
-            bottom:40%;
+            bottom:35%;
             img{
                 animation-delay:0.2s;
                 -webkit-animation-delay:0.2s;
@@ -138,7 +138,7 @@
             position: absolute;
             width:100%;
             left:0;
-            bottom:30%;
+            bottom:25%;
             h3{
                 font-size:38px;
                 color:#fff;
@@ -222,7 +222,7 @@
     .fl-part1{
         width:383px;
         height:465px;
-        bottom:25%;
+        bottom:37%;
         right:48%;
         background-image: url(~assets/images/home/sy_yuansu_1.png);
         animation-delay:2.2s;
@@ -231,7 +231,7 @@
     .fl-part2{
         width:225px;
         height:396px;
-        bottom:20%;
+        bottom:33%;
         right:30%;
         background-image: url(~assets/images/home/sy_yuansu_2.png);
         animation-delay:1.8s;
@@ -240,7 +240,7 @@
     .fl-part3{
         width:397px;
         height:470px;
-        bottom:0;
+        bottom:13%;
         right:35%;
         background-image: url(~assets/images/home/sy_yuansu_3.png);
         animation-delay:1.4s;
@@ -250,7 +250,7 @@
     .fr-part1{
         width:228px;
         height:427px;
-        bottom:29%;
+        bottom:41%;
         left:55%;
         background-image: url(~assets/images/home/sy_yuansu_4.png);
         animation-delay:2.6s;
@@ -259,7 +259,7 @@
     .fr-part2{
         width:215px;
         height:413px;
-        bottom:18%;
+        bottom:29%;
         left:60%;
         background-image: url(~assets/images/home/sy_yuansu_5.png);
         animation-delay:2.2s;
@@ -268,7 +268,7 @@
     .fr-part3{
         width:354px;
         height:546px;
-        bottom:7%;
+        bottom:19%;
         left:20%;
         background-image: url(~assets/images/home/sy_yuansu_6.png);
         animation-delay:1.8s;
@@ -277,7 +277,7 @@
     .fr-part4{
         width:470px;
         height:286px;
-        bottom:0;
+        bottom:13%;
         left:20%;
         background-image: url(~assets/images/home/sy_yuansu_7.png);
         animation-delay:1.4s;
