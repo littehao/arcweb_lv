@@ -84,12 +84,8 @@
             ])  
         },
         mounted(){
-            let NODE_ENV=process.env.NODE_ENV=='development';
-            let hosttest=window.location.host=='node.testfordemo.com';
-            console.log(NODE_ENV)
-            console.log(hosttest)
-            console.log(window.location.host)
-            this.http = NODE_ENV?'https://api.testfordemo.com':hosttest?'https://api.testfordemo.com':'https://api.katoong.com';
+            let hosttest=window.location.host=='www.katoong.com';
+            this.http = hosttest?'https://api.katoong.com':'https://api.testfordemo.com';
             if(this.getAgent == 'mobile'){
                 window.location.href = '/'
             }
