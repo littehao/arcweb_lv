@@ -126,7 +126,7 @@
             position: absolute;
             width:100%;
             left:0;
-            bottom:50%;
+            bottom:40%;
             img{
                 animation-delay:0.2s;
                 -webkit-animation-delay:0.2s;
@@ -136,7 +136,7 @@
             position: absolute;
             width:100%;
             left:0;
-            bottom:40%;
+            bottom:30%;
             h3{
                 font-size:38px;
                 color:#fff;
