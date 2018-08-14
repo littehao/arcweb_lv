@@ -208,7 +208,7 @@
     }
     .lv-service-list{
         width:100%;
-        height:972px;
+        height:auto;
         background:url(~assets/images/service/fwzc_bj_2.png) no-repeat;
         background-size:cover;
         padding-top:103px;
@@ -242,7 +242,7 @@
                     font-size:16px;
                     line-height:25px;
                     color:#ccc;
-                    height:75px;
+                    height:172px;
                 }
             }
         }

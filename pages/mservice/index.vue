@@ -273,7 +273,7 @@
                     font-size:16px;
                     line-height:25px;
                     color:#ccc;
-                    height:75px;
+                    height:auto;
                 }
             }
         }
