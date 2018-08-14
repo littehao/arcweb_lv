@@ -3,7 +3,7 @@
         <div class="lv-classproduct-content1">
             <div class="lv-classproduct-banner" :style="style">
                 <!-- <img src="~assets/images/classproduct/banner.png" alt=""> -->
-                <div class="productbtn"><nuxt-link to="/"><img src="~assets/images/classproduct/productbtn.png" alt=""></nuxt-link></div>
+                <div class="productbtn"><a target="_blank" href="https://www.solantec.net/"><img src="~assets/images/classproduct/productbtn.png" alt=""></a></div>
             </div>
             <div class="classproduct-part">
                 <Container>
@@ -38,7 +38,7 @@
             <div class="classproduct-part1">
                 <Container>
                     <div class="part">
-                        <div class="classproduct-right revealOnScroll" data-animation="slideInRight">
+                        <div class="classproduct-right revealOnScroll" data-animation="fadeInLeft">
                             <img src="~assets/images/classproduct/yxfl_2.png" alt="">
                         </div>
                         <div class="classproduct-left">
@@ -62,6 +62,8 @@
                         </div>
                     </div>
                 </Container>
+                <div class="classproduct-part1-bg1"></div>
+                <div class="classproduct-part1-bg2"></div>
             </div>
             <div class="classproduct-part2">
                 <Container>
@@ -94,7 +96,7 @@
             <div class="classproduct-part2">
                 <Container>
                     <div class="part">
-                        <div class="classproduct-right revealOnScroll" data-animation="slideInRight">
+                        <div class="classproduct-right revealOnScroll" data-animation="fadeInLeft">
                             <img src="~assets/images/classproduct/yxfl_4.png" alt="">
                         </div>
                         <div class="classproduct-left">
@@ -150,7 +152,7 @@
             <div class="classproduct-part2">
                 <Container>
                     <div class="part">
-                        <div class="classproduct-right revealOnScroll" data-animation="slideInRight">
+                        <div class="classproduct-right revealOnScroll" data-animation="fadeInLeft">
                             <img src="~assets/images/classproduct/yxfl_6.png" alt="">
                         </div>
                         <div class="classproduct-left">
@@ -185,7 +187,11 @@
 <script>
 import $ from 'jquery'
 import 'animate.css'
+import { mapGetters } from 'vuex'
 export default {
+    layout (context) {
+        return context.userAgent;
+    },
     data(){
         return {
             style:{
@@ -193,7 +199,16 @@ export default {
             }
         }
     },
+    computed:{
+        ...mapGetters([
+            'getAgent'
+        ])  
+    },
     mounted(){
+        if(this.getAgent == 'mobile'){
+            window.location.href = '/'
+        }
+
         this.style.height = document.documentElement.clientHeight + 'px';
         let tt = document.documentElement.clientHeight;
         let that = this;
@@ -211,7 +226,9 @@ export default {
         },false)
     },
     beforeDestroy(){
-        window.removeEventListener("scroll",this,false);
+        if (window.removeEventListener) {
+            window.removeEventListener("scroll",this,false);
+        }
     },
     methods:{
         revealOnScroll(tt,t){
@@ -269,12 +286,29 @@ export default {
         position: relative;
         z-index: 1;
         .classproduct-part1{
-            background:url(~assets/images/classproduct/yxfl_ys_3.png) no-repeat;
             background-position:-100px top;
             background-size:100%;
             padding-top:100px;
             position: relative;
             z-index: 10;
+            .classproduct-part1-bg1{
+                width:100%;
+                height:100%;
+                background:url(~assets/images/classproduct/yxfl_ys_3.png) no-repeat;
+                background-size:cover;
+                position: absolute;
+                top:0;
+                left:0;
+            }
+            .classproduct-part1-bg2{
+                width:100%;
+                height:100%;
+                background:url(~assets/images/classproduct/homebgop.png) no-repeat;
+                background-size:cover;
+                position: absolute;
+                top:0;
+                left:0;
+            }
         }
         .classproduct-part2{
             position: relative;

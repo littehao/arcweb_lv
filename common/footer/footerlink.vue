@@ -8,19 +8,19 @@
                 <nuxt-link  target="_blank" to="/">首页</nuxt-link>
                 </li>
                 <li>
-                <nuxt-link  target="_blank" to="/">关于我们</nuxt-link>
+                <nuxt-link  target="_blank" to="/about">关于我们</nuxt-link>
+                </li>
+                <!-- <li>
+                <nuxt-link  target="_blank" to="/contactus">联系我们</nuxt-link>
+                </li> -->
+                <li>
+                <a  target="_blank" href="https://www.solantec.net">演示站</a>
                 </li>
                 <li>
-                <nuxt-link  target="_blank" to="/">联系我们</nuxt-link>
-                </li>
-                <li>
-                <nuxt-link  target="_blank" to="/">演示站</nuxt-link>
-                </li>
-                <li>
-                <nuxt-link  target="_blank" to="/">合作</nuxt-link>
+                <nuxt-link  target="_blank" to="/contactus">合作</nuxt-link>
                 </li>
             </ul>
-            <ul class="list">
+            <!-- <ul class="list">
                 <li>
                 <nuxt-link  target="_blank" to="/">产品优势</nuxt-link>
                 </li>
@@ -35,7 +35,7 @@
                 <nuxt-link  target="_blank" to="/">其他</nuxt-link>
 
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </Container>
    </div>

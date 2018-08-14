@@ -2,7 +2,9 @@
 import Vue from 'vue'
 
 import Lheader from './header/header'
+import Mheader from './header/mheader'
 import Lfooter from './footer/footer'
+import Mfooter from './footer/mfooter'
 import Footerlink from './footer/footerlink'
 import Container from './container/container'
 import Card from './card/card'
@@ -13,7 +15,9 @@ const  component={
   Footerlink,
   Container,
   Card,
-  Force
+  Force,
+  Mheader,
+  Mfooter
 }
 
 const common={

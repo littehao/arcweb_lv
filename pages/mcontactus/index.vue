@@ -1,7 +1,6 @@
 <template>
     <div class="contactus">
-        <Container>
-          <div class="contactus-content">
+        <div class="contactus-content">
             <h1 class="form-title">联系我们</h1>
             <p class="form-info">请在以下填写您的个人资料，或直接通过本公司电子邮箱地址：market@livevideo.com 进行联系！</p>
             <div class="form">
@@ -16,7 +15,7 @@
                   <Input v-model="formTop.tel" type="text" :number="true"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">电子邮件 <span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">电子邮件<span class="form-item-required">*</span></p>
 
                   <Input v-model="formTop.email" type="email"></Input>
                 </FormItem>
@@ -26,7 +25,7 @@
                   <Input v-model="formTop.othercall" type="text"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">合作方案 <span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">合作方案<span class="form-item-required">*</span></p>
                   <div class="form-check">
                     <CheckboxGroup  v-model="formTop.program">
                       <Checkbox label="棋牌游戏"></Checkbox>
@@ -42,15 +41,16 @@
                 </FormItem>
                 <FormItem >
                   <p name="label" class="form-item-label">留言<span class="form-item-required">*</span></p>
-                  <Input v-model="formTop.message" type="textarea" :rows="rows" :autosize="false"></Input>
+
+                  <Input v-model="formTop.message" type="textarea" :autosize="{minRows: 5,maxRows: 8}"></Input>
                 </FormItem>
                 <FormItem >
                   <Button  class="form-btn" @click="submit">提交</Button>
+
                 </FormItem>
               </Form>
             </div>
           </div>
-        </Container>
     </div>
 </template>
 
@@ -62,7 +62,6 @@
         },
         data(){
             return {
-                rows:8,
                 style:{
                     height:0,
                 },
@@ -72,7 +71,7 @@
                   email: null,//邮箱
                   othercall:null,//其他联系方式
                   program:[],//合适方案
-                  message:'',//留言
+                  message:null,//留言
                 }
             }
         },
@@ -82,29 +81,13 @@
             ])  
         },
         mounted(){
-            if(this.getAgent == 'mobile'){
+            if(this.getAgent == 'default'){
                 window.location.href = '/'
             }
             this.style.height = document.documentElement.clientHeight + 'px';
-
-            let tt = document.documentElement.clientHeight;
-            window.addEventListener('scroll',function(){
-                var t = document.documentElement.scrollTop || document.body.scrollTop; 
-                var top_div = document.getElementById( "header" );
-                if( t >= 80 ) {
-                    top_div.style.background = "#27272E";
-                } else {
-                    top_div.style.background = "transparent";
-                }
-            },false)
-        },
-        beforeDestroy(){
-            if (window.removeEventListener) {
-                window.removeEventListener("scroll",this,false);
-            }
         },
         methods:{
-          asyncData (params) {
+         asyncData (params) {
            return this.$http.get(`/OpenAPI/v1/Config/contactUs`,this.formTop)
             .then((res)=>{
               console.log(res)
@@ -121,7 +104,7 @@
                         this.formTop.othercall = '';
                     }
               }else{
-                this.$Message.success('接口请求错误');
+                  this.$Message.success('接口请求错误');
               }
             })  
           },
@@ -139,8 +122,7 @@
 <style  lang="scss">
  .contactus{
    width: 100%;
-   background: url("../../assets/images/contactus/lxwm_bj.png") no-repeat center;
-   background-size:cover;
+   background-image: url("../../assets/images/contactus/lxwm_bj.png");
    .contactus-content{
      height: auto;
      width: 100%;
@@ -155,18 +137,21 @@
      }
      .form-info{
        color:$text-color-white;
-      font-size: $font-size-large;
+       font-size: $font-size-large;
        line-height: 25px;
        text-align: center;
        margin-bottom: 25px;
+       width:90%;
+       margin:0 auto;
+       word-break:break-all; 
      }
      .form{
-       width: 660px;
+       width: 90%;
        height: auto;
        margin: 0 auto;
        border-radius: 4px;
-       background: rgba(255,255,255,.3);
-       padding:50px;
+       background: rgba(255,255,255,.1);
+       padding:30px 20px;
        .form-item-label{
          color: $text-color-white;
          font-size: $font-size-large;
@@ -193,7 +178,7 @@
             background-color: transparent;
           }
           .ivu-checkbox-wrapper{
-            margin-right: 200px;
+            margin-right: 70px;
           }
         }
        }

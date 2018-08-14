@@ -11,6 +11,7 @@
               <li class="item "  :class="{active:active==index}" v-for="(item,index) of router" :key="index">
                 <nuxt-link class="nav-link"  :to="item.path">{{item.title}}</nuxt-link>
               </li>
+              <li class="item"><a class="nav-link" href="https://www.solantec.net" target="_blank">演示站</a></li>
             </ul>
           </nav>
         </div>
@@ -19,7 +20,6 @@
   <!--</Affix>-->
 
 </template>
-
 
 <script>
     export default {
@@ -51,10 +51,10 @@
               title:'合作联系',
               path:'/contactus'
             },
-            {
-              title:'演示站',
-              path:'/'
-            },
+            // {
+            //   title:'演示站',
+            //   path:'https://www.solantec.net/home'
+            // },
           ],
           bgstatus:false
         }

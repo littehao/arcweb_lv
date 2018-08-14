@@ -3,13 +3,19 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const _d2b68128 = () => import('../pages/demostation/index.vue' /* webpackChunkName: "pages/demostation/index" */).then(m => m.default || m)
 const _d875f9a0 = () => import('../pages/service/index.vue' /* webpackChunkName: "pages/service/index" */).then(m => m.default || m)
 const _2bee7ccc = () => import('../pages/home/index.vue' /* webpackChunkName: "pages/home/index" */).then(m => m.default || m)
+const _a7244032 = () => import('../pages/mcontent/index.vue' /* webpackChunkName: "pages/mcontent/index" */).then(m => m.default || m)
+const _442ec7f9 = () => import('../pages/contactus/index.vue' /* webpackChunkName: "pages/contactus/index" */).then(m => m.default || m)
 const _fca5e818 = () => import('../pages/content/index.vue' /* webpackChunkName: "pages/content/index" */).then(m => m.default || m)
 const _48c0499c = () => import('../pages/classproduct/index.vue' /* webpackChunkName: "pages/classproduct/index" */).then(m => m.default || m)
+const _24eaaaf2 = () => import('../pages/mhome/index.vue' /* webpackChunkName: "pages/mhome/index" */).then(m => m.default || m)
+const _6084628a = () => import('../pages/mabout/index.vue' /* webpackChunkName: "pages/mabout/index" */).then(m => m.default || m)
+const _82f451ba = () => import('../pages/mservice/index.vue' /* webpackChunkName: "pages/mservice/index" */).then(m => m.default || m)
+const _1614871f = () => import('../pages/mclassproduct/index.vue' /* webpackChunkName: "pages/mclassproduct/index" */).then(m => m.default || m)
+const _7beb29a8 = () => import('../pages/mcontactus/index.vue' /* webpackChunkName: "pages/mcontactus/index" */).then(m => m.default || m)
 const _63029a08 = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
-const _442ec7f9 = () => import('../pages/contactus/index.vue' /* webpackChunkName: "pages/contactus/index" */).then(m => m.default || m)
-const _d2b68128 = () => import('../pages/demostation/index.vue' /* webpackChunkName: "pages/demostation/index" */).then(m => m.default || m)
 const _705f93ec = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
@@ -71,6 +77,11 @@ export function createRouter () {
     scrollBehavior,
     routes: [
 		{
+			path: "/demostation",
+			component: _d2b68128,
+			name: "demostation"
+		},
+		{
 			path: "/service",
 			component: _d875f9a0,
 			name: "service"
@@ -79,6 +90,16 @@ export function createRouter () {
 			path: "/home",
 			component: _2bee7ccc,
 			name: "home"
+		},
+		{
+			path: "/mcontent",
+			component: _a7244032,
+			name: "mcontent"
+		},
+		{
+			path: "/contactus",
+			component: _442ec7f9,
+			name: "contactus"
 		},
 		{
 			path: "/content",
@@ -91,19 +112,34 @@ export function createRouter () {
 			name: "classproduct"
 		},
 		{
+			path: "/mhome",
+			component: _24eaaaf2,
+			name: "mhome"
+		},
+		{
+			path: "/mabout",
+			component: _6084628a,
+			name: "mabout"
+		},
+		{
+			path: "/mservice",
+			component: _82f451ba,
+			name: "mservice"
+		},
+		{
+			path: "/mclassproduct",
+			component: _1614871f,
+			name: "mclassproduct"
+		},
+		{
+			path: "/mcontactus",
+			component: _7beb29a8,
+			name: "mcontactus"
+		},
+		{
 			path: "/about",
 			component: _63029a08,
 			name: "about"
-		},
-		{
-			path: "/contactus",
-			component: _442ec7f9,
-			name: "contactus"
-		},
-		{
-			path: "/demostation",
-			component: _d2b68128,
-			name: "demostation"
 		},
 		{
 			path: "/",

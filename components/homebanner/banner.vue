@@ -30,6 +30,12 @@
 
 <script type="text/javascript">
     export default {
+        porps:{
+            value:{
+                type:Boolean,
+                default:false
+            }
+        },
         data(){
             return {
                 animated:true,
@@ -53,8 +59,8 @@
         },
         mounted(){
             var box=document.getElementById("lv-banner");
+            // box.style.height= document.documentElement.clientHeight+'px';
             let offsetconf = 10;
-            box.style.height= document.documentElement.clientHeight-80+'px';
             let that = this;
             var move = true;
             setTimeout(() => {
@@ -72,8 +78,12 @@
             },5000)
         },
         beforeDestroy(){
-            var box=document.getElementById("lv-banner");
-            box.removeEventListener("mousemove",this,false);
+            if(this.value){
+                var box=document.getElementById("lv-banner");
+                if (box.removeEventListener) {
+                    box.removeEventListener("mousemove",this,false);
+                }
+            }
         },
         methods:{
             eventListener(ev,_this,offsetconf){//函数
@@ -84,9 +94,9 @@
                     var pageH=document.documentElement.clientHeight/2/offsetconf;
                     var placex=(mousex-pageW);
                     var placey=(mousey-pageH);
-                    this.style1['transform'] = 'translate3d('+(-placex-30)+'px,'+(-placey - 30)+'px,0)';
-                    this.style2['transform'] = 'translate3d('+(-placex-20)+'px,'+(-placey - 20)+'px,0)';
-                    this.style3['transform'] = 'translate3d('+(-placex-10)+'px,'+(-placey - 10)+'px,0)';
+                    this.style1['transform'] = 'translate3d('+(-placex)+'px,'+(-placey)+'px,0)';
+                    this.style2['transform'] = 'translate3d('+(-placex)+'px,'+(-placey)+'px,0)';
+                    this.style3['transform'] = 'translate3d('+(-placex)+'px,'+(-placey)+'px,0)';
                     this.style4['transform'] = 'translate3d('+(-placex)+'px,'+(-placey)+'px,0)';
             },
             
@@ -111,15 +121,22 @@
         left:0;
         text-align: center;
         z-index:2;
+        background:url(~assets/images/home/light.png) no-repeat 45% top;
         .lv-banner-logo{
-            padding-top:131px;
+            position: absolute;
+            width:100%;
+            left:0;
+            bottom:50%;
             img{
                 animation-delay:0.2s;
                 -webkit-animation-delay:0.2s;
             }
         }
         .lv-banner-title{
-            margin-top:25px;
+            position: absolute;
+            width:100%;
+            left:0;
+            bottom:40%;
             h3{
                 font-size:38px;
                 color:#fff;
@@ -167,6 +184,7 @@
     }
     .lv-banner-main{
         width:100%;
+        height:100%;
         position: relative;
     }
     .fl-part{
@@ -202,8 +220,8 @@
     .fl-part1{
         width:383px;
         height:465px;
-        top:48px;
-        right:316px;
+        bottom:25%;
+        right:48%;
         background-image: url(~assets/images/home/sy_yuansu_1.png);
         animation-delay:2.2s;
         -webkit-animation-delay:2.2s;
@@ -211,8 +229,8 @@
     .fl-part2{
         width:225px;
         height:396px;
-        top:146px;
-        right:190px;
+        bottom:20%;
+        right:30%;
         background-image: url(~assets/images/home/sy_yuansu_2.png);
         animation-delay:1.8s;
         -webkit-animation-delay:1.8s;
@@ -220,8 +238,8 @@
     .fl-part3{
         width:397px;
         height:470px;
-        top:263px;
-        right:193px;
+        bottom:0;
+        right:35%;
         background-image: url(~assets/images/home/sy_yuansu_3.png);
         animation-delay:1.4s;
         -webkit-animation-delay:1.4s;
@@ -230,8 +248,8 @@
     .fr-part1{
         width:228px;
         height:427px;
-        top:70px;
-        left:358px;
+        bottom:29%;
+        left:55%;
         background-image: url(~assets/images/home/sy_yuansu_4.png);
         animation-delay:2.6s;
         -webkit-animation-delay:2.6s;
@@ -239,8 +257,8 @@
     .fr-part2{
         width:215px;
         height:413px;
-        top:170px;
-        left:389px;
+        bottom:18%;
+        left:60%;
         background-image: url(~assets/images/home/sy_yuansu_5.png);
         animation-delay:2.2s;
         -webkit-animation-delay:2.2s;
@@ -248,8 +266,8 @@
     .fr-part3{
         width:354px;
         height:546px;
-        top:158px;
-        left:161px;
+        bottom:7%;
+        left:20%;
         background-image: url(~assets/images/home/sy_yuansu_6.png);
         animation-delay:1.8s;
         -webkit-animation-delay:1.8s;
@@ -257,8 +275,8 @@
     .fr-part4{
         width:470px;
         height:286px;
-        top:477px;
-        left:161px;
+        bottom:0;
+        left:20%;
         background-image: url(~assets/images/home/sy_yuansu_7.png);
         animation-delay:1.4s;
         -webkit-animation-delay:1.4s;
