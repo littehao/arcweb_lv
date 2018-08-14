@@ -2,7 +2,7 @@
     <div class="contactus">
         <Container>
           <div class="contactus-content">
-            <h1 class="form-title">联系我们</h1>
+            <h1 class="form-title">联系我们1</h1>
             <p class="form-info">请在以下填写您的个人资料，或直接通过本公司电子邮箱地址：market@livevideo.com 进行联系！</p>
             <div class="form">
               <Form :model="formTop" label-position="top">
@@ -55,7 +55,7 @@
 </template>
 
 <script>
-
+    import axios from 'axios'
     import { mapGetters } from 'vuex'
     export default {
         layout (context) {
@@ -85,7 +85,7 @@
         },
         mounted(){
             let NODE_ENV=process.env.NODE_ENV=='development';
-            let hosttest=location.host=='arc_h5.testfordemo.com';
+            let hosttest=location.host=='node.testfordemo.com';
             this.http = NODE_ENV?'https://api.testfordemo.com':hosttest?'https://api.testfordemo.com':'https://api.katoong.com';
             if(this.getAgent == 'mobile'){
                 window.location.href = '/'
@@ -128,6 +128,14 @@
               }else{
                 this.$Message.success('接口请求错误');
               }
+            })
+          },
+          asyncData () {
+            return axios.get(`${this.http}/OpenAPI/v1/Config/contactUs`,{
+              params:this.formTop
+            })
+            .then((res) => {
+              console.log(res)
             })
           },
           submit(){

@@ -83,7 +83,7 @@
         },
         mounted(){
             let NODE_ENV=process.env.NODE_ENV=='development';
-            let hosttest=location.host=='arc_h5.testfordemo.com';
+            let hosttest=location.host=='node.testfordemo.com';
             this.http = NODE_ENV?'https://api.testfordemo.com':hosttest?'https://api.testfordemo.com':'https://api.katoong.com';
             if(this.getAgent == 'default'){
                 window.location.href = '/'
