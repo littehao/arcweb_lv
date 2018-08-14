@@ -1,8 +1,7 @@
 const pkg = require('./package')
 const resolve = require('path').resolve
 module.exports = {
-  //mode: 'spa',
-
+  mode: 'spa',
   /*
   ** Headers of the page
   */
