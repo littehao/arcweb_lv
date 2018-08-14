@@ -40,7 +40,7 @@ module.exports = {
   },
   proxy: {
     '/OpenAPI': {
-      target:'https://api.katoong.com',
+      target:'https://api.testfordemo.com',
       ws: false,
     }
   },
