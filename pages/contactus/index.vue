@@ -105,12 +105,14 @@
             }
         },
         methods:{
-          getData (params) {
-           return axios.get(`https://api.katoong.com/OpenAPI/v1/Config/contactUs`,this.formTop)
+          getData () {
+           return axios.get(`https://api.katoong.com/OpenAPI/v1/Config/contactUs`,{
+               params:this.formTop
+           })
             .then((res)=>{
               console.log(res)
               if(res){
-                    if(res.code == 1){
+                    if(res.data.code == 1){
                         this.$Message.error(res.msg)
                     }else{
                         this.$Message.success('提交成功');
@@ -129,6 +131,15 @@
           submit(){
             if(!this.formTop.name || !this.formTop.tel || !this.formTop.email || !this.formTop.program || !this.formTop.message){
               this.$Message.error('*为必填内容')
+              return;
+            }
+            if(isNaN(this.formTop.tel)){
+                this.$Message.error('手机号必须是数字')
+                return;
+            }
+            let reg = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/;
+            if(!reg.test(this.formTop.email)){
+              this.$Message.error('邮箱格式不正确')
               return;
             }
             this.getData();
