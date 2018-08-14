@@ -33,7 +33,7 @@
                       <Checkbox label="老虎机"></Checkbox>
                       <Checkbox label="数字彩票"></Checkbox>
                       <Checkbox label="电子竞技"></Checkbox>
-                      <Checkbox label="接机电玩"></Checkbox>
+                      <Checkbox label="街机电玩"></Checkbox>
                       <Checkbox label="体育投注"></Checkbox>
                       <Checkbox label="lv抓抓乐"></Checkbox>
                       <Checkbox label="其他"></Checkbox>
@@ -85,7 +85,10 @@
         },
         mounted(){
             let NODE_ENV=process.env.NODE_ENV=='development';
-            let hosttest=location.host=='node.testfordemo.com';
+            let hosttest=window.location.host=='node.testfordemo.com';
+            console.log(NODE_ENV)
+            console.log(hosttest)
+            console.log(window.location.host)
             this.http = NODE_ENV?'https://api.testfordemo.com':hosttest?'https://api.testfordemo.com':'https://api.katoong.com';
             if(this.getAgent == 'mobile'){
                 window.location.href = '/'

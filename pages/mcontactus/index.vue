@@ -32,7 +32,7 @@
                       <Checkbox label="老虎机"></Checkbox>
                       <Checkbox label="数字彩票"></Checkbox>
                       <Checkbox label="电子竞技"></Checkbox>
-                      <Checkbox label="接机电玩"></Checkbox>
+                      <Checkbox label="街机电玩"></Checkbox>
                       <Checkbox label="体育投注"></Checkbox>
                       <Checkbox label="lv抓抓乐"></Checkbox>
                       <Checkbox label="其他"></Checkbox>
