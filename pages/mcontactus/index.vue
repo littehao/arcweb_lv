@@ -88,7 +88,7 @@
         },
         methods:{
          getData (params) {
-           return axios.post(`https://api.katoong.com/OpenAPI/v1/Config/contactUs`,this.formTop)
+           return axios.get(`https://api.katoong.com/OpenAPI/v1/Config/contactUs`,this.formTop)
             .then((res)=>{
               console.log(res)
               if(res){
