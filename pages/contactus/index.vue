@@ -105,7 +105,7 @@
         },
         methods:{
           asyncData (params) {
-           return this.$http.get(`/OpenAPI/v1/Config/contactUs`,this.formTop)
+           return this.$http.post(`/OpenAPI/v1/Config/contactUs`,this.formTop)
             .then((res)=>{
               console.log(res)
               if(res){
