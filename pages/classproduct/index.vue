@@ -216,7 +216,7 @@ export default {
         window.addEventListener('scroll',function(){
             var t = document.documentElement.scrollTop || document.body.scrollTop; 
             var top_div = document.getElementById( "header" );
-            if( t >= tt ) {
+            if( t >= 80 ) {
                 top_div.style.background = "#27272E";
             } else {
                 top_div.style.background = "transparent";
