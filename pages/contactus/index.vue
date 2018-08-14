@@ -2,7 +2,7 @@
     <div class="contactus">
         <Container>
           <div class="contactus-content">
-            <h1 class="form-title">联系我们</h1>
+            <h1 class="form-title">联系我们1</h1>
             <p class="form-info">请在以下填写您的个人资料，或直接通过本公司电子邮箱地址：market@livevideo.com 进行联系！</p>
             <div class="form">
               <Form :model="formTop" label-position="top">
