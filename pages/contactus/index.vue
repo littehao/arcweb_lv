@@ -71,7 +71,7 @@
                   name: null,//姓名
                   tel: null,//电话
                   email: null,//邮箱
-                  othercall:null,//其他联系方式
+                  othercall:'',//其他联系方式
                   program:[],//合适方案
                   message:'',//留言
                 },
