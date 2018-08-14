@@ -370,7 +370,7 @@
                 width:100%;
                 height:120px;
                 position: absolute;
-                bottom:45%;
+                bottom:30%;
                 left:0;
             }
             h3{
