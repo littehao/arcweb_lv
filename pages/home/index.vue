@@ -271,6 +271,7 @@ export default {
        border-color: transparent;
        cursor: pointer;
        outline: none;
+       font-size:16px;
      }
      .customer{
        margin-top: 100px;
