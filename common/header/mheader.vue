@@ -6,6 +6,7 @@
             <div class="menu-down" :class="{active:show}">
                 <ul>
                     <li v-for="item in nav" :key="item.title"><nuxt-link :to="item.path">{{item.title}}</nuxt-link></li>
+                    <li><a class="nav-link" href="https://m.katoong.com" target="_blank">演示站</a></li>
                 </ul> 
             </div>
         </div>
@@ -43,10 +44,10 @@
               title:'合作联系',
               path:'/mcontactus'
             },
-            {
-              title:'演示站',
-              path:'/'
-            },
+            // {
+            //   title:'演示站',
+            //   path:'/'
+            // },
           ],
         }
       },
@@ -108,7 +109,7 @@
                  a{ 
                      display: block;
                      color:#fff;
-                     font-size:12px;
+                     font-size:14px;
                      padding:0 20px;
                  }
              }

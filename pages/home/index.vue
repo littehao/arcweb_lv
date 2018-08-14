@@ -201,16 +201,16 @@ export default {
       .title{
         color: $title-color;
         font-size: 2*$font-size-large;
-        margin-bottom: 15px;
+        // margin-bottom: 15px;
       }
       .subtitle{
-        color: $title-color;
+        color: $text-color-blue;
         font-size: 2*$font-size-large;
         margin-bottom: 20px;
       }
       .content-info{
         font-size: $font-size-large;
-        color: $text-color-blue;
+        color: $title-color;
         line-height: 30px;
       }
     }

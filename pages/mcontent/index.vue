@@ -8,7 +8,7 @@
                             <img class="img" src="~assets/images/content/nrzz_rw_1.png" alt="">
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经济团队，工业化造星</p>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经纪团队，工业化造星</p>
                             </div>
                         </div>
                     </div>
@@ -17,7 +17,7 @@
                             <img class="img" src="~assets/images/content/nrzz_rw_2.png" alt="">
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经济团队，工业化造星</p>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经纪团队，工业化造星</p>
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                             <img class="img" src="~assets/images/content/nrzz_rw_3.png" alt="">
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经济团队，工业化造星</p>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经纪团队，工业化造星</p>
                             </div>
                         </div>
                     </div>
@@ -181,7 +181,7 @@
                         <p>如果你有特殊才艺或技能</p>
                         <p>如果你想实现梦想</p>
                         <p>请与我们联络</p>
-                        <div class="link"><nuxt-link to="/mcontactus">申请加入LV</nuxt-link></div>
+                        <!-- <div class="link"><nuxt-link to="/mcontactus">申请加入LV</nuxt-link></div> -->
                 </div>
             </div>
         </div>
@@ -359,12 +359,12 @@
                         font-size:14px;
                     }
                 }
-                &:hover{
-                    transform: translateY(-5px);
-                }
-                &:hover img{
-                    box-shadow: 0 0 10px #101010;
-                }
+                // &:hover{
+                //     transform: translateY(-5px);
+                // }
+                // &:hover img{
+                //     box-shadow: 0 0 10px #101010;
+                // }
             }
         }
         .line{
@@ -485,17 +485,17 @@
                         z-index:-1;
                     }
                 }
-                &:hover{
-                    transform: rotateX(10deg) rotateY(5deg);
-                }
-                &:hover .shadow.deg135{
-                    background-image: -webkit-linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
-                    background-image: linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
-                }
-                &:hover .shadow.deg225{
-                    background-image: -webkit-linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
-                    background-image: linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
-                }
+                // &:hover{
+                //     transform: rotateX(10deg) rotateY(5deg);
+                // }
+                // &:hover .shadow.deg135{
+                //     background-image: -webkit-linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
+                //     background-image: linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
+                // }
+                // &:hover .shadow.deg225{
+                //     background-image: -webkit-linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
+                //     background-image: linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
+                // }
             }
             .item:nth-child(2n+1){
                 padding:0px 10px 0px 20px;

@@ -28,7 +28,7 @@
             <div class="section">
                <div class="pic revealOnScroll" data-animation="fadeInUp">
                     <img class="img1" style="position:relative;z-index:2;" src="~assets/images/home/Screen1.png" alt="">
-                    <img class="img1" style="position:absolute;left:20%;top:30px;" src="~assets/images/home/screen.png" alt="">
+                    <!-- <img class="img1" style="position:absolute;left:20%;top:30px;" src="~assets/images/home/screen.png" alt=""> -->
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
                    <h3 class="title">定义博娱新时代</h3>

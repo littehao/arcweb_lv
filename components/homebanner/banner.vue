@@ -16,7 +16,7 @@
             </div>
             <div class="lv-banner-info">
                 <div class="lv-banner-logo">
-                    <img class="animated fadeInUp" src="~assets/images/lv.png" alt="">
+                    <img class="animated fadeInUp" src="~assets/images/home/lv.png" alt="">
                 </div>
                 <div class="lv-banner-title">
                     <h3 class="animated fadeInUp">Live Video</h3>
@@ -121,7 +121,7 @@
         left:0;
         text-align: center;
         z-index:2;
-        background:url(~assets/images/home/light.png) no-repeat 45% top;
+        background:url(~assets/images/home/light.png) no-repeat 48% top;
         .lv-banner-logo{
             position: absolute;
             width:100%;
