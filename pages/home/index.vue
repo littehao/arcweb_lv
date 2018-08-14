@@ -295,6 +295,7 @@ export default {
             text-align: center;
             color: $text-color-white;
             border: 1px solid $border-color-active;
+            font-size:16px;
           }
        }
      }
