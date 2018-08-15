@@ -20,9 +20,9 @@
                   <img src="~assets/images/avatar/tx_4.png" class="avatar tx4 revealOnScroll" data-animation="fadeInUp" alt="">
                </div>
                <div class="info">
-                   <h3 class="title revealOnScroll" data-animation="fadeInUp">全球博娱游戏直播的开创者</h3>
+                   <h3 class="title revealOnScroll" data-animation="fadeInUp">博娱直播游戏的全球领先者</h3>
                    <div class="lv revealOnScroll" data-animation="fadeInUp">Live Video</div>
-                   <div class="intro revealOnScroll" data-animation="fadeInUp">专业的培训让主播熟悉三大彩种的玩法，并可亲自下注带领玩家下注，对下注号码提供专业的分析，以供玩家参考，中奖号码播报，开奖倒计时提醒玩家下注，玩家中奖发送贺彩，语音播报中奖信息，满足玩家虚荣心理，调动其他玩家的下注热情，对于下注额度达到一定金额，进行相应表演，增强彩票玩法的娱乐性与互动性。</div>
+                   <div class="intro revealOnScroll" data-animation="fadeInUp">在博娱业界中，倾力专注于开发、设计博娱各式产品及系统，且为了提供客户有安全、稳定的思维下，陆续完成多种博娱系统与游戏产品：如LV棋牌游戏、LV街机投注、LV彩票游戏、LV电竞体育、LV抓抓乐、LV推推乐……等，Live Video是全球博娱产业中开拓这领域的领先者。</div>
                </div>
             </div>
             <div class="section">
@@ -42,9 +42,9 @@
                     <img class="img2" style="position:absolute;left:10%;bottom:0px;width:30%;" src="~assets/images/home/sy_sj_3.png" alt="">
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
-                   <h3 class="title">全球博娱游戏直播的开创者</h3>
+                   <h3 class="title">安全稳定核心技术 深耕博娱产品经验</h3>
                    <div class="lv">Live Video</div>
-                   <div class="intro">专业的培训让主播熟悉三大彩种的玩法，并可亲自下注带领玩家下注，对下注号码提供专业的分析，以供玩家参考，中奖号码播报，开奖倒计时提醒玩家下注，玩家中奖发送贺彩，语音播报中奖信息，满足玩家虚荣心理，调动其他玩家的下注热情，对于下注额度达到一定金额，进行相应表演，增强彩票玩法的娱乐性与互动性。</div>
+                   <div class="intro">把”安全稳定核心技术、深耕博娱产品经验、创造博娱品牌新时代”的三大方针作为Live Video 开拓博娱事业版图的重要经营核心，在拥有博娱系统核心技术、直播互动整合技术、强力的运营后台系统及支援各种模式或平台的技术能力，并且与许多博娱产业数一数二的各类伙伴持续合作及提供服务。</div>
                </div>
             </div>
             <div class="bg1"></div>
