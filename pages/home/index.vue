@@ -94,11 +94,11 @@
             </div>
           </Container>
         </div>
-        <div class="section-btn">
+        <div class="section-btn" style="padding-bottom:100px;">
           <Container>
             <button class="btn" type="button" onclick="window.open('https://www.solantec.net/','_blank')">立即体验</button>
           </Container>
-          <div class="customer">
+          <!-- <div class="customer">
             <Container>
               <div class="customer-info">
                 <h2>如果您在Live Video遇到任何问题<br/>
@@ -107,7 +107,7 @@
 
               </div>
             </Container>
-          </div>
+          </div> -->
         </div>
         <footerlink></footerlink>
         <img src="../../assets/images/home/bg2.png" class="section-content-pic" alt="">

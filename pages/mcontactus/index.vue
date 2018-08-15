@@ -15,26 +15,29 @@
                   <Input v-model="formTop.tel" type="text" :number="true"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">电子邮件<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">电子邮件</p>
 
                   <Input v-model="formTop.email" type="email"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">其他联系方式 </p>
+                  <p name="label" class="form-item-label">其他联系方式</p>
 
                   <Input v-model="formTop.othercall" type="text"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">合作方案<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">公司网站地址<span class="form-item-required">*</span></p>
+                  <Input v-model="formTop.address" type="text"></Input>
+                </FormItem>
+                <FormItem >
+                  <p name="label" class="form-item-label">合作方案</p>
                   <div class="form-check">
                     <CheckboxGroup  v-model="formTop.program">
-                      <Checkbox label="棋牌游戏"></Checkbox>
-                      <Checkbox label="老虎机"></Checkbox>
-                      <Checkbox label="数字彩票"></Checkbox>
-                      <Checkbox label="电子竞技"></Checkbox>
-                      <Checkbox label="街机电玩"></Checkbox>
-                      <Checkbox label="体育投注"></Checkbox>
-                      <Checkbox label="lv抓抓乐"></Checkbox>
+                      <Checkbox label="API放线"></Checkbox>
+                      <Checkbox label="直播+ 系统包网"></Checkbox>
+                      <Checkbox label="直播+游戏 系统包网"></Checkbox>
+                      <Checkbox label="LV游戏接口+直播"></Checkbox>
+                      <Checkbox label="LV直播系统接口+游戏"></Checkbox>
+                      <Checkbox label="直播服务+解决方案"></Checkbox>
                       <Checkbox label="其他"></Checkbox>
                     </CheckboxGroup>
                   </div>
@@ -66,12 +69,13 @@
                     height:0,
                 },
                 formTop: {
-                  name: null,//姓名
-                  tel: null,//电话
-                  email: null,//邮箱
-                  othercall:null,//其他联系方式
+                  name: '',//姓名
+                  tel: '',//电话
+                  email: '',//邮箱
+                  othercall:'',//其他联系方式
+                  address:'',//公司地址
                   program:[],//合适方案
-                  message:null,//留言
+                  message:'',//留言
                 },
                 http:''
             }
@@ -92,6 +96,7 @@
         },
         methods:{
          getData(){
+            console.log(`${this.http}/OpenAPI/v1/Config/contactUs?${this.formTop}`)
             this.$jsonp(`${this.http}/OpenAPI/v1/Config/contactUs`,this.formTop)
             .then( res => {
               console.log(res)
@@ -103,6 +108,7 @@
                         this.formTop.name = '';
                         this.formTop.email = '';
                         this.formTop.tel = '';
+                        this.formTop.address = '';
                         this.formTop.program = [];
                         this.formTop.message = '';
                         this.formTop.othercall = '';
@@ -113,7 +119,7 @@
             })
           },
           submit(){
-            if(!this.formTop.name || !this.formTop.tel || !this.formTop.email || !this.formTop.program || !this.formTop.message){
+            if(!this.formTop.name || !this.formTop.tel || !this.formTop.address || !this.formTop.message){
               this.$Message.error('*为必填内容')
               return;
             }
@@ -122,7 +128,7 @@
                 return;
             }
             let reg = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/;
-            if(!reg.test(this.formTop.email)){
+            if(this.formTop.email &&!reg.test(this.formTop.email)){
               this.$Message.error('邮箱格式不正确')
               return;
             }
