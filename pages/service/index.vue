@@ -37,10 +37,10 @@
                         <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                             <div class="program">
                                 <img src="~assets/images/service/fwzc_icon_zbbw.png" alt="">
-                                <h3>直播+游戏系统包网</h3>
+                                <h3>视频直播系统包网</h3>
                                 <div class="program_info">
-                                    <h3>直播+游戏系统包网</h3>
-                                    <p>为品牌客户提供功能齐全的直播+游戏系统，上百款精品游戏任您挑选，并提供线上系统一条龙服务。</p>
+                                    <h3>视频直播系统包网</h3>
+                                    <p>为品牌客户提供健全的直播系统包网方案，为客户提供直播+媒体，教育，电竞，体育，社交娱乐，电商等直播包网服务。</p>
                                     <div class="time">
                                         <span></span>
                                         <i></i>
@@ -51,10 +51,10 @@
                         <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                             <div class="program">
                                 <img src="~assets/images/service/fwzc_icon_zbyx.png" alt="">
-                                <h3>视频直播系统包网</h3>
+                                <h3>直播+游戏系统包网</h3>
                                 <div class="program_info">
-                                    <h3>视频直播系统包网</h3>
-                                    <p>为品牌客户提供健全的直播系统包网方案，为客户提供直播+媒体，教育，电竞，体育，社交娱乐，电商等直播包网服务。</p>
+                                    <h3>直播+游戏系统包网</h3>
+                                    <p>为品牌客户提供功能齐全的直播+游戏系统，上百款精品游戏任您挑选，并提供线上系统一条龙服务。</p>
                                     <div class="time">
                                         <span></span>
                                         <i></i>
