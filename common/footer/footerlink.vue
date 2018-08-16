@@ -8,34 +8,26 @@
                 <nuxt-link  target="_blank" to="/">首页</nuxt-link>
                 </li>
                 <li>
+                <nuxt-link  target="_blank" to="/classproduct">产品种类</nuxt-link>
+                </li>
+                <li>
+                <nuxt-link  target="_blank" to="/content">内容制作</nuxt-link>
+                </li>
+                <li>
+                <nuxt-link  target="_blank" to="/service">服务支持</nuxt-link>
+                </li>
+            </ul>
+            <ul class="list">
+                <li>
                 <nuxt-link  target="_blank" to="/about">关于我们</nuxt-link>
                 </li>
-                <!-- <li>
-                <nuxt-link  target="_blank" to="/contactus">联系我们</nuxt-link>
-                </li> -->
+                <li>
+                <nuxt-link  target="_blank" to="/contactus">合作联系</nuxt-link>
+                </li>
                 <li>
                 <a  target="_blank" href="https://www.solantec.net">演示站</a>
                 </li>
-                <li>
-                <nuxt-link  target="_blank" to="/contactus">合作</nuxt-link>
-                </li>
             </ul>
-            <!-- <ul class="list">
-                <li>
-                <nuxt-link  target="_blank" to="/">产品优势</nuxt-link>
-                </li>
-                <li>
-                <nuxt-link  target="_blank" to="/">互动棋牌</nuxt-link>
-
-                </li>
-                <li>
-                <nuxt-link  target="_blank" to="/">类目</nuxt-link>
-                </li>
-                <li>
-                <nuxt-link  target="_blank" to="/">其他</nuxt-link>
-
-                </li>
-            </ul> -->
         </div>
     </Container>
    </div>
