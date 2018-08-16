@@ -156,10 +156,11 @@
                     }
                 }
             });
+            this.swiper=swiper;
         },
         methods:{
             controldown(){
-               
+              this.swiper.slideNext();
             }
         }
     }
