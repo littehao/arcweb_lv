@@ -98,7 +98,7 @@
                                         <div class="item"><img src="~assets/images/classproduct/tx_3_3.png" alt=""></div>
                                     </div>
                                 </div>
-                                <div class="classproduct-right ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0.1s">
+                                <div class="classproduct-right ani" swiper-animate-effect="fadeInRight"  swiper-animate-delay="0.1s">
                                     <img src="~assets/images/classproduct/yxfl_3.png" alt="">
                                 </div>
                             </div>
