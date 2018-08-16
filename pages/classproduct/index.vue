@@ -1,5 +1,5 @@
 <template>
-    <div class="lv-classproduct">
+    <div class="lv-classproduct" id="lv-classproduct">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide lv-classproduct-content1">
@@ -212,7 +212,7 @@ export default {
             window.location.href = '/'
         }
 
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('#lv-classproduct .swiper-container', {
             direction: 'vertical',
             mousewheel: true,
             speed:500,
