@@ -20,7 +20,7 @@
                 </div>
                 <div class="lv-banner-title">
                     <h3 class="animated fadeInUp">Live Video</h3>
-                    <p class="animated fadeInUp">一站式综合博娱直播系统的开创者与定义者</p>
+                    <p class="animated fadeInUp">一站式娱乐游戏直播系统的开创者</p>
                 </div>
                 <slot></slot>
             </div>
@@ -99,7 +99,7 @@
                     this.style3['transform'] = 'translate3d('+(-placex)+'px,'+(-placey)+'px,0)';
                     this.style4['transform'] = 'translate3d('+(-placex)+'px,'+(-placey)+'px,0)';
             },
-            
+
         }
     }
 </script>
@@ -108,7 +108,7 @@
 .lv-banner{
     width:100%;
     min-width:$container-width;
-    height:100%;
+    height:inherit;
     background:url(~assets/images/home/sy_banner_1.png) center;
     background-size:cover;
     position: relative;

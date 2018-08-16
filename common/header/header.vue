@@ -32,15 +32,15 @@
               path:'/'
             },
             {
-              title:'产品种类',
+              title:'直播游戏',
               path:'/classproduct'
             },
             {
-              title:'内容制作',
+              title:'内容媒体',
               path:'/content'
             },
             {
-              title:'服务支持',
+              title:'服务支援',
               path:'/service'
             },
             {
