@@ -5,6 +5,10 @@ import '../styles/normalize.css'
 
 import '../node_modules/iview/dist/styles/iview.css'
 
+import '../static/examples.css'
+
+import '../static/fullpage.min.css'
+
 
 let layouts = {
 

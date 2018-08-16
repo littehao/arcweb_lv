@@ -1,6 +1,6 @@
 <template>
     <section id="home" >
-      <div class="section-content" v-fullpage="opts">
+      <div class="section-content" >
         <div id="content-0" >
           <lv-banner  v-model="show">
             <div class="control-down" @click="controldown">
@@ -65,7 +65,7 @@
                   <h2 class="title revealOnScroll" data-animation="fadeInUp">定义博娱新时代</h2>
                   <h3 class="subtitle revealOnScroll" data-animation="fadeInUp">Live Video </h3>
                   <p class="content-info revealOnScroll" data-animation="fadeInUp">
-                    独特的玩家大神排行榜，根椐胜率、连中、中奖金额等进行相应排行，对于上榜玩家有特权免费或收费分享其注单，引领其他玩家跟单购买，对于认证大神分享的注单有权要求跟单者打赏或分享利润分红，玩家可根椐情况随时打赏主播，钻石礼物、现金礼物随意送。彩播后续还将继续完善产品，更多好玩有趣的功能持续更新中
+                    独特的玩家大神排行榜，根椐胜率、连中、中奖金额等进行相应排行，对于上榜玩家有特权免费或收费分享其注单，引领其他玩家跟单购买，对于认证大神分享的注单有权要求跟单者打赏或分享利润分红，玩家可根椐情况随时打赏主播，钻石礼物、现金礼物随意送。Live Video后续还将继续完善产品，更多好玩有趣的功能持续更新中
                   </p>
                 </div>
                 <div class="card-info-right img-content card-pic">
@@ -120,8 +120,6 @@
 </template>
 
 <script>
-// import $ from 'jquery'
-import 'animate.css'
 import lvBanner from '~/components/homebanner/banner'
 export default {
     name: "index",
@@ -154,50 +152,19 @@ export default {
     mounted(){
         let tt = document.documentElement.clientHeight;
         let that = this;
-        // let win_height_padded = tt * 1.1;
-        // window.addEventListener('scroll',function(){
-        //     var t = document.documentElement.scrollTop || document.body.scrollTop;
-        //     var top_div = document.getElementById( "header" );
-        //     if( t >= 80 ) {
-        //         top_div.style.background = "#27272E";
-        //     } else {
-        //         top_div.style.background = "transparent";
-        //     }
-        //     // let bgtop =  t/5;
-        //     // that.style.backgroundPosition = '50% '+ -bgtop + 'px';
-        //
-        //     that.revealOnScroll(tt,t);
-        // },false)
+
+
     },
     beforeDestroy(){
-        // if (window.removeEventListener) {
-        //     window.removeEventListener("scroll",this,false);
-        // }
+
     },
     methods:{
         controldown(){
-          //this.pageNum ++;
-          //alert('0000')
-          //this.$refs.fullpage.$fullpage.moveNext();
+
           console.log(this.$refs)
-          // let tt = document.documentElement.clientHeight;
-          // $('html,body').animate({scrollTop:tt},500);
+
         },
-        // revealOnScroll(tt,t){
-        //     $(".revealOnScroll:not(.animated)").each(function () {
-        //         var $this = $(this),
-        //             offsetTop = $this.offset().top;
-        //         if(t + tt > offsetTop) {
-        //             if ($this.data('timeout')) {
-        //                 window.setTimeout(function(){
-        //                      $this.addClass('animated ' + $this.data('animation'));
-        //                 }, parseInt($this.data('timeout')));
-        //             } else {
-        //                 $this.addClass('animated ' + $this.data('animation'));
-        //             }
-        //         }
-        //     })
-        // },
+
     }
 }
 </script>

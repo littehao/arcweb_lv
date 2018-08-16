@@ -32,7 +32,9 @@ module.exports = {
     {
       src: '~styles/normalize.css',
     },
-    { src: 'iview/dist/styles/iview.css'}
+    { src: 'iview/dist/styles/iview.css'},
+    { src: '~static/examples.css'},
+    { src: '~static/fullpage.min.css'}
   ],
   axios: {
     proxy: true
@@ -54,7 +56,9 @@ module.exports = {
     {
       src: '~/plugins/fullpage.js',
       //ssr: false
-    }
+    },
+
+
   ],
 
   /*
