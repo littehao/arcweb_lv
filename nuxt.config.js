@@ -19,7 +19,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  
+
   /*
   ** Customize the progress-bar color
   */
@@ -53,7 +53,13 @@ module.exports = {
     {
       src: '~/plugins/index',
       ssr: true
-    }
+    },
+    {
+      src: '~/plugins/fullpage.js',
+      //ssr: false
+    },
+
+
   ],
 
   /*
