@@ -7,7 +7,7 @@
                 <ul>
                     <li v-for="item in nav" :key="item.title"><nuxt-link :to="item.path">{{item.title}}</nuxt-link></li>
                     <li><a class="nav-link" href="https://m.katoong.com" target="_blank">演示站</a></li>
-                </ul> 
+                </ul>
             </div>
         </div>
     </div>
@@ -25,15 +25,15 @@
               path:'/'
             },
             {
-              title:'产品种类',
+              title:'直播游戏',
               path:'/mclassproduct'
             },
             {
-              title:'内容制作',
+              title:'内容媒体',
               path:'/mcontent'
             },
             {
-              title:'服务支持',
+              title:'服务支援',
               path:'/mservice'
             },
             {
@@ -106,7 +106,7 @@
                  height:45px;
                  line-height:45px;
                  border-bottom:1px solid #666666;
-                 a{ 
+                 a{
                      display: block;
                      color:#fff;
                      font-size:14px;

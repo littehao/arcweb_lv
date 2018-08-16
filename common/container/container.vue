@@ -12,7 +12,7 @@
 <style  lang="scss">
 
  .container{
-   /*height: 100%;*/
+   height: inherit;
    width:$container-width;
    margin-right: auto;
    margin-left: auto;
