@@ -3,20 +3,20 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _d2b68128 = () => import('../pages/demostation/index.vue' /* webpackChunkName: "pages/demostation/index" */).then(m => m.default || m)
-const _d875f9a0 = () => import('../pages/service/index.vue' /* webpackChunkName: "pages/service/index" */).then(m => m.default || m)
-const _2bee7ccc = () => import('../pages/home/index.vue' /* webpackChunkName: "pages/home/index" */).then(m => m.default || m)
-const _a7244032 = () => import('../pages/mcontent/index.vue' /* webpackChunkName: "pages/mcontent/index" */).then(m => m.default || m)
-const _442ec7f9 = () => import('../pages/contactus/index.vue' /* webpackChunkName: "pages/contactus/index" */).then(m => m.default || m)
-const _fca5e818 = () => import('../pages/content/index.vue' /* webpackChunkName: "pages/content/index" */).then(m => m.default || m)
-const _48c0499c = () => import('../pages/classproduct/index.vue' /* webpackChunkName: "pages/classproduct/index" */).then(m => m.default || m)
-const _24eaaaf2 = () => import('../pages/mhome/index.vue' /* webpackChunkName: "pages/mhome/index" */).then(m => m.default || m)
-const _6084628a = () => import('../pages/mabout/index.vue' /* webpackChunkName: "pages/mabout/index" */).then(m => m.default || m)
-const _82f451ba = () => import('../pages/mservice/index.vue' /* webpackChunkName: "pages/mservice/index" */).then(m => m.default || m)
-const _1614871f = () => import('../pages/mclassproduct/index.vue' /* webpackChunkName: "pages/mclassproduct/index" */).then(m => m.default || m)
-const _7beb29a8 = () => import('../pages/mcontactus/index.vue' /* webpackChunkName: "pages/mcontactus/index" */).then(m => m.default || m)
-const _63029a08 = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
-const _705f93ec = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _51ed5e16 = () => import('../pages/demostation/index.vue' /* webpackChunkName: "pages/demostation/index" */).then(m => m.default || m)
+const _1aa8f24c = () => import('../pages/service/index.vue' /* webpackChunkName: "pages/service/index" */).then(m => m.default || m)
+const _72a6ee30 = () => import('../pages/home/index.vue' /* webpackChunkName: "pages/home/index" */).then(m => m.default || m)
+const _2a57d17d = () => import('../pages/mcontent/index.vue' /* webpackChunkName: "pages/mcontent/index" */).then(m => m.default || m)
+const _f8f9edba = () => import('../pages/contactus/index.vue' /* webpackChunkName: "pages/contactus/index" */).then(m => m.default || m)
+const _3ed8e0c4 = () => import('../pages/content/index.vue' /* webpackChunkName: "pages/content/index" */).then(m => m.default || m)
+const _ed29dc70 = () => import('../pages/classproduct/index.vue' /* webpackChunkName: "pages/classproduct/index" */).then(m => m.default || m)
+const _78b210b1 = () => import('../pages/mhome/index.vue' /* webpackChunkName: "pages/mhome/index" */).then(m => m.default || m)
+const _acf9a45e = () => import('../pages/mabout/index.vue' /* webpackChunkName: "pages/mabout/index" */).then(m => m.default || m)
+const _3c6fc8b9 = () => import('../pages/mservice/index.vue' /* webpackChunkName: "pages/mservice/index" */).then(m => m.default || m)
+const _21b02349 = () => import('../pages/mclassproduct/index.vue' /* webpackChunkName: "pages/mclassproduct/index" */).then(m => m.default || m)
+const _6d3e4f42 = () => import('../pages/mcontactus/index.vue' /* webpackChunkName: "pages/mcontactus/index" */).then(m => m.default || m)
+const _23abff9c = () => import('../pages/about/index.vue' /* webpackChunkName: "pages/about/index" */).then(m => m.default || m)
+const _056203b4 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
 
 
 
@@ -78,72 +78,72 @@ export function createRouter () {
     routes: [
 		{
 			path: "/demostation",
-			component: _d2b68128,
+			component: _51ed5e16,
 			name: "demostation"
 		},
 		{
 			path: "/service",
-			component: _d875f9a0,
+			component: _1aa8f24c,
 			name: "service"
 		},
 		{
 			path: "/home",
-			component: _2bee7ccc,
+			component: _72a6ee30,
 			name: "home"
 		},
 		{
 			path: "/mcontent",
-			component: _a7244032,
+			component: _2a57d17d,
 			name: "mcontent"
 		},
 		{
 			path: "/contactus",
-			component: _442ec7f9,
+			component: _f8f9edba,
 			name: "contactus"
 		},
 		{
 			path: "/content",
-			component: _fca5e818,
+			component: _3ed8e0c4,
 			name: "content"
 		},
 		{
 			path: "/classproduct",
-			component: _48c0499c,
+			component: _ed29dc70,
 			name: "classproduct"
 		},
 		{
 			path: "/mhome",
-			component: _24eaaaf2,
+			component: _78b210b1,
 			name: "mhome"
 		},
 		{
 			path: "/mabout",
-			component: _6084628a,
+			component: _acf9a45e,
 			name: "mabout"
 		},
 		{
 			path: "/mservice",
-			component: _82f451ba,
+			component: _3c6fc8b9,
 			name: "mservice"
 		},
 		{
 			path: "/mclassproduct",
-			component: _1614871f,
+			component: _21b02349,
 			name: "mclassproduct"
 		},
 		{
 			path: "/mcontactus",
-			component: _7beb29a8,
+			component: _6d3e4f42,
 			name: "mcontactus"
 		},
 		{
 			path: "/about",
-			component: _63029a08,
+			component: _23abff9c,
 			name: "about"
 		},
 		{
 			path: "/",
-			component: _705f93ec,
+			component: _056203b4,
 			name: "index"
 		}
     ],
