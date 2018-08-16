@@ -1,13 +1,15 @@
 <template>
-    <section id="home" :style="trans">
-      <!-- <lv-banner>
+    <section id="home" >
+      <div class="section-content" v-fullpage="opts">
+        <div id="content-0" >
+          <lv-banner  v-model="show">
             <div class="control-down" @click="controldown">
-                <div class="down-page" style="display:block;">
-                    <i class="icon-darr"></i>
-                </div>
+              <div class="down-page" style="display:block;">
+                <i class="icon-darr"></i>
+              </div>
             </div>
-      </lv-banner> -->
-      <div class="section-content">
+          </lv-banner>
+        </div>
         <div id="content-1">
           <Container>
             <div class="section-1">
@@ -87,38 +89,38 @@
                   <h2 class="title revealOnScroll" data-animation="fadeInUp">安全稳定核心技术 深耕博娱产品经验</h2>
                   <h3 class="subtitle revealOnScroll" data-animation="fadeInUp">Live Video </h3>
                   <p class="content-info revealOnScroll" data-animation="fadeInUp">
-                    把”安全稳定核心技术、深耕博娱产品经验、创造博娱品牌新时代”的三大方针作为Live Video 开拓博娱事业版图的重要经营核心，在拥有博娱系统核心技术、直播互动整合技术、强力的运营后台系统及支援各种模式或平台的技术能力，并且与许多博娱产业数一数二的各类伙伴持续合作及提供服务。 
+                    把”安全稳定核心技术、深耕博娱产品经验、创造博娱品牌新时代”的三大方针作为Live Video 开拓博娱事业版图的重要经营核心，在拥有博娱系统核心技术、直播互动整合技术、强力的运营后台系统及支援各种模式或平台的技术能力，并且与许多博娱产业数一数二的各类伙伴持续合作及提供服务。
                   </p>
                 </div>
               </div>
             </div>
           </Container>
         </div>
-        <div class="section-btn" style="padding-bottom:100px;">
-          <Container>
-            <button class="btn" type="button" onclick="window.open('https://www.solantec.net/','_blank')">立即体验</button>
-          </Container>
-          <!-- <div class="customer">
-            <Container>
-              <div class="customer-info">
-                <h2>如果您在Live Video遇到任何问题<br/>
-                  请点击右方按钮联系我们24小时在线客服</h2>
-                <nuxt-link  target="_blank" to="/contactus">联系客服</nuxt-link>
+        <!--<div class="section-btn" style="padding-bottom:100px;">-->
+          <!--<Container>-->
+            <!--<button class="btn" type="button" onclick="window.open('https://www.solantec.net/','_blank')">立即体验</button>-->
+          <!--</Container>-->
+          <!--&lt;!&ndash; <div class="customer">-->
+            <!--<Container>-->
+              <!--<div class="customer-info">-->
+                <!--<h2>如果您在Live Video遇到任何问题<br/>-->
+                  <!--请点击右方按钮联系我们24小时在线客服</h2>-->
+                <!--<nuxt-link  target="_blank" to="/contactus">联系客服</nuxt-link>-->
 
-              </div>
-            </Container>
-          </div> -->
-        </div>
-        <footerlink></footerlink>
-        <img src="../../assets/images/home/bg2.png" class="section-content-pic" alt="">
-        <img src="../../assets/images/home/bg1.png" class="section-content-bottompic" alt="">
+              <!--</div>-->
+            <!--</Container>-->
+          <!--</div> &ndash;&gt;-->
+        <!--</div>-->
+        <!--<footerlink></footerlink>-->
+        <!--<img src="../../assets/images/home/bg2.png" class="section-content-pic" alt="">-->
+        <!--<img src="../../assets/images/home/bg1.png" class="section-content-bottompic" alt="">-->
 
       </div>
     </section>
 </template>
 
 <script>
-import $ from 'jquery'
+// import $ from 'jquery'
 import 'animate.css'
 import lvBanner from '~/components/homebanner/banner'
 export default {
@@ -133,48 +135,69 @@ export default {
             },
             trans:{
                 transform:'translate3d(0,0,0)',
+            },
+          show:true,
+          opts: {
+            start: 0,
+            dir: 'v',
+            duration: 500,
+            stopPageScroll: true,
+            beforeChange: function (prev, next) {
+              console.log('before', prev, next)
+            },
+            afterChange: function (prev, next) {
+              console.log('after', prev, next)
             }
+          }
         }
     },
     mounted(){
         let tt = document.documentElement.clientHeight;
         let that = this;
-        let win_height_padded = tt * 1.1;
-        window.addEventListener('scroll',function(){
-            var t = document.documentElement.scrollTop || document.body.scrollTop; 
-            var top_div = document.getElementById( "header" );
-            if( t >= 80 ) {
-                top_div.style.background = "#27272E";
-            } else {
-                top_div.style.background = "transparent";
-            }
-            // let bgtop =  t/5;
-            // that.style.backgroundPosition = '50% '+ -bgtop + 'px'; 
-
-            that.revealOnScroll(tt,t);
-        },false)
+        // let win_height_padded = tt * 1.1;
+        // window.addEventListener('scroll',function(){
+        //     var t = document.documentElement.scrollTop || document.body.scrollTop;
+        //     var top_div = document.getElementById( "header" );
+        //     if( t >= 80 ) {
+        //         top_div.style.background = "#27272E";
+        //     } else {
+        //         top_div.style.background = "transparent";
+        //     }
+        //     // let bgtop =  t/5;
+        //     // that.style.backgroundPosition = '50% '+ -bgtop + 'px';
+        //
+        //     that.revealOnScroll(tt,t);
+        // },false)
     },
     beforeDestroy(){
-        if (window.removeEventListener) {
-            window.removeEventListener("scroll",this,false);
-        }
+        // if (window.removeEventListener) {
+        //     window.removeEventListener("scroll",this,false);
+        // }
     },
     methods:{
-        revealOnScroll(tt,t){
-            $(".revealOnScroll:not(.animated)").each(function () {
-                var $this = $(this), 
-                    offsetTop = $this.offset().top; 
-                if(t + tt > offsetTop) { 
-                    if ($this.data('timeout')) { 
-                        window.setTimeout(function(){
-                             $this.addClass('animated ' + $this.data('animation')); 
-                        }, parseInt($this.data('timeout')));
-                    } else {
-                        $this.addClass('animated ' + $this.data('animation'));
-                    } 
-                }   
-            })
+        controldown(){
+          //this.pageNum ++;
+          //alert('0000')
+          //this.$refs.fullpage.$fullpage.moveNext();
+          console.log(this.$refs)
+          // let tt = document.documentElement.clientHeight;
+          // $('html,body').animate({scrollTop:tt},500);
         },
+        // revealOnScroll(tt,t){
+        //     $(".revealOnScroll:not(.animated)").each(function () {
+        //         var $this = $(this),
+        //             offsetTop = $this.offset().top;
+        //         if(t + tt > offsetTop) {
+        //             if ($this.data('timeout')) {
+        //                 window.setTimeout(function(){
+        //                      $this.addClass('animated ' + $this.data('animation'));
+        //                 }, parseInt($this.data('timeout')));
+        //             } else {
+        //                 $this.addClass('animated ' + $this.data('animation'));
+        //             }
+        //         }
+        //     })
+        // },
     }
 }
 </script>
@@ -186,10 +209,7 @@ export default {
   background-color:  $body-background;
 }
 #home{
-  //height: 100%;
-  width: 100%;
   background-color: $body-background;
-  transition: all 0.5s linear;
   .card-info{
     display: flex;
     align-items: center;
@@ -197,7 +217,6 @@ export default {
     height: $card-height;
     &-left{
       width: 100%;
-      /*height: 100%;*/
       .title{
         color: $title-color;
         font-size: 2*$font-size-large;
@@ -236,9 +255,9 @@ export default {
     }
   }
  .section-content{
-   position: relative;
-   height: auto;
-   overflow: hidden;
+   /*position: relative;*/
+   /*height: auto;*/
+   /*overflow: hidden;*/
  }
   .section-content-pic{
     position: absolute;

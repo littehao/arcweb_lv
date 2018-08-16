@@ -1,15 +1,8 @@
 <template>
   <div class="layout">
     <Lheader></Lheader>
-    <lv-banner v-if="show" v-model="show">
-      <div class="control-down" @click="controldown">
-          <div class="down-page" style="display:block;">
-              <i class="icon-darr"></i>
-          </div>
-      </div>
-    </lv-banner>
     <nuxt/>
-    <Lfooter></Lfooter>
+    <!--<Lfooter></Lfooter>-->
   </div>
 </template>
 <script>
