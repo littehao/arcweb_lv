@@ -5,8 +5,8 @@
                 <Container>
                     <div class="lv-service-content">
                         <div>
-                            <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">Live Video</h3>
-                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">一站式综合博娱直播系统的开创者与定义者</p>
+                            <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LIVE VIDEO</h3>
+                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">引流新潮流，缔造新时代</p>
                         </div>
                     </div>
                     <div class="control-down" @click="controldown">
@@ -125,7 +125,7 @@
         computed:{
             ...mapGetters([
                 'getAgent'
-            ])  
+            ])
         },
         mounted(){
             if(this.getAgent == 'mobile'){
@@ -141,12 +141,12 @@
                 },
                 on:{
                     init: function(){
-                        swiperAni.swiperAnimateCache(this); //隐藏动画元素 
+                        swiperAni.swiperAnimateCache(this); //隐藏动画元素
                         swiperAni.swiperAnimate(this); //初始化完成开始动画
-                    }, 
-                    slideChangeTransitionEnd: function(){ 
+                    },
+                    slideChangeTransitionEnd: function(){
                         swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-                    } 
+                    }
                 }
             });
         },

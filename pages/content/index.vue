@@ -9,8 +9,8 @@
                                 <div class="lv-slide-content">
                                     <img class="img" src="~assets/images/content/nrzz_rw_1.png" alt="" style="width:45%">
                                     <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星 网红霸主等着你</p>
+                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">生态造星计划</h3>
+                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星，星光大道等你来</p>
                                     </div>
                                 </div>
                             </div>
@@ -27,8 +27,8 @@
                                 <div class="lv-slide-content">
                                     <img class="img" src="~assets/images/content/nrzz_rw_3.png" alt="" style="width:42%">
                                     <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">艺人网红养成平台</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人蜕变成网红 网红跃升当艺人</p>
+                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">明星艺人养成</h3>
+                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人主播大蜕变，红人跃升大明星</p>
                                     </div>
                                 </div>
                             </div>
@@ -36,8 +36,8 @@
                                 <div class="lv-slide-content">
                                     <img class="img" src="~assets/images/content/nrzz_rw_4.png" alt="" style="width:42%">
                                     <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">多样化节目频道</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">主播专属夯节目 频道多样选不完</p>
+                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">专业PGC节目频道</h3>
+                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业导演团队倾情巨制，多元节目内容舞台无限</p>
                                     </div>
                                 </div>
                             </div>
@@ -45,8 +45,8 @@
                                 <div class="lv-slide-content">
                                     <img class="img" src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:35%">
                                     <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻神级导师团队</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">神级导师献专业 量身打造艺人魂</p>
+                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻级导师团队倾力打造</h3>
+                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">梦幻导师量身打造，专业培训神级飞跃</p>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="swiper-slide lv-content-star">
                     <Container>
-                        <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV特邀明星</h3>
+                        <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV特约明星艺人</h3>
                         <div class="star-list">
                             <div class="item ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div>
@@ -105,14 +105,14 @@
                 <div class="swiper-slide lv-celebrity">
                     <Container>
                         <div class="lv-celebrity-section">
-                            <h3 class="celebrity-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV签约网红主持人</h3>
+                            <h3 class="celebrity-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV独家签约网红主播人数超过千人</h3>
                             <img src="../../assets/images/content/force.png" class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s" alt="">
                         </div>
                     </Container>
                 </div>
                 <div class="swiper-slide lv-channel">
                     <Container>
-                        <h3 class="title" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LVTV 专属频道</h3>
+                        <h3 class="title" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LVTV官方节目频道，开启娱乐节目互动直播新潮流</h3>
                         <div class="channel-list">
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
@@ -189,13 +189,13 @@
                             <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">专业的造星团队</h3>
                                 <div class="lv-starteam-content">
                                     <div class="left">
-                                        <h2 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">钻石级导师开启你的追梦之旅</h2>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">多维度的训练方式，专业的经纪团队，多渠道的商演机会，工业化的造星工厂</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">如果你有极强的表现欲望</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">如果你热爱游戏，唱歌，跳舞</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">如果你有特殊才艺或技能</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">如果你想实现梦想</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">请与我们联络</p>
+                                        <h2 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">全渠道+全明星+工业化=星途璀璨</h2>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">最顶级的培训导师带你开启追梦之旅</p>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">最专业的经纪团队为你开创广阔机遇</p>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">最顶尖的制作团队为你量身定制作品</p>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">最豪华的明星阵容带你走向璀璨之路</p>
+                                            <!--<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">如果你想实现梦想</p>-->
+                                            <!--<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">请与我们联络</p>-->
                                     </div>
                                     <div class="right">
                                         <img class="img1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="~assets/images/content/zxtd_3.png" alt="">
@@ -229,7 +229,7 @@
         computed:{
             ...mapGetters([
                 'getAgent'
-            ])  
+            ])
         },
           methods:{
 
@@ -266,12 +266,12 @@
                 },
                 on:{
                     init: function(){
-                        swiperAni.swiperAnimateCache(this); //隐藏动画元素 
+                        swiperAni.swiperAnimateCache(this); //隐藏动画元素
                         swiperAni.swiperAnimate(this); //初始化完成开始动画
-                    }, 
-                    slideChangeTransitionEnd: function(){ 
+                    },
+                    slideChangeTransitionEnd: function(){
                         swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-                    } 
+                    }
                 }
             });
         },
