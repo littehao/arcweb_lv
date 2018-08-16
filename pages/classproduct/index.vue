@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="lv-classproduct-content2">
-            <div class="classproduct-part1">
+            <div class="classproduct-part2">
                 <Container>
                     <div class="part">
                         <div class="classproduct-left">
@@ -35,7 +35,7 @@
                     </div>
                 </Container>
             </div>
-            <div class="classproduct-part1">
+            <div class="classproduct-part2">
                 <Container>
                     <div class="part">
                         <div class="classproduct-right revealOnScroll" data-animation="fadeInLeft">
