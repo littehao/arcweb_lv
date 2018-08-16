@@ -1,11 +1,13 @@
 <template>
-    <div class="lv-classproduct">
+    <div class="lv-classproduct page-container">
         <div class="lv-classproduct-content1">
             <div class="lv-classproduct-banner" :style="style">
                 <!-- <img src="~assets/images/classproduct/banner.png" alt=""> -->
                 <div class="productbtn"><a target="_blank" href="https://www.solantec.net/"><img src="~assets/images/classproduct/productbtn.png" alt=""></a></div>
             </div>
-            <div class="classproduct-part">
+        </div>
+        <div class="lv-classproduct-content2">
+            <div class="classproduct-part1">
                 <Container>
                     <div class="part">
                         <div class="classproduct-left">
@@ -33,8 +35,6 @@
                     </div>
                 </Container>
             </div>
-        </div>
-        <div class="lv-classproduct-content2">
             <div class="classproduct-part1">
                 <Container>
                     <div class="part">
