@@ -32,7 +32,10 @@ module.exports = {
     {
       src: '~styles/normalize.css',
     },
-    { src: 'iview/dist/styles/iview.css'}
+    { src: 'iview/dist/styles/iview.css'},
+    {
+      src: 'animate.css/animate.css'
+    }
   ],
   axios: {
     proxy: true

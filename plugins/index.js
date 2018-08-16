@@ -8,12 +8,13 @@ import VueJsonp from 'vue-jsonp'
 import * as swiperAni from './swiper.animate.min.js'
 import Swiper from 'swiper';
 import 'swiper/dist/css/swiper.min.css';
-import 'animate.css'
+
 if (typeof window !== 'undefined') {
     window.$ = $;
     window.Swiper = Swiper;
     window.swiperAni = swiperAni;
 }
+
 Vue.use(VueJsonp)
 Vue.prototype.$http=axios
 
