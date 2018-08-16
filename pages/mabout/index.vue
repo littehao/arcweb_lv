@@ -189,7 +189,7 @@
             &::before{
                 position: absolute;
                 top:46%;
-                left:-16%;
+                left:-15.5%;
                 display: block;
                 content: "";
                 width:30px;
@@ -210,7 +210,7 @@
             &::before{
                 position: absolute;
                 top:6px;
-                left:-14.5%;
+                left:-14%;
                 display: block;
                 content: "";
                 width:20px;
