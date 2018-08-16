@@ -18,8 +18,8 @@
                                 <div class="lv-slide-content">
                                     <img class="img" src="~assets/images/content/nrzz_rw_2.png" alt="" style="width:30%">
                                     <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">众多选秀活动比赛</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">主播选秀星活动 怕你不敢来参加</p>
+                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">内容为王，娱乐至上</h3>
+                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">娱乐内容与粉丝经济领域的先行者</p>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                     <Container>
                         <div class="lv-celebrity-section">
                             <h3 class="celebrity-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV独家签约网红主播人数超过千人</h3>
-                            <img src="../../assets/images/content/force.png" class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s" alt="">
+                            <img src="../../assets/images/content/force.png" class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.1s" alt="">
                         </div>
                     </Container>
                 </div>
@@ -207,6 +207,12 @@
                         </div>
                     </Container>
                 </div>
+                <div class="swiper-slide"  style="height:266px">
+                    <div class="homefooter">
+                        <footerlink></footerlink>
+                        <Lfooter></Lfooter>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -258,6 +264,7 @@
                 });
             var swiperV = new Swiper('.swiper-container-v', {
                 direction: 'vertical',
+                slidesPerView: 'auto',
                 mousewheel: true,
                 speed:500,
                 pagination: {
@@ -323,7 +330,7 @@
     }
     .lv-content-star{
         width:100%;
-        height:698px;
+        height:100%;
         background:#1c1c23;
         color:#fff;
         padding:100px 0;
@@ -375,7 +382,7 @@
         }
     }
     .lv-celebrity{
-      height: 860px;
+      height: 100%;
       width: 100%;
       background-image: url("../../assets/images/content/nrzz_bj_2.png");
       background-size: cover;
@@ -398,7 +405,7 @@
     }
     .lv-channel{
         width:100%;
-        height:876px;
+        height:100%;
         background:$body-background;
         padding:50px 0;
         color:#fff;
@@ -480,7 +487,7 @@
     }
     .lv-starteam{
         width:100%;
-        height:860px;
+        height:100%;
         padding-top:90px;
         background: #0d0d11;
         color:#fff;

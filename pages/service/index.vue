@@ -5,8 +5,8 @@
                 <Container>
                     <div class="lv-service-content">
                         <div>
-                            <h3 class="animated fadeInUp">LIVE VIDEO</h3>
-                            <p class="animated fadeInUp" >引流新潮流，缔造新时代</p>
+                            <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LIVE VIDEO</h3>
+                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">引流新潮流，缔造新时代</p>
                         </div>
                     </div>
                     <div class="control-down" @click="controldown">
@@ -18,64 +18,100 @@
             </div>
             <div class="swiper-slide lv-service-list">
                 <Container>
-                    <h3>我们的服务支持</h3>
+                    <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">我们的服务支持</h3>
                     <ul class="lv-service-ul">
-                        <li class="item">
-                            <div class="title">
-                                <div class="img"><img src="~assets/images/service/fwzc_icon_api.png" alt=""></div>
-                                <div class="t">API放线</div>
-                            </div>
-                            <div class="info">
-                                提供完整的 API 发布、管理、维护生命周期管理。您只需简单操作，即可快速、低成本、低风险的开放数据或服务
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="title">
-                                <div class="img"><img src="~assets/images/service/fwzc_icon_zbbw.png" alt=""></div>
-                                <div class="t">直播+ 系统包网</div>
-                            </div>
-                            <div class="info">
-                                对于尚未建立自有品牌的企业或个人创业客户，可以针对不同属性及导向自由搭配各种产品，提供多种合作模式选择，数十种各式模板挑选，并加上我们领先群雄的直播系统技术及庞大美女主播群做为更有利的后援下，更提供客户您可以就直播体系中单一模式或整套模式选择。
+                        <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+                            <div class="program">
+                                <img src="~assets/images/service/fwzc_icon_api.png" alt="">
+                                <h3>LV品牌API接入</h3>
+                                <div class="program_info">
+                                    <h3>LV品牌API接入</h3>
+                                    <p>为平台和商户提供完整的或独立的LV直播游戏系统API接入，完美支持PC端,手机H5，原生SDK接入。</p>
+                                    <div class="time">
+                                        <span></span>
+                                        <i></i>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <li class="item">
-                            <div class="title">
-                                <div class="img"><img src="~assets/images/service/fwzc_icon_zbyx.png" alt=""></div>
-                                <div class="t">直播+游戏 系统包网</div>
-                            </div>
-                            <div class="info">
-                                对于尚未建立自有品牌的企业或个人创业客户，可以针对不同属性及导向自由搭配各种博娱游戏产品，提供多种合作模式选择，数十种各式模板挑选，自行研发多款不同类型博娱游戏及顶尖开发系统技术
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="title">
-                                <div class="img"><img src="~assets/images/service/fwzc_icon_yxzb.png" alt=""></div>
-                                <div class="t">LV游戏接口+直播</div>
-                            </div>
-                            <div class="info">
-                                拥有领先业界的直播系统技术及专业整合API串接技术下，客户您可以直接透过我们自行研发的多款博娱游戏，轻轻松松地串接至您所拥有的直播系统，并可以依据您对博娱游戏的需求做出客制化选择，毋须担心嵌入您的现有直播系统之中会出现重大错误或阻碍。
+                        <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+                            <div class="program">
+                                <img src="~assets/images/service/fwzc_icon_zbbw.png" alt="">
+                                <h3>视频直播系统包网</h3>
+                                <div class="program_info">
+                                    <h3>视频直播系统包网</h3>
+                                    <p>为品牌客户提供健全的直播系统包网方案，为客户提供直播+媒体，教育，电竞，体育，社交娱乐，电商等直播包网服务。</p>
+                                    <div class="time">
+                                        <span></span>
+                                        <i></i>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <li class="item">
-                            <div class="title">
-                                <div class="img"><img src="~assets/images/service/fwzc_icon_jkyx.png" alt=""></div>
-                                <div class="t">LV直播系统接口+游戏</div>
-                            </div>
-                            <div class="info">
-                                拥有领先业界的直播系统技术及专业整合API串接技术下，众多博彩品牌的厂商或客户可以直接透过我们自行研发直播系统及既有已签约的庞大美女主播群，轻轻松松地串接至您所拥有的博彩游戏。
+                        <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+                            <div class="program">
+                                <img src="~assets/images/service/fwzc_icon_zbyx.png" alt="">
+                                <h3>直播+游戏系统包网</h3>
+                                <div class="program_info">
+                                    <h3>直播+游戏系统包网</h3>
+                                    <p>为品牌客户提供功能齐全的直播+游戏系统，上百款精品游戏任您挑选，并提供线上系统一条龙服务。</p>
+                                    <div class="time">
+                                        <span></span>
+                                        <i></i>
+                                    </div>
+                                </div>
                             </div>
                         </li>
-                        <li class="item">
-                            <div class="title">
-                                <div class="img"><img src="~assets/images/service/fwzc_icon_zbjj.png" alt=""></div>
-                                <div class="t">直播服务+解决方案</div>
+                        <li class="item ani"  swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+                            <div class="program">
+                                <img src="~assets/images/service/fwzc_icon_yxzb.png" alt="">
+                                <h3>“直播+” 娱乐游戏服务</h3>
+                                <div class="program_info">
+                                    <h3>“直播+” 娱乐游戏服务</h3>
+                                    <p>为线上游戏供应商提供直播+基础服务，详情请联系。</p>
+                                    <div class="time">
+                                        <span></span>
+                                        <i></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="info">
-                                领先业界的直播系统技术及既有已签约的庞大美女主播群下，并且斥资重金打造质感摄影棚，提供专业灯光系统、镜头架设、音响设备及背景空间配置等规划。运用成熟直播及影音串流技术，省时、省容量且支援跨系统装置，高分辨率影音视频实时传播全球市场。
+                        </li>
+                        <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+                            <div class="program">
+                                <img src="~assets/images/service/fwzc_icon_jkyx.png" alt="">
+                                <h3>“游戏+”视频直播服务</h3>
+                                <div class="program_info">
+                                    <h3>“游戏+”视频直播服务</h3>
+                                    <p>为线上直播平台提供全渠道游戏+服务，详情请联系。</p>
+                                    <div class="time">
+                                        <span></span>
+                                        <i></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+                            <div class="program">
+                                <img src="~assets/images/service/fwzc_icon_zbjj.png" alt="">
+                                <h3>直播+技术解决方案</h3>
+                                <div class="program_info">
+                                    <h3>直播+技术解决方案</h3>
+                                    <p>为广大客户提供视频直播云服务，详情请联系。</p>
+                                    <div class="time">
+                                        <span></span>
+                                        <i></i>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                     </ul>
                 </Container>
+            </div>
+            <div class="swiper-slide"  style="height:266px">
+                <div class="homefooter">
+                    <footerlink></footerlink>
+                    <Lfooter></Lfooter>
+                </div>
             </div>
         </div>
     </div>
@@ -103,6 +139,7 @@
             }
             var swiper = new Swiper('.lv-service.swiper-container', {
                 direction: 'vertical',
+                slidesPerView: 'auto',
                 mousewheel: true,
                 speed:500,
                 pagination: {
@@ -121,24 +158,8 @@
             });
         },
         methods:{
-            revealOnScroll(tt,t){
-                $(".revealOnScroll:not(.animated)").each(function () {
-                    var $this = $(this),
-                        offsetTop = $this.offset().top;
-                    if(t + tt > offsetTop) {
-                        if ($this.data('timeout')) {
-                            window.setTimeout(function(){
-                                $this.addClass('animated ' + $this.data('animation'));
-                            }, parseInt($this.data('timeout')));
-                        } else {
-                            $this.addClass('animated ' + $this.data('animation'));
-                        }
-                    }
-                })
-            },
             controldown(){
-                let tt = document.documentElement.clientHeight;
-                $('html,body').animate({scrollTop:tt},500);
+               
             }
         }
     }
@@ -206,7 +227,7 @@
     }
     .lv-service-list{
         width:100%;
-        height:auto;
+        height:100%;
         background:url(~assets/images/service/fwzc_bj_2.png) no-repeat;
         background-size:cover;
         padding-top:103px;
@@ -221,27 +242,41 @@
             flex-wrap: wrap;
             margin-top:55px;
             .item{
-                width:50%;
-                padding:0 100px 0 50px;
+                width:33.3%;
                 margin-bottom:100px;
                 color:#fff;
-                .title{
-                    display:flex;
-                    align-items: center;
-                    margin-bottom:20px;
-                    .img{
-                        margin-right:20px;
-                    }
-                    .t{
-                        font-size:24px;
+                cursor: pointer;
+                padding:0 20px;
+                h3{padding-top:30px;text-align:center;font-size:30px;}
+                .program{
+                    position:relative;height:270px;padding:55px 0;border:1px solid rgba(255, 255, 255, 0.37);border-radius:5px;
+                    img{
+                        display: block;
+                        margin:0 auto;
                     }
                 }
-                .info{
-                    font-size:16px;
-                    line-height:25px;
-                    color:#ccc;
-                    height:172px;
+                .program_info{
+                    position:absolute;
+                    top:-5%;left:-5%;z-index:1;
+                    width:110%;height:0;
+                    opacity:0;
+                    overflow:hidden;
+                    background:rgb(109, 109, 108);
+                    color:#fff;
+                    text-align:center;
+                    transition:all .6s cubic-bezier(.215, .61, .355, 1) 0s;
+                    -webkit-transition:all .6s cubic-bezier(.215, .61, .355, 1) 0s;
+                    -moz-transition:all .6s cubic-bezier(.215, .61, .355, 1) 0s;
+                    h3{
+                        font-size:20px;
+                        margin-bottom: 15px;
+                    }
                 }
+                .program_info p{padding:0 15px;font-size:16px;line-height:25px;overflow:hidden;}
+                .program_info .time{width:100%;height:auto;background: #f7f7f7;text-align:left;}
+                .program_info .time span{display:block;color:#13DF81;}
+                .program_info .time i{font-size:14px;color:#13DF81;line-height:20px;font-style: normal;}
+                .program:hover .program_info{height:110%;opacity: 1;}
             }
         }
     }

@@ -2,9 +2,9 @@
     <div class="contactus">
         <Container>
           <div class="contactus-content">
-            <h1 class="form-title">联系我们</h1>
-            <p class="form-info">如您有兴趣进一步了解Live Video 的服务支援或产品，请填妥下方表格，将有专人尽速与您联系。</p>
-            <div class="form">
+            <h1 class="form-title animated fadeInUp">联系我们</h1>
+            <p class="form-info animated fadeInUp">如您有兴趣进一步了解Live Video 的服务支援或产品，请填妥下方表格，将有专人尽速与您联系。</p>
+            <div class="form animated bounceIn">
               <Form :model="formTop" label-position="top">
                 <FormItem >
                   <p name="label" class="form-item-label">姓名<span class="form-item-required">*</span></p>
@@ -54,6 +54,7 @@
             </div>
           </div>
         </Container>
+        <Lfooter></Lfooter>
     </div>
 </template>
 
