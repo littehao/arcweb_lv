@@ -35,11 +35,11 @@ export default {
 </script>
 <style lang="scss">
   .lv-home{
-    transition: all 0.5s linear;
-    position: absolute;
-    left: 0;
-    top: 0;
+    /*transition: all 0.5s linear;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
   }
 </style>

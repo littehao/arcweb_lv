@@ -212,11 +212,6 @@
 </template>
 
 <script>
-    import $ from 'jquery'
-    import 'animate.css'
-    import * as swiperAni from '../../plugins/swiper.animate.min.js'
-    import Swiper from 'swiper';
-    import 'swiper/dist/css/swiper.min.css';
     import { mapGetters } from 'vuex'
     export default {
     //   asyncData ({ app,params }) {

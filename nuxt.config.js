@@ -33,8 +33,9 @@ module.exports = {
       src: '~styles/normalize.css',
     },
     { src: 'iview/dist/styles/iview.css'},
-    { src: '~static/examples.css'},
-    { src: '~static/fullpage.min.css'}
+    {
+      src: 'animate.css/animate.css'
+    }
   ],
   axios: {
     proxy: true
