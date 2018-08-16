@@ -3,7 +3,7 @@
         <Container>
           <div class="contactus-content">
             <h1 class="form-title">联系我们</h1>
-            <p class="form-info">请在以下填写您的个人资料，便于我们与您进行联系！</p>
+            <p class="form-info">如您有兴趣进一步了解Live Video 的服务支援或产品，请填妥下方表格，将有专人尽速与您联系。</p>
             <div class="form">
               <Form :model="formTop" label-position="top">
                 <FormItem >
@@ -16,7 +16,7 @@
                   <Input v-model="formTop.tel" type="text" :number="true"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">电子邮件</p>
+                  <p name="label" class="form-item-label">电子邮件<span class="form-item-required">*</span></p>
 
                   <Input v-model="formTop.email" type="email"></Input>
                 </FormItem>
@@ -30,7 +30,7 @@
                   <Input v-model="formTop.address" type="text"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">合作方案</p>
+                  <p name="label" class="form-item-label">合作方案<span class="form-item-required">*</span></p>
                   <div class="form-check">
                     <CheckboxGroup  v-model="formTop.program">
                       <Checkbox label="API放线"></Checkbox>
@@ -143,7 +143,7 @@
             })
           },
           submit(){
-            if(!this.formTop.name || !this.formTop.tel || !this.formTop.address ||  !this.formTop.message){
+            if(!this.formTop.name || !this.formTop.tel || !this.formTop.email || !this.formTop.program || !this.formTop.address ||  !this.formTop.message){
               this.$Message.error('*为必填内容')
               return;
             }

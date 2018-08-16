@@ -103,8 +103,8 @@
              transition: height 0.3s linear;
              li{
                  width:100%;
-                 height:35px;
-                 line-height:35px;
+                 height:45px;
+                 line-height:45px;
                  border-bottom:1px solid #666666;
                  a{ 
                      display: block;
@@ -130,7 +130,7 @@
              }
          }
          .active{
-             height:260px;
+             height:320px;
          }
      }
  }

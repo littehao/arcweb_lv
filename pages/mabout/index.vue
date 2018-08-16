@@ -18,12 +18,56 @@
             <img class="grop3" src="~assets/images/about/about3.png" alt="">
         </div>
         <div class="m-about-timeline">
-            <div class="top">
-                <div class="text1">我们的故事</div>
-                <div class="text2">面向未来</div>
+            <div class="time-list">
+                <div class="time time1">
+                    <div class="top">
+                        <div class="text1">我们的故事</div>
+                        <div class="text2">面向未来</div>
+                    </div>
+                    <div class="center"><span class="year">2018</span><span class="month">.04</span></div>
+                    <div class="bottom">在欧洲成立马耳他分公司<br>开拓欧洲市场</div>
+                </div>
+                <div class="time time2" style="margin-top:100px;">
+                    <div class="center"><span class="month">2017.12</span></div>
+                    <div class="bottom">在纽西兰成立技术服务中心</div>
+                </div>
+                <div class="time time2">
+                    <div class="center"><span class="month">2017.8</span></div>
+                    <div class="bottom">在美国硅谷成立技术服务中心</div>
+                </div>
+                <div class="time time2">
+                    <div class="center"><span class="month">2017.4</span></div>
+                    <div class="bottom">直播相关设备及场所建置包含摄影棚及直播间</div>
+                </div>
+                <div class="time time2">
+                    <div class="center"><span class="month">2016.6</span></div>
+                    <div class="bottom">延揽顶尖直播互动系统团队钻研直播视讯领域</div>
+                </div>
+                <div class="time time2">
+                    <div class="center"><span class="month">2015.9</span></div>
+                    <div class="bottom">在英国马恩岛成立新事业部并开始申请多个国家的博彩牌照</div>
+                </div>
+                <div class="time time2">
+                    <div class="center"><span class="month">2014.3</span></div>
+                    <div class="bottom">发行专门彩票平台包网服务</div>
+                </div>
+                <div class="time time2">
+                    <div class="center"><span class="month">2013.8</span></div>
+                    <div class="bottom">发布第二代PHP彩票2.0版</div>
+                </div>
+                <div class="time time2">
+                    <div class="center"><span class="month">2012.7</span></div>
+                    <div class="bottom">推行出创新的数字彩票1.0系统</div>
+                </div>
+                <div class="time time2">
+                    <div class="center"><span class="month">2011.5</span></div>
+                    <div class="bottom">推出第一代PHP彩票1.0系统</div>
+                </div>
+                <div class="time time2">
+                    <div class="center"><span class="month">2009.8</span></div>
+                    <div class="bottom">创立于菲律宾马尼拉</div>
+                </div>
             </div>
-            <div class="center"><span class="year">2018</span><span class="month">.04</span></div>
-            <div class="bottom">在欧洲成立马耳他分公司<br>开拓欧洲市场</div>
         </div>
     </div>
 </template>
@@ -114,9 +158,9 @@
     }
     .m-about-timeline{
         width:100%;
+        height:374px;
         background:url(~assets/images/about/about4.png) no-repeat center #1c1c23;
         background-size:80%;
-        padding:50px;
         color:#fff;
         position: relative;
         &::before{
@@ -129,6 +173,51 @@
             height:100%;
             background:#FFE95C;
             opacity: 0.2;
+        }
+        .time-list{
+            width:100%;
+            height:100%;
+            overflow-y:auto;
+            padding:50px;
+        }
+        .time{
+            width:100%;
+            position: relative;
+        }
+        .time1{
+            height:100%;
+            &::before{
+                position: absolute;
+                top:46%;
+                left:-16%;
+                display: block;
+                content: "";
+                width:30px;
+                height:30px;
+                background:url(~assets/images/about/about_icon.png) no-repeat center;
+                background-size:100%;
+            }
+        }
+        .time2{
+            margin-top:50px;
+            .center{
+                margin:0;
+            }
+            .bottom{
+                padding:0;
+                font-size:14px;
+            }
+            &::before{
+                position: absolute;
+                top:6px;
+                left:-14.5%;
+                display: block;
+                content: "";
+                width:20px;
+                height:20px;
+                background:url(~assets/images/about/about_icon.png) no-repeat center;
+                background-size:100%;
+            }
         }
         .top{
             .text1{
