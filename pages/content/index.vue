@@ -1,37 +1,16 @@
 <template>
     <div class="lv-content">
-        <div class="swiper-container swiper-container-h">
+        <div class="swiper-container swiper-container-v">
             <div class="swiper-wrapper">
-            <div class="swiper-slide">Horizontal Slide 1</div>
-            <div class="swiper-slide">
-                <div class="swiper-container swiper-container-v">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Vertical Slide 1</div>
-                    <div class="swiper-slide">Vertical Slide 2</div>
-                    <div class="swiper-slide">Vertical Slide 3</div>
-                    <div class="swiper-slide">Vertical Slide 4</div>
-                    <div class="swiper-slide">Vertical Slide 5</div>
-                </div>
-                <div class="swiper-pagination swiper-pagination-v"></div>
-                </div>
-            </div>
-            <div class="swiper-slide">Horizontal Slide 3</div>
-            <div class="swiper-slide">Horizontal Slide 4</div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination swiper-pagination-h"></div>
-        </div>
-        <!-- <div class="swiper-container swiper-container-father">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide lv-content-banner">
-                    <div class="swiper-container swiper-container-son">
+                <div class="swiper-slide">
+                    <div class="swiper-container swiper-container-h lv-content-banner">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="lv-slide-content">
                                     <img class="img" src="~assets/images/content/nrzz_rw_1.png" alt="" style="width:45%">
                                     <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星 网红霸主等着你</p>
+                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">生态造星计划</h3>
+                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星，星光大道等你来</p>
                                     </div>
                                 </div>
                             </div>
@@ -48,8 +27,8 @@
                                 <div class="lv-slide-content">
                                     <img class="img" src="~assets/images/content/nrzz_rw_3.png" alt="" style="width:42%">
                                     <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">艺人网红养成平台</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人蜕变成网红 网红跃升当艺人</p>
+                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">明星艺人养成</h3>
+                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人主播大蜕变，红人跃升大明星</p>
                                     </div>
                                 </div>
                             </div>
@@ -57,8 +36,8 @@
                                 <div class="lv-slide-content">
                                     <img class="img" src="~assets/images/content/nrzz_rw_4.png" alt="" style="width:42%">
                                     <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">多样化节目频道</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">主播专属夯节目 频道多样选不完</p>
+                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">专业PGC节目频道</h3>
+                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业导演团队倾情巨制，多元节目内容舞台无限</p>
                                     </div>
                                 </div>
                             </div>
@@ -66,8 +45,8 @@
                                 <div class="lv-slide-content">
                                     <img class="img" src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:35%">
                                     <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻神级导师团队</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">神级导师献专业 量身打造艺人魂</p>
+                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻级导师团队倾力打造</h3>
+                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">梦幻导师量身打造，专业培训神级飞跃</p>
                                     </div>
                                 </div>
                             </div>
@@ -78,9 +57,9 @@
                 </div>
                 <div class="swiper-slide lv-content-star">
                     <Container>
-                        <h3 class="title">LV特邀明星</h3>
+                        <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV特约明星艺人</h3>
                         <div class="star-list">
-                            <div class="item">
+                            <div class="item ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div>
                                     <img src="~assets/images/content/lvty_zhyz.png" alt="">
                                     <div class="intro">
@@ -89,7 +68,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item ani"  swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
                                 <div>
                                     <img src="~assets/images/content/lvty_gg.png" alt="">
                                     <div class="intro">
@@ -98,7 +77,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
                                 <div>
                                     <img src="~assets/images/content/lvty_axy.png" alt="">
                                     <div class="intro">
@@ -107,7 +86,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
                                 <div>
                                     <img src="~assets/images/content/lvty_rzr.png" alt="">
                                     <div class="intro">
@@ -118,24 +97,24 @@
                             </div>
                         </div>
                     </Container>
-                    <div class="line" style="bottom:303px;"></div>
-                    <div class="line" style="bottom:281px;"></div>
-                    <div class="line" style="bottom:259px;"></div>
-                    <div class="line" style="bottom:239px;"></div>
+                    <div class="line" style="bottom:52%;"></div>
+                    <div class="line" style="bottom:50%;"></div>
+                    <div class="line" style="bottom:48%;"></div>
+                    <div class="line" style="bottom:46%;"></div>
                 </div>
                 <div class="swiper-slide lv-celebrity">
                     <Container>
                         <div class="lv-celebrity-section">
-                            <h3 class="celebrity-title">LV签约网红主持人</h3>
-                            <img src="../../assets/images/content/force.png" alt="">
+                            <h3 class="celebrity-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV独家签约网红主播人数超过千人</h3>
+                            <img src="../../assets/images/content/force.png" class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s" alt="">
                         </div>
                     </Container>
                 </div>
                 <div class="swiper-slide lv-channel">
                     <Container>
-                        <h3 class="title">LVTV 专属频道</h3>
+                        <h3 class="title" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LVTV官方节目频道，开启娱乐节目互动直播新潮流</h3>
                         <div class="channel-list">
-                            <div class="item">
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
                                     <div class="avatar"><img src="~assets/images/content/lvtv_wdpd.png" alt=""></div>
                                     <div class="bag-opa"></div>
@@ -146,7 +125,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
                                     <div class="avatar"><img src="~assets/images/content/lvtv_yypd.png" alt=""></div>
                                     <div class="bag-opa"></div>
@@ -157,7 +136,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
                                     <div class="avatar"><img src="~assets/images/content/lvtv_djpd.png" alt=""></div>
                                     <div class="bag-opa"></div>
@@ -168,7 +147,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
                                     <div class="avatar"><img src="~assets/images/content/lvtv_typd.png" alt=""></div>
                                     <div class="bag-opa"></div>
@@ -179,7 +158,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
                                     <div class="avatar"><img src="~assets/images/content/lvtv_cppd.png" alt=""></div>
                                     <div class="bag-opa"></div>
@@ -190,7 +169,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
                                     <div class="avatar"><img src="~assets/images/content/lvtv_zhpd.png" alt=""></div>
                                     <div class="bag-opa"></div>
@@ -207,29 +186,29 @@
                 <div class="swiper-slide lv-starteam">
                     <Container>
                         <div class="lv-starteam-bg">
-                            <h3 class="title">专业的造星团队</h3>
+                            <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">专业的造星团队</h3>
                                 <div class="lv-starteam-content">
                                     <div class="left">
-                                        <h2>钻石级导师开启你的追梦之旅</h2>
-                                            <p>多维度的训练方式，专业的经纪团队，多渠道的商演机会，工业化的造星工厂</p>
-                                            <p>如果你有极强的表现欲望</p>
-                                            <p>如果你热爱游戏，唱歌，跳舞</p>
-                                            <p>如果你有特殊才艺或技能</p>
-                                            <p>如果你想实现梦想</p>
-                                            <p>请与我们联络</p>
+                                        <h2 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">全渠道+全明星+工业化=星途璀璨</h2>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">最顶级的培训导师带你开启追梦之旅</p>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">最专业的经纪团队为你开创广阔机遇</p>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">最顶尖的制作团队为你量身定制作品</p>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">最豪华的明星阵容带你走向璀璨之路</p>
+                                            <!--<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">如果你想实现梦想</p>-->
+                                            <!--<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">请与我们联络</p>-->
                                     </div>
                                     <div class="right">
-                                        <img class="img1" src="~assets/images/content/zxtd_3.png" alt="">
-                                        <img class="img2" src="~assets/images/content/zxtd_4.png" alt="">
-                                        <img class="img3" src="~assets/images/content/zxtd_1.png" alt="">
-                                        <img class="img4" src="~assets/images/content/zxtd_2.png" alt="">
+                                        <img class="img1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="~assets/images/content/zxtd_3.png" alt="">
+                                        <img class="img2 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s" src="~assets/images/content/zxtd_4.png" alt="">
+                                        <img class="img3 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s" src="~assets/images/content/zxtd_1.png" alt="">
+                                        <img class="img4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="~assets/images/content/zxtd_2.png" alt="">
                                     </div>
                                 </div>
                         </div>
                     </Container>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </template>
 
@@ -250,7 +229,7 @@
         computed:{
             ...mapGetters([
                 'getAgent'
-            ])  
+            ])
         },
           methods:{
 
@@ -267,86 +246,45 @@
             this.height = document.documentElement.clientHeight;
 
             var swiperH = new Swiper('.swiper-container-h', {
-                spaceBetween: 50,
-                pagination: {
-                    el: '.swiper-pagination-h',
-                    clickable: true,
-                },
+                    autoplay:{
+                        delay:5000
+                    },
+                    speed:500,
+                    loop:true,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
                 });
-                var swiperV = new Swiper('.swiper-container-v', {
+            var swiperV = new Swiper('.swiper-container-v', {
                 direction: 'vertical',
-                spaceBetween: 50,
+                mousewheel: true,
+                speed:500,
                 pagination: {
-                    el: '.swiper-pagination-v',
+                    el: '.swiper-pagination',
                     clickable: true,
                 },
+                on:{
+                    init: function(){
+                        swiperAni.swiperAnimateCache(this); //隐藏动画元素
+                        swiperAni.swiperAnimate(this); //初始化完成开始动画
+                    },
+                    slideChangeTransitionEnd: function(){
+                        swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                    }
+                }
             });
-            // var mySwiper = new Swiper('.swiper-container-son', {
-            //     autoplay:{
-            //         delay:5000
-            //     },
-            //     speed:500,
-            //     loop:true,
-            //     navigation: {
-            //         nextEl: '.swiper-button-next',
-            //         prevEl: '.swiper-button-prev',
-            //     },
-            //     on:{
-            //         init: function(){
-            //             swiperAni.swiperAnimateCache(this); //隐藏动画元素 
-            //             swiperAni.swiperAnimate(this); //初始化完成开始动画
-            //         }, 
-            //         slideChangeTransitionEnd: function(){ 
-            //             swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-            //         } 
-            //     }
-            // })
-
-            // var swiper = new Swiper('.swiper-container-father', {
-            //     direction: 'vertical',
-            //     mousewheel: true,
-            //     speed:500,
-            //     pagination: {
-            //         el: '.swiper-pagination',
-            //         clickable: true,
-            //     },
-            //     on:{
-            //         init: function(){
-            //             swiperAni.swiperAnimateCache(this); //隐藏动画元素 
-            //             swiperAni.swiperAnimate(this); //初始化完成开始动画
-            //         }, 
-            //         slideChangeTransitionEnd: function(){ 
-            //             swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-            //         } 
-            //     }
-            // });
-
-            // let tt = document.documentElement.clientHeight;
-            // let that = this;
-            // let win_height_padded = tt * 1.1;
-            // window.addEventListener('scroll',function(){
-            //     var t = document.documentElement.scrollTop || document.body.scrollTop; 
-            //     var top_div = document.getElementById( "header" );
-            //     if( t >= 80 ) {
-            //         top_div.style.background = "#27272E";
-            //     } else {
-            //         top_div.style.background = "transparent";
-            //     }
-
-            //     that.revealOnScroll(tt,t);
-            // },false)
         },
-        // beforeDestroy(){
-        //     if (window.removeEventListener) {
-        //         window.removeEventListener("scroll",this,false);
-        //     }
-        // },
     }
 </script>
 
 <style lang="scss">
 .lv-content{
     width:100%;
+    height:100%;
+    .swiper-container{
+        height:100%;
+    }
     .lv-content-banner{
         width:100%;
         background:url(~assets/images/content/nrzz_bj_1.png) no-repeat center;
@@ -394,6 +332,7 @@
             text-align: center;
             font-size:$font-size-base * 2;
             margin-bottom:53px;
+            margin-top:10%;
         }
         .star-list{
             width:100%;
@@ -453,6 +392,7 @@
           color: $title-color;
           font-size: $font-size-base*2;
           text-align: center;
+          margin-top:15%;
         }
       }
     }
@@ -466,6 +406,7 @@
             text-align: center;
             font-size:$font-size-base * 2;
             margin-bottom:53px;
+            margin-top:10%;
         }
         .channel-list{
             width:100%;
@@ -476,12 +417,6 @@
                 padding:0 48px;
                 margin-bottom:50px;
                 position: relative;
-                -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-                will-change: transform;
-                transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-                transition: all 0.2s linear;
-                // cursor: pointer;
                 .item-t{
                     width:300px;
                     height:300px;
@@ -540,17 +475,6 @@
                         z-index:-1;
                     }
                 }
-                // &:hover{
-                //     transform: rotateX(10deg) rotateY(5deg);
-                // }
-                // &:hover .shadow.deg135{
-                //     background-image: -webkit-linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
-                //     background-image: linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
-                // }
-                // &:hover .shadow.deg225{
-                //     background-image: -webkit-linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
-                //     background-image: linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
-                // }
             }
         }
     }
@@ -563,6 +487,7 @@
         .title{
             font-size:28px;
             text-align: center;
+            margin-top:10%;
         }
         .lv-starteam-bg{
             width:100%;
@@ -602,6 +527,7 @@
             .right{
                 width:500px;
                 float:right;
+                position: relative;
                 .img1{
                     transform: translateX(20px);
                 }
@@ -612,7 +538,9 @@
                     transform: translateX(-80px);
                 }
                 .img4{
-                    transform: translate(230px,-300px);
+                    position: absolute;
+                    right:0;
+                    bottom:6%;
                 }
             }
         }

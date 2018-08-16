@@ -257,12 +257,8 @@ export default {
 
         //     that.revealOnScroll(tt,t);
         // },false)
+
     },
-    // beforeDestroy(){
-    //     if (window.removeEventListener) {
-    //         window.removeEventListener("scroll",this,false);
-    //     }
-    // },
     methods:{
         revealOnScroll(tt,t){
             $(".revealOnScroll:not(.animated)").each(function () {
