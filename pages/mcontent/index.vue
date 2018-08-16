@@ -330,7 +330,7 @@
                 left:0;
             }
             h3{
-                font-size:34px;
+                font-size:24px;
                 color:#fff;
             }
             p{
