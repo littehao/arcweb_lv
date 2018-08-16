@@ -189,7 +189,7 @@
             &::before{
                 position: absolute;
                 top:46%;
-                left:-15.5%;
+                left:-15%;
                 display: block;
                 content: "";
                 width:30px;

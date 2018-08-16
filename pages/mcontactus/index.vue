@@ -196,6 +196,7 @@
           }
           .ivu-checkbox-wrapper{
             margin-right: 70px;
+            width:140px;
           }
         }
        }
