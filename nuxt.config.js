@@ -35,6 +35,9 @@ module.exports = {
     { src: 'iview/dist/styles/iview.css'},
     {
       src: 'animate.css/animate.css'
+    },
+    {
+      src:'swiper/dist/css/swiper.min.css'
     }
   ],
   axios: {
@@ -54,12 +57,6 @@ module.exports = {
       src: '~/plugins/index',
       ssr: true
     },
-    {
-      src: '~/plugins/fullpage.js',
-      //ssr: false
-    },
-
-
   ],
 
   /*
@@ -70,7 +67,7 @@ module.exports = {
   ],
   //解决页面js预加载
   render: {
-    resourceHints: false
+    resourceHints: true
   },
   /*
   ** Build configuration
@@ -79,6 +76,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    vendor:['iview','axios','vue-jsonp','swiper'],
     extend(config, ctx ) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

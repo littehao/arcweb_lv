@@ -6,7 +6,7 @@ import iView from 'iview';
 import VueJsonp from 'vue-jsonp'
 import * as swiperAni from './swiper.animate.min.js'
 import Swiper from 'swiper';
-import 'swiper/dist/css/swiper.min.css';
+// import 'swiper/dist/css/swiper.min.css';
 
 if (typeof window !== 'undefined') {
     window.$ = $;
