@@ -213,23 +213,23 @@ export default {
         let tt = document.documentElement.clientHeight;
         let that = this;
         let win_height_padded = tt * 1.1;
-        window.addEventListener('scroll',function(){
-            var t = document.documentElement.scrollTop || document.body.scrollTop; 
-            var top_div = document.getElementById( "header" );
-            if( t >= 80 ) {
-                top_div.style.background = "#27272E";
-            } else {
-                top_div.style.background = "transparent";
-            }
+        // window.addEventListener('scroll',function(){
+        //     var t = document.documentElement.scrollTop || document.body.scrollTop; 
+        //     var top_div = document.getElementById( "header" );
+        //     if( t >= 80 ) {
+        //         top_div.style.background = "#27272E";
+        //     } else {
+        //         top_div.style.background = "transparent";
+        //     }
 
-            that.revealOnScroll(tt,t);
-        },false)
+        //     that.revealOnScroll(tt,t);
+        // },false)
     },
-    beforeDestroy(){
-        if (window.removeEventListener) {
-            window.removeEventListener("scroll",this,false);
-        }
-    },
+    // beforeDestroy(){
+    //     if (window.removeEventListener) {
+    //         window.removeEventListener("scroll",this,false);
+    //     }
+    // },
     methods:{
         revealOnScroll(tt,t){
             $(".revealOnScroll:not(.animated)").each(function () {
