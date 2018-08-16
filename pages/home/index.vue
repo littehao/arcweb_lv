@@ -17,15 +17,15 @@
                 <div class="section-1">
                   <div class="card-info section-card1">
                     <div class="card-info-left text-content">
-                      <h2 class="title revealOnScroll ani" swiper-animate-effect="fadeInUp" data-timeout="0">全球领先的娱乐游戏直播系统</h2>
-                      <h3 class="subtitle revealOnScroll ani" swiper-animate-effect="fadeInUp" data-timeout="0">Live Video </h3>
-                      <p class="content-info revealOnScroll ani" swiper-animate-effect="fadeInUp" data-timeout="0">
+                      <h2 class="title  ani" swiper-animate-effect="fadeInUp" >全球领先的娱乐游戏直播系统</h2>
+                      <h3 class="subtitle  ani" swiper-animate-effect="fadeInUp" >Live Video </h3>
+                      <p class="content-info  ani" swiper-animate-effect="fadeInUp" >
                         我们深耕网络视频直播服务行业多年，始终为致力于打造安全，稳定，流畅，高性能和高并发的直播系统而不断努力。多年的娱乐游戏行业经验，专业多元的游戏开发经验让我们成为全球最领先的“直播+游戏”技术提供商。匠心巨制，倾情推出全球最领先的综合娱乐游戏直播系统。
                       </p>
                     </div>
                     <div class="card-info-right img-content" >
-                      <img class="pc revealOnScroll ani" swiper-animate-effect="fadeInRight" data-timeout="0" src="../../assets/images/home/sy_dn_1.png" alt="">
-                      <!-- <img class="mobeil revealOnScroll" data-animation="fadeInRight" data-timeout="0" src="../../assets/images/home/sy_sj_1.png" alt=""> -->
+                      <img class="pc  ani" swiper-animate-effect="fadeInRight"  src="../../assets/images/home/sy_dn_1.png" alt="">
+                      <!-- <img class="mobeil " data-animation="fadeInRight"  src="../../assets/images/home/sy_sj_1.png" alt=""> -->
                     </div>
                   </div>
                 </div>
@@ -44,18 +44,18 @@
                   <div class="card-info section-card2">
                     <div class="card-info-right img-content">
                       <!--<span class="square">-->
-                      <img src="../../assets/images/avatar/tx_1.png" class="avatar tx1 ani revealOnScroll" swiper-animate-effect="fadeInLeft" alt="">
-                      <img src="../../assets/images/avatar/tx_2.png" class="avatar tx2 ani revealOnScroll" swiper-animate-effect="fadeInLeft" alt="">
-                      <img src="../../assets/images/avatar/tx_3.png" class="avatar tx3 ani revealOnScroll" swiper-animate-effect="fadeInLeft" alt="">
-                      <img src="../../assets/images/avatar/tx_4.png" class="avatar tx4 ani revealOnScroll" swiper-animate-effect="fadeInLeft" alt="">
+                      <img src="../../assets/images/avatar/tx_1.png" class="avatar tx1 ani " swiper-animate-effect="fadeInLeft" alt="">
+                      <img src="../../assets/images/avatar/tx_2.png" class="avatar tx2 ani " swiper-animate-effect="fadeInLeft" alt="">
+                      <img src="../../assets/images/avatar/tx_3.png" class="avatar tx3 ani " swiper-animate-effect="fadeInLeft" alt="">
+                      <img src="../../assets/images/avatar/tx_4.png" class="avatar tx4 ani " swiper-animate-effect="fadeInLeft" alt="">
 
                       <!--</span>-->
                     </div>
                     <div class="card-info-left text-content">
-                      <h2 class="title revealOnScroll ani" swiper-animate-effect="fadeInUp">内容媒体粉丝经济领域的先行者
+                      <h2 class="title  ani" swiper-animate-effect="fadeInUp">内容媒体粉丝经济领域的先行者
                       </h2>
-                      <h3 class="subtitle revealOnScroll ani" swiper-animate-effect="fadeInUp">Live Video </h3>
-                      <p class="content-info revealOnScroll ani" swiper-animate-effect="fadeInUp">
+                      <h3 class="subtitle  ani" swiper-animate-effect="fadeInUp">Live Video </h3>
+                      <p class="content-info  ani" swiper-animate-effect="fadeInUp">
                         移动互联时代，内容成为粉丝经济的核心驱动力，视频直播正在改变整个世界的互动社交方式。而全球泛娱乐产业正在高速发展，并与人们的生活不断融合。视频直播+娱乐游戏+粉丝经济，将开启下一个内容媒体大时代，LV始终是这个行业的先导者。
                       </p>
                     </div>
@@ -72,14 +72,14 @@
                   <div class="card-info section-card3">
 
                     <div class="card-info-left text-content">
-                      <h2 class="title revealOnScroll ani" swiper-animate-effect="fadeInUp">定义娱乐游戏新时代</h2>
-                      <h3 class="subtitle revealOnScroll ani" swiper-animate-effect="fadeInUp">Live Video </h3>
-                      <p class="content-info revealOnScroll ani" swiper-animate-effect="fadeInUp">
+                      <h2 class="title  ani" swiper-animate-effect="fadeInUp">定义娱乐游戏新时代</h2>
+                      <h3 class="subtitle  ani" swiper-animate-effect="fadeInUp">Live Video </h3>
+                      <p class="content-info  ani" swiper-animate-effect="fadeInUp">
                         娱乐即是生活，游戏即是人生。娱乐游戏正在成为我们每个人不可或缺的重要一部分。而视频直播互动下的娱乐游戏，将完全重新定义娱乐的多元性和高粘性，正在改变着未来和世界。更多更优质的内容，更多的互动玩法，更多的粉丝打赏和利润分红，即开即玩即时享乐的人生法则，将引导LV定义娱乐游戏行业新时代。
                       </p>
                     </div>
                     <div class="card-info-right img-content card-pic">
-                      <img class="revealOnScroll ani" swiper-animate-effect="fadeInRight"  src="../../assets/images/home/Screen1.png" alt="">
+                      <img class=" ani" swiper-animate-effect="fadeInRight"  src="../../assets/images/home/Screen1.png" alt="">
                     </div>
                   </div>
                 </div>
@@ -87,20 +87,20 @@
             </div>
           </div>
           <div id="content-4" class="swiper-slide">
-            <Container style="height: auto">
+            <Container class="endpage">
               <div class="section-4">
                 <div class="card-info section-card4">
 
                   <div class="card-info-right img-content ">
-                    <img  class="sj revealOnScroll ani" swiper-animate-effect="fadeInLeft" src="../../assets/images/home/sy_sj_3.png" alt="">
-                    <img  class="ipad revealOnScroll ani" swiper-animate-effect="fadeInLeft" src="../../assets/images/home/sy_sj_2.png" alt="">
+                    <img  class="sj  ani" swiper-animate-effect="fadeInLeft" src="../../assets/images/home/sy_sj_3.png" alt="">
+                    <img  class="ipad  ani" swiper-animate-effect="fadeInLeft" src="../../assets/images/home/sy_sj_2.png" alt="">
 
                   </div>
                   <div class="card-info-left text-content">
-                    <h2 class="title revealOnScroll ani" swiper-animate-effect="fadeInUp">定制你专属的“直播+”和“游戏+”
+                    <h2 class="title  ani" swiper-animate-effect="fadeInUp">定制你专属的“直播+”和“游戏+”
                     </h2>
-                    <h3 class="subtitle revealOnScroll ani" swiper-animate-effect="fadeInUp">Live Video </h3>
-                    <p class="content-info revealOnScroll ani " swiper-animate-effect="fadeInUp">
+                    <h3 class="subtitle  ani" swiper-animate-effect="fadeInUp">Live Video </h3>
+                    <p class="content-info  ani " swiper-animate-effect="fadeInUp">
                       我们拥有成熟完善的视频直播系统和功能，且拥有性能优越的高并发架构技术，坚实的技术团队全面保障系统的稳定和安全。产品服务接口达到了每天数亿的调用量，经验就是一切，强大的直播互动整合技术可以为您定制任何你想要的专属产品。
                     </p>
                   </div>
@@ -108,26 +108,18 @@
               </div>
 
             </Container>
-            <div >
-              <div class="section-btn" style="padding-bottom:60px;">
-                <Container>
-                  <button class="btn" type="button" onclick="window.open('https://www.solantec.net/','_blank')">立即体验</button>
-                </Container>
-                <!-- <div class="customer">
-                <Container>
-                <div class="customer-info">
-                <h2>如果您在Live Video遇到任何问题<br/>
-                请点击右方按钮联系我们24小时在线客服</h2>
-                <nuxt-link  target="_blank" to="/contactus">联系客服</nuxt-link>
-
-                </div>
-                </Container>
-                </div> -->
-              </div>
-              <footerlink></footerlink>
-            </div>
           </div>
-
+          <div class="swiper-slide"  style="height:440px">
+              <div class="homefooter">
+                <div class="section-btn" style="padding-bottom:60px;">
+                    <Container>
+                    <button class="btn" type="button" onclick="window.open('https://www.solantec.net/','_blank')">立即体验</button>
+                    </Container>
+                </div>
+                <footerlink></footerlink>
+                <Lfooter></Lfooter>
+                </div>
+          </div>
           <!--<img src="../../assets/images/home/bg2.png" class="section-content-pic" alt="">-->
           <!--<img src="../../assets/images/home/bg1.png" class="section-content-bottompic" alt="">-->
 
@@ -161,6 +153,7 @@ export default {
       var swiper = new Swiper('.test', {
         direction: 'vertical',
         mousewheel: true,
+        slidesPerView: 'auto',
         speed:500,
         pagination: {
           el: '.swiper-pagination',
@@ -173,8 +166,8 @@ export default {
           },
           slideChangeTransitionEnd: function(){
             swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-          }
-        }
+          },
+        },
       });
     },
     beforeDestroy(){
@@ -315,7 +308,7 @@ export default {
      }
    }
   #content-1{
-    height: 711px;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     // background-image: url("～assets/images/home/sy_bj_1.png") ;
@@ -330,7 +323,7 @@ export default {
       align-items: center;
       overflow:hidden;
       .section-card1{
-        margin-top: 150px;
+        // margin-top: 150px;
       }
     }
     .mask-wrap{
@@ -361,7 +354,7 @@ export default {
     width: 100%;
      background: url(../../assets/images/home/bg2.png);
     background-repeat: no-repeat;
-    background-size: $section-1;
+    background-size: 40%;
     background-position: -$section-1/2+20 center;
     position: relative;
     overflow: hidden;
@@ -372,7 +365,7 @@ export default {
       align-items: center;
       overflow:hidden;
       .section-card2{
-        margin-top: 50px;
+        // margin-top: 50px;
 
       }
       .avatar{
@@ -409,8 +402,8 @@ export default {
     position: relative;
     overflow: hidden;
     background-image: url(../../assets/images/home/bg2.png);
-    background-position: 150% center;
-    background-size: contain;
+    background-position: 140% center;
+    background-size: 50%;
     background-repeat: no-repeat;
     z-index: 1;
     .section-3{
@@ -419,7 +412,7 @@ export default {
       align-items: center;
       overflow:hidden;
       .section-card3{
-        margin-top: 50px;
+        // margin-top: 50px;
 
       }
       .card-pic{
@@ -439,17 +432,17 @@ export default {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background-image: url(../../assets/images/home/bg1.png);
+    // background-image: url(../../assets/images/home/bg1.png);
     background-position: bottom left;
     background-size: contain;
     background-repeat: no-repeat;
     .section-4{
-      height: auto;
-      margin-top: 100px;
-      margin-bottom: 60px;
+      height: 100%;
       overflow:hidden;
+      display: flex;
+      align-items: center;
       .section-card4{
-        margin-top: 50px;
+        // margin-top: 50px;
 
       }
       .ipad,.sj{
