@@ -4,8 +4,8 @@
         <div class="lv-service-banner" :style="style">
             <div class="lv-service-content">
                 <div>
-                    <h3 class="animated fadeInUp">Live Video</h3>
-                    <p class="animated fadeInUp" >一站式综合博娱直播系统<br>开创者与定义者</p>
+                    <h3 class="animated fadeInUp">LIVE VIDEO</h3>
+                    <p class="animated fadeInUp" >引流新潮流，缔造新时代</p>
                     <div class="line"></div>
                     <p class="animated fadeInUp">为每位客户提供最专业与最高品质的服务是我们的目标。您的满意，即是我们继续往前的最大动力。</p>
                     <dl class="text animated fadeInUp">
@@ -31,55 +31,57 @@
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_api.png" alt=""></div>
-                        <div class="t">API放线</div>
+                        <div class="t">LV品牌API接入</div>
                     </div>
                     <div class="info">
-                        提供完整的 API 发布、管理、维护生命周期管理。您只需简单操作，即可快速、低成本、低风险的开放数据或服务
+                      为平台和商户提供完整的或独立的LV直播游戏系统API接入，完美支持PC端,手机H5，原生SDK接入。
                     </div>
                 </li>
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_zbbw.png" alt=""></div>
-                        <div class="t">直播+ 系统包网</div>
+                        <div class="t">直播+游戏系统包网</div>
                     </div>
                     <div class="info">
-                        对于尚未建立自有品牌的企业或个人创业客户，可以针对不同属性及导向自由搭配各种产品，提供多种合作模式选择，数十种各式模板挑选，并加上我们领先群雄的直播系统技术及庞大美女主播群做为更有利的后援下，更提供客户您可以就直播体系中单一模式或整套模式选择。
+                      为品牌客户提供功能齐全的直播+游戏系统，上百款精品游戏任您挑选，并提供线上系统一条龙服务。
                     </div>
                 </li>
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_zbyx.png" alt=""></div>
-                        <div class="t">直播+游戏 系统包网</div>
+                        <div class="t">视频直播系统包网</div>
                     </div>
                     <div class="info">
-                        对于尚未建立自有品牌的企业或个人创业客户，可以针对不同属性及导向自由搭配各种博娱游戏产品，提供多种合作模式选择，数十种各式模板挑选，自行研发多款不同类型博娱游戏及顶尖开发系统技术
+                      为品牌客户提供健全的直播系统包网方案，为客户提供直播+媒体，教育，电竞，体育，社交娱乐，电商等直播包网服务。
                     </div>
                 </li>
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_yxzb.png" alt=""></div>
-                        <div class="t">LV游戏接口+直播</div>
+                        <div class="t">“直播+” 娱乐游戏服务</div>
                     </div>
                     <div class="info">
-                        拥有领先业界的直播系统技术及专业整合API串接技术下，客户您可以直接透过我们自行研发的多款博娱游戏，轻轻松松地串接至您所拥有的直播系统，并可以依据您对博娱游戏的需求做出客制化选择，毋须担心嵌入您的现有直播系统之中会出现重大错误或阻碍。
+                      为线上游戏供应商提供直播+基础服务，详情请联系。
                     </div>
                 </li>
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_jkyx.png" alt=""></div>
-                        <div class="t">LV直播系统接口+游戏</div>
+                        <div class="t">“游戏+”视频直播服务
+                        </div>
                     </div>
                     <div class="info">
-                        拥有领先业界的直播系统技术及专业整合API串接技术下，众多博彩品牌的厂商或客户可以直接透过我们自行研发直播系统及既有已签约的庞大美女主播群，轻轻松松地串接至您所拥有的博彩游戏。
+                      为线上直播平台提供全渠道游戏+服务，详情请联系。
                     </div>
                 </li>
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_zbjj.png" alt=""></div>
-                        <div class="t">直播服务+解决方案</div>
+                        <div class="t">直播+技术解决方案
+                        </div>
                     </div>
                     <div class="info">
-                        领先业界的直播系统技术及既有已签约的庞大美女主播群下，并且斥资重金打造质感摄影棚，提供专业灯光系统、镜头架设、音响设备及背景空间配置等规划。运用成熟直播及影音串流技术，省时、省容量且支援跨系统装置，高分辨率影音视频实时传播全球市场。
+                      为广大客户提供视频直播云服务，详情请联系。
                     </div>
                 </li>
             </ul>
@@ -105,7 +107,7 @@
         computed:{
             ...mapGetters([
                 'getAgent'
-            ])  
+            ])
         },
         mounted(){
             if(this.getAgent == 'default'){
@@ -116,7 +118,7 @@
             let that = this;
             let win_height_padded = tt * 1.1;
             window.addEventListener('scroll',function(){
-                var t = document.documentElement.scrollTop || document.body.scrollTop; 
+                var t = document.documentElement.scrollTop || document.body.scrollTop;
                 that.revealOnScroll(tt,t);
             },false)
         },
@@ -128,17 +130,17 @@
         methods:{
             revealOnScroll(tt,t){
                 $(".revealOnScroll:not(.animated)").each(function () {
-                    var $this = $(this), 
-                        offsetTop = $this.offset().top; 
-                    if(t + tt > offsetTop) { 
-                        if ($this.data('timeout')) { 
+                    var $this = $(this),
+                        offsetTop = $this.offset().top;
+                    if(t + tt > offsetTop) {
+                        if ($this.data('timeout')) {
                             window.setTimeout(function(){
-                                $this.addClass('animated ' + $this.data('animation')); 
+                                $this.addClass('animated ' + $this.data('animation'));
                             }, parseInt($this.data('timeout')));
                         } else {
                             $this.addClass('animated ' + $this.data('animation'));
-                        } 
-                    }   
+                        }
+                    }
                 })
             },
             controldown(){

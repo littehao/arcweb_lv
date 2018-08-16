@@ -20,7 +20,9 @@
                                 </div>
                             </div>
                             <div class="info revealOnScroll" data-animation="fadeInUp">
-                                <p>Live Video棋牌投注，更是突破现有博彩娱乐的既有模式，透过本身专业的直播系统技术，加入许多美女直播互动和玩家一起游玩，绝对要给玩家带来超新奇的新鲜感与参与感，24小时不断线的直播互动游戏房间，再也不用担心无法导入更多客流量及客户黏着度下降，大大提高合作伙伴的营销推懬优势。</p>
+                                <p>
+                                  LIVE VIDEO首推直播互动娱乐游戏，主播带你玩游戏，实时互动聊天与打赏礼物，主播面对面陪你畅玩你喜欢的游戏。LV直播棋牌既包含百家乐，骰宝，龙虎斗，二八杠，牌九，色碟，三公，鱼虾蟹等游戏，也有斗地主，扎金花，德州扑克，经典麻将，吹牛等多款竞技类游戏，我们将为广大用户持续更新更多受欢迎的游戏。
+                                </p>
                             </div>
                         </div>
                         <div class="bottom revealOnScroll" data-animation="fadeInUp">
@@ -48,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="info revealOnScroll" data-animation="fadeInUp">
-                                <p>Live Video街机电玩，目前已有奔驰宝马及飞禽走兽等游戏，并陆续计划将推出高知名度、游戏性强的街机电玩游戏，更是突破现有博彩娱乐的既有模式，透过本身专业的直播系统技术，加入许多美女直播互动和玩家一起游玩，绝对要给玩家带来超新奇的新鲜感与参与感，24小时不断线的直播互动游戏房间，再也不用担心无法导入更多客流量及客户黏着度下降，大大提高合作伙伴的营销推广优势。</p>
+                              <p>LV街机电玩带你回到孩童时代的回忆里，还原最经典的街机游戏和电子游戏，不管是水果机，奔驰宝马，飞禽走兽，森林舞会，还是念念不忘的捕鱼达人，狩猎游戏，雷霆战机，都应有尽有。让美女主播带你启程，一起畅享游戏吧。</p>
                             </div>
                         </div>
                         <div class="bottom revealOnScroll" data-animation="fadeInUp">
@@ -74,7 +76,7 @@
                                 </div>
                             </div>
                             <div class="info revealOnScroll" data-animation="fadeInUp">
-                                <p>Live Video电子老虎机，陆续计划将推出询问度高、游戏性强的老虎机游戏，且更是突破现有博彩娱乐的既有模式，透过本身专业的直播系统技术，加入许多美女直播互动和玩家一起游玩，绝对要给玩家带来超新奇的新鲜感与参与感，24小时不断线的直播互动游戏房间。</p>
+                              <p>LV践行“娱乐互动至上”原则，将娱乐与互动进行到底，各类经典的传统多线老虎机游戏深度还原经典之作，强大的老虎机游戏制作团队将为用户带来超高质量的老虎机游戏，更有众多原创IP老虎机游戏和手游闯关型老虎机等你来挑战。</p>
                             </div>
                         </div>
                         <div class="bottom revealOnScroll" data-animation="fadeInUp">
@@ -100,7 +102,7 @@
                                 </div>
                             </div>
                             <div class="info revealOnScroll" data-animation="fadeInUp">
-                                <p>Live Video数字彩票，目前提供时下最热门、最齐全的彩票游戏，包括：六合彩、时时彩、快三、赛车PK10、快乐10分、快乐8......满足玩家多变的需求，并陆续计划将推出询问度高、奖金性强的数字彩票游戏，而玩家可依自身技术水平和实际需求选择不同游戏房间。透过本身专业的直播系统技术，加入许多美女直播互动和玩家一起游玩，绝对要给玩家带来超新奇的新鲜感与参与感，24小时不断线的直播互动游戏房间。</p>
+                              <p>V数字彩票为大家呈现最热门最齐全的彩票游戏，包括热门的时时彩，六合彩，PK10，快三，快乐8，以及自开彩票等游戏。独家推出娱乐性互动彩票游戏，美女专家为您直播说彩，带你一起畅玩彩票游戏，特邀彩票专家为您解说彩票计划，给你不一样的购彩体验，快来加入LV直播彩票吧。</p>
                             </div>
                         </div>
                         <div class="bottom revealOnScroll" data-animation="fadeInUp">
@@ -126,7 +128,7 @@
                                 </div>
                             </div>
                             <div class="info revealOnScroll" data-animation="fadeInUp">
-                                <p>＂ＬＶ抓抓乐＂是一款利用Ｈ５技术制作的在线直播遥控操作线下实体机台呈现的抓娃娃娱乐型机台。玩家不需要实际前往抓娃娃机店面，就能拥有身临其境的临场体验。采用最先进的H5界面及手机APP界面，让玩家可以在PC端与手机端都可以随时方便使用；利用健全的物联网模式及直播技术下，对线下实体机器的远端管理，再透过手机或计算机就可以控制机台的抓力、机率、投币数等参数，及另外加一台电眼就能进行远端报错或突发事件通知。</p>
+                              <p>LV抓抓乐是一款利用在线直播实时遥控操作线下实体机台呈现的抓娃娃娱乐型机台游戏。玩家再也不需要实际前往现场娃娃机台前，就能拥有身临其境的激情体验。不管你使用PC还是手机，都可以随时随地畅玩LV抓抓乐游戏，更推出多种多样的礼物和红包类型，让玩家天天时时刻刻抓抓乐乐，停不下来。</p>
                             </div>
                         </div>
                         <!-- <div class="bottom revealOnScroll" data-animation="fadeInUp">
@@ -152,7 +154,7 @@
                                 </div>
                             </div>
                             <div class="info revealOnScroll" data-animation="fadeInUp">
-                                <p>“LV推推乐”是一款在线真实全景远程遥控操作、线下实体机台呈现推钱币的娱乐型游戏机台，利用计算机或手机APP便能进行远端遥控实体机台上摄影机 + 直播全程操作推钱币的过程。玩家不需要实际前往娱乐机台店面，就能拥有自己身处推币机台前的临场感。采用最先进的H5设计，让玩家可以在PC端与手机端都可以随时方便进行LV推推乐；用直播技术，对线下实体机器进行远端管理。我们的技术可以透过手机或计算机控制机台的基本设置、难度调整、奖励触发及出币模式等后端参数实时修正，及另外加一台摄影机就能进行远端报错或突发事件通知。</p>
+                              <p>LV推推乐是一款利用在线直播实时遥控线下实体推币机台的娱乐型机台游戏，其利用视频直播实时通信和遥感技术进行远端遥控实体机台投币，玩家无需前往机台店面，就可以拥有深处推币机台的临场真实感，游戏公平公正，方便快捷，即开即玩，让玩家可以时刻都可娱乐游戏。</p>
                             </div>
                         </div>
                         <!-- <div class="bottom revealOnScroll" data-animation="fadeInUp">
@@ -187,7 +189,7 @@ export default {
     computed:{
         ...mapGetters([
             'getAgent'
-        ])  
+        ])
     },
     mounted(){
         if(this.getAgent == 'default'){
@@ -198,7 +200,7 @@ export default {
         let that = this;
         let win_height_padded = tt * 1.1;
         window.addEventListener('scroll',function(){
-            var t = document.documentElement.scrollTop || document.body.scrollTop; 
+            var t = document.documentElement.scrollTop || document.body.scrollTop;
             that.revealOnScroll(tt,t);
         },false)
     },
@@ -210,17 +212,17 @@ export default {
     methods:{
         revealOnScroll(tt,t){
             $(".revealOnScroll:not(.animated)").each(function () {
-                var $this = $(this), 
-                    offsetTop = $this.offset().top; 
-                if(t + tt > offsetTop) { 
-                    if ($this.data('timeout')) { 
+                var $this = $(this),
+                    offsetTop = $this.offset().top;
+                if(t + tt > offsetTop) {
+                    if ($this.data('timeout')) {
                         window.setTimeout(function(){
-                             $this.addClass('animated ' + $this.data('animation')); 
+                             $this.addClass('animated ' + $this.data('animation'));
                         }, parseInt($this.data('timeout')));
                     } else {
                         $this.addClass('animated ' + $this.data('animation'));
-                    } 
-                }   
+                    }
+                }
             })
         }
     }

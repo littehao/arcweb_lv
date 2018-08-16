@@ -176,13 +176,14 @@ export default {
           }
         }
       });
+      this.swiper=swiper
     },
     beforeDestroy(){
 
     },
     methods:{
         controldown(){
-
+          this.swiper.slideNext();
           console.log(this.$refs)
 
         },
