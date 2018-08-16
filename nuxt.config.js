@@ -77,6 +77,22 @@ module.exports = {
     ** You can extend webpack config here
     */
     vendor:['iview','axios','vue-jsonp','swiper'],
+    loaders:[{
+      test: /\.(png|jpe?g|gif|svg)$/,
+      loader: 'url-loader',
+      query: {
+        limit: 1000,
+        name: 'img/[name].[hash:7].[ext]'
+      }
+    },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        query: {
+          limit: 1000,
+          name: 'fonts/[name].[hash:7].[ext]'
+        }
+      }],
     extend(config, ctx ) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
