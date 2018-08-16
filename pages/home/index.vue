@@ -343,7 +343,7 @@ export default {
             height:100%;
             background:url("~assets/images/home/homebg.png") no-repeat;
             background-size:cover;
-            background-attachment:fixed;
+            // background-attachment:fixed;
             position: absolute;
             top:0;
             left:0;
