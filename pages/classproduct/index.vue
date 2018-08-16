@@ -8,29 +8,29 @@
                     </div>
                 </div>
                 <div class="swiper-slide lv-classproduct-content2">
-                    <div class="classproduct-part2">
+                    <div class="classproduct-part2 bg2">
                         <Container>
                             <div class="part">
                                 <div class="classproduct-left">
                                     <div class="top">
-                                        <div class="title revealOnScroll" data-animation="fadeInUp">
+                                        <div class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
                                             <span>01</span>
                                             <div>
                                                 <h3>棋牌游戏</h3>
                                                 <p>Live Video</p>
                                             </div>
                                         </div>
-                                        <div class="info revealOnScroll" data-animation="fadeInUp">
+                                        <div class="info ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
                                             <p>Live Video棋牌投注，更是突破现有博彩娱乐的既有模式，透过本身专业的直播系统技术，加入许多美女直播互动和玩家一起游玩，绝对要给玩家带来超新奇的新鲜感与参与感，24小时不断线的直播互动游戏房间，再也不用担心无法导入更多客流量及客户黏着度下降，大大提高合作伙伴的营销推懬优势。</p>
                                         </div>
                                     </div>
-                                    <div class="bottom revealOnScroll" data-animation="fadeInUp">
+                                    <div class="bottom ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
                                         <div class="item"><img src="~assets/images/classproduct/tx_1_1.png" alt=""></div>
                                         <div class="item"><img src="~assets/images/classproduct/tx_1_2.png" alt=""></div>
                                         <div class="item"><img src="~assets/images/classproduct/tx_1_3.png" alt=""></div>
                                     </div>
                                 </div>
-                                <div class="classproduct-right revealOnScroll" data-animation="slideInRight">
+                                <div class="classproduct-right ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
                                     <img src="~assets/images/classproduct/yxfl_1.png" alt="">
                                 </div>
                             </div>
@@ -189,11 +189,7 @@
 </template>
 
 <script>
-import $ from 'jquery'
-import * as swiperAni from '../../plugins/swiper.animate.min.js'
-import Swiper from 'swiper';
-import 'swiper/dist/css/swiper.min.css';
-import 'animate.css'
+// import $ from 'jquery'
 
 import { mapGetters } from 'vuex'
 export default {
@@ -224,6 +220,15 @@ export default {
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            on:{
+                init: function(){
+                    swiperAni.swiperAnimateCache(this); //隐藏动画元素 
+                    swiperAni.swiperAnimate(this); //初始化完成开始动画
+                }, 
+                slideChangeTransitionEnd: function(){ 
+                    swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                } 
+            }
         });
 
         this.style.height = document.documentElement.clientHeight + 'px';
@@ -336,6 +341,28 @@ export default {
             position: relative;
             z-index: 10;
             height:100%;
+            .classproduct-part1-bg1{
+                width:100%;
+                height:100%;
+                background:url(~assets/images/classproduct/yxfl_ys_3.png) no-repeat;
+                background-size:cover;
+                position: absolute;
+                top:0;
+                left:0;
+            }
+            .classproduct-part1-bg2{
+                width:100%;
+                height:100%;
+                background:url(~assets/images/classproduct/homebgop.png) no-repeat;
+                background-size:cover;
+                position: absolute;
+                top:0;
+                left:0;
+            }
+        }
+        .bg2{
+            background:url(~assets/images/classproduct/bg2.png) no-repeat top;
+            background-size:cover
         }
         .shape1{
             position: absolute;
