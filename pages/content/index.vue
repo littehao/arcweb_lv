@@ -318,10 +318,9 @@
             }
             this.height = document.documentElement.clientHeight;
             var mySwiper = new Swiper('.swiper-container', {
-                // autoplay:{
-                //     delay:5000
-                // },
-                autoplay:false,
+                autoplay:{
+                    delay:5000
+                },
                 speed:500,
                 loop:true,
                 navigation: {

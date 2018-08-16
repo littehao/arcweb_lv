@@ -4,7 +4,7 @@
             <div class="section">
                <div class="pic revealOnScroll" data-animation="fadeInUp">
                     <img class="img1" src="~assets/images/home/sy_dn_1.png" alt="">
-                    <img class="img2" src="~assets/images/home/sy_sj_1.png" alt="">
+                    <!-- <img class="img2" src="~assets/images/home/sy_sj_1.png" alt=""> -->
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
                    <h3 class="title">倾力打造一站式综合博娱直播系统</h3>

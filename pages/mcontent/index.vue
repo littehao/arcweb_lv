@@ -270,7 +270,7 @@
                     }, 
                     slideChangeTransitionEnd: function(){ 
                         swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-                    } 
+                    }   
                 }
             })
 
@@ -334,7 +334,7 @@
                 color:#fff;
             }
             p{
-                font-size:$font-size-base * 2;
+                font-size:18px;
                 color:#fff;
             }
         }
