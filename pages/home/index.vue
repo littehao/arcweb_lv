@@ -63,7 +63,7 @@
                   <h2 class="title revealOnScroll" data-animation="fadeInUp">定义博娱新时代</h2>
                   <h3 class="subtitle revealOnScroll" data-animation="fadeInUp">Live Video </h3>
                   <p class="content-info revealOnScroll" data-animation="fadeInUp">
-                    独特的玩家大神排行榜，根椐胜率、连中、中奖金额等进行相应排行，对于上榜玩家有特权免费或收费分享其注单，引领其他玩家跟单购买，对于认证大神分享的注单有权要求跟单者打赏或分享利润分红，玩家可根椐情况随时打赏主播，钻石礼物、现金礼物随意送。彩播后续还将继续完善产品，更多好玩有趣的功能持续更新中
+                    独特的玩家大神排行榜，根椐胜率、连中、中奖金额等进行相应排行，对于上榜玩家有特权免费或收费分享其注单，引领其他玩家跟单购买，对于认证大神分享的注单有权要求跟单者打赏或分享利润分红，玩家可根椐情况随时打赏主播，钻石礼物、现金礼物随意送。Live Video后续还将继续完善产品，更多好玩有趣的功能持续更新中
                   </p>
                 </div>
                 <div class="card-info-right img-content card-pic">
