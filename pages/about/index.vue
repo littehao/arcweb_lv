@@ -222,13 +222,39 @@
             width:22%;
             position: absolute;
             bottom:10%;
-            left:24%;
+            left:25%;
         }
         .about3{
-            width: 25%;
+            width: 20%;
             position: absolute;
-            bottom:12%;
+            bottom:10%;
             right:10%;
+        }
+        @media screen and (max-width:1440px) {
+            .lv-introduction-content{
+                h3{
+                    margin-top:20px;
+                    font-size:20px;
+                }
+                .text{
+                    font-size:14px;
+                }
+            }
+            .about1{
+                width:20%;
+                bottom:35%;
+                left:15%;
+            }
+            .about2{
+                width:18%;
+                left:30%;
+                bottom:4%;
+            }
+            .about3{
+                width: 16%;
+                bottom:2%;
+                right:20%;
+            }
         }
     }
     .lv-livevideo{
