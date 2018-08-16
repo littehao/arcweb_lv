@@ -3,9 +3,11 @@ import qs from 'qs'
 import config from './config'
 
 const service = axios.create(config)
+
 if (process.server) {
   config.baseURL = `https://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}`
 }
+
 // POST 传参序列化
 service.interceptors.request.use(
   config => {
@@ -25,7 +27,6 @@ service.interceptors.response.use(
     return Promise.reject(error)
   }
 )
-
 export default {
   // post 方法
   post (url, data) {

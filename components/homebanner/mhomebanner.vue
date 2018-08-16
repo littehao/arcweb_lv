@@ -51,14 +51,16 @@ export default {
             text-align: center;
             padding-top:80px;
             color:#fff;
-            background:url(~assets/images/home/light.png) no-repeat 43% top;
+            background:url(~assets/images/home/light.png) no-repeat 40% top;
             background-size:55%;
             position: relative;
             z-index: 2;
             .logo{
-                width:20%;
+                width:35%;
                 animation-delay:0.4s;
                 -webkit-animation-delay:0.4s;
+                display: block;
+                margin-left:28%;
             }
             .title{
                 font-size:20px;

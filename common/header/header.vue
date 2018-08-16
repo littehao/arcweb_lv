@@ -117,7 +117,7 @@
     background-color:transparent;
 
     z-index: 200;
-    transition: all 0.3s linear;
+    transition: all 0.4s linear;
     .content{
       width: 100%;
       height: 100%;

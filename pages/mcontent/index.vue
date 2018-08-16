@@ -8,7 +8,7 @@
                             <img class="img" src="~assets/images/content/nrzz_rw_1.png" alt="">
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经济团队，工业化造星</p>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星 网红霸主等着你</p>
                             </div>
                         </div>
                     </div>
@@ -16,8 +16,8 @@
                         <div class="lv-slide-content">
                             <img class="img" src="~assets/images/content/nrzz_rw_2.png" alt="">
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经济团队，工业化造星</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">众多选秀活动比赛</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">主播选秀星活动 怕你不敢来参加</p>
                             </div>
                         </div>
                     </div>
@@ -25,8 +25,26 @@
                         <div class="lv-slide-content">
                             <img class="img" src="~assets/images/content/nrzz_rw_3.png" alt="">
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业经济团队，工业化造星</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">艺人网红养成平台</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人蜕变成网红 网红跃升当艺人</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="lv-slide-content">
+                            <img class="img" src="~assets/images/content/nrzz_rw_4.png" alt="">
+                            <div class="text">
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">多样化节目频道</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">主播专属夯节目 频道多样选不完</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="lv-slide-content">
+                            <img class="img" src="~assets/images/content/nrzz_rw_5.png" alt="">
+                            <div class="text">
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻神级导师团队</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">神级导师献专业 量身打造艺人魂</p>
                             </div>
                         </div>
                     </div>
@@ -181,7 +199,7 @@
                         <p>如果你有特殊才艺或技能</p>
                         <p>如果你想实现梦想</p>
                         <p>请与我们联络</p>
-                        <div class="link"><nuxt-link to="/mcontactus">申请加入LV</nuxt-link></div>
+                        <!-- <div class="link"><nuxt-link to="/mcontactus">申请加入LV</nuxt-link></div> -->
                 </div>
             </div>
         </div>
@@ -252,7 +270,7 @@
                     }, 
                     slideChangeTransitionEnd: function(){ 
                         swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-                    } 
+                    }   
                 }
             })
 
@@ -312,11 +330,11 @@
                 left:0;
             }
             h3{
-                font-size:34px;
+                font-size:24px;
                 color:#fff;
             }
             p{
-                font-size:$font-size-base * 2;
+                font-size:18px;
                 color:#fff;
             }
         }
@@ -359,12 +377,12 @@
                         font-size:14px;
                     }
                 }
-                &:hover{
-                    transform: translateY(-5px);
-                }
-                &:hover img{
-                    box-shadow: 0 0 10px #101010;
-                }
+                // &:hover{
+                //     transform: translateY(-5px);
+                // }
+                // &:hover img{
+                //     box-shadow: 0 0 10px #101010;
+                // }
             }
         }
         .line{
@@ -485,17 +503,17 @@
                         z-index:-1;
                     }
                 }
-                &:hover{
-                    transform: rotateX(10deg) rotateY(5deg);
-                }
-                &:hover .shadow.deg135{
-                    background-image: -webkit-linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
-                    background-image: linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
-                }
-                &:hover .shadow.deg225{
-                    background-image: -webkit-linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
-                    background-image: linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
-                }
+                // &:hover{
+                //     transform: rotateX(10deg) rotateY(5deg);
+                // }
+                // &:hover .shadow.deg135{
+                //     background-image: -webkit-linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
+                //     background-image: linear-gradient(155deg,rgba(0,0,0,0.9),transparent 50%);
+                // }
+                // &:hover .shadow.deg225{
+                //     background-image: -webkit-linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
+                //     background-image: linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
+                // }
             }
             .item:nth-child(2n+1){
                 padding:0px 10px 0px 20px;

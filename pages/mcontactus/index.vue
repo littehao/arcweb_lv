@@ -2,7 +2,7 @@
     <div class="contactus">
         <div class="contactus-content">
             <h1 class="form-title">联系我们</h1>
-            <p class="form-info">请在以下填写您的个人资料，或直接通过本公司电子邮箱地址：market@livevideo.com 进行联系！</p>
+            <p class="form-info">如您有兴趣进一步了解Live Video 的服务支援或产品，请填妥下方表格，将有专人尽速与您联系。</p>
             <div class="form">
               <Form :model="formTop" label-position="top">
                 <FormItem >
@@ -20,33 +20,34 @@
                   <Input v-model="formTop.email" type="email"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">其他联系方式 </p>
+                  <p name="label" class="form-item-label">其他联系方式</p>
 
                   <Input v-model="formTop.othercall" type="text"></Input>
+                </FormItem>
+                <FormItem >
+                  <p name="label" class="form-item-label">公司网站地址<span class="form-item-required">*</span></p>
+                  <Input v-model="formTop.address" type="text"></Input>
                 </FormItem>
                 <FormItem >
                   <p name="label" class="form-item-label">合作方案<span class="form-item-required">*</span></p>
                   <div class="form-check">
                     <CheckboxGroup  v-model="formTop.program">
-                      <Checkbox label="棋牌游戏"></Checkbox>
-                      <Checkbox label="老虎机"></Checkbox>
-                      <Checkbox label="数字彩票"></Checkbox>
-                      <Checkbox label="电子竞技"></Checkbox>
-                      <Checkbox label="接机电玩"></Checkbox>
-                      <Checkbox label="体育投注"></Checkbox>
-                      <Checkbox label="lv抓抓乐"></Checkbox>
+                      <Checkbox label="API放线"></Checkbox>
+                      <Checkbox label="直播+ 系统包网"></Checkbox>
+                      <Checkbox label="直播+游戏 系统包网"></Checkbox>
+                      <Checkbox label="LV游戏接口+直播"></Checkbox>
+                      <Checkbox label="LV直播系统接口+游戏"></Checkbox>
+                      <Checkbox label="直播服务+解决方案"></Checkbox>
                       <Checkbox label="其他"></Checkbox>
                     </CheckboxGroup>
                   </div>
                 </FormItem>
                 <FormItem >
                   <p name="label" class="form-item-label">留言<span class="form-item-required">*</span></p>
-
                   <Input v-model="formTop.message" type="textarea" :autosize="{minRows: 5,maxRows: 8}"></Input>
                 </FormItem>
                 <FormItem >
                   <Button  class="form-btn" @click="submit">提交</Button>
-
                 </FormItem>
               </Form>
             </div>
@@ -66,13 +67,15 @@
                     height:0,
                 },
                 formTop: {
-                  name: null,//姓名
-                  tel: null,//电话
-                  email: null,//邮箱
-                  othercall:null,//其他联系方式
+                  name: '',//姓名
+                  tel: '',//电话
+                  email: '',//邮箱
+                  othercall:'',//其他联系方式
+                  address:'',//公司地址
                   program:[],//合适方案
-                  message:null,//留言
-                }
+                  message:'',//留言
+                },
+                http:''
             }
         },
         computed:{
@@ -81,15 +84,19 @@
             ])  
         },
         mounted(){
+            let NODE_ENV=process.env.NODE_ENV=='development';
+            let hosttest=location.host=='node.testfordemo.com';
+            this.http = NODE_ENV?'https://api.testfordemo.com':hosttest?'https://api.testfordemo.com':'https://api.katoong.com';
             if(this.getAgent == 'default'){
                 window.location.href = '/'
             }
             this.style.height = document.documentElement.clientHeight + 'px';
         },
         methods:{
-         asyncData (params) {
-           return this.$http.get(`/OpenAPI/v1/Config/contactUs`,this.formTop)
-            .then((res)=>{
+         getData(){
+            console.log(`${this.http}/OpenAPI/v1/Config/contactUs?${this.formTop}`)
+            this.$jsonp(`${this.http}/OpenAPI/v1/Config/contactUs`,this.formTop)
+            .then( res => {
               console.log(res)
               if(res){
                     if(res.code == 1){
@@ -99,21 +106,31 @@
                         this.formTop.name = '';
                         this.formTop.email = '';
                         this.formTop.tel = '';
+                        this.formTop.address = '';
                         this.formTop.program = [];
                         this.formTop.message = '';
                         this.formTop.othercall = '';
                     }
               }else{
-                  this.$Message.success('接口请求错误');
+                this.$Message.success('接口请求错误');
               }
-            })  
+            })
           },
           submit(){
-            if(!this.formTop.name || !this.formTop.tel || !this.formTop.email || !this.formTop.program || !this.formTop.message){
+            if(!this.formTop.name || !this.formTop.tel || !this.formTop.email || !this.formTop.program || !this.formTop.address ||  !this.formTop.message){
               this.$Message.error('*为必填内容')
               return;
             }
-            this.asyncData();
+            if(isNaN(this.formTop.tel)){
+                this.$Message.error('手机号必须是数字')
+                return;
+            }
+            let reg = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/;
+            if(this.formTop.email &&!reg.test(this.formTop.email)){
+              this.$Message.error('邮箱格式不正确')
+              return;
+            }
+            this.getData();
           },
         }
     }
@@ -179,6 +196,7 @@
           }
           .ivu-checkbox-wrapper{
             margin-right: 70px;
+            width:140px;
           }
         }
        }
