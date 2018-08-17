@@ -602,11 +602,11 @@
                 width:680px;
                 float:left;
                 h2{
-                    font-size:40px;
+                    font-size:30px;
                     margin-bottom:25px;
                 }
                 p{
-                    font-size:20px;
+                    font-size:18px;
                     margin-bottom:25px;
                 }
                 .link{
