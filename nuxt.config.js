@@ -62,12 +62,18 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
+  //缓存
+  cache: true,
+  performance: {
+    gzip: true,
+  },
+
   modules: [
     '@nuxtjs/axios'
   ],
   //解决页面js预加载
   render: {
-    resourceHints: true
+    resourceHints: false
   },
   /*
   ** Build configuration
@@ -76,7 +82,8 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    vendor:['iview','axios','vue-jsonp','swiper'],
+    vendor:['iview','axios','vue-jsonp','swiper','jquery'],
+
     loaders:[{
       test: /\.(png|jpe?g|gif|svg)$/,
       loader: 'url-loader',
