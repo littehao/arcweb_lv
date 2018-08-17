@@ -97,7 +97,6 @@ module.exports = {
 
     extend(config, ctx ) {
       // Run ESLint on sav
-      console.log(config,'---------------')
 
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
