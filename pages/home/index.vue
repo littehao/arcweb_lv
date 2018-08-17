@@ -55,9 +55,7 @@
                       <h2 class="title  ani" swiper-animate-effect="fadeInUp">内容媒体粉丝经济领域的先行者
                       </h2>
                       <h3 class="subtitle  ani" swiper-animate-effect="fadeInUp">Live Video </h3>
-                      <p class="content-info  ani" swiper-animate-effect="fadeInUp">
-                        移动互联时代，内容成为粉丝经济的核心驱动力，视频直播正在改变整个世界的互动社交方式。而全球泛娱乐产业正在高速发展，并与人们的生活不断融合。视频直播+娱乐游戏+粉丝经济，将开启下一个内容媒体大时代，LV始终是这个行业的先导者。
-                      </p>
+                      <p class="content-info  ani" swiper-animate-effect="fadeInUp">移动互联时代，内容成为粉丝经济的核心驱动力，视频直播正在改变整个世界的互动社交方式。而全球泛娱乐产业正在高速发展，并与人们的生活不断融合。视频直播+娱乐游戏+粉丝经济，将开启下一个内容媒体大时代，LV始终是这个行业的先导者。</p>
                     </div>
                     </div>
                 </div>
@@ -240,7 +238,7 @@ export default {
       width: 680px;
     }
     .text-content{
-      width: 540px;
+      width: 520px;
     }
   }
  .section-content{

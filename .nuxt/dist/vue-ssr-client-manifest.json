@@ -94,8 +94,8 @@
     "img/shape2.844d5dc.png",
     "img/about_icon.06fc48d.png",
     "img/lxwm_bj.50c1896.png",
-    "pages/index.1d244be0a12356e36161.js",
-    "pages/home/index.24b59fe0ca6455053882.js",
+    "pages/index.524d9ef7589f6c98462c.js",
+    "pages/home/index.e5e88b94646c9256a780.js",
     "pages/classproduct/index.8a2c686f9224000cf774.js",
     "pages/mcontent/index.d7b2ad84f780d7d885f8.js",
     "pages/content/index.5feeebf1b5b3431aac6f.js",
@@ -112,18 +112,18 @@
     "pages/demostation/index.e822e86c166bcd95bd96.js",
     "vendor.86e385dacac770415c62.js",
     "app.8a98f7597cae306cab1a.js",
-    "manifest.14631e57ac89281ad40a.js",
+    "manifest.1cf16b7b0553dd019813.js",
     "LICENSES",
     "index.spa.html"
   ],
   "initial": [
-    "manifest.14631e57ac89281ad40a.js",
+    "manifest.1cf16b7b0553dd019813.js",
     "vendor.86e385dacac770415c62.js",
     "app.8a98f7597cae306cab1a.js"
   ],
   "async": [
-    "pages/index.1d244be0a12356e36161.js",
-    "pages/home/index.24b59fe0ca6455053882.js",
+    "pages/index.524d9ef7589f6c98462c.js",
+    "pages/home/index.e5e88b94646c9256a780.js",
     "pages/classproduct/index.8a2c686f9224000cf774.js",
     "pages/mcontent/index.d7b2ad84f780d7d885f8.js",
     "pages/content/index.5feeebf1b5b3431aac6f.js",
