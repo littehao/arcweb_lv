@@ -116,67 +116,115 @@
                         <div class="channel-list">
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
-                                    <div class="avatar"><img src="~assets/images/content/lvtv_wdpd.png" alt=""></div>
-                                    <div class="bag-opa"></div>
-                                    <span class="shadow deg135"></span>
-                                    <div class="info">
-                                        <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                        <p class="caption">舞蹈频道</p>
+                                    <div class="pic">
+                                        <div class="avatar"><img src="~assets/images/content/lvtv_wdpd.png" alt=""></div>
+                                        <div class="bag-opa"></div>
+                                        <span class="shadow deg135"></span>
+                                        <div class="info">
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <p class="caption">舞蹈频道</p>
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <video class="live">
+                                            <source src="~assets/images/content/dance.mp4" type="video/mp4">
+                                            Your browser does not support the <code>video</code> element.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
-                                    <div class="avatar"><img src="~assets/images/content/lvtv_yypd.png" alt=""></div>
-                                    <div class="bag-opa"></div>
-                                    <span class="shadow deg225"></span>
-                                    <div class="info">
-                                        <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                        <p class="caption">音乐频道</p>
+                                    <div class="pic">
+                                        <div class="avatar"><img src="~assets/images/content/lvtv_yypd.png" alt=""></div>
+                                        <div class="bag-opa"></div>
+                                        <span class="shadow deg225"></span>
+                                        <div class="info">
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <p class="caption">音乐频道</p>
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <video class="live" >
+                                            <source src="~assets/images/content/erhu.mp4" type="video/mp4">
+                                            Your browser does not support the <code>video</code> element.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
-                                    <div class="avatar"><img src="~assets/images/content/lvtv_djpd.png" alt=""></div>
-                                    <div class="bag-opa"></div>
-                                    <span class="shadow deg135"></span>
-                                    <div class="info">
-                                        <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                        <p class="caption">电竞频道</p>
+                                    <div class="pic">
+                                        <div class="avatar"><img src="~assets/images/content/lvtv_djpd.png" alt=""></div>
+                                        <div class="bag-opa"></div>
+                                        <span class="shadow deg135"></span>
+                                        <div class="info">
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <p class="caption">电竞频道</p>
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <video class="live" >
+                                            <source src="~assets/images/content/dianjing.mp4" type="video/mp4">
+                                            Your browser does not support the <code>video</code> element.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
-                                    <div class="avatar"><img src="~assets/images/content/lvtv_typd.png" alt=""></div>
-                                    <div class="bag-opa"></div>
-                                    <span class="shadow deg225"></span>
-                                    <div class="info">
-                                        <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                        <p class="caption">体育频道</p>
+                                    <div class="pic">
+                                        <div class="avatar"><img src="~assets/images/content/lvtv_typd.png" alt=""></div>
+                                        <div class="bag-opa"></div>
+                                        <span class="shadow deg225"></span>
+                                        <div class="info">
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <p class="caption">体育频道</p>
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <video class="live">
+                                            <source src="~assets/images/content/tiyu.mp4" type="video/mp4">
+                                            Your browser does not support the <code>video</code> element.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
-                                    <div class="avatar"><img src="~assets/images/content/lvtv_cppd.png" alt=""></div>
-                                    <div class="bag-opa"></div>
-                                    <span class="shadow deg135"></span>
-                                    <div class="info">
-                                        <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                        <p class="caption">彩票频道</p>
+                                    <div class="pic">
+                                        <div class="avatar"><img src="~assets/images/content/lvtv_cppd.png" alt=""></div>
+                                        <div class="bag-opa"></div>
+                                        <span class="shadow deg135"></span>
+                                        <div class="info">
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <p class="caption">彩票频道</p>
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <video class="live">
+                                            <source src="~assets/images/content/dance.mp4" type="video/mp4">
+                                            Your browser does not support the <code>video</code> element.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
-                                    <div class="avatar"><img src="~assets/images/content/lvtv_zhpd.png" alt=""></div>
-                                    <div class="bag-opa"></div>
-                                    <span class="shadow deg135"></span>
-                                    <div class="info">
-                                        <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                        <p class="caption">综合频道</p>
+                                    <div class="pic">
+                                        <div class="avatar"><img src="~assets/images/content/lvtv_zhpd.png" alt=""></div>
+                                        <div class="bag-opa"></div>
+                                        <span class="shadow deg135"></span>
+                                        <div class="info">
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <p class="caption">综合频道</p>
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <video class="live">
+                                            <source src="~assets/images/content/sound.mp4" type="video/mp4">
+                                            Your browser does not support the <code>video</code> element.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -219,6 +267,7 @@
 </template>
 
 <script>
+    
     import { mapGetters } from 'vuex'
     export default {
         layout (context) {
@@ -244,8 +293,14 @@
          // this.getdata()
         },
         mounted(){
-          //console.log(this)
-            // this.mapData()
+            $('.channel-list .item .item-t').hover(function(){
+                let dom = $(this).find('.live');
+                dom[0].play();
+            },function(){
+                let dom = $(this).find('.live');
+                dom[0].pause();  
+            })
+
             if(this.getAgent == 'mobile'){
                 window.location.href = '/'
             }
@@ -427,10 +482,41 @@
                 padding:0 48px;
                 margin-bottom:50px;
                 position: relative;
+                cursor: pointer;
                 .item-t{
                     width:300px;
                     height:300px;
                     position: relative;
+                    &:hover .pic{
+                        opacity: 0;
+                        transform: rotate(45deg);
+                        // transform-origin:top right;
+                    }
+                    .pic{
+                        width:100%;
+                        height:100%;
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        z-index: 1;
+                        opacity: 1;
+                        transition: all 0.3s linear;
+                    }
+                    .video{
+                        width:100%;
+                        height:100%;
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        overflow:hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        video{
+                            height: 100%;
+                            background:#000;
+                        }
+                    }
                     .bag-opa{
                         position: absolute;
                         top:0;
@@ -486,6 +572,7 @@
                     }
                 }
             }
+            
         }
     }
     .lv-starteam{
