@@ -82,7 +82,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    vendor:['iview','axios','vue-jsonp','swiper','jquery'],
+    //vendor:['swiper'],
 
     loaders:[{
       test: /\.(png|jpe?g|gif|svg)$/,

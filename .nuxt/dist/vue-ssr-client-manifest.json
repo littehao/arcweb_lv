@@ -94,49 +94,49 @@
     "img/shape2.844d5dc.png",
     "img/about_icon.06fc48d.png",
     "img/lxwm_bj.50c1896.png",
-    "pages/index.babe20a92a5328f2afdf.js",
+    "pages/index.b303b5bfa6c2bbc6d72b.js",
     "pages/home/index.edd2c07e5607ad9f6a8e.js",
     "pages/classproduct/index.090147e1dbb1b6362ee4.js",
-    "pages/mcontent/index.d7b2ad84f780d7d885f8.js",
+    "pages/mcontent/index.8c27bf88dc044eb253ec.js",
     "pages/content/index.5feeebf1b5b3431aac6f.js",
-    "pages/mclassproduct/index.731e9c12000473bcc318.js",
-    "layouts/mobile.ac8745fd6fd85b8c1299.js",
-    "layouts/default.dcffa90cea2b01ed2426.js",
-    "pages/mhome/index.b89080dccbe4eb8b1554.js",
+    "pages/mclassproduct/index.4a8d3f6515c24ed319bd.js",
+    "layouts/mobile.61271f9c92ff1924987b.js",
+    "layouts/default.934c4ac3a301d9f5fcbb.js",
+    "pages/mhome/index.e6ed8273a8f830f541e5.js",
     "pages/service/index.b42b3386eb214390c8cd.js",
-    "pages/mservice/index.33a9800026b28845ed87.js",
+    "pages/mservice/index.16826213c5583fd59b70.js",
     "pages/mabout/index.74e18f487c54d72347a4.js",
     "pages/about/index.846f182c91217bc13a97.js",
     "pages/mcontactus/index.a0a20a90e1dee82206c7.js",
-    "pages/contactus/index.38322e630171f528a582.js",
+    "pages/contactus/index.42b98e2a3ee5cdb21989.js",
     "pages/demostation/index.e822e86c166bcd95bd96.js",
-    "vendor.86e385dacac770415c62.js",
-    "app.8a98f7597cae306cab1a.js",
-    "manifest.e7767f1b8df31a57c3c6.js",
+    "vendor.e85e1e43371cdf3a6a73.js",
+    "app.6d4854b886584de3f256.js",
+    "manifest.0a5e1f4dbd74067c385d.js",
     "LICENSES",
     "index.spa.html"
   ],
   "initial": [
-    "manifest.e7767f1b8df31a57c3c6.js",
-    "vendor.86e385dacac770415c62.js",
-    "app.8a98f7597cae306cab1a.js"
+    "manifest.0a5e1f4dbd74067c385d.js",
+    "vendor.e85e1e43371cdf3a6a73.js",
+    "app.6d4854b886584de3f256.js"
   ],
   "async": [
-    "pages/index.babe20a92a5328f2afdf.js",
+    "pages/index.b303b5bfa6c2bbc6d72b.js",
     "pages/home/index.edd2c07e5607ad9f6a8e.js",
     "pages/classproduct/index.090147e1dbb1b6362ee4.js",
-    "pages/mcontent/index.d7b2ad84f780d7d885f8.js",
+    "pages/mcontent/index.8c27bf88dc044eb253ec.js",
     "pages/content/index.5feeebf1b5b3431aac6f.js",
-    "pages/mclassproduct/index.731e9c12000473bcc318.js",
-    "layouts/mobile.ac8745fd6fd85b8c1299.js",
-    "layouts/default.dcffa90cea2b01ed2426.js",
-    "pages/mhome/index.b89080dccbe4eb8b1554.js",
+    "pages/mclassproduct/index.4a8d3f6515c24ed319bd.js",
+    "layouts/mobile.61271f9c92ff1924987b.js",
+    "layouts/default.934c4ac3a301d9f5fcbb.js",
+    "pages/mhome/index.e6ed8273a8f830f541e5.js",
     "pages/service/index.b42b3386eb214390c8cd.js",
-    "pages/mservice/index.33a9800026b28845ed87.js",
+    "pages/mservice/index.16826213c5583fd59b70.js",
     "pages/mabout/index.74e18f487c54d72347a4.js",
     "pages/about/index.846f182c91217bc13a97.js",
     "pages/mcontactus/index.a0a20a90e1dee82206c7.js",
-    "pages/contactus/index.38322e630171f528a582.js",
+    "pages/contactus/index.42b98e2a3ee5cdb21989.js",
     "pages/demostation/index.e822e86c166bcd95bd96.js"
   ],
   "modules": {
@@ -5912,14 +5912,6 @@
       107,
       92
     ],
-    "a8bf22a6": [
-      110,
-      69
-    ],
-    "93c9bdb2": [
-      110,
-      69
-    ],
     "7b0c9f32": [
       109,
       8,
@@ -5967,13 +5959,21 @@
       40,
       56
     ],
+    "a8bf22a6": [
+      110,
+      69
+    ],
     "2910a7c2": [
       109,
       8,
       40,
       56
     ],
-    "69ded098": [
+    "93c9bdb2": [
+      110,
+      69
+    ],
+    "629e580d": [
       109,
       8,
       40,
