@@ -12,7 +12,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 import { createStore } from './store.js'
 
 /* Plugins */
-import nuxt_plugin_axios_5b33b96a from 'nuxt_plugin_axios_5b33b96a' // Source: ./axios.js
+import nuxt_plugin_axios_27aae454 from 'nuxt_plugin_axios_27aae454' // Source: ./axios.js
 import nuxt_plugin_index_348e71c8 from 'nuxt_plugin_index_348e71c8' // Source: ../plugins/index
 
 
@@ -36,7 +36,7 @@ Vue.use(Meta, {
   tagIDKeyName: 'hid' // the property name that vue-meta uses to determine whether to overwrite or append a tag
 })
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
 async function createApp (ssrContext) {
   const router = createRouter(ssrContext)
@@ -152,7 +152,7 @@ async function createApp (ssrContext) {
 
   // Plugin execution
   
-  if (typeof nuxt_plugin_axios_5b33b96a === 'function') await nuxt_plugin_axios_5b33b96a(app.context, inject)
+  if (typeof nuxt_plugin_axios_27aae454 === 'function') await nuxt_plugin_axios_27aae454(app.context, inject)
   if (typeof nuxt_plugin_index_348e71c8 === 'function') await nuxt_plugin_index_348e71c8(app.context, inject)
   
 

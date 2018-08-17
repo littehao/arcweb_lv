@@ -1,7 +1,7 @@
 const pkg = require('./package')
 const resolve = require('path').resolve
 module.exports = {
-  mode: 'spa',
+  //mode: 'spa',
   //server
   server: {
     port: 8000,
@@ -84,7 +84,7 @@ module.exports = {
   ],
   //解决页面js预加载
   render: {
-    resourceHints: false
+    resourceHints: true
   },
   /*
   ** Build configuration
@@ -97,7 +97,9 @@ module.exports = {
 
     extend(config, ctx ) {
       // Run ESLint on sav
-
+      if (ctx.isClient) {
+        config.devtool = '#eval-source-map'
+      }
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
