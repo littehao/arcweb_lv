@@ -120,7 +120,7 @@ export async function setContext(app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {}
+      env: {"NODE_ENV":"production","HOST":"0.0.0.0","PORT":3333}
     }
     // Only set once
     if (context.req) app.context.req = context.req

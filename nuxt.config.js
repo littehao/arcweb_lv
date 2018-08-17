@@ -2,6 +2,16 @@ const pkg = require('./package')
 const resolve = require('path').resolve
 module.exports = {
   mode: 'spa',
+  //server
+  server: {
+    port: 8000,
+    host: '0.0.0.0'
+  },
+  env:{
+    NODE_ENV: process.env.NODE_ENV || 'development',
+    HOST:'0.0.0.0', //process.env.HOST || 'localhost',
+    PORT:3333,
+  },
   /*
   ** Headers of the page
   */
@@ -41,7 +51,8 @@ module.exports = {
     }
   ],
   axios: {
-    proxy: true
+    proxy: true,
+    baseURL:'http://'+process.env.HOST+':'+process.env.PORT,
   },
   proxy: {
     '/OpenAPI': {
@@ -84,24 +95,10 @@ module.exports = {
     */
     //vendor:['swiper'],
 
-    loaders:[{
-      test: /\.(png|jpe?g|gif|svg)$/,
-      loader: 'url-loader',
-      query: {
-        limit: 1000,
-        name: 'img/[name].[hash:7].[ext]'
-      }
-    },
-      {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
-        query: {
-          limit: 1000,
-          name: 'fonts/[name].[hash:7].[ext]'
-        }
-      }],
     extend(config, ctx ) {
-      // Run ESLint on save
+      // Run ESLint on sav
+      console.log(config,'---------------')
+
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
