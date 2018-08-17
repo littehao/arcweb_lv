@@ -7,8 +7,8 @@
                         <div class="lv-slide-content">
                             <img class="img" src="~assets/images/content/nrzz_rw_1.png" alt="">
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">网红主播造星计划</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星 网红霸主等着你</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">生态造星计划</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星，星光大道等你来</p>
                             </div>
                         </div>
                     </div>
@@ -16,8 +16,8 @@
                         <div class="lv-slide-content">
                             <img class="img" src="~assets/images/content/nrzz_rw_2.png" alt="">
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">众多选秀活动比赛</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">主播选秀星活动 怕你不敢来参加</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">内容为王，娱乐至上</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">娱乐内容与粉丝经济领域的先行者</p>
                             </div>
                         </div>
                     </div>
@@ -25,8 +25,8 @@
                         <div class="lv-slide-content">
                             <img class="img" src="~assets/images/content/nrzz_rw_3.png" alt="">
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">艺人网红养成平台</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人蜕变成网红 网红跃升当艺人</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">明星艺人养成</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人主播大蜕变，红人跃升大明星</p>
                             </div>
                         </div>
                     </div>
@@ -34,8 +34,8 @@
                         <div class="lv-slide-content">
                             <img class="img" src="~assets/images/content/nrzz_rw_4.png" alt="">
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">多样化节目频道</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">主播专属夯节目 频道多样选不完</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">专业PGC节目频道</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业导演团队倾情巨制，多元节目内容舞台无限</p>
                             </div>
                         </div>
                     </div>
@@ -43,8 +43,8 @@
                         <div class="lv-slide-content">
                             <img class="img" src="~assets/images/content/nrzz_rw_5.png" alt="">
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻神级导师团队</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">神级导师献专业 量身打造艺人魂</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻级导师团队倾力打造</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">梦幻导师量身打造，专业培训神级飞跃</p>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
       </div>
       <div class="lv-content-star">
           <div>
-              <h3 class="title">LV特邀明星</h3>
+              <h3 class="title">LV特约明星艺人</h3>
               <div class="star-list">
                   <div class="item">
                     <div>
@@ -111,7 +111,7 @@
           </div>
       </div>
       <div class="lv-channel">
-        <h3 class="title">LVTV 专属频道</h3>
+        <h3 class="title">LVTV官方节目频道，开启娱乐节目互动直播新潮流</h3>
         <div class="channel-list">
             <div class="item">
                 <div class="item-t">
@@ -192,13 +192,13 @@
                     <img class="img4" src="~assets/images/content/zxtd_2.png" alt="">
                 </div>
                 <div class="left">
-                    <h2>钻石级导师开启你的追梦之旅</h2>
-                        <p>多维度的训练方式，专业的经纪团队，多渠道的商演机会，工业化的造星工厂</p>
-                        <p>如果你有极强的表现欲望</p>
-                        <p>如果你热爱游戏，唱歌，跳舞</p>
-                        <p>如果你有特殊才艺或技能</p>
-                        <p>如果你想实现梦想</p>
-                        <p>请与我们联络</p>
+                    <h2>全渠道+全明星+工业化=星途璀璨</h2>
+                        <p>最顶级的培训导师带你开启追梦之旅</p>
+                        <p>最专业的经纪团队为你开创广阔机遇</p>
+                        <p>最顶尖的制作团队为你量身定制作品</p>
+                        <p>最豪华的明星阵容带你走向璀璨之路</p>
+                        <!--<p>如果你想实现梦想</p>-->
+                        <!--<p>请与我们联络</p>-->
                         <!-- <div class="link"><nuxt-link to="/mcontactus">申请加入LV</nuxt-link></div> -->
                 </div>
             </div>
@@ -229,22 +229,22 @@
         computed:{
             ...mapGetters([
                 'getAgent'
-            ])  
+            ])
         },
         methods:{
             revealOnScroll(tt,t){
                 $(".revealOnScroll:not(.animated)").each(function () {
-                    var $this = $(this), 
-                        offsetTop = $this.offset().top; 
-                    if(t + tt > offsetTop) { 
-                        if ($this.data('timeout')) { 
+                    var $this = $(this),
+                        offsetTop = $this.offset().top;
+                    if(t + tt > offsetTop) {
+                        if ($this.data('timeout')) {
                             window.setTimeout(function(){
-                                $this.addClass('animated ' + $this.data('animation')); 
+                                $this.addClass('animated ' + $this.data('animation'));
                             }, parseInt($this.data('timeout')));
                         } else {
                             $this.addClass('animated ' + $this.data('animation'));
-                        } 
-                    }   
+                        }
+                    }
                 })
             }
         },
@@ -265,12 +265,12 @@
                 loop:true,
                 on:{
                     init: function(){
-                        swiperAni.swiperAnimateCache(this); //隐藏动画元素 
+                        swiperAni.swiperAnimateCache(this); //隐藏动画元素
                         swiperAni.swiperAnimate(this); //初始化完成开始动画
-                    }, 
-                    slideChangeTransitionEnd: function(){ 
+                    },
+                    slideChangeTransitionEnd: function(){
                         swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-                    }   
+                    }
                 }
             })
 
@@ -278,7 +278,7 @@
             let that = this;
             let win_height_padded = tt * 1.1;
             window.addEventListener('scroll',function(){
-                var t = document.documentElement.scrollTop || document.body.scrollTop; 
+                var t = document.documentElement.scrollTop || document.body.scrollTop;
 
                 that.revealOnScroll(tt,t);
             },false)

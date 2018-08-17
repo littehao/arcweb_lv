@@ -19,7 +19,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  
+
   /*
   ** Customize the progress-bar color
   */
@@ -32,7 +32,13 @@ module.exports = {
     {
       src: '~styles/normalize.css',
     },
-    { src: 'iview/dist/styles/iview.css'}
+    { src: 'iview/dist/styles/iview.css'},
+    {
+      src: 'animate.css/animate.css'
+    },
+    {
+      src:'swiper/dist/css/swiper.min.css'
+    }
   ],
   axios: {
     proxy: true
@@ -50,12 +56,18 @@ module.exports = {
     {
       src: '~/plugins/index',
       ssr: true
-    }
+    },
   ],
 
   /*
   ** Nuxt.js modules
   */
+  //缓存
+  cache: true,
+  performance: {
+    gzip: true,
+  },
+
   modules: [
     '@nuxtjs/axios'
   ],
@@ -70,6 +82,24 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    vendor:['iview','axios','vue-jsonp','swiper','jquery'],
+
+    loaders:[{
+      test: /\.(png|jpe?g|gif|svg)$/,
+      loader: 'url-loader',
+      query: {
+        limit: 1000,
+        name: 'img/[name].[hash:7].[ext]'
+      }
+    },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        query: {
+          limit: 1000,
+          name: 'fonts/[name].[hash:7].[ext]'
+        }
+      }],
     extend(config, ctx ) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

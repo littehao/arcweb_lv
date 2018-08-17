@@ -2,7 +2,7 @@
    <footer class="footer">
      <Container>
        <p><span>LVTV-the inventor of live egaming system Copyright</span> <img src="../../assets/images/public/logo.png" alt="">  <span>© 2017-2018 System All Rights Reserved</span></p>
-
+      <!--<input type="file" class="files" @change="open"/>-->
      </Container>
    </footer>
 </template>
@@ -13,7 +13,37 @@
           return{
 
           }
+        },
+
+        methods:{
+          open(e){
+            console.log(e.target.files[0],'------')
+           let r = new FileReader();
+            r.readAsDataURL(e.target.files[0]);
+            r.onload = function(e) {
+              console.log(e,'------')
+
+            }
+
+            this.test(e.target.files[0])
+          },
+          test(data){
+            let config = {
+              headers:{'Content-Type':'multipart/form-data'}
+            };
+            let param = new FormData(); //创建form对象
+            param.append('token','0b62bf23e2b0c407a35abf923facef7f');//断点传输
+            param.append('video',data);
+            this.$axios.post(`/OpenAPI/V1/user/approveCheck`,param,config)
+                  .then((res) => {
+                   console.log(res)
+                  })
+          }
+        },
+        mounted(){
+
         }
+
     }
 </script>
 

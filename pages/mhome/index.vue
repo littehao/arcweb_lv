@@ -7,9 +7,11 @@
                     <!-- <img class="img2" src="~assets/images/home/sy_sj_1.png" alt=""> -->
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
-                   <h3 class="title">倾力打造一站式综合博娱直播系统</h3>
+                   <h3 class="title">全球领先的娱乐游戏直播系统</h3>
                    <div class="lv">Live Video</div>
-                   <div class="intro">努力提升用户体验，改变了目前游戏类直播产品不能很好融合的行业痛点，让玩家一边看直播，一边下注成为可能，开奖信息实时公布，实时的下注倒计时提醒</div>
+                   <div class="intro">
+                     我们深耕网络视频直播服务行业多年，始终为致力于打造安全，稳定，流畅，高性能和高并发的直播系统而不断努力。多年的娱乐游戏行业经验，专业多元的游戏开发经验让我们成为全球最领先的“直播+游戏”技术提供商。匠心巨制，倾情推出全球最领先的综合娱乐游戏直播系统。
+                   </div>
                </div>
             </div>
             <div class="section">
@@ -20,9 +22,11 @@
                   <img src="~assets/images/avatar/tx_4.png" class="avatar tx4 revealOnScroll" data-animation="fadeInUp" alt="">
                </div>
                <div class="info">
-                   <h3 class="title revealOnScroll" data-animation="fadeInUp">博娱直播游戏的全球领先者</h3>
+                   <h3 class="title revealOnScroll" data-animation="fadeInUp">内容媒体粉丝经济领域的先行者</h3>
                    <div class="lv revealOnScroll" data-animation="fadeInUp">Live Video</div>
-                   <div class="intro revealOnScroll" data-animation="fadeInUp">在博娱业界中，倾力专注于开发、设计博娱各式产品及系统，且为了提供客户有安全、稳定的思维下，陆续完成多种博娱系统与游戏产品：如LV棋牌游戏、LV街机投注、LV彩票游戏、LV电竞体育、LV抓抓乐、LV推推乐……等，Live Video是全球博娱产业中开拓这领域的领先者。</div>
+                   <div class="intro revealOnScroll" data-animation="fadeInUp">
+                     移动互联时代，内容成为粉丝经济的核心驱动力，视频直播正在改变整个世界的互动社交方式。而全球泛娱乐产业正在高速发展，并与人们的生活不断融合。视频直播+娱乐游戏+粉丝经济，将开启下一个内容媒体大时代，LV始终是这个行业的先导者。
+                   </div>
                </div>
             </div>
             <div class="section">
@@ -31,9 +35,11 @@
                     <!-- <img class="img1" style="position:absolute;left:20%;top:30px;" src="~assets/images/home/screen.png" alt=""> -->
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
-                   <h3 class="title">定义博娱新时代</h3>
+                   <h3 class="title">定义娱乐游戏新时代</h3>
                    <div class="lv">Live Video</div>
-                   <div class="intro">独特的玩家大神排行榜，根椐胜率、连中、中奖金额等进行相应排行，对于上榜玩家有特权免费或收费分享其注单，引领其他玩家跟单购买，对于认证大神分享的注单有权要求跟单者打赏或分享利润分红，玩家可根椐情况随时打赏主播，钻石礼物、现金礼物随意送。彩播后续还将继续完善产品，更多好玩有趣的功能持续更新中。</div>
+                   <div class="intro">
+                     娱乐即是生活，游戏即是人生。娱乐游戏正在成为我们每个人不可或缺的重要一部分。而视频直播互动下的娱乐游戏，将完全重新定义娱乐的多元性和高粘性，正在改变着未来和世界。更多更优质的内容，更多的互动玩法，更多的粉丝打赏和利润分红，即开即玩即时享乐的人生法则，将引导LV定义娱乐游戏行业新时代。
+                   </div>
                </div>
             </div>
             <div class="section">
@@ -42,9 +48,11 @@
                     <img class="img2" style="position:absolute;left:10%;bottom:0px;width:30%;" src="~assets/images/home/sy_sj_3.png" alt="">
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
-                   <h3 class="title">安全稳定核心技术 深耕博娱产品经验</h3>
+                   <h3 class="title">定制你专属的“直播+”和“游戏+”</h3>
                    <div class="lv">Live Video</div>
-                   <div class="intro">把”安全稳定核心技术、深耕博娱产品经验、创造博娱品牌新时代”的三大方针作为Live Video 开拓博娱事业版图的重要经营核心，在拥有博娱系统核心技术、直播互动整合技术、强力的运营后台系统及支援各种模式或平台的技术能力，并且与许多博娱产业数一数二的各类伙伴持续合作及提供服务。</div>
+                   <div class="intro">
+                     我们拥有成熟完善的视频直播系统和功能，且拥有性能优越的高并发架构技术，坚实的技术团队全面保障系统的稳定和安全。产品服务接口达到了每天数亿的调用量，经验就是一切，强大的直播互动整合技术可以为您定制任何你想要的专属产品。
+                   </div>
                </div>
             </div>
             <div class="bg1"></div>
@@ -73,7 +81,7 @@ export default {
         let that = this;
         let win_height_padded = tt * 1.1;
         window.addEventListener('scroll',function(){
-            var t = document.documentElement.scrollTop || document.body.scrollTop; 
+            var t = document.documentElement.scrollTop || document.body.scrollTop;
             that.revealOnScroll(tt,t);
         },false)
     },
@@ -85,17 +93,17 @@ export default {
     methods:{
         revealOnScroll(tt,t){
             $(".revealOnScroll:not(.animated)").each(function () {
-                var $this = $(this), 
-                    offsetTop = $this.offset().top; 
-                if(t + tt > offsetTop) { 
-                    if ($this.data('timeout')) { 
+                var $this = $(this),
+                    offsetTop = $this.offset().top;
+                if(t + tt > offsetTop) {
+                    if ($this.data('timeout')) {
                         window.setTimeout(function(){
-                             $this.addClass('animated ' + $this.data('animation')); 
+                             $this.addClass('animated ' + $this.data('animation'));
                         }, parseInt($this.data('timeout')));
                     } else {
                         $this.addClass('animated ' + $this.data('animation'));
-                    } 
-                }   
+                    }
+                }
             })
         },
         controldown(){

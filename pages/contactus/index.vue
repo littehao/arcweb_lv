@@ -2,9 +2,9 @@
     <div class="contactus">
         <Container>
           <div class="contactus-content">
-            <h1 class="form-title">联系我们</h1>
-            <p class="form-info">如您有兴趣进一步了解Live Video 的服务支援或产品，请填妥下方表格，将有专人尽速与您联系。</p>
-            <div class="form">
+            <h1 class="form-title animated fadeInUp">联系我们</h1>
+            <p class="form-info animated fadeInUp">如您有兴趣进一步了解Live Video 的服务支援或产品，请填妥下方表格，将有专人尽速与您联系。</p>
+            <div class="form animated bounceIn">
               <Form :model="formTop" label-position="top">
                 <FormItem >
                   <p name="label" class="form-item-label">姓名<span class="form-item-required">*</span></p>
@@ -33,12 +33,12 @@
                   <p name="label" class="form-item-label">合作方案<span class="form-item-required">*</span></p>
                   <div class="form-check">
                     <CheckboxGroup  v-model="formTop.program">
-                      <Checkbox label="API放线"></Checkbox>
-                      <Checkbox label="直播+ 系统包网"></Checkbox>
-                      <Checkbox label="直播+游戏 系统包网"></Checkbox>
-                      <Checkbox label="LV游戏接口+直播"></Checkbox>
-                      <Checkbox label="LV直播系统接口+游戏"></Checkbox>
-                      <Checkbox label="直播服务+解决方案"></Checkbox>
+                      <Checkbox label="LV品牌API接入"></Checkbox>
+                      <Checkbox label="“直播+游戏” 系统包网"></Checkbox>
+                      <Checkbox label="“直播+” 系统包网"></Checkbox>
+                      <Checkbox label="“直播+” 游戏服务"></Checkbox>
+                      <Checkbox label="“游戏+”直播服务"></Checkbox>
+                      <Checkbox label="“直播+”解决方案"></Checkbox>
                       <Checkbox label="其他"></Checkbox>
                     </CheckboxGroup>
                   </div>
@@ -54,6 +54,7 @@
             </div>
           </div>
         </Container>
+        <Lfooter></Lfooter>
     </div>
 </template>
 
@@ -85,7 +86,7 @@
         computed:{
             ...mapGetters([
                 'getAgent'
-            ])  
+            ])
         },
         mounted(){
             let hosttest=window.location.host=='www.katoong.com';
@@ -97,7 +98,7 @@
 
             let tt = document.documentElement.clientHeight;
             window.addEventListener('scroll',function(){
-                var t = document.documentElement.scrollTop || document.body.scrollTop; 
+                var t = document.documentElement.scrollTop || document.body.scrollTop;
                 var top_div = document.getElementById( "header" );
                 if( t >= 80 ) {
                     top_div.style.background = "#27272E";
