@@ -59,48 +59,89 @@
                     <Container>
                         <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV特约明星艺人</h3>
                         <div class="star-list">
-                            <div class="item ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div>
-                                    <img src="~assets/images/content/lvty_zhyz.png" alt="">
+                                    <div class="avatar"><img src="~assets/images/content/lvty_star1.jpg" alt=""></div>
                                     <div class="intro">
-                                        <span class="name">赵韩樱子</span>
-                                        <span class="info">当红歌手</span>
+                                        <span class="name">瑩瑩</span>
+                                        <span class="info">网红歌手</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item ani"  swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
+                            <div class="item ani"  swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
                                 <div>
-                                    <img src="~assets/images/content/lvty_gg.png" alt="">
+                                    <div class="avatar"><img src="~assets/images/content/lvty_star2.jpg" alt=""></div>
                                     <div class="intro">
-                                        <span class="name">鬼鬼</span>
-                                        <span class="info">当红演员</span>
+                                        <span class="name">小可兒</span>
+                                        <span class="info">网红主播</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
                                 <div>
-                                    <img src="~assets/images/content/lvty_axy.png" alt="">
+                                    <div class="avatar"><img src="~assets/images/content/lvty_star3.jpg" alt=""></div>
                                     <div class="intro">
-                                        <span class="name">安心亞</span>
-                                        <span class="info">当红女艺人</span>
+                                        <span class="name">香緹Chante</span>
+                                        <span class="info">网红主播</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
                                 <div>
-                                    <img src="~assets/images/content/lvty_rzr.png" alt="">
+                                    <div class="avatar"><img src="~assets/images/content/lvty_star4.jpg" alt=""></div>
                                     <div class="intro">
-                                        <span class="name">容祖儿</span>
-                                        <span class="info">当红女歌手</span>
+                                        <span class="name">禔娜</span>
+                                        <span class="info">网红主播</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
+                                <div>
+                                    <div class="avatar"><img src="~assets/images/content/lvty_star5.jpg" alt=""></div>
+                                    <div class="intro">
+                                        <span class="name">妮妮</span>
+                                        <span class="info">网红主播</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ani"  swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
+                                <div>
+                                    <div class="avatar"><img src="~assets/images/content/lvty_star6.jpg" alt=""></div>
+                                    <div class="intro">
+                                        <span class="name">小晶滢</span>
+                                        <span class="info">网红歌手</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
+                                <div>
+                                    <div class="avatar"><img src="~assets/images/content/lvty_star7.jpg" alt=""></div>
+                                    <div class="intro">
+                                        <span class="name">薇夏</span>
+                                        <span class="info">网红歌手</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                                <div>
+                                    <div class="avatar"><img src="~assets/images/content/lvty_star8.jpg" alt=""></div>
+                                    <div class="intro">
+                                        <span class="name">Meggie</span>
+                                        <span class="info">网红歌手</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </Container>
-                    <div class="line" style="bottom:52%;"></div>
-                    <div class="line" style="bottom:50%;"></div>
-                    <div class="line" style="bottom:48%;"></div>
-                    <div class="line" style="bottom:46%;"></div>
+                    <div class="line" style="bottom:60%;"></div>
+                    <div class="line" style="bottom:58%;"></div>
+                    <div class="line" style="bottom:56%;"></div>
+                    <div class="line" style="bottom:54%;"></div>
+
+                    <div class="line" style="bottom:32%;"></div>
+                    <div class="line" style="bottom:30%;"></div>
+                    <div class="line" style="bottom:28%;"></div>
+                    <div class="line" style="bottom:26%;"></div>
                 </div>
                 <div class="swiper-slide lv-celebrity">
                     <Container>
@@ -146,7 +187,7 @@
                                     </div>
                                     <div class="video">
                                         <video class="live" loop="loop" preload="auto">
-                                            <source src="~assets/images/content/erhu.mp4" type="video/mp4">
+                                            <source src="~assets/images/content/sound.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
                                         </video>
                                     </div>
@@ -203,7 +244,7 @@
                                     </div>
                                     <div class="video">
                                         <video class="live" loop="loop" preload="auto">
-                                            <source src="~assets/images/content/dance.mp4" type="video/mp4">
+                                            <source src="~assets/images/content/caipiao.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
                                         </video>
                                     </div>
@@ -222,7 +263,7 @@
                                     </div>
                                     <div class="video">
                                         <video class="live" loop="loop" preload="auto">
-                                            <source src="~assets/images/content/sound.mp4" type="video/mp4">
+                                            <source src="~assets/images/content/zonghe.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
                                         </video>
                                     </div>
@@ -238,12 +279,7 @@
                                 <div class="lv-starteam-content">
                                     <div class="left">
                                         <h2 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">全渠道+全明星+工业化=星途璀璨</h2>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">最顶级的培训导师带你开启追梦之旅</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">最专业的经纪团队为你开创广阔机遇</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">最顶尖的制作团队为你量身定制作品</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">最豪华的明星阵容带你走向璀璨之路</p>
-                                            <!--<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">如果你想实现梦想</p>-->
-                                            <!--<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">请与我们联络</p>-->
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">最顶级的培训导师带你开启追梦之旅。最专业的经纪团队为你开创广阔机遇。最顶尖的制作团队为你量身定制作品。最豪华的明星阵容带你走向璀璨之路</p>
                                     </div>
                                     <div class="right">
                                         <img class="img1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="~assets/images/content/zxtd_3.png" alt="">
@@ -397,7 +433,7 @@
             text-align: center;
             font-size:$font-size-base * 2;
             margin-bottom:53px;
-            margin-top:10%;
+            margin-top:5%;
         }
         .star-list{
             width:100%;
@@ -408,19 +444,25 @@
             .item{
                 width:25%;
                 padding:0 35px;
+                margin-bottom:30px;
                 transition: all 0.3s linear;
-                img{
+                .avatar{
                     width:100%;
-                    display:block;
-                    transition: all 0.3s linear;
+                    height:250px;
+                    overflow:hidden;
+                    img{
+                        width:100%;
+                        display:block;
+                        transition: all 0.3s linear;
+                    }
                 }
                 .intro{
                     .name{
-                        font-size:$font-size-small * 2;
+                        font-size:18px;
                         margin-right:15px;
                     }
                     .info{
-                        font-size:$font-size-large;
+                        font-size:14px;
                     }
                 }
                 // &:hover{
@@ -436,7 +478,7 @@
             left:0;
             width:100%;
             height:2px;
-            background:#D8D8D8;
+            background:#afafaf;
         }
     }
     .lv-celebrity{
@@ -482,13 +524,15 @@
             flex-wrap: wrap;
             .item{
                 width:33.3%;
-                padding:0 48px;
+                // padding:0 48px;
                 margin-bottom:50px;
                 position: relative;
                 cursor: pointer;
+                display:flex;
+                justify-content: center;
                 .item-t{
-                    width:300px;
-                    height:300px;
+                    width:350px;
+                    height:280px;
                     position: relative;
                     &:hover .pic{
                         opacity: 0;
@@ -504,6 +548,14 @@
                         z-index: 1;
                         opacity: 1;
                         transition: all 0.3s linear;
+                        overflow: hidden;
+                        .avatar{
+                            width:100%;
+                            height:100%;
+                            img{
+                                width:100%;
+                            }
+                        }
                     }
                     .video{
                         width:100%;
@@ -555,7 +607,7 @@
                         width:100%;
                         height:100%;
                         text-align: center;
-                        padding-top:118px;
+                        padding-top:100px;
                         .caption{
                             margin-top:58px;
                             font-size:28px;
@@ -575,7 +627,12 @@
                     }
                 }
             }
-            
+            .item:nth-child(2){
+
+            }
+            .item:nth-child(2){
+
+            }
         }
     }
     .lv-starteam{
@@ -599,7 +656,7 @@
             width:100%;
             margin-top:73px;
             .left{
-                width:680px;
+                width:38%;
                 float:left;
                 h2{
                     font-size:30px;
@@ -608,6 +665,7 @@
                 p{
                     font-size:18px;
                     margin-bottom:25px;
+                    line-height: 35px;
                 }
                 .link{
                     margin-top:80px;
