@@ -126,7 +126,7 @@
                                         </div>
                                     </div>
                                     <div class="video">
-                                        <video class="live">
+                                        <video class="live" loop="loop">
                                             <source src="~assets/images/content/dance.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
                                         </video>
@@ -145,7 +145,7 @@
                                         </div>
                                     </div>
                                     <div class="video">
-                                        <video class="live" >
+                                        <video class="live" loop="loop">
                                             <source src="~assets/images/content/erhu.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
                                         </video>
@@ -163,7 +163,7 @@
                                             <p class="caption">电竞频道</p>
                                         </div>
                                     </div>
-                                    <div class="video">
+                                    <div class="video" loop="loop">
                                         <video class="live" >
                                             <source src="~assets/images/content/dianjing.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
@@ -183,7 +183,7 @@
                                         </div>
                                     </div>
                                     <div class="video">
-                                        <video class="live">
+                                        <video class="live" loop="loop">
                                             <source src="~assets/images/content/tiyu.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
                                         </video>
@@ -202,7 +202,7 @@
                                         </div>
                                     </div>
                                     <div class="video">
-                                        <video class="live">
+                                        <video class="live" loop="loop">
                                             <source src="~assets/images/content/dance.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
                                         </video>
@@ -221,7 +221,7 @@
                                         </div>
                                     </div>
                                     <div class="video">
-                                        <video class="live">
+                                        <video class="live" loop="loop">
                                             <source src="~assets/images/content/sound.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
                                         </video>
@@ -295,7 +295,10 @@
         mounted(){
             $('.channel-list .item .item-t').hover(function(){
                 let dom = $(this).find('.live');
-                dom[0].play();
+                dom[0].pause();
+                if(dom[0].paused){
+                    dom[0].play();
+                }
             },function(){
                 let dom = $(this).find('.live');
                 dom[0].pause();  
