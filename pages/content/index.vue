@@ -395,11 +395,14 @@
           height: 40px;
           line-height: 40px;
           margin-top: 55px;
-          margin-bottom: 35px;
+          margin-bottom: 25px;
           color: $title-color;
           font-size: $font-size-base*2;
           text-align: center;
-          margin-top:15%;
+          margin-top:120px;
+        }
+        img{
+          width: 100%;
         }
       }
     }
@@ -412,8 +415,8 @@
         .title{
             text-align: center;
             font-size:$font-size-base * 2;
-            margin-bottom:53px;
-            margin-top:10%;
+            margin-bottom:45px;
+            margin-top:80px;
         }
         .channel-list{
             width:100%;
@@ -494,7 +497,7 @@
         .title{
             font-size:28px;
             text-align: center;
-            margin-top:10%;
+            margin-top:80px;
         }
         .lv-starteam-bg{
             width:100%;

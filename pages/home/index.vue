@@ -119,6 +119,8 @@
                 <Lfooter></Lfooter>
                 </div>
           </div>
+
+
           <!--<img src="../../assets/images/home/bg2.png" class="section-content-pic" alt="">-->
           <!--<img src="../../assets/images/home/bg1.png" class="section-content-bottompic" alt="">-->
 
