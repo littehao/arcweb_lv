@@ -42,4 +42,9 @@ export default {
     width: 100%;
     height: 100%;
   }
+  @media screen and (max-width:640px) {
+      .lv-home{
+          height:auto;
+      }
+  }
 </style>
