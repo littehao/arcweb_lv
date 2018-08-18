@@ -190,12 +190,67 @@
                         </Container>
                     </div>
                 </div>
-                <div class="swiper-slide"  style="height:266px">
-                    <div class="homefooter">
-                        <footerlink></footerlink>
-                        <Lfooter></Lfooter>
+                <div class="swiper-slide lv-classproduct-content2">
+                        <div class="classproduct-part2">
+                            <Container>
+                                <div class="part">
+                                    <div class="classproduct-left ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0s">
+                                        <div class="top">
+                                            <div class="title ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0s">
+                                                <span>07</span>
+                                                <div>
+                                                    <h3>电竞游戏模块</h3>
+                                                    <p>Live Video</p>
+                                                </div>
+                                            </div>
+                                            <div class="info ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0.1s">
+                                                <p>
+                                                内容待加入...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="classproduct-right ani" swiper-animate-effect="fadeInRight"  swiper-animate-delay="0.1s">
+                                        <img src="~assets/images/classproduct/yxfl_7.png" alt="">
+                                    </div>
+                                </div>
+                            </Container>
+                        </div>
                     </div>
-                </div>
+                    <div class="swiper-slide lv-classproduct-content2">
+                        <div class="classproduct-part2">
+                            <Container>
+                                <div class="part">
+                                    <div class="classproduct-right ani" swiper-animate-effect="fadeInLeft"  swiper-animate-delay="0.1s">
+                                        <img src="~assets/images/classproduct/yxfl_8.png" alt="">
+                                    </div>
+                                    <div class="classproduct-left ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0s">
+                                        <div class="top">
+                                            <div class="title ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0s">
+                                                <span>08</span>
+                                                <div>
+                                                    <h3>体育竞猜</h3>
+                                                    <p>Live Video</p>
+                                                </div>
+                                            </div>
+                                            <div class="info ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0.1s">
+                                                <p>
+                                                    内容待加入...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tiyubg ani" swiper-animate-effect="fadeIn"  swiper-animate-delay="1s"></div>
+                                </div>
+                            </Container>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"  style="height:266px">
+                        <div class="homefooter">
+                            <footerlink></footerlink>
+                            <Lfooter></Lfooter>
+                        </div>
+                    </div>
             </div>
         </div>
 
@@ -369,6 +424,7 @@ export default {
         display: flex;
         align-items: center;
         height:100%;
+        position: relative;
         .classproduct-left{
             width:487px;
             color:#fff;
@@ -376,10 +432,38 @@ export default {
         .classproduct-right{
             width:683px;
             color:#fff;
+            text-align: right;
             img{
                 width:100%;;
             }
         }
+        .tiyubg{
+            width:100%;
+            height:540px;
+            position: absolute;
+            top:50%;
+            left:0;
+            margin-top:-290px;
+            background:url(~~assets/images/classproduct/dianjingbg.png) no-repeat;
+            background-size:80% 100%;
+            background-position: right top;
+            z-index:-1;
+        }
+        // @media screen and (min-width:1680px) and (max-width:1910px) {
+        //     .tiyubg{
+        //         background-size:80% 60%;
+        //     }
+        // }
+        // @media screen and (min-width:1440px) and (max-width:1679px) {
+        //     .tiyubg{
+        //         background-size:80% 70%;
+        //     }
+        // }
+        // @media screen and (max-width:1439px) {
+        //     .tiyubg{
+        //         background-size:80% 80%;
+        //     }
+        // }
     }
     .top{
         margin-bottom:30px;
