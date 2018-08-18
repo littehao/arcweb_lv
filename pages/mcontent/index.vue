@@ -5,7 +5,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <img class="img" src="~assets/images/content/nrzz_rw_1.png" alt="">
+                            <div class="img"><img src="~assets/images/content/nrzz_rw_1.png" alt=""></div>
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">生态造星计划</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星，星光大道等你来</p>
@@ -14,7 +14,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <img class="img" src="~assets/images/content/nrzz_rw_2.png" alt="">
+                            <div class="img"><img src="~assets/images/content/nrzz_rw_2.png" alt="" style="width:80%;"></div>
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">内容为王，娱乐至上</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">娱乐内容与粉丝经济领域的先行者</p>
@@ -23,7 +23,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <img class="img" src="~assets/images/content/nrzz_rw_3.png" alt="">
+                            <div class="img"><img src="~assets/images/content/nrzz_rw_3.png" alt=""></div>
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">明星艺人养成</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人主播大蜕变，红人跃升大明星</p>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <img class="img" src="~assets/images/content/nrzz_rw_4.png" alt="">
+                            <div class="img"><img src="~assets/images/content/nrzz_rw_4.png" alt=""></div>
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">专业PGC节目频道</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业导演团队倾情巨制，多元节目内容舞台无限</p>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <img class="img" src="~assets/images/content/nrzz_rw_5.png" alt="">
+                            <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt=""></div>
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻级导师团队倾力打造</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">梦幻导师量身打造，专业培训神级飞跃</p>
@@ -58,50 +58,95 @@
               <div class="star-list">
                   <div class="item">
                     <div>
-                        <img src="~assets/images/content/lvty_zhyz.png" alt="">
+                        <img src="~assets/images/content/lvty_star1.jpg" alt="">
                         <div class="intro">
-                            <span class="name">赵韩樱子</span>
-                            <span class="info">当红歌手</span>
+                            <span class="name">瑩瑩</span>
+                            <span class="info">网红歌手</span>
                         </div>
                     </div>
                   </div>
                   <div class="item">
                       <div>
-                        <img src="~assets/images/content/lvty_gg.png" alt="">
+                        <img src="~assets/images/content/lvty_star2.jpg" alt="">
                         <div class="intro">
-                            <span class="name">鬼鬼</span>
-                            <span class="info">当红演员</span>
+                            <span class="name">小可兒</span>
+                            <span class="info">网红主播</span>
                         </div>
                     </div>
                   </div>
                   <div class="item">
                       <div>
-                        <img src="~assets/images/content/lvty_axy.png" alt="">
+                        <img src="~assets/images/content/lvty_star3.jpg" alt="">
                         <div class="intro">
-                            <span class="name">安心亞</span>
-                            <span class="info">当红女艺人</span>
+                            <span class="name">香緹Chante</span>
+                            <span class="info">网红主播</span>
                         </div>
                     </div>
                   </div>
                   <div class="item">
                       <div>
-                        <img src="~assets/images/content/lvty_rzr.png" alt="">
+                        <img src="~assets/images/content/lvty_star4.jpg" alt="">
                         <div class="intro">
-                            <span class="name">容祖儿</span>
-                            <span class="info">当红女歌手</span>
+                            <span class="name">禔娜</span>
+                            <span class="info">网红主播</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div>
+                        <img src="~assets/images/content/lvty_star5.jpg" alt="">
+                        <div class="intro">
+                            <span class="name">妮妮</span>
+                            <span class="info">网红主播</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                      <div>
+                        <img src="~assets/images/content/lvty_star6.jpg" alt="">
+                        <div class="intro">
+                            <span class="name">小晶滢</span>
+                            <span class="info">网红歌手</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                      <div>
+                        <img src="~assets/images/content/lvty_star7.jpg" alt="">
+                        <div class="intro">
+                            <span class="name">薇夏</span>
+                            <span class="info">网红歌手</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                      <div>
+                        <img src="~assets/images/content/lvty_star8.jpg" alt="">
+                        <div class="intro">
+                            <span class="name">Meggie</span>
+                            <span class="info">网红歌手</span>
                         </div>
                     </div>
                   </div>
               </div>
           </div>
-          <div class="line" style="bottom:400px;"></div>
-          <div class="line" style="bottom:380px;"></div>
-          <div class="line" style="bottom:360px;"></div>
-          <div class="line" style="bottom:340px;"></div>
-          <div class="line" style="bottom:160px;left:10%;"></div>
-          <div class="line" style="bottom:140px;left:10%;"></div>
-          <div class="line" style="bottom:120px;left:10%;"></div>
-          <div class="line" style="bottom:100px;left:10%;"></div>
+          <div class="line" style="top:25%;"></div>
+          <div class="line" style="top:26%;"></div>
+          <div class="line" style="top:27%;"></div>
+          <div class="line" style="top:28%;"></div>
+          <div class="line" style="top:45%;left:10%;"></div>
+          <div class="line" style="top:46%;left:10%;"></div>
+          <div class="line" style="top:47%;left:10%;"></div>
+          <div class="line" style="top:48%;left:10%;"></div>
+
+          <div class="line" style="bottom:36%;"></div>
+          <div class="line" style="bottom:35%;"></div>
+          <div class="line" style="bottom:34%;"></div>
+          <div class="line" style="bottom:33%;"></div>
+          <div class="line" style="bottom:18%;left:10%;"></div>
+          <div class="line" style="bottom:17%;left:10%;"></div>
+          <div class="line" style="bottom:16%;left:10%;"></div>
+          <div class="line" style="bottom:15%;left:10%;"></div>
       </div>
        <div class="lv-celebrity">
            <div class="lv-celebrity-section">
@@ -193,10 +238,7 @@
                 </div>
                 <div class="left">
                     <h2>全渠道+全明星+工业化=星途璀璨</h2>
-                        <p>最顶级的培训导师带你开启追梦之旅</p>
-                        <p>最专业的经纪团队为你开创广阔机遇</p>
-                        <p>最顶尖的制作团队为你量身定制作品</p>
-                        <p>最豪华的明星阵容带你走向璀璨之路</p>
+                        <p>最顶级的培训导师带你开启追梦之旅。最专业的经纪团队为你开创广阔机遇。最顶尖的制作团队为你量身定制作品。最豪华的明星阵容带你走向璀璨之路</p>
                         <!--<p>如果你想实现梦想</p>-->
                         <!--<p>请与我们联络</p>-->
                         <!-- <div class="link"><nuxt-link to="/mcontactus">申请加入LV</nuxt-link></div> -->
@@ -316,11 +358,17 @@
             width:100%;
             height:100%;
             position: relative;
+            text-align: center;
             .img{
                 position: absolute;
                 bottom:0;
                 left:0;
                 width:100%;
+                img{
+                    width:100%;
+                    display: block;
+                    margin:0 auto;
+                }
             }
             .text{
                 width:100%;
@@ -341,15 +389,16 @@
     }
     .lv-content-star{
         width:100%;
-        height:698px;
+        height:auto;
         background:#1c1c23;
         color:#fff;
         padding:100px 0;
         position: relative;
         .title{
             text-align: center;
-            font-size:$font-size-base * 2;
+            font-size:18px;
             margin-bottom:53px;
+            padding:0 20px;
         }
         .star-list{
             width:100%;
@@ -365,16 +414,17 @@
                 margin-bottom:20px;
                 img{
                     width:100%;
+                    height:195px;
                     display:block;
                     transition: all 0.3s linear;
                 }
                 .intro{
                     .name{
-                        font-size:16px;
+                        font-size:14px;
                         margin-right:15px;
                     }
                     .info{
-                        font-size:14px;
+                        font-size:12px;
                     }
                 }
                 // &:hover{
@@ -409,7 +459,7 @@
           margin-top: 55px;
           margin-bottom: 35px;
           color: $title-color;
-          font-size: $font-size-base*2;
+          font-size: 18px;
           text-align: center;
         }
       }
@@ -422,8 +472,9 @@
         color:#fff;
         .title{
             text-align: center;
-            font-size:$font-size-base * 2;
+            font-size:18px;
             margin-bottom:53px;
+            padding:0 20px;
         }
         .channel-list{
             width:100%;
@@ -530,8 +581,9 @@
         background: #0d0d11;
         color:#fff;
         .title{
-            font-size:28px;
+            font-size:18px;
             text-align: center;
+            padding:0 20px;
         }
         .lv-starteam-bg{
             width:100%;
@@ -546,12 +598,13 @@
                 width:100%;
                 padding:0 20px;
                 h2{
-                    font-size:24px;
+                    font-size:20px;
                     margin-bottom:25px;
                 }
                 p{
-                    font-size:16px;
+                    font-size:14px;
                     margin-bottom:15px;
+                    line-height: 30px;
                 }
                 .link{
                     margin-top:-80px;

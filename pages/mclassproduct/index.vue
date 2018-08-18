@@ -131,11 +131,6 @@
                               <p>LV抓抓乐是一款利用在线直播实时遥控操作线下实体机台呈现的抓娃娃娱乐型机台游戏。玩家再也不需要实际前往现场娃娃机台前，就能拥有身临其境的激情体验。不管你使用PC还是手机，都可以随时随地畅玩LV抓抓乐游戏，更推出多种多样的礼物和红包类型，让玩家天天时时刻刻抓抓乐乐，停不下来。</p>
                             </div>
                         </div>
-                        <!-- <div class="bottom revealOnScroll" data-animation="fadeInUp">
-                            <div class="item"><img src="~assets/images/classproduct/tx_1_1.png" alt=""></div>
-                            <div class="item"><img src="~assets/images/classproduct/tx_1_2.png" alt=""></div>
-                            <div class="item"><img src="~assets/images/classproduct/tx_1_3.png" alt=""></div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -157,11 +152,48 @@
                               <p>LV推推乐是一款利用在线直播实时遥控线下实体推币机台的娱乐型机台游戏，其利用视频直播实时通信和遥感技术进行远端遥控实体机台投币，玩家无需前往机台店面，就可以拥有深处推币机台的临场真实感，游戏公平公正，方便快捷，即开即玩，让玩家可以时刻都可娱乐游戏。</p>
                             </div>
                         </div>
-                        <!-- <div class="bottom revealOnScroll" data-animation="fadeInUp">
-                            <div class="item"><img src="~assets/images/classproduct/tx_1_1.png" alt=""></div>
-                            <div class="item"><img src="~assets/images/classproduct/tx_1_2.png" alt=""></div>
-                            <div class="item"><img src="~assets/images/classproduct/tx_1_3.png" alt=""></div>
-                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="classproduct-part2">
+                <div class="part">
+                    <div class="classproduct-right revealOnScroll" data-animation="fadeInUp">
+                        <img src="~assets/images/classproduct/yxfl_7.png" alt="">
+                    </div>
+                    <div class="classproduct-left">
+                        <div class="top">
+                            <div class="title revealOnScroll" data-animation="fadeInUp">
+                                <span>07</span>
+                                <div>
+                                    <h3>电竞游戏模块</h3>
+                                    <p>Live Video</p>
+                                </div>
+                            </div>
+                            <div class="info revealOnScroll" data-animation="fadeInUp">
+                              <p>内容待加入...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="classproduct-part2">
+                <div class="part">
+                    <div class="classproduct-right revealOnScroll" data-animation="fadeInUp">
+                        <img src="~assets/images/classproduct/yxfl_8.png" alt="">
+                    </div>
+                    <div class="classproduct-left">
+                        <div class="top">
+                            <div class="title revealOnScroll" data-animation="fadeInUp">
+                                <span>08</span>
+                                <div>
+                                    <h3>体育竞猜</h3>
+                                    <p>Live Video</p>
+                                </div>
+                            </div>
+                            <div class="info revealOnScroll" data-animation="fadeInUp">
+                              <p>内容待加入...</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -447,6 +447,12 @@
             margin-bottom:53px;
             margin-top:5%;
         }
+        @media screen and (max-width:1679px) {
+            .title{
+                margin-top:0;
+                font-size:24px;
+            }
+        }
         .star-list{
             width:100%;
             display: flex;
@@ -466,6 +472,11 @@
                         width:100%;
                         display:block;
                         transition: all 0.3s linear;
+                    }
+                }
+                @media screen and (max-width:1679px) {
+                    .avatar{
+                        height:200px;
                     }
                 }
                 .intro{
@@ -515,6 +526,17 @@
         }
         img{
           width: 100%;
+          display:block;
+          margin:0 auto;
+        }
+        @media screen and (max-width:1679px) {
+            .celebrity-title{
+                margin-top:100px;
+                font-size:24px;
+            }
+            img{
+                width: 75%;
+            }
         }
       }
     }
@@ -638,12 +660,12 @@
                         z-index:-1;
                     }
                 }
-            }
-            .item:nth-child(2){
-
-            }
-            .item:nth-child(2){
-
+                @media screen and (max-width:1679px) {
+                    .item-t{
+                        width:250px;
+                        height:200px;
+                    }
+                }
             }
         }
     }
@@ -712,7 +734,34 @@
                     right:0;
                     bottom:6%;
                 }
+                @media screen and (max-width:1679px) {
+                    .img1{
+                        width:45%;
+                    }
+                    .img2{
+                        width:30%;
+                    }
+                    .img3{
+                        transform: translateX(0px);
+                        width:45%;
+                    }
+                    .img4{
+                        position: absolute;
+                        right:10%;
+                        bottom:6%;
+                        width:35%;
+                    }
+                }
             }
+        }
+        @media screen and (max-width:1679px) {
+            .title{
+                margin-top:0px;
+                font-size:24px;
+            }
+             .lv-starteam-content{
+                 margin-top:20px;
+             }
         }
     }
 }

@@ -238,6 +238,11 @@
             text-align: center;
             font-weight:400;
         }
+        @media screen and (max-width:1679px) {
+            h3{
+                font-size:24px;
+            }
+        }
         .lv-service-ul{
             display:flex;
             flex-wrap: wrap;
@@ -254,6 +259,15 @@
                     img{
                         display: block;
                         margin:0 auto;
+                    }
+                }
+                @media screen and (max-width:1679px) {
+                    h3{
+                        font-size:20px;
+                    }
+                    .program{
+                        width:80%;
+                        height:200px;
                     }
                 }
                 .program_info{
@@ -278,6 +292,11 @@
                 .program_info .time span{display:block;color:#13DF81;}
                 .program_info .time i{font-size:14px;color:#13DF81;line-height:20px;font-style: normal;}
                 .program:hover .program_info{height:110%;opacity: 1;}
+            }
+            @media screen and (max-width:1679px) {
+                .item{
+                   margin-bottom:30px;
+                }
             }
         }
     }
