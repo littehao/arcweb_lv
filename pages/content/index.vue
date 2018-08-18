@@ -7,7 +7,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="lv-slide-content">
-                                    <img class="img" src="~assets/images/content/nrzz_rw_1.png" alt="" style="width:45%">
+                                    <div class="img"><img  src="~assets/images/content/nrzz_rw_1.png" alt="" style="width:60%"></div>
                                     <div class="text">
                                         <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">生态造星计划</h3>
                                         <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星，星光大道等你来</p>
@@ -16,7 +16,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="lv-slide-content">
-                                    <img class="img" src="~assets/images/content/nrzz_rw_2.png" alt="" style="width:30%">
+                                    <div class="img"><img src="~assets/images/content/nrzz_rw_2.png" alt="" style="width:45%"></div>
                                     <div class="text">
                                         <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">内容为王，娱乐至上</h3>
                                         <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">娱乐内容与粉丝经济领域的先行者</p>
@@ -25,7 +25,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="lv-slide-content">
-                                    <img class="img" src="~assets/images/content/nrzz_rw_3.png" alt="" style="width:42%">
+                                    <div class="img"><img  src="~assets/images/content/nrzz_rw_3.png" alt="" style="width:60%"></div>
                                     <div class="text">
                                         <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">明星艺人养成</h3>
                                         <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人主播大蜕变，红人跃升大明星</p>
@@ -34,7 +34,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="lv-slide-content">
-                                    <img class="img" src="~assets/images/content/nrzz_rw_4.png" alt="" style="width:42%">
+                                    <div class="img"><img  src="~assets/images/content/nrzz_rw_4.png" alt="" style="width:70%"></div>
                                     <div class="text">
                                         <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">专业PGC节目频道</h3>
                                         <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业导演团队倾情巨制，多元节目内容舞台无限</p>
@@ -43,7 +43,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="lv-slide-content">
-                                    <img class="img" src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:35%">
+                                    <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:66%"></div>
                                     <div class="text">
                                         <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻级导师团队倾力打造</h3>
                                         <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">梦幻导师量身打造，专业培训神级飞跃</p>
@@ -162,7 +162,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
                                             <p class="caption">舞蹈频道</p>
                                         </div>
                                     </div>
@@ -181,13 +181,13 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg225"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
                                             <p class="caption">音乐频道</p>
                                         </div>
                                     </div>
                                     <div class="video">
                                         <video class="live" loop="loop" preload="auto">
-                                            <source src="~assets/images/content/sound.mp4" type="video/mp4">
+                                            <!-- <source src="~assets/images/content/sound.mp4" type="video/mp4"> -->
                                             Your browser does not support the <code>video</code> element.
                                         </video>
                                     </div>
@@ -200,7 +200,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
                                             <p class="caption">电竞频道</p>
                                         </div>
                                     </div>
@@ -219,7 +219,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg225"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
                                             <p class="caption">体育频道</p>
                                         </div>
                                     </div>
@@ -238,7 +238,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
                                             <p class="caption">彩票频道</p>
                                         </div>
                                     </div>
@@ -257,7 +257,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
                                             <p class="caption">综合频道</p>
                                         </div>
                                     </div>
@@ -399,22 +399,34 @@
             width:100%;
             height:100%;
             position: relative;
+            display:flex;
+            align-items: center;
             .img{
-                position: absolute;
-                bottom:0;
-                left:45%;
-                margin-left:-250px;
+                width:50%;
+                height:100%;
+                position: relative;
+                // position: absolute;
+                // bottom:0;
+                // left:45%;
+                // margin-left:-250px;
+                img{
+                    position: absolute;
+                    bottom:0;
+                    right:0;
+                }
             }
             .text{
-                width:100%;
+                width:50%;
                 height:120px;
-                position: absolute;
-                bottom:30%;
-                left:0;
+                // position: absolute;
+                // bottom:30%;
+                // left:0;
             }
             h3{
-                font-size:34px;
+                margin-top:50px;
+                font-size:36px;
                 color:#fff;
+                margin-bottom:25px;
             }
             p{
                 font-size:$font-size-base * 2;
@@ -609,7 +621,7 @@
                         text-align: center;
                         padding-top:100px;
                         .caption{
-                            margin-top:58px;
+                            margin-top:120px;
                             font-size:28px;
                         }
                     }
