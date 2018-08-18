@@ -205,7 +205,7 @@
                                         </div>
                                     </div>
                                     <div class="video" loop="loop" preload="auto">
-                                        <video class="live" >
+                                        <video class="live" loop="loop" preload="auto">
                                             <source src="~assets/images/content/dianjing.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
                                         </video>
