@@ -187,7 +187,7 @@
                                     </div>
                                     <div class="video">
                                         <video class="live" loop="loop" preload="auto">
-                                            <!-- <source src="~assets/images/content/sound.mp4" type="video/mp4"> -->
+                                            <source src="~assets/images/content/sound.mp4" type="video/mp4">
                                             Your browser does not support the <code>video</code> element.
                                         </video>
                                     </div>
