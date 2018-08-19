@@ -6,8 +6,6 @@ import iView from 'iview';
 import VueJsonp from 'vue-jsonp'
 import * as swiperAni from './swiper.animate.min.js'
 import Swiper from 'swiper';
-import VueParticles from 'vue-particles'  
-Vue.use(VueParticles)  
 
 if (typeof window !== 'undefined') {
     window.$ = $;
