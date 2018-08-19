@@ -512,12 +512,13 @@
         .title{
             text-align: center;
             font-size:$font-size-base * 2;
-            margin-bottom:50px;
+            margin-bottom:100px;
             margin-top:10%;
         }
-        @media screen and (max-width:1679px) {
+        @media screen and (max-width:1680px) {
             .title{
                margin-top: 80px;
+               margin-bottom: 50px;
             }
         }
         .channel-list{
