@@ -152,7 +152,7 @@
                     </Container>
                 </div>
                 <div class="swiper-slide lv-channel">
-                    <Container>
+                    <Container class="addbg">
                         <h3 class="title" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LVTV官方节目频道，开启娱乐节目互动直播新潮流</h3>
                         <div class="channel-list">
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
@@ -162,7 +162,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                                             <p class="caption">舞蹈频道</p>
                                         </div>
                                     </div>
@@ -181,7 +181,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg225"></span>
                                         <div class="info">
-                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                                             <p class="caption">音乐频道</p>
                                         </div>
                                     </div>
@@ -200,7 +200,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                                             <p class="caption">电竞频道</p>
                                         </div>
                                     </div>
@@ -219,7 +219,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg225"></span>
                                         <div class="info">
-                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                                             <p class="caption">体育频道</p>
                                         </div>
                                     </div>
@@ -238,7 +238,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                                             <p class="caption">彩票频道</p>
                                         </div>
                                     </div>
@@ -257,7 +257,7 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
                                             <p class="caption">综合频道</p>
                                         </div>
                                     </div>
@@ -550,6 +550,9 @@
         background:$body-background;
         padding:50px 0;
         color:#fff;
+        .addbg{
+            background: url(~assets/images/content/nrzz_wzbj.png) no-repeat right bottom;
+        }
         .title{
             text-align: center;
             font-size:$font-size-base * 2;
@@ -560,6 +563,7 @@
             width:100%;
             display: flex;
             flex-wrap: wrap;
+            background: url(~assets/images/content/nrzz_wzbj.png) no-repeat;
             .item{
                 width:33.3%;
                 // padding:0 48px;
@@ -574,7 +578,7 @@
                     position: relative;
                     &:hover .pic{
                         opacity: 0;
-                        transform: rotate(45deg);
+                        // transform: rotate(45deg);
                         // transform-origin:top right;
                     }
                     .pic{
@@ -585,7 +589,7 @@
                         left:0;
                         z-index: 1;
                         opacity: 1;
-                        transition: all 0.3s linear;
+                        transition: all 0.4s linear;
                         overflow: hidden;
                         .avatar{
                             width:100%;
@@ -645,10 +649,20 @@
                         width:100%;
                         height:100%;
                         text-align: center;
-                        padding-top:100px;
+                        padding-top:25%;
+                        img{
+                            width:16%;
+                        }
                         .caption{
-                            margin-top:120px;
-                            font-size:28px;
+                            // margin-top:120px;
+                            font-size:22px;
+                            position: absolute;
+                            bottom:0;
+                            left:0;
+                            width:100%;
+                            height:42px;
+                            line-height: 42px;
+                            background:rgba(0,0,0,0.5)
                         }
                     }
                     &:after{
