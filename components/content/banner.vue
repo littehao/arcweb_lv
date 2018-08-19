@@ -39,7 +39,7 @@
             </div>
             <div class="swiper-slide" >
                 <div class="lv-slide-content">
-                    <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:66%"></div>
+                    <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:50%"></div>
                     <div class="text">
                         <h3 class="title" >梦幻级导师团队倾力打造</h3>
                         <p class="info"  >梦幻导师量身打造，专业培训神级飞跃</p>

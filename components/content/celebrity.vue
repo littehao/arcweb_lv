@@ -1,0 +1,21 @@
+<template>
+    <div class="swiper-slide lv-celebrity">
+        <Container>
+            <div class="lv-celebrity-section">
+                <h3 class="celebrity-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV独家签约网红主播人数超过千人</h3>
+                <img src="../../assets/images/content/force.png" class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.1s" alt="">
+            </div>
+        </Container>
+    </div>
+</template>
+
+<script>
+export default {
+    
+}
+</script>
+
+<style lang="scss">
+
+</style>
+

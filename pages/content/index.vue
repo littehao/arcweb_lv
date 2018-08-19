@@ -83,7 +83,7 @@
                             </div>
                         </div>
                     </Container>
-                    <div class="line" style="bottom:60%;"></div>
+                    <!-- <div class="line" style="bottom:60%;"></div>
                     <div class="line" style="bottom:58%;"></div>
                     <div class="line" style="bottom:56%;"></div>
                     <div class="line" style="bottom:54%;"></div>
@@ -91,16 +91,17 @@
                     <div class="line" style="bottom:32%;"></div>
                     <div class="line" style="bottom:30%;"></div>
                     <div class="line" style="bottom:28%;"></div>
-                    <div class="line" style="bottom:26%;"></div>
+                    <div class="line" style="bottom:26%;"></div> -->
                 </div>
-                <div class="swiper-slide lv-celebrity">
+                <!-- <div class="swiper-slide lv-celebrity">
                     <Container>
                         <div class="lv-celebrity-section">
                             <h3 class="celebrity-title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV独家签约网红主播人数超过千人</h3>
                             <img src="../../assets/images/content/force.png" class="ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.1s" alt="">
                         </div>
                     </Container>
-                </div>
+                </div> -->
+                <celebrity></celebrity>
                 <div class="swiper-slide lv-channel">
                     <Container class="addbg">
                         <h3 class="title" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LVTV官方节目频道，开启娱乐节目互动直播新潮流</h3>
@@ -258,6 +259,7 @@
 
 <script>
     import banner from '~/components/content/banner'
+    import celebrity from '~/components/content/celebrity'
     import { mapGetters } from 'vuex'
     export default {
         layout (context) {
@@ -277,7 +279,8 @@
             ])
         },
         components:{
-            banner
+            banner,
+            celebrity
         },
         methods:{
 
