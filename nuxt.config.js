@@ -67,7 +67,7 @@ module.exports = {
     {
       src: '~/plugins/index',
       ssr: true
-    },
+    }
   ],
 
   /*

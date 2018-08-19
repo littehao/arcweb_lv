@@ -9,6 +9,7 @@ import Swiper from 'swiper';
 
 if (typeof window !== 'undefined') {
     window.$ = $;
+    window.jQuery = $;
     window.Swiper = Swiper;
     window.swiperAni = swiperAni;
 }
