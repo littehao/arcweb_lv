@@ -41,7 +41,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt=""></div>
+                            <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:80%;"></div>
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻级导师团队倾力打造</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">梦幻导师量身打造，专业培训神级飞跃</p>
@@ -130,7 +130,7 @@
                   </div>
               </div>
           </div>
-          <div class="line" style="top:25%;"></div>
+          <!-- <div class="line" style="top:25%;"></div>
           <div class="line" style="top:26%;"></div>
           <div class="line" style="top:27%;"></div>
           <div class="line" style="top:28%;"></div>
@@ -146,7 +146,7 @@
           <div class="line" style="bottom:18%;left:10%;"></div>
           <div class="line" style="bottom:17%;left:10%;"></div>
           <div class="line" style="bottom:16%;left:10%;"></div>
-          <div class="line" style="bottom:15%;left:10%;"></div>
+          <div class="line" style="bottom:15%;left:10%;"></div> -->
       </div>
        <div class="lv-celebrity">
            <div class="lv-celebrity-section">
@@ -164,8 +164,9 @@
                     <div class="bag-opa"></div>
                     <span class="shadow deg135"></span>
                     <div class="info">
-                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                    <p class="caption">舞蹈频道</p>
+                    <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">舞蹈频道</p> -->
+                    <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -175,8 +176,9 @@
                     <div class="bag-opa"></div>
                     <span class="shadow deg225"></span>
                     <div class="info">
-                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                    <p class="caption">音乐频道</p>
+                    <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">音乐频道</p> -->
+                    <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -186,8 +188,9 @@
                     <div class="bag-opa"></div>
                     <span class="shadow deg135"></span>
                     <div class="info">
-                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                    <p class="caption">电竞频道</p>
+                    <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">电竞频道</p> -->
+                    <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -197,8 +200,9 @@
                     <div class="bag-opa"></div>
                     <span class="shadow deg225"></span>
                     <div class="info">
-                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                    <p class="caption">体育频道</p>
+                    <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">体育频道</p> -->
+                    <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -208,8 +212,9 @@
                     <div class="bag-opa"></div>
                     <span class="shadow deg135"></span>
                     <div class="info">
-                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                    <p class="caption">彩票频道</p>
+                    <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">彩票频道</p> -->
+                    <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -219,8 +224,9 @@
                     <div class="bag-opa"></div>
                     <span class="shadow deg135"></span>
                     <div class="info">
-                    <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                    <p class="caption">综合频道</p>
+                    <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
+                    <p class="caption">综合频道</p> -->
+                    <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -238,7 +244,10 @@
                 </div>
                 <div class="left">
                     <h2>全渠道+全明星+工业化=星途璀璨</h2>
-                        <p>最顶级的培训导师带你开启追梦之旅。最专业的经纪团队为你开创广阔机遇。最顶尖的制作团队为你量身定制作品。最豪华的明星阵容带你走向璀璨之路</p>
+                        <p>最顶级的培训导师带你开启追梦之旅</p>
+                        <p>最专业的经纪团队为你开创广阔机遇</p>
+                        <p>最顶尖的制作团队为你量身定制作品</p>
+                        <p>最豪华的明星阵容带你走向璀璨之路</p>
                         <!--<p>如果你想实现梦想</p>-->
                         <!--<p>请与我们联络</p>-->
                         <!-- <div class="link"><nuxt-link to="/mcontactus">申请加入LV</nuxt-link></div> -->
@@ -466,7 +475,7 @@
     }
     .lv-channel{
         width:100%;
-        height:876px;
+        height:auto;
         background:$body-background;
         padding:50px 0;
         color:#fff;
@@ -481,8 +490,8 @@
             display: flex;
             flex-wrap: wrap;
             .item{
-                width:50%;
-                margin-bottom:50px;
+                width:80%;
+                margin:0 auto 50px auto;
                 position: relative;
                 -webkit-transform-style: preserve-3d;
                 transform-style: preserve-3d;
@@ -539,6 +548,14 @@
                         .caption{
                             margin-top:20px;
                             font-size:24px;
+                            position: absolute;
+                            bottom:10px;
+                            right:10px;
+                            img{
+                                width:30px;
+                                display: block;
+                                opacity: 0.5;
+                            }
                         }
                     }
                     &:after{
@@ -566,12 +583,12 @@
                 //     background-image: linear-gradient(245deg,rgba(0,0,0,0.9),transparent 50%);
                 // }
             }
-            .item:nth-child(2n+1){
-                padding:0px 10px 0px 20px;
-            }
-            .item:nth-child(2n){
-                padding:0px 20px 0px 10px;
-            }
+            // .item:nth-child(2n+1){
+            //     padding:0px 10px 0px 20px;
+            // }
+            // .item:nth-child(2n){
+            //     padding:0px 20px 0px 10px;
+            // }
         }
     }
     .lv-starteam{
