@@ -3,57 +3,7 @@
         <div class="swiper-container swiper-container-v">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="swiper-container swiper-container-h lv-content-banner">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="lv-slide-content">
-                                    <div class="img"><img  src="~assets/images/content/nrzz_rw_1.png" alt="" style="width:60%"></div>
-                                    <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">生态造星计划</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星，星光大道等你来</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="lv-slide-content">
-                                    <div class="img"><img src="~assets/images/content/nrzz_rw_2.png" alt="" style="width:45%"></div>
-                                    <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">内容为王，娱乐至上</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">娱乐内容与粉丝经济领域的先行者</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="lv-slide-content">
-                                    <div class="img"><img  src="~assets/images/content/nrzz_rw_3.png" alt="" style="width:60%"></div>
-                                    <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">明星艺人养成</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人主播大蜕变，红人跃升大明星</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="lv-slide-content">
-                                    <div class="img"><img  src="~assets/images/content/nrzz_rw_4.png" alt="" style="width:70%"></div>
-                                    <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">专业PGC节目频道</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业导演团队倾情巨制，多元节目内容舞台无限</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="lv-slide-content">
-                                    <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:66%"></div>
-                                    <div class="text">
-                                        <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻级导师团队倾力打造</h3>
-                                        <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">梦幻导师量身打造，专业培训神级飞跃</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-prev swiper-button-white"></div>
-                        <div class="swiper-button-next swiper-button-white"></div>
-                    </div>
+                    <banner></banner>
                 </div>
                 <div class="swiper-slide lv-content-star">
                     <Container>
@@ -307,7 +257,7 @@
 </template>
 
 <script>
-    
+    import banner from '~/components/content/banner'
     import { mapGetters } from 'vuex'
     export default {
         layout (context) {
@@ -326,7 +276,10 @@
                 'getAgent'
             ])
         },
-          methods:{
+        components:{
+            banner
+        },
+        methods:{
 
         },
         created(){
@@ -348,18 +301,7 @@
                 window.location.href = '/'
             }
             this.height = document.documentElement.clientHeight;
-
-            var swiperH = new Swiper('.swiper-container-h', {
-                    autoplay:{
-                        delay:5000
-                    },
-                    speed:500,
-                    loop:true,
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
+            
             var swiperV = new Swiper('.swiper-container-v', {
                 direction: 'vertical',
                 slidesPerView: 'auto',
