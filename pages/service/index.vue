@@ -247,6 +247,11 @@
             display:flex;
             flex-wrap: wrap;
             margin-top:55px;
+            // @media screen and (max-width:1680px) {
+            //     .item{
+            //        margin-bottom:30px;
+            //     }
+            // }
             .item{
                 width:33.3%;
                 margin-bottom:100px;
@@ -261,7 +266,7 @@
                         margin:0 auto;
                     }
                 }
-                @media screen and (max-width:1679px) {
+                @media screen and (max-width:1680px) {
                     h3{
                         font-size:20px;
                     }
@@ -292,11 +297,6 @@
                 .program_info .time span{display:block;color:#13DF81;}
                 .program_info .time i{font-size:14px;color:#13DF81;line-height:20px;font-style: normal;}
                 .program:hover .program_info{height:110%;opacity: 1;}
-            }
-            @media screen and (max-width:1679px) {
-                .item{
-                   margin-bottom:30px;
-                }
             }
         }
     }

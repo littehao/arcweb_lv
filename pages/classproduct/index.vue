@@ -199,7 +199,7 @@
                                             <div class="title ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0s">
                                                 <span>07</span>
                                                 <div>
-                                                    <h3>电竞游戏模块</h3>
+                                                    <h3>电竞游戏</h3>
                                                     <p>Live Video</p>
                                                 </div>
                                             </div>

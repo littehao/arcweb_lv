@@ -113,8 +113,9 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                            <p class="caption">舞蹈频道</p>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <!-- <p class="caption">舞蹈频道</p> -->
+                                            <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                                         </div>
                                     </div>
                                     <div class="video">
@@ -132,8 +133,9 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg225"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                            <p class="caption">音乐频道</p>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <!-- <p class="caption">音乐频道</p> -->
+                                            <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                                         </div>
                                     </div>
                                     <div class="video">
@@ -151,8 +153,9 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                            <p class="caption">电竞频道</p>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <!-- <p class="caption">电竞频道</p> -->
+                                            <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                                         </div>
                                     </div>
                                     <div class="video" loop="loop" preload="auto">
@@ -170,8 +173,9 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg225"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                            <p class="caption">体育频道</p>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <!-- <p class="caption">体育频道</p> -->
+                                            <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                                         </div>
                                     </div>
                                     <div class="video">
@@ -189,8 +193,9 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                            <p class="caption">彩票频道</p>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <!-- <p class="caption">彩票频道</p> -->
+                                            <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                                         </div>
                                     </div>
                                     <div class="video">
@@ -208,8 +213,9 @@
                                         <div class="bag-opa"></div>
                                         <span class="shadow deg135"></span>
                                         <div class="info">
-                                            <div class="img"><img src="~assets/images/content/play.png" alt=""></div>
-                                            <p class="caption">综合频道</p>
+                                            <!-- <div class="img"><img src="~assets/images/content/play.png" alt=""></div> -->
+                                            <!-- <p class="caption">综合频道</p> -->
+                                            <p class="caption"><img src="~assets/images/content/bf.png" alt=""></p>
                                         </div>
                                     </div>
                                     <div class="video">
@@ -478,7 +484,12 @@
           display:block;
           margin:0 auto;
         }
-        @media screen and (max-width:1679px) {
+        @media screen and (max-width:1680px) and (min-width:1441px) {
+            img{
+                width: 90%;
+            }
+        }
+        @media screen and (max-width:1440px) {
             .celebrity-title{
                 margin-top:100px;
                 font-size:24px;
@@ -501,8 +512,13 @@
         .title{
             text-align: center;
             font-size:$font-size-base * 2;
-            margin-bottom:45px;
-            margin-top:80px;
+            margin-bottom:50px;
+            margin-top:10%;
+        }
+        @media screen and (max-width:1679px) {
+            .title{
+               margin-top: 80px;
+            }
         }
         .channel-list{
             width:100%;
@@ -512,19 +528,22 @@
             .item{
                 width:33.3%;
                 // padding:0 48px;
-                margin-bottom:50px;
+                margin-bottom:80px;
                 position: relative;
                 cursor: pointer;
                 display:flex;
                 justify-content: center;
                 .item-t{
                     width:350px;
-                    height:280px;
+                    height:210px;
                     position: relative;
                     &:hover .pic{
                         opacity: 0;
                         // transform: rotate(45deg);
                         // transform-origin:top right;
+                    }
+                    &:hover .video{
+                        opacity: 1;
                     }
                     .pic{
                         width:100%;
@@ -536,11 +555,15 @@
                         opacity: 1;
                         transition: all 0.4s linear;
                         overflow: hidden;
+                        border-radius: 10px;
                         .avatar{
                             width:100%;
                             height:100%;
+                            border-radius: 10px;
+                            overflow: hidden;
                             img{
                                 width:100%;
+                                display: block;
                             }
                         }
                     }
@@ -554,6 +577,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        opacity: 0;
                         video{
                             height: 100%;
                             background:#000;
@@ -567,6 +591,8 @@
                         height:100%;
                         background:#000;
                         opacity: 0.2;
+                        border-radius: 10px;
+                        overflow: hidden;
                     }
                     .shadow{
                         position: absolute;
@@ -594,7 +620,7 @@
                         width:100%;
                         height:100%;
                         text-align: center;
-                        padding-top:25%;
+                        padding-top:16%;
                         img{
                             width:16%;
                         }
@@ -606,8 +632,14 @@
                             left:0;
                             width:100%;
                             height:42px;
-                            line-height: 42px;
-                            background:rgba(0,0,0,0.5)
+                            // line-height: 42px;
+                            // background:rgba(0,0,0,0.5)
+                            img{
+                                width:30px;
+                                float: right;
+                                margin-right:10px;
+                                opacity: 0.5;
+                            }
                         }
                     }
                     &:after{
@@ -625,9 +657,14 @@
                 }
                 @media screen and (max-width:1679px) {
                     .item-t{
-                        width:250px;
-                        height:200px;
+                        width:300px;
+                        height:180px;
                     }
+                }
+            }
+            @media screen and (max-width:1679px) {
+                .item{
+                    margin-bottom:50px;
                 }
             }
         }
