@@ -257,7 +257,7 @@ export default {
         background:rgba(255, 255, 255, 0.1);
         border-color:#4e4e4e;
         .tl-timemarker-content-container{
-            background:#1c1c23;
+            background:#1c1c23 !important;
             box-shadow: none;
             border-color:#828282;
             height:40px !important;
