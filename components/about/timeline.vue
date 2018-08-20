@@ -99,7 +99,7 @@ export default {
     head() {
         return {
             script:[
-                {src:'http://cdn.katoong.com/app/timeline-js.js',type:'text/javascript'}
+                {src:'https://cdn.katoong.com/app/timeline-js.js',type:'text/javascript'}
             ]
         }
     },
