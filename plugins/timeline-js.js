@@ -9821,7 +9821,7 @@ TL.SlideNav = TL.Class.extend({
         this._el.title						= TL.Dom.create("div", "tl-slidenav-title", this._el.content_container);
         this._el.description				= TL.Dom.create("div", "tl-slidenav-description", this._el.content_container);
 
-        // this._el.icon.innerHTML				= "&nbsp;"
+        this._el.icon.innerHTML				= "&nbsp;"
 
         this._update();
     },
@@ -10715,6 +10715,7 @@ TL.TimeNav = TL.Class.extend({
         for (var i = 0; i < this._markers.length; i++) {
 
             // Set Height
+            console.log(marker_height)
             this._markers[i].setHeight(marker_height);
 
             //Position by Row
@@ -11267,7 +11268,7 @@ TL.TimeMarker = TL.Class.extend({
         if (h <= 30) {
             this._el.content.className = "tl-timemarker-content tl-timemarker-content-small";
         } else {
-            this._el.content.className = "tl-timemarker-content tl-timemarker-content-container-small";
+            this._el.content.className = "tl-timemarker-content";
         }
 
         if (h <= 56) {
@@ -11357,7 +11358,7 @@ TL.TimeMarker = TL.Class.extend({
 
         // Thumbnail or Icon
         if (this.data.media) {
-            // this._el.media_container	= TL.Dom.create("div", "tl-timemarker-media-container", this._el.content);
+            this._el.media_container	= TL.Dom.create("div", "tl-timemarker-media-container", this._el.content);
             // ugh. needs an overhaul
             var mtd = {url: this.data.media.thumbnail};
             var thumbnail_media_type = (this.data.media.thumbnail) ? TL.MediaType(mtd, true) : null;

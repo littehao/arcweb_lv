@@ -537,11 +537,11 @@
 }
 
 .tl-icon-zoom-in:after {
-	content: "\e631"
+	/* content: "\e631" */
 }
 
 .tl-icon-zoom-out:after {
-	content: "\e632"
+	/* content: "\e632" */
 }
 
 .tl-icon-list:after {
@@ -597,7 +597,7 @@
 }
 
 .tl-icon-goback:after {
-	content: "\e63e"
+	/* content: "\e63e" */
 }
 
 .tl-icon-doc-v2:after {
@@ -2102,7 +2102,7 @@
 
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-icon,.tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-icon,.tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-title,.tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-title,.tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description,.tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
 	text-shadow: 1px 1px 1px #fff;
-	color: #333
+	color: #fff;
 }
 
 .tl-slidenav-previous .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-icon,.tl-slidenav-next .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-icon,.tl-slidenav-previous .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-title,.tl-slidenav-next .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-title,.tl-slidenav-previous .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-description,.tl-slidenav-next .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-description {
@@ -2152,7 +2152,7 @@
 }
 
 .tl-slidenav-previous .tl-slidenav-icon:before {
-	content: "\e650"
+	/* content: "\e650" */
 }
 
 .tl-slidenav-previous:hover .tl-slidenav-title,.tl-slidenav-next:hover .tl-slidenav-title {

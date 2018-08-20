@@ -1,6 +1,6 @@
 <template>
     <div class="lv-about-timeline">
-        <Container>
+        <!-- <Container>
             <div class="time ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s"><span class="year">2018</span><span class="month">.04</span></div>
             <div class="rightext">
                 <div class="text1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">我们的故事</div>
@@ -77,33 +77,37 @@
                     </div>
                 </li>
             </ul>
+        </div> -->
+        <Container class="timeTile">
+        <div class="rightext">
+            <div class="text1">我们的故事</div>
+            <div class="text2">面向未来</div>
         </div>
-        <!-- <div id='timeline-20227' class=" timeline-block" data-display="hide">
+        </Container>
+        <div id='timeline-20227' class=" timeline-block" data-display="hide">
             <div id='timeline-embed-20227' data-display="hide" style="width: 100%; height:100%">
             </div>
-        </div> -->
+        </div>
     </div>
 </template>
 
 <script>
-// import '../../plugins/timeline-js2.css'
+import '../../plugins/css/fontello.css'
+import '../../plugins/css/webabout.css'
+import '../../plugins/css/timeline-js2.css'
 export default {
     head() {
         return {
-            meta: [
-                { hid: 'description', name: 'description', content: '你好' }
-            ],
             script:[
-                // {src:'http://goodgaming.com/Public/js/timeline-js.js?v=1.01.0153',type:'text/javascript'}
+                {src:'http://goodgaming.com/Public/js/timeline-js.js?v=1.01.0153',type:'text/javascript'}
             ]
         }
     },
     mounted(){
-        // this.timeline();
+        this.timeline();
     },
     methods:{
         timeline(){
-            var url = 'http://goodgaming.com/Public/TP02';
             function hideshow() {
                 var width = $(document).width();
                 if (width <= 992) {
@@ -119,7 +123,7 @@ export default {
                             },
                             "text": {
                                 "headline": "创立于菲律宾马尼拉",
-                                "text": "创立于菲律宾马尼拉"
+                                "text": "2008"
                             },
                         }, {
                             "start_date": {
@@ -128,7 +132,7 @@ export default {
                             },
                             "text": {
                                 "headline": "推出第一代PHP彩票1.0系统",
-                                "text": "First Php lottery system v.10 released to the market"
+                                "text": "2011"
                             },
                         }, {
                             "start_date": {
@@ -137,7 +141,7 @@ export default {
                             },
                             "text": {
                                 "headline": "推行出创新的数字彩票1.0系统",
-                                "text": "Lottery gaming v2.0 released and got the highly market reputation."
+                                "text": "2012"
                             },
                         }, {
                             "start_date": {
@@ -146,7 +150,7 @@ export default {
                             },
                             "text": {
                                 "headline": "发布第二代PHP彩票2.0版",
-                                "text": "Second php lottery system with latest architecture design released and solved the bottleneck of high concurrency and tamper resistance."
+                                "text": "2013"
                             },
                         }, {
                             "start_date": {
@@ -155,7 +159,7 @@ export default {
                             },
                             "text": {
                                 "headline": "发行专门彩票平台包网服务",
-                                "text": "Lottery X plan started and tookover 8 plus lottery gaming technology corporation; meanwhile, 8 lottery gaming projects started, including php, java, c# with various language options. We devoted to developing the lottery gaming architecture design and providing the optimized solutions for lottery industry."
+                                "text": "2014"
                             },
                         }, {
                             "start_date": {
@@ -164,7 +168,7 @@ export default {
                             },
                             "text": {
                                 "headline": "在英国马恩岛成立新事业部并开始申请多个国家的博彩牌照",
-                                "text": "Lottery IT service released. The first professional lottery IT service supplier."
+                                "text": "2015"
                             },
                         }, {
                             "start_date": {
@@ -173,7 +177,7 @@ export default {
                             },
                             "text": {
                                 "headline": "延揽顶尖直播互动系统团队钻研直播视讯领域",
-                                "text": "Malaysia. Developing the latest architecture design for java system and integrated vairous global leading technology."
+                                "text": "2016"
                             },
                         }, {
                             "start_date": {
@@ -182,7 +186,7 @@ export default {
                             },
                             "text": {
                                 "headline": "直播相关设备及场所建置包含摄影棚及直播间",
-                                "text": "GOODGAMING established in Taipei, Tawan and set up the overseas department."
+                                "text": "2017"
                             },
                         }, {
                             "start_date": {
@@ -191,7 +195,7 @@ export default {
                             },
                             "text": {
                                 "headline": "在美国硅谷成立技术服务中心",
-                                "text": "Poker gaming department established in Japan and broke into poker market."
+                                "text": "2017"
                             },
                         }, {
                             "start_date": {
@@ -200,7 +204,7 @@ export default {
                             },
                             "text": {
                                 "headline": "在纽西兰成立技术服务中心",
-                                "text": "Slots depatment established in Taipei, Taiwan and expended the related business."
+                                "text": "2017"
                             },
                         }, {
                             "start_date": {
@@ -209,7 +213,7 @@ export default {
                             },
                             "text": {
                                 "headline": "在欧洲成立马耳他分公司开拓欧洲市场",
-                                "text": "International finance and global strategy departments established in Isle of Man, UK and started to apply lottery licenses in various countries"
+                                "text": "2018"
                             },
                         }]
                     };
@@ -229,6 +233,16 @@ export default {
 .lv-about-timeline{
     width:100%;
     height:100%;
+    position: relative;
+    .timeTile{
+        position:absolute;
+        top:0;
+        left:50%;
+        width:1200px;
+        height:100%;
+        margin-left:-600px;
+        z-index: 0;
+    }
     .timeline-block{
         width:100%;
         height:100%;
@@ -240,12 +254,16 @@ export default {
         background:transparent !important;
     }
     .tl-timenav{
-        background:transparent;
+        background:rgba(255, 255, 255, 0.1);
         border-color:#4e4e4e;
         .tl-timemarker-content-container{
-            background:transparent;
+            background:#1c1c23;
             box-shadow: none;
             border-color:#828282;
+            height:40px !important;
+            transition:all 0.2s linear;
+            width:100px;
+            
         }
         .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container{
             color:#fff;
@@ -255,6 +273,13 @@ export default {
     .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline{
         font-size:14px;
         line-height:16px;
+        width:100%;
+        height:100%;
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2 !important;
+        -webkit-box-orient: vertical;
     }
     .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline{
         color:#ffe95b;
@@ -262,14 +287,66 @@ export default {
     .tl-timemarker.tl-timemarker-active .tl-timemarker-line-left, .tl-timemarker.tl-timemarker-active .tl-timemarker-line-right{
         border-color:rgba(255, 232, 92, 0.61);
     }
-    .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container{
+    .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container,.tl-slidenav-title,.tl-slidenav-description{
         display:none;
     }
     .tl-timemarker .tl-timemarker-line-left, .tl-timemarker .tl-timemarker-line-right{
         box-shadow: none;
         border-color:#828282;
     }
-    
+    .tl-text p{
+        color:#fff;
+        font-size:100px;
+        display: inline-block;
+        position: absolute;
+        left:0;
+        top:35%;
+    }
+    .tl-text h2.tl-headline-title, .tl-text h2.tl-headline{
+        font-size:26px;
+        color:#fff;
+        display:inline-block;
+        position: absolute;
+        left:69%;
+        top:60%;
+        max-width:400px;
+        text-align:left;
+        line-height: 50px;
+        font-weight: 400;
+    }
+    .tl-text .tl-headline-date, .tl-text h3.tl-headline-date{
+        color:#fff;
+        font-size:20px;
+        display: inline-block;
+        position: absolute;
+        left:240px;
+        bottom:52%;
+    }
+    .tl-slide-text-only .tl-slide-content-container .tl-slide-content{
+        width:1200px !important;
+        display:block;
+        margin:0 auto;
+        height:100%;
+    }
+    .tl-slide-text-only .tl-slide-content-container .tl-slide-content .tl-text{
+        width:100% !important;
+        margin:0;
+        max-width:100%;
+        min-width:100%;
+    }
+    .tl-slide .tl-slide-content-container{
+        height:100%;
+    }
+    #tl-jbfngg,.tl-text-content-container{
+        height:100%;
+    }
+    .tl-timemarker:hover .tl-timemarker-content-container{
+        width:260px;
+         z-index: 11;
+    }
+    .tl-timeaxis-background{
+        background:transparent;
+    }
 }
 </style>
 
