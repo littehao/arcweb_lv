@@ -99,7 +99,7 @@ export default {
     head() {
         return {
             script:[
-                {src:'https://cdn.katoong.com/app/timeline-js.js',type:'text/javascript'}
+                {src:'https://cdn.katoong.com/app/timeline-js2.js',type:'text/javascript'}
             ]
         }
     },
@@ -120,6 +120,7 @@ export default {
                             "start_date": {
                                 "year": "2008",
                                 "month": "08",
+                                "day":'01'
                             },
                             "text": {
                                 "headline": "创立于菲律宾马尼拉",
