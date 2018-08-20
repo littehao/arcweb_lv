@@ -78,7 +78,7 @@
                 </li>
             </ul>
         </div> -->
-        <!-- <Container class="timeTile">
+        <Container class="timeTile">
         <div class="rightext">
             <div class="text1">我们的故事</div>
             <div class="text2">面向未来</div>
@@ -87,7 +87,7 @@
         <div id='timeline-20227' class=" timeline-block" data-display="hide">
             <div id='timeline-embed-20227' data-display="hide" style="width: 100%; height:100%">
             </div>
-        </div> -->
+        </div>
     </div>
 </template>
 
@@ -99,12 +99,12 @@ export default {
     head() {
         return {
             script:[
-                // {src:'http://goodgaming.com/Public/js/timeline-js.js?v=1.01.0153',type:'text/javascript'}
+                {src:'http://cdn.katoong.com/app/timeline-js.js',type:'text/javascript'}
             ]
         }
     },
     mounted(){
-        // this.timeline();
+        this.timeline();
     },
     methods:{
         timeline(){

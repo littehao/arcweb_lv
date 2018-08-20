@@ -10715,7 +10715,6 @@ TL.TimeNav = TL.Class.extend({
         for (var i = 0; i < this._markers.length; i++) {
 
             // Set Height
-            console.log(marker_height)
             this._markers[i].setHeight(marker_height);
 
             //Position by Row
