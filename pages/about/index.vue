@@ -23,84 +23,7 @@
                 </Container>
             </div>
             <div class="swiper-slide lv-livevideo">
-                <Container>
-                    <div class="time ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s"><span class="year">2018</span><span class="month">.04</span></div>
-                    <div class="rightext">
-                        <div class="text1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">我们的故事</div>
-                        <div class="text2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">面向未来</div>
-                        <div class="text3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">在欧洲成立马耳他分公司开拓欧洲市场</div>
-                    </div>
-                </Container>
-                <div class="timeline">
-                    <ul class="timeline-list">
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
-                            <span class="mintime">2009.8</span>
-                            <p class="linetext">创立于菲律宾马尼拉</p>
-                            <i class="round"></i>
-                            <i class="line"></i>
-                        </li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">
-                            <span class="mintime">2011.5</span>
-                            <p class="linetext">推出第一代PHP彩票1.0系统</p>
-                            <i class="round"></i>
-                            <i class="line"></i>
-                        </li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">
-                            <span class="mintime">2012.7</span>
-                            <p class="linetext">推行出创新的数字彩票1.0系统</p>
-                            <i class="round"></i>
-                            <i class="line"></i>
-                        </li>
-                        <li class="ani"  swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
-                            <span class="mintime">2013.8</span>
-                            <p class="linetext">发布第二代PHP彩票2.0版</p>
-                            <i class="round"></i>
-                            <i class="line"></i>
-                        </li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">
-                            <span class="mintime">2014.3</span>
-                            <p class="linetext">发行专门彩票平台包网服务</p>
-                            <i class="round"></i>
-                            <i class="line"></i>
-                        </li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
-                            <span class="mintime">2015.9</span>
-                            <p class="linetext">在英国马恩岛成立新事业部并开始申请多个国家的博彩牌照</p>
-                            <i class="round"></i>
-                            <i class="line"></i>
-                        </li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s">
-                            <span class="mintime">2016.6</span>
-                            <p class="linetext">延揽顶尖直播互动系统团队钻研直播视讯领域</p>
-                            <i class="round"></i>
-                            <i class="line"></i>
-                        </li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s">
-                            <span class="mintime">2017.4</span>
-                            <p class="linetext">直播相关设备及场所建置包含摄影棚及直播间</p>
-                            <i class="round"></i>
-                            <i class="line"></i>
-                        </li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
-                            <span class="mintime">2017.8</span>
-                            <p class="linetext">在美国硅谷成立技术服务中心</p>
-                            <i class="round"></i>
-                            <i class="line"></i>
-                        </li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s">
-                            <span class="mintime">2017.12</span>
-                            <p class="linetext">在纽西兰成立技术服务中心</p>
-                            <i class="round"></i>
-                            <i class="line"></i>
-                        </li>
-                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
-                            <span class="mintime">2018.4</span>
-                            <div class="round-first">
-                                <span class="round-two"><i class="round"></i></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <timeline></timeline>
             </div>
             <div class="swiper-slide"  style="height:266px">
                 <div class="homefooter">
@@ -109,10 +32,12 @@
                 </div>
             </div>
         </div>
+        <!-- <timeline></timeline> -->
     </div>
 </template>
 
 <script>
+    import timeline from '~/components/about/timeline'
     import { mapGetters } from 'vuex'
     export default {
         layout (context) {
@@ -124,6 +49,9 @@
                     height:0,
                 }
             }
+        },
+        components:{
+            timeline
         },
         computed:{
             ...mapGetters([
@@ -138,6 +66,7 @@
             var swiper = new Swiper('.lv-about.swiper-container', {
                 direction: 'vertical',
                 mousewheel: true,
+                simulateTouch : false,
                 slidesPerView: 'auto',
                 speed:500,
                 pagination: {

@@ -60,6 +60,7 @@
                     </div>
                 </div>
               </Container>
+              <div class="bgimg"></div>
             </div>
           </div>
           <div class="swiper-slide">
@@ -81,6 +82,7 @@
                   </div>
                 </div>
               </Container>
+              <div class="bgimg"></div>
             </div>
           </div>
           <div id="content-4" class="swiper-slide">
@@ -102,20 +104,20 @@
                     </p>
                   </div>
                 </div>
-              </div>
-
-            </Container>
-          </div>
-          <div class="swiper-slide"  style="height:440px">
-              <div class="homefooter">
                 <div class="section-btn" style="padding-bottom:60px;">
                     <Container>
                     <button class="btn" type="button" onclick="window.open('https://www.solantec.net/','_blank')">立即体验</button>
                     </Container>
                 </div>
+              </div>
+              
+            </Container>
+          </div>
+          <div class="swiper-slide"  style="height:266px">
+              <div class="homefooter">
                 <footerlink></footerlink>
                 <Lfooter></Lfooter>
-                </div>
+              </div>
           </div>
 
 
@@ -260,10 +262,11 @@ export default {
     width: 100%;
   }
    .section-btn{
-     position: relative;
      z-index: 1;
      height: auto;
-     margin-top: 70px;
+     position: absolute;
+     bottom:0;
+     left:0;
      .btn{
        display: block;
        margin: 0 auto;
@@ -352,13 +355,20 @@ export default {
   #content-2{
     height: 100%;
     width: 100%;
-     background: url(../../assets/images/home/bg2.png);
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: -$section-1/2+20 center;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    .bgimg{
+      position: absolute;
+      top:0;
+      left:-30%;
+      width:100%;
+      height:100%;
+      background-image: url(../../assets/images/home/bg2.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 50%;
+    }
     .section-2{
       height: 100%;
       display: flex;
@@ -401,11 +411,18 @@ export default {
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-image: url(../../assets/images/home/bg2.png);
-    background-position: 140% center;
-    background-size: 50%;
-    background-repeat: no-repeat;
     z-index: 1;
+    .bgimg{
+      position: absolute;
+      top:0;
+      right:-75%;
+      width:100%;
+      height:100%;
+      background-image: url(../../assets/images/home/bg2.png);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 50%;
+    }
     .section-3{
       height: 100%;
       display: flex;
@@ -432,7 +449,7 @@ export default {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    // background-image: url(../../assets/images/home/bg1.png);
+    background-image: url(../../assets/images/home/bg1.png);
     background-position: bottom left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -440,7 +457,9 @@ export default {
       height: 100%;
       overflow:hidden;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
+      position: relative;
       .section-card4{
         // margin-top: 50px;
 

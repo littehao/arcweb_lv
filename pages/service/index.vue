@@ -273,6 +273,7 @@
                     .program{
                         width:80%;
                         height:200px;
+                        margin:0 auto;
                     }
                 }
                 .program_info{

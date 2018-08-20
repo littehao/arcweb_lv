@@ -12,7 +12,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="lv-slide-content">
-                    <div class="img"><img src="~assets/images/content/nrzz_rw_2.png" alt="" style="width:45%"></div>
+                    <div class="img"><img src="~assets/images/content/nrzz_rw_2.png" alt="" style="width:85%"></div>
                     <div class="text">
                         <h3 class="title">内容为王，娱乐至上</h3>
                         <p class="info"  >娱乐内容与粉丝经济领域的先行者</p>
@@ -21,7 +21,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="lv-slide-content">
-                    <div class="img"><img  src="~assets/images/content/nrzz_rw_3.png" alt="" style="width:60%"></div>
+                    <div class="img"><img  src="~assets/images/content/nrzz_rw_3.png" alt="" style="width:85%"></div>
                     <div class="text">
                         <h3 class="title" >明星艺人养成</h3>
                         <p class="info"  >素人主播大蜕变，红人跃升大明星</p>
@@ -30,7 +30,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="lv-slide-content">
-                    <div class="img"><img  src="~assets/images/content/nrzz_rw_4.png" alt="" style="width:70%"></div>
+                    <div class="img"><img  src="~assets/images/content/nrzz_rw_4.png" alt="" style="width:85%"></div>
                     <div class="text">
                         <h3 class="title" >专业PGC节目频道</h3>
                         <p class="info"  >专业导演团队倾情巨制，多元节目内容舞台无限</p>
@@ -39,7 +39,7 @@
             </div>
             <div class="swiper-slide" >
                 <div class="lv-slide-content">
-                    <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:50%"></div>
+                    <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:85%"></div>
                     <div class="text">
                         <h3 class="title" >梦幻级导师团队倾力打造</h3>
                         <p class="info"  >梦幻导师量身打造，专业培训神级飞跃</p>

@@ -48,7 +48,7 @@ module.exports = {
     },
     {
       src:'swiper/dist/css/swiper.min.css'
-    }
+    },
   ],
   axios: {
     proxy: true,

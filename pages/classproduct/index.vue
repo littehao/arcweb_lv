@@ -22,7 +22,7 @@
                                         </div>
                                         <div class="info ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0.1s">
                                             <p>
-                                              LIVE VIDEO首推直播互动娱乐游戏，主播带你玩游戏，实时互动聊天与打赏礼物，主播面对面陪你畅玩你喜欢的游戏。LV直播棋牌既包含百家乐，骰宝，龙虎斗，二八杠，牌九，色碟，三公，鱼虾蟹等游戏，也有斗地主，扎金花，德州扑克，经典麻将，吹牛等多款竞技类游戏，我们将为广大用户持续更新更多受欢迎的游戏。
+                                              LV首推直播互动娱乐游戏，主播带你玩游戏，实时互动聊天与打赏礼物，主播面对面陪你畅玩你喜欢的游戏。LV直播棋牌既包含百家乐，骰宝，龙虎斗，二八杠，牌九，色碟，三公，鱼虾蟹等游戏，也有斗地主，扎金花，德州扑克，经典麻将，吹牛等多款竞技类游戏，我们将为广大用户持续更新更多受欢迎的游戏。
                                             </p>
                                         </div>
                                     </div>
@@ -103,6 +103,7 @@
                                 </div>
                             </div>
                         </Container>
+                        <div class="bgimg"></div>
                     </div>
                 </div>
                 <div class="swiper-slide lv-classproduct-content2">
@@ -133,6 +134,7 @@
                                 </div>
                             </div>
                         </Container>
+                        <div class="bgimg2"></div>
                     </div>
                 </div>
                 <div class="swiper-slide lv-classproduct-content2">
@@ -160,6 +162,7 @@
                                 </div>
                             </div>
                         </Container>
+                        <div class="bgimg3"></div>
                     </div>
                 </div>
                 <div class="swiper-slide lv-classproduct-content2">
@@ -188,6 +191,7 @@
                                 </div>
                             </div>
                         </Container>
+                        <div class="bgimg2"></div>
                     </div>
                 </div>
                 <div class="swiper-slide lv-classproduct-content2">
@@ -205,7 +209,7 @@
                                             </div>
                                             <div class="info ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0.1s">
                                                 <p>
-                                                内容待加入...
+                                                    LV作为专业电竞博彩平台，我们提供最完整的电竞博彩项目及盘口，投注项目包括绝地求生:大逃杀、反恐精英CS、刀塔(Dota 2)、英雄联盟、星际争霸、炉石传说等等，并且除了一般输赢盘口，另有首杀、首座炮塔...等多达30种的特殊盘口设计，加上24小时直播的网红美女在线与您观看讨论赛事情况，为全球电子竞技爱好者提供最优质、最可靠的直播竞猜服务。
                                                 </p>
                                             </div>
                                         </div>
@@ -215,6 +219,7 @@
                                     </div>
                                 </div>
                             </Container>
+                            <div class="bgimg"></div>
                         </div>
                     </div>
                     <div class="swiper-slide lv-classproduct-content2">
@@ -235,14 +240,15 @@
                                             </div>
                                             <div class="info ani" swiper-animate-effect="fadeInUp"  swiper-animate-delay="0.1s">
                                                 <p>
-                                                    内容待加入...
+                                                    LV拥有赛事数据库中已超过50种不同类型的体育类型，涉及足球、篮球、网球、棒球、冰球及美式足球等世界主流体育型态，每月超过15,000场赛事预播及直播，透过 Live Video 24小时不断线的直播互动技术，让许多网红美女与您一起参与精彩赛事投注讨论，绝对带给体育迷您超刺激的临场感。
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tiyubg ani" swiper-animate-effect="fadeIn"  swiper-animate-delay="1s"></div>
+                                    <!-- <div class="tiyubg ani" swiper-animate-effect="fadeIn"  swiper-animate-delay="1s"></div> -->
                                 </div>
                             </Container>
+                            <div class="bgimg2"></div>
                         </div>
                     </div>
                     <div class="swiper-slide"  style="height:266px">
@@ -380,6 +386,31 @@ export default {
             position: relative;
             z-index: 10;
             height:100%;
+            .bgimg{
+                width:100%;
+                height:100%;
+                position: absolute;
+                top:0;
+                left:0;
+                background:url(~assets/images/classproduct/shape1.png) no-repeat left center;
+            }
+            .bgimg2{
+                width:100%;
+                height:100%;
+                position: absolute;
+                top:0;
+                left:0;
+                background:url(~assets/images/classproduct/shape2.png) no-repeat right center;
+            }
+            .bgimg3{
+                width:100%;
+                height:100%;
+                position: absolute;
+                top:0;
+                left:-30%;
+                background:url(~assets/images/classproduct/BG_2.png) no-repeat left center;
+                background-size:70%;
+            }
             .classproduct-part1-bg1{
                 width:100%;
                 height:100%;
