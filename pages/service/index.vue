@@ -266,10 +266,16 @@
                 .program_info{
                     position:absolute;
                     top:-5%;left:-5%;z-index:1;
-                    width:110%;height:0;
+                    width:110%;
+                    height:0;
                     opacity:0;
                     overflow:hidden;
-                    background:rgb(109, 109, 108);
+                    // background:rgb(109, 109, 108);
+                    background: #e7bc56;
+                    background: -webkit-linear-gradient(#e7bc56, #e77226);
+                    background: -o-linear-gradient(#e7bc56, #e77226);
+                    background: -moz-linear-gradient(#e7bc56, #e77226); 
+                    background: linear-gradient(#e7bc56, #e77226);
                     color:#fff;
                     text-align:center;
                     transition:all .6s cubic-bezier(.215, .61, .355, 1) 0s;

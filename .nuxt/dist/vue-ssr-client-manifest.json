@@ -17,7 +17,7 @@
     "img/Screen1.ded1b31.png",
     "img/bg2.ad4c004.png",
     "img/tx_2_1.63afa20.png",
-    "videos/dance.acbb8b1.mp4",
+    "videos/dance.35f51e6.mp4",
     "img/yxfl_2.e09bc2d.png",
     "img/fontello.dba2e91.svg",
     "img/lvtv_cppd.6927fe9.png",
@@ -29,7 +29,7 @@
     "img/tx_4_2.a1f1ec4.png",
     "img/sy_sj_2.188a916.png",
     "img/lvty_star8.e16cbfd.jpg",
-    "videos/caipiao.41ed44a.mp4",
+    "videos/caipiao.b9c6e2e.mp4",
     "img/about2.0e67f23.png",
     "img/sy_sj_3.d8a5a0e.png",
     "img/fwzc_icon_zbyx.d726606.png",
@@ -64,7 +64,7 @@
     "img/nrzz_rw_2.4ad2763.png",
     "img/tx_4_1.2992f0a.png",
     "img/yxfl_ys_3.75c5290.png",
-    "videos/dianjing.218a513.mp4",
+    "videos/dianjing.f182b7b.mp4",
     "img/homebg.b08027f.png",
     "img/sy_yuansu_3.a1a2a2a.png",
     "img/shape1.8d6f4d8.png",
@@ -78,7 +78,7 @@
     "img/nrzz_rw_1.6ba5137.png",
     "img/sy_yuansu_2.0206f22.png",
     "img/nrzz_rw_5.b94139f.png",
-    "videos/tiyu.96692ac.mp4",
+    "videos/tiyu.4a3fbf0.mp4",
     "img/lvty_star3.2e75053.jpg",
     "img/tx_2.8131694.png",
     "img/fwzc_bj_2.2374e86.png",
@@ -93,7 +93,7 @@
     "img/lvty_star2.f027a1b.jpg",
     "img/floating-card-shadow.e411d05.png",
     "img/productbtn.ac19b30.png",
-    "videos/zonghe.23a5305.mp4",
+    "videos/zonghe.d3792bc.mp4",
     "img/yxfl_5.6daf353.png",
     "img/BG_2.5d4c870.png",
     "videos/sound.3a84b74.mp4",
@@ -114,7 +114,7 @@
     "img/lvty_star4.de74344.jpg",
     "fonts/fontello.2b0babc.eot",
     "img/lxwm_bj.50c1896.png",
-    "pages/content/index.5ed0aade102ebf7b6485.js",
+    "pages/content/index.52e8f4dbac1d8f424f69.js",
     "pages/index.fa301c5c5be628b776b8.js",
     "pages/classproduct/index.afc3949c50f7f7b148cd.js",
     "pages/mcontent/index.18a1a4bb82f13c9d0330.js",
@@ -124,25 +124,25 @@
     "layouts/mobile.23687e910307a6e46c7f.js",
     "layouts/default.0528b41f46aad1cbba62.js",
     "pages/mhome/index.c94037a377f650f31721.js",
-    "pages/service/index.dc0e261e3e6784be662e.js",
+    "pages/service/index.7265331a81a3882e7eac.js",
     "pages/mservice/index.9b2d049648db661bbd12.js",
     "pages/mabout/index.c286cb685f2cadcea1f9.js",
     "pages/mcontactus/index.a14c79b0558daa1e5392.js",
     "pages/contactus/index.fef08a22324605abd559.js",
     "pages/demostation/index.63b8863e46e1e45e66a4.js",
     "vendor.e85e1e43371cdf3a6a73.js",
-    "app.371283886aaa74774424.js",
-    "manifest.a084968257b069eb8d91.js",
+    "app.108847dda90926cfad26.js",
+    "manifest.b42dabbaa6fb9561c164.js",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.a084968257b069eb8d91.js",
+    "manifest.b42dabbaa6fb9561c164.js",
     "vendor.e85e1e43371cdf3a6a73.js",
-    "app.371283886aaa74774424.js"
+    "app.108847dda90926cfad26.js"
   ],
   "async": [
-    "pages/content/index.5ed0aade102ebf7b6485.js",
+    "pages/content/index.52e8f4dbac1d8f424f69.js",
     "pages/index.fa301c5c5be628b776b8.js",
     "pages/classproduct/index.afc3949c50f7f7b148cd.js",
     "pages/mcontent/index.18a1a4bb82f13c9d0330.js",
@@ -152,7 +152,7 @@
     "layouts/mobile.23687e910307a6e46c7f.js",
     "layouts/default.0528b41f46aad1cbba62.js",
     "pages/mhome/index.c94037a377f650f31721.js",
-    "pages/service/index.dc0e261e3e6784be662e.js",
+    "pages/service/index.7265331a81a3882e7eac.js",
     "pages/mservice/index.9b2d049648db661bbd12.js",
     "pages/mabout/index.c286cb685f2cadcea1f9.js",
     "pages/mcontactus/index.a14c79b0558daa1e5392.js",
@@ -243,17 +243,6 @@
       9,
       52,
       68
-    ],
-    "49234833": [
-      123,
-      2,
-      4,
-      31,
-      37,
-      50,
-      59,
-      80,
-      104
     ],
     "49450982": [
       129,
@@ -1118,17 +1107,6 @@
       0,
       71,
       75
-    ],
-    "311900ad": [
-      123,
-      2,
-      4,
-      31,
-      37,
-      50,
-      59,
-      80,
-      104
     ],
     "571a7a82": [
       129,
@@ -2057,17 +2035,6 @@
       52,
       68
     ],
-    "9695c222": [
-      123,
-      2,
-      4,
-      31,
-      37,
-      50,
-      59,
-      80,
-      104
-    ],
     "232d188f": [
       129,
       9,
@@ -2121,6 +2088,17 @@
       100,
       103,
       110
+    ],
+    "67428ed5": [
+      123,
+      2,
+      4,
+      31,
+      37,
+      50,
+      59,
+      80,
+      104
     ],
     "0897a21c": [
       129,
@@ -2683,6 +2661,17 @@
       9,
       52,
       68
+    ],
+    "3fa88119": [
+      123,
+      2,
+      4,
+      31,
+      37,
+      50,
+      59,
+      80,
+      104
     ],
     "dfa02458": [
       129,
@@ -5496,6 +5485,17 @@
       52,
       68
     ],
+    "279e3993": [
+      123,
+      2,
+      4,
+      31,
+      37,
+      50,
+      59,
+      80,
+      104
+    ],
     "664ffcd6": [
       129,
       9,
@@ -6988,26 +6988,6 @@
       52,
       68
     ],
-    "4b480e0a": [
-      130,
-      83
-    ],
-    "05d086ce": [
-      130,
-      83
-    ],
-    "3a36ef70": [
-      129,
-      9,
-      52,
-      68
-    ],
-    "629e580d": [
-      129,
-      9,
-      52,
-      68
-    ],
     "1fcf2b98": [
       129,
       9,
@@ -7030,6 +7010,12 @@
       130,
       83
     ],
+    "3a36ef70": [
+      129,
+      9,
+      52,
+      68
+    ],
     "05bdeccf": [
       129,
       9,
@@ -7051,6 +7037,20 @@
       83
     ],
     "0adab950": [
+      129,
+      9,
+      52,
+      68
+    ],
+    "4b480e0a": [
+      130,
+      83
+    ],
+    "05d086ce": [
+      130,
+      83
+    ],
+    "629e580d": [
       129,
       9,
       52,
