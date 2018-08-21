@@ -6,7 +6,7 @@
                     <banner></banner>
                 </div>
                 <div class="swiper-slide lv-content-star">
-                    <Container>
+                    <Container class="addbg">
                         <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV特约明星艺人</h3>
                         <div class="star-list">
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
@@ -396,6 +396,9 @@
         color:#fff;
         padding:100px 0;
         position: relative;
+        .addbg{
+            background: url(~assets/images/content/nrzz_wzbj.png) no-repeat right bottom;
+        }
         .title{
             text-align: center;
             font-size:$font-size-base * 2;
@@ -413,7 +416,8 @@
             display: flex;
             flex-wrap: wrap;
             position: relative;
-            z-index: 11;;
+            z-index: 11;
+            background: url(~assets/images/content/nrzz_wzbj.png) no-repeat left top;
             .item{
                 width:25%;
                 padding:0 35px;
