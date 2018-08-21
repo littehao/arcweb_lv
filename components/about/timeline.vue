@@ -362,6 +362,9 @@ export default {
     .tl-timeaxis-background{
         background:transparent;
     }
+    .tl-timenav .tl-attribution{
+        display:none;
+    }
 }
 </style>
 
