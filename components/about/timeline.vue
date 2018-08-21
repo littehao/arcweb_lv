@@ -96,18 +96,33 @@ import '../../plugins/css/fontello.css'
 import '../../plugins/css/webabout.css'
 import '../../plugins/css/timeline-js2.css'
 export default {
-    head() {
-        return {
-            script:[
-                {src:'https://cdn.katoong.com/app/timeline-js2.js',type:'text/javascript'}
-            ]
-        }
-    },
+    // head() {
+    //     return {
+    //         script:[
+    //             {src:'https://cdn.katoong.com/app/timeline-js2.js',type:'text/javascript'}
+    //         ]
+    //     }
+    // },
     mounted(){
-        this.timeline();
+        if($("#timeline").length == 0){
+            var theHead = document.getElementsByTagName('head').item(0);
+            //创建脚本的dom对象实例
+            var myScript = document.createElement('script');
+            myScript.src = 'https://cdn.katoong.com/app/timeline-js2.js';      
+            myScript.id = "timeline";    //指定脚本路径
+            myScript.type = 'text/javascript';  //指定脚本类型
+            myScript.defer = true;              //程序下载完后再解析和执行
+            theHead.appendChild(myScript); 
+        }
+        if($("#timeline").length > 0){
+            setTimeout(() => {
+                this.timeline();
+            },500)
+        }
     },
     methods:{
         timeline(){
+            console.log(TL)
             function hideshow() {
                 var width = $(document).width();
                 if (width <= 992) {
