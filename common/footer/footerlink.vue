@@ -46,7 +46,7 @@
     height: auto;
     width:100%;
     background:#1c1c23;
-    border-top: 1px solid #666666;
+    border-top:1px solid #272727;
     .footer-content{
       width: 100%;
       display:flex;
