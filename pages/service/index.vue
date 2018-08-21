@@ -95,10 +95,9 @@
                     </ul>
                 </Container>
             </div>
-            <div class="swiper-slide"  style="height:266px">
+            <div class="swiper-slide"  style="height:98px">
                 <div class="homefooter">
                     <footerlink></footerlink>
-                    <Lfooter></Lfooter>
                 </div>
             </div>
         </div>

@@ -25,10 +25,9 @@
             <div class="swiper-slide lv-livevideo">
                 <timeline></timeline>
             </div>
-            <div class="swiper-slide"  style="height:266px">
+            <div class="swiper-slide"  style="height:98px">
                 <div class="homefooter">
                     <footerlink></footerlink>
-                    <Lfooter></Lfooter>
                 </div>
             </div>
         </div>

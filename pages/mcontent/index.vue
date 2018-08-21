@@ -5,7 +5,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <div class="img"><img src="~assets/images/content/nrzz_rw_1.png" alt=""></div>
+                            <div class="img"><img src="~assets/images/content/nrzz_rw_1.png" alt="" style="width:80%;"></div>
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">生态造星计划</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星，星光大道等你来</p>
@@ -14,7 +14,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <div class="img"><img src="~assets/images/content/nrzz_rw_2.png" alt="" style="width:80%;"></div>
+                            <div class="img"><img src="~assets/images/content/nrzz_rw_2.png" alt=""></div>
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">内容为王，娱乐至上</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">娱乐内容与粉丝经济领域的先行者</p>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="lv-slide-content">
-                            <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt="" style="width:80%;"></div>
+                            <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt=""></div>
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻级导师团队倾力打造</h3>
                                 <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">梦幻导师量身打造，专业培训神级飞跃</p>

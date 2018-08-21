@@ -2,32 +2,19 @@
    <div class="footer" id="footer-section">
      <Container>
         <div class="footer-content">
-            <div class="language"></div>
-            <ul class="list">
-                <li>
+            <div class="footer-logo"><img src="../../assets/images/public/logo.png" alt=""></div>
+            <div class="footer-nav">
+              <div class="nuxtnav">
                 <nuxt-link  target="_blank" to="/">首页</nuxt-link>
-                </li>
-                <li>
                 <nuxt-link  target="_blank" to="/classproduct">产品种类</nuxt-link>
-                </li>
-                <li>
                 <nuxt-link  target="_blank" to="/content">内容制作</nuxt-link>
-                </li>
-                <li>
                 <nuxt-link  target="_blank" to="/service">服务支持</nuxt-link>
-                </li>
-            </ul>
-            <ul class="list">
-                <li>
                 <nuxt-link  target="_blank" to="/about">关于我们</nuxt-link>
-                </li>
-                <li>
                 <nuxt-link  target="_blank" to="/contactus">合作联系</nuxt-link>
-                </li>
-                <li>
                 <a  target="_blank" href="https://www.solantec.net">演示站</a>
-                </li>
-            </ul>
+              </div>
+              <div class="copy">LVTV-the inventor of live egaming system Copyright © 2017-2018 System All Rights Reserved</div>
+            </div>
         </div>
     </Container>
    </div>
@@ -53,24 +40,32 @@
       align-items: start;
       justify-content: start;
       padding: 20px 0;
-      height: 220px;
+      // height: 220px;
+      .footer-logo{
+        flex:2;
+        img{
+          width:120px;
+        }
+      }
+      .footer-nav{
+        text-align: right;
+        a{
+          color:#fff;
+          font-size:14px;
+          margin-left: 20px;
+          &:hover{
+            color:#FFE95C;
+          }
+        } 
+        .copy{
+          margin-top:15px;
+          color:#506a84;
+          font-size:14px;
+        }
+      }
     }
     .language{
       width: 200px;
-    }
-    .list{
-      min-width: 150px;
-      max-width: 200px;
-      height: auto;
-      li{
-        a{
-          width: 100%;
-          line-height: 25px;
-          text-align: left;
-          font-size: $font-size-large;
-          color:#7887A7;
-        }
-      }
     }
   }
 </style>
