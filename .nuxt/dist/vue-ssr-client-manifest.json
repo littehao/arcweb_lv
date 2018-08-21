@@ -120,7 +120,7 @@
     "pages/mcontent/index.17dce69dac82e6857a0d.js",
     "pages/home/index.b2d6e6e6d1230d7c8756.js",
     "pages/mclassproduct/index.d52ce8d102db705eb675.js",
-    "pages/about/index.9f9f2b5122248fba3910.js",
+    "pages/about/index.66c6a21a09d9a9d538ea.js",
     "layouts/mobile.23687e910307a6e46c7f.js",
     "layouts/default.0528b41f46aad1cbba62.js",
     "pages/mhome/index.c94037a377f650f31721.js",
@@ -132,12 +132,12 @@
     "pages/demostation/index.63b8863e46e1e45e66a4.js",
     "vendor.e85e1e43371cdf3a6a73.js",
     "app.a936bd84a60a9e67f955.js",
-    "manifest.74c13210086381c8b290.js",
+    "manifest.0396a4355eb29b73e5c0.js",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.74c13210086381c8b290.js",
+    "manifest.0396a4355eb29b73e5c0.js",
     "vendor.e85e1e43371cdf3a6a73.js",
     "app.a936bd84a60a9e67f955.js"
   ],
@@ -148,7 +148,7 @@
     "pages/mcontent/index.17dce69dac82e6857a0d.js",
     "pages/home/index.b2d6e6e6d1230d7c8756.js",
     "pages/mclassproduct/index.d52ce8d102db705eb675.js",
-    "pages/about/index.9f9f2b5122248fba3910.js",
+    "pages/about/index.66c6a21a09d9a9d538ea.js",
     "layouts/mobile.23687e910307a6e46c7f.js",
     "layouts/default.0528b41f46aad1cbba62.js",
     "pages/mhome/index.c94037a377f650f31721.js",
