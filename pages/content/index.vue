@@ -698,7 +698,7 @@
                 width:38%;
                 float:left;
                 h2{
-                    font-size:30px;
+                    font-size:28px;
                     margin-bottom:25px;
                 }
                 p{
