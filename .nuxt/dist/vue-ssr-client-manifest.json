@@ -115,10 +115,10 @@
     "fonts/fontello.2b0babc.eot",
     "img/lxwm_bj.50c1896.png",
     "pages/content/index.48921663bed5d2b39cd6.js",
-    "pages/index.7c17de838cddc4469b00.js",
+    "pages/index.bb0ea473b82f26d16cbd.js",
     "pages/classproduct/index.fca62ea55fdef1a89572.js",
     "pages/mcontent/index.17dce69dac82e6857a0d.js",
-    "pages/home/index.b2d6e6e6d1230d7c8756.js",
+    "pages/home/index.d1dbf7f2961515118ada.js",
     "pages/mclassproduct/index.d52ce8d102db705eb675.js",
     "pages/about/index.ff69d2749fcddf578200.js",
     "layouts/mobile.23687e910307a6e46c7f.js",
@@ -132,21 +132,21 @@
     "pages/demostation/index.63b8863e46e1e45e66a4.js",
     "vendor.e85e1e43371cdf3a6a73.js",
     "app.880981ba8b69c73f42f7.js",
-    "manifest.dc4ddf3a3ccf09b8e0b7.js",
+    "manifest.48ae4ce678b47c12bf00.js",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.dc4ddf3a3ccf09b8e0b7.js",
+    "manifest.48ae4ce678b47c12bf00.js",
     "vendor.e85e1e43371cdf3a6a73.js",
     "app.880981ba8b69c73f42f7.js"
   ],
   "async": [
     "pages/content/index.48921663bed5d2b39cd6.js",
-    "pages/index.7c17de838cddc4469b00.js",
+    "pages/index.bb0ea473b82f26d16cbd.js",
     "pages/classproduct/index.fca62ea55fdef1a89572.js",
     "pages/mcontent/index.17dce69dac82e6857a0d.js",
-    "pages/home/index.b2d6e6e6d1230d7c8756.js",
+    "pages/home/index.d1dbf7f2961515118ada.js",
     "pages/mclassproduct/index.d52ce8d102db705eb675.js",
     "pages/about/index.ff69d2749fcddf578200.js",
     "layouts/mobile.23687e910307a6e46c7f.js",
@@ -6443,6 +6443,26 @@
       52,
       68
     ],
+    "4b480e0a": [
+      130,
+      83
+    ],
+    "05d086ce": [
+      130,
+      83
+    ],
+    "4be3b308": [
+      129,
+      9,
+      52,
+      68
+    ],
+    "629e580d": [
+      129,
+      9,
+      52,
+      68
+    ],
     "ee27662e": [
       129,
       9,
@@ -6932,12 +6952,6 @@
       52,
       68
     ],
-    "4be3b308": [
-      129,
-      9,
-      52,
-      68
-    ],
     "05e48d11": [
       129,
       9,
@@ -6963,12 +6977,6 @@
       68
     ],
     "6cef8c80": [
-      129,
-      9,
-      52,
-      68
-    ],
-    "629e580d": [
       129,
       9,
       52,
@@ -7029,14 +7037,6 @@
       68
     ],
     "542334c2": [
-      130,
-      83
-    ],
-    "4b480e0a": [
-      130,
-      83
-    ],
-    "05d086ce": [
       130,
       83
     ],
