@@ -122,7 +122,6 @@ export default {
     },
     methods:{
         timeline(){
-            console.log(TL)
             function hideshow() {
                 var width = $(document).width();
                 if (width <= 992) {
