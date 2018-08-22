@@ -95,10 +95,10 @@
                     <!-- <img  class="ipad  ani" swiper-animate-effect="fadeInLeft" src="../../assets/images/home/sy_sj_2.png" alt=""> -->
                   </div>
                   <div class="card-info-left text-content">
-                    <h2 class="title  ani" swiper-animate-effect="fadeInUp">定制你专属的“直播+”和“游戏+”</h2>
+                    <h2 class="title  ani" swiper-animate-effect="fadeInUp">定制您专属的“直播+”和“游戏+”</h2>
                     <h3 class="subtitle  ani" swiper-animate-effect="fadeInUp">Live Video </h3>
                     <p class="content-info  ani " swiper-animate-effect="fadeInUp">
-                      我们拥有成熟完善的视频直播系统和功能，且拥有性能优越的高并发架构技术，坚实的技术团队全面保障系统的稳定和安全。产品服务接口达到了每天数亿的调用量，经验就是一切，强大的直播互动整合技术可以为您定制任何你想要的专属产品。
+                      我们拥有成熟完善的视频直播系统和功能，且拥有性能优越的高并发架构技术，坚实的技术团队全面保障系统的稳定和安全。产品服务接口达到了每天数亿的调用量，经验就是一切，强大的直播互动整合技术可以为您定制任何您想要的专属产品。
                     </p>
                   </div>
                 </div>
