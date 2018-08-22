@@ -44,8 +44,8 @@
             </div>
             <div class="section">
                <div class="pic revealOnScroll" data-animation="fadeInUp">
-                    <img class="img1" style="position:relative;" src="~assets/images/home/sy_sj_2.png" alt="">
-                    <img class="img2" style="position:absolute;left:10%;bottom:0px;width:30%;" src="~assets/images/home/sy_sj_3.png" alt="">
+                    <!-- <img class="img1" style="position:relative;" src="~assets/images/home/sy_sj_2.png" alt=""> -->
+                    <img class="img3" style="width:90%;" src="~assets/images/home/sy_sj_3.png" alt="">
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
                    <h3 class="title">定制您专属的“直播+”和“游戏+”</h3>
