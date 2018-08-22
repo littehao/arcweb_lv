@@ -291,7 +291,7 @@
                         padding-top:0;
                     }
                 }
-                .program_info p{padding:0 50px;font-size:16px;line-height:25px;overflow:hidden;}
+                .program_info p{padding:0 50px;font-size:16px;line-height:25px;overflow:hidden;text-align:left;}
                 .program_info .time{width:100%;height:auto;background: #f7f7f7;text-align:left;}
                 .program_info .time span{display:block;color:#13DF81;}
                 .program_info .time i{font-size:14px;color:#13DF81;line-height:20px;font-style: normal;}
