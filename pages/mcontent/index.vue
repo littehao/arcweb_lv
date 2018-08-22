@@ -8,7 +8,7 @@
                             <div class="img"><img src="~assets/images/content/nrzz_rw_1.png" alt="" style="width:80%;"></div>
                             <div class="text">
                                 <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">生态造星计划</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星，星光大道等你来</p>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星，星光大道等您来</p>
                             </div>
                         </div>
                     </div>
@@ -244,11 +244,11 @@
                 </div>
                 <div class="left">
                     <h2>全渠道+全明星+工业化=星途璀璨</h2>
-                        <p>最顶级的培训导师带你开启追梦之旅</p>
-                        <p>最专业的经纪团队为你开创广阔机遇</p>
-                        <p>最顶尖的制作团队为你量身定制作品</p>
-                        <p>最豪华的明星阵容带你走向璀璨之路</p>
-                        <!--<p>如果你想实现梦想</p>-->
+                        <p>最顶级的培训导师带您开启追梦之旅</p>
+                        <p>最专业的经纪团队为您开创广阔机遇</p>
+                        <p>最顶尖的制作团队为您量身定制作品</p>
+                        <p>最豪华的明星阵容带您走向璀璨之路</p>
+                        <!--<p>如果您想实现梦想</p>-->
                         <!--<p>请与我们联络</p>-->
                         <!-- <div class="link"><nuxt-link to="/mcontactus">申请加入LV</nuxt-link></div> -->
                 </div>

@@ -48,10 +48,10 @@
                     <img class="img2" style="position:absolute;left:10%;bottom:0px;width:30%;" src="~assets/images/home/sy_sj_3.png" alt="">
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
-                   <h3 class="title">定制你专属的“直播+”和“游戏+”</h3>
+                   <h3 class="title">定制您专属的“直播+”和“游戏+”</h3>
                    <div class="lv">Live Video</div>
                    <div class="intro">
-                     我们拥有成熟完善的视频直播系统和功能，且拥有性能优越的高并发架构技术，坚实的技术团队全面保障系统的稳定和安全。产品服务接口达到了每天数亿的调用量，经验就是一切，强大的直播互动整合技术可以为您定制任何你想要的专属产品。
+                     我们拥有成熟完善的视频直播系统和功能，且拥有性能优越的高并发架构技术，坚实的技术团队全面保障系统的稳定和安全。产品服务接口达到了每天数亿的调用量，经验就是一切，强大的直播互动整合技术可以为您定制任何您想要的专属产品。
                    </div>
                </div>
             </div>
