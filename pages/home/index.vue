@@ -92,8 +92,7 @@
 
                   <div class="card-info-right img-content ">
                     <img  class="sj  ani" swiper-animate-effect="fadeInLeft" src="../../assets/images/home/sy_sj_3.png" alt="">
-                    <img  class="ipad  ani" swiper-animate-effect="fadeInLeft" src="../../assets/images/home/sy_sj_2.png" alt="">
-
+                    <!-- <img  class="ipad  ani" swiper-animate-effect="fadeInLeft" src="../../assets/images/home/sy_sj_2.png" alt=""> -->
                   </div>
                   <div class="card-info-left text-content">
                     <h2 class="title  ani" swiper-animate-effect="fadeInUp">定制你专属的“直播+”和“游戏+”</h2>
@@ -468,7 +467,12 @@ export default {
         bottom: 0;
       }
       .sj{
-        width: 185px;
+        width: 80%;
+      }
+      @media screen and (max-width: 1440px) {
+        .sj{
+          width: 70%;
+        }
       }
       .ipad{
         left:185px;

@@ -31,7 +31,7 @@
     "img/lvty_star8.e16cbfd.jpg",
     "videos/caipiao.b9c6e2e.mp4",
     "img/about2.0e67f23.png",
-    "img/sy_sj_3.d8a5a0e.png",
+    "img/sy_sj_3.973bead.png",
     "img/fwzc_icon_zbyx.d726606.png",
     "fonts/fontello.3c1bc69.ttf",
     "img/lvty_star5.5ee4e7f.jpg",
@@ -71,7 +71,7 @@
     "img/gywm_bj_2.691b34c.png",
     "fonts/ionicons.99ac330.woff",
     "img/about3.0f7a63a.png",
-    "img/yxfl_1.b9acf57.png",
+    "img/yxfl_1.8439796.png",
     "img/sy_yuansu_5.ed24a7b.png",
     "img/tx_4.d590792.png",
     "img/tx_1_2.3de105e.png",
@@ -115,15 +115,15 @@
     "fonts/fontello.2b0babc.eot",
     "img/lxwm_bj.50c1896.png",
     "pages/content/index.3370d9a3d9241ab96740.js",
-    "pages/index.fa301c5c5be628b776b8.js",
-    "pages/classproduct/index.afc3949c50f7f7b148cd.js",
+    "pages/index.a4dda278192e22dec7de.js",
+    "pages/classproduct/index.0f400672f259670eb0fc.js",
     "pages/mcontent/index.18a1a4bb82f13c9d0330.js",
-    "pages/home/index.5968c0f5d6a48138c318.js",
-    "pages/mclassproduct/index.d52ce8d102db705eb675.js",
+    "pages/home/index.d72c2c805a6f5fd6ffd2.js",
+    "pages/mclassproduct/index.1bc88fc749aa2422c727.js",
     "pages/about/index.c47fb1046617edc1d64e.js",
     "layouts/mobile.23687e910307a6e46c7f.js",
     "layouts/default.0528b41f46aad1cbba62.js",
-    "pages/mhome/index.c94037a377f650f31721.js",
+    "pages/mhome/index.0033c2f5276c6bab679e.js",
     "pages/service/index.dfba354caa8409246349.js",
     "pages/mservice/index.9b2d049648db661bbd12.js",
     "pages/mabout/index.c286cb685f2cadcea1f9.js",
@@ -132,26 +132,26 @@
     "pages/demostation/index.63b8863e46e1e45e66a4.js",
     "vendor.e85e1e43371cdf3a6a73.js",
     "app.86a9afd83f41e213c74a.js",
-    "manifest.7480c72140f3cdad6ed2.js",
+    "manifest.6f30cc00710e2b20b86a.js",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.7480c72140f3cdad6ed2.js",
+    "manifest.6f30cc00710e2b20b86a.js",
     "vendor.e85e1e43371cdf3a6a73.js",
     "app.86a9afd83f41e213c74a.js"
   ],
   "async": [
     "pages/content/index.3370d9a3d9241ab96740.js",
-    "pages/index.fa301c5c5be628b776b8.js",
-    "pages/classproduct/index.afc3949c50f7f7b148cd.js",
+    "pages/index.a4dda278192e22dec7de.js",
+    "pages/classproduct/index.0f400672f259670eb0fc.js",
     "pages/mcontent/index.18a1a4bb82f13c9d0330.js",
-    "pages/home/index.5968c0f5d6a48138c318.js",
-    "pages/mclassproduct/index.d52ce8d102db705eb675.js",
+    "pages/home/index.d72c2c805a6f5fd6ffd2.js",
+    "pages/mclassproduct/index.1bc88fc749aa2422c727.js",
     "pages/about/index.c47fb1046617edc1d64e.js",
     "layouts/mobile.23687e910307a6e46c7f.js",
     "layouts/default.0528b41f46aad1cbba62.js",
-    "pages/mhome/index.c94037a377f650f31721.js",
+    "pages/mhome/index.0033c2f5276c6bab679e.js",
     "pages/service/index.dfba354caa8409246349.js",
     "pages/mservice/index.9b2d049648db661bbd12.js",
     "pages/mabout/index.c286cb685f2cadcea1f9.js",
@@ -7036,12 +7036,6 @@
       130,
       83
     ],
-    "0adab950": [
-      129,
-      9,
-      52,
-      68
-    ],
     "4b480e0a": [
       130,
       83
@@ -7051,6 +7045,12 @@
       83
     ],
     "629e580d": [
+      129,
+      9,
+      52,
+      68
+    ],
+    "0adab950": [
       129,
       9,
       52,
