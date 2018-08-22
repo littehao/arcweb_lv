@@ -426,6 +426,7 @@
                     width:100%;
                     height:250px;
                     overflow:hidden;
+                    box-shadow: 7px 7px 10px rgba(132, 132, 132, 0.4);
                     img{
                         width:100%;
                         display:block;

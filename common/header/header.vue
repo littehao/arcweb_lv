@@ -4,7 +4,7 @@
       <Container>
         <div class="content">
           <div class="logo">
-            <img src="../../assets/images/public/logo.png" alt="">
+            <nuxt-link to="/"><img src="../../assets/images/public/logo.png" alt=""></nuxt-link>
           </div>
           <nav class="nav">
             <ul class="nav-list">
