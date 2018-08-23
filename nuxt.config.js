@@ -49,6 +49,9 @@ module.exports = {
     {
       src:'swiper/dist/css/swiper.min.css'
     },
+    {
+      src:'vue-img-inputer/dist/index.css'
+    }
   ],
   axios: {
     proxy: true,

@@ -9,6 +9,7 @@ import Footerlink from './footer/footerlink'
 import Container from './container/container'
 import Card from './card/card'
 import Force from './force/force'
+import ImgInputer from 'vue-img-inputer'
 const  component={
   Lheader,
   Lfooter,
@@ -17,7 +18,8 @@ const  component={
   Card,
   Force,
   Mheader,
-  Mfooter
+  Mfooter,
+  ImgInputer
 }
 
 const common={

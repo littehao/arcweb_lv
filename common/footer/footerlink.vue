@@ -5,13 +5,21 @@
             <div class="footer-logo"><img src="../../assets/images/public/logo.png" alt=""></div>
             <div class="footer-nav">
               <div class="nuxtnav">
-                <nuxt-link  target="_blank" to="/">首页</nuxt-link>
-                <nuxt-link  target="_blank" to="/classproduct">产品种类</nuxt-link>
-                <nuxt-link  target="_blank" to="/content">内容制作</nuxt-link>
-                <nuxt-link  target="_blank" to="/service">服务支持</nuxt-link>
-                <nuxt-link  target="_blank" to="/about">关于我们</nuxt-link>
-                <nuxt-link  target="_blank" to="/contactus">合作联系</nuxt-link>
-                <a  target="_blank" href="https://www.solantec.net">演示站</a>
+                <div>
+                  <nuxt-link  target="_blank" to="/">首页</nuxt-link>
+                  <nuxt-link  target="_blank" to="/classproduct">产品种类</nuxt-link>
+                  <nuxt-link  target="_blank" to="/content">内容制作</nuxt-link>
+                  <nuxt-link  target="_blank" to="/service">服务支持</nuxt-link>
+                  <nuxt-link  target="_blank" to="/about">关于我们</nuxt-link>
+                  <nuxt-link  target="_blank" to="/contactus">合作联系</nuxt-link>
+                  <a target="_blank" href="https://www.solantec.net">演示站</a>
+                </div>
+                <div style="margin-left:50px;">
+                  <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-fb.png" alt=""></a>
+                  <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-ytb.png" alt=""></a>
+                  <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-sky.png" alt=""></a>
+                  <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-wb.png" alt=""></a>
+                </div>
               </div>
               <div class="copy">LVTV-the inventor of live egaming system Copyright © 2017-2018 System All Rights Reserved</div>
             </div>
@@ -49,10 +57,16 @@
       }
       .footer-nav{
         text-align: right;
+        .nuxtnav{
+          display:flex;
+          align-items: center;
+          font-size:0;
+        }
         a{
           color:#fff;
           font-size:14px;
-          margin-left: 20px;
+          margin-right: 20px;
+          display:inline-block;
           &:hover{
             color:#FFE95C;
           }
@@ -61,6 +75,7 @@
           margin-top:15px;
           color:#506a84;
           font-size:14px;
+          text-align: left;
         }
       }
     }

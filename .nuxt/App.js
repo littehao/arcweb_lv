@@ -9,6 +9,8 @@ import '../node_modules/animate.css/animate.css'
 
 import '../node_modules/swiper/dist/css/swiper.min.css'
 
+import '../node_modules/vue-img-inputer/dist/index.css'
+
 
 let layouts = {
 

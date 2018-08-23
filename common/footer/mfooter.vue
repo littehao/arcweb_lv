@@ -1,6 +1,12 @@
 <template>
    <footer class="m-footer">
-     <p><img src="../../assets/images/public/logo.png" alt=""></p>
+    <div class="share">
+      <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-fb.png" alt=""></a>
+      <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-ytb.png" alt=""></a>
+      <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-sky.png" alt=""></a>
+      <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-wb.png" alt=""></a>
+    </div>
+    <p>LVTV-the inventor of live egaming system Copyright © 2017-2018 System All Rights Reserved</p>
    </footer>
 </template>
 
@@ -20,16 +26,24 @@
   $footer-text-color:#2A4560;
 .m-footer{
   width: 100%;
-  height: $footer-height;
+  // height: $footer-height;
   background-color:$footer-bg;
+  padding:10px 0;
+  .share{
+    text-align: center;
+    a{
+      display: inline-block;
+      margin:0 10px;
+    }
+  }
   p{
-
     width: 100%;
     height:100%;
     text-align: center;
-   display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    color:#506a84;
     span{
       display: inline-block;
       height: 100%;

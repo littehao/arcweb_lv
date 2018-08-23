@@ -253,6 +253,7 @@
                         <!-- <div class="link"><nuxt-link to="/mcontactus">申请加入LV</nuxt-link></div> -->
                 </div>
             </div>
+            <div class="signing"><nuxt-link to="/msigning">申请加入</nuxt-link></div>
         </div>
       </div>
     </div>
@@ -607,6 +608,20 @@
             height:100%;
             background: url(~assets/images/content/nrzz_wzbj.png) no-repeat 180px 150px  #0d0d11;
             overflow:hidden;
+            .signing{
+                text-align: center;
+                margin-top:30px;
+                a{
+                    display:inline-block;
+                    font-size:16px;
+                    color:#4c4c4c;
+                    width:150px;
+                    background: #ffe95b;
+                    height:35px;
+                    line-height: 35px;
+                    border-radius:50px;
+                }
+            }
         }
         .lv-starteam-content{
             width:100%;

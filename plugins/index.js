@@ -6,7 +6,6 @@ import iView from 'iview';
 import VueJsonp from 'vue-jsonp'
 import * as swiperAni from './swiper.animate.min.js'
 import Swiper from 'swiper';
-
 // import TL from './timeline-js.js'
 
 if (typeof window !== 'undefined') {

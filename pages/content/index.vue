@@ -233,7 +233,7 @@
                     <Container>
                         <div class="lv-starteam-bg">
                             <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">专业的造星团队</h3>
-                                <div class="lv-starteam-content">
+                                <div class="lv-starteam-content clearfix">
                                     <div class="left">
                                         <h2 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">全渠道+全明星+工业化=星途璀璨</h2>
                                             <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">最顶级的培训导师带您开启追梦之旅</p>
@@ -249,6 +249,7 @@
                                         <img class="img4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="~assets/images/content/zxtd_2.png" alt="">
                                     </div>
                                 </div>
+                                <div class="signing"><nuxt-link to="/signing">申请加入</nuxt-link></div>
                         </div>
                     </Container>
                 </div>
@@ -660,14 +661,14 @@
                         z-index:-1;
                     }
                 }
-                @media screen and (max-width:1679px) {
+                @media screen and (max-width:1680px) {
                     .item-t{
                         width:300px;
                         height:180px;
                     }
                 }
             }
-            @media screen and (max-width:1679px) {
+            @media screen and (max-width:1680px) {
                 .item{
                     margin-bottom:50px;
                 }
@@ -690,6 +691,40 @@
             height:100%;
             background: url(~assets/images/content/nrzz_wzbj.png) no-repeat 180px 150px  #0d0d11;
             overflow:hidden;
+            .signing{
+                text-align: center;
+                margin-top:50px;
+                a{
+                    display:inline-block;
+                    font-size:20px;
+                    color:#4c4c4c;
+                    width:200px;
+                    background: #ffe95b;
+                    height:50px;
+                    line-height: 50px;
+                    border-radius:50px;
+                }
+            }
+            @media screen and (max-width:1680px) {
+                .signing{
+                    margin-top:50px;
+                    a{
+                        height:40px;
+                        line-height: 40px;
+                        font-size:16px;
+                    }
+                }
+            }
+            @media screen and (max-width:1440px) {
+                .signing{
+                    margin-top:20px;
+                    a{
+                        height:40px;
+                        line-height: 40px;
+                        font-size:16px;
+                    }
+                }
+            }
         }
         .lv-starteam-content{
             width:100%;
@@ -705,6 +740,11 @@
                     font-size:18px;
                     margin:15% 0;
                     line-height: 35px;
+                }
+                @media screen and (max-width:1440px) {
+                    p{
+                        margin:10% 0;
+                    }
                 }
                 .link{
                     margin-top:80px;
@@ -723,6 +763,7 @@
             }
             .right{
                 width:500px;
+                height:100%;
                 float:right;
                 position: relative;
                 .img1{
@@ -739,7 +780,33 @@
                     right:0;
                     bottom:6%;
                 }
-                @media screen and (max-width:1679px) {
+                @media screen and (max-width:1440px) {
+                    .img1{
+                        width:35%;
+                    }
+                    .img2{
+                        width:30%;
+                        position: absolute;
+                        right:150px;
+                        top:30px;
+                        width:35%;
+                    }
+                    .img3{
+                        transform: translateX(0px);
+                        width:35%;
+                        position: absolute;
+                        left:2%;
+                        top:200px;
+                        width:35%;
+                    }
+                    .img4{
+                        position: absolute;
+                        right:120px;
+                        top:220px;
+                        width:30%;
+                    }
+                }
+                @media screen and (max-width:1679px) and (min-width:1441px) {
                     .img1{
                         width:45%;
                     }
@@ -759,14 +826,20 @@
                 }
             }
         }
-        @media screen and (max-width:1679px) {
+        @media screen and (max-width:1680px) and (min-width: 1441px) {
             .title{
-                margin-top:0px;
+                margin-top:50px;
                 font-size:24px;
             }
              .lv-starteam-content{
                  margin-top:20px;
              }
+        }
+        @media screen and (max-width:1440px) {
+            .title{
+                margin-top:10px;
+                font-size:24px;
+            }
         }
     }
 }
