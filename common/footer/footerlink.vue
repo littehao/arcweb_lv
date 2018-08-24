@@ -2,10 +2,20 @@
    <div class="footer" id="footer-section">
      <Container>
         <div class="footer-content">
-            <div class="footer-logo"><img src="../../assets/images/public/logo.png" alt=""></div>
+            <div class="footer-logo">
+              <div>
+                <img class="ftlogo" src="../../assets/images/public/logo.png" alt="">
+              </div>
+              <div class="share">
+                <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-fb.png" alt=""></a>
+                <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-ytb.png" alt=""></a>
+                <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-sky.png" alt=""></a>
+                <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-wb.png" alt=""></a>
+              </div>
+            </div>
             <div class="footer-nav">
               <div class="nuxtnav">
-                <div>
+                <div style="text-align: right;width:100%;">
                   <nuxt-link  target="_blank" to="/">首页</nuxt-link>
                   <nuxt-link  target="_blank" to="/classproduct">产品种类</nuxt-link>
                   <nuxt-link  target="_blank" to="/content">内容制作</nuxt-link>
@@ -13,12 +23,6 @@
                   <nuxt-link  target="_blank" to="/about">关于我们</nuxt-link>
                   <nuxt-link  target="_blank" to="/contactus">合作联系</nuxt-link>
                   <a target="_blank" href="https://www.solantec.net">演示站</a>
-                </div>
-                <div style="margin-left:50px;">
-                  <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-fb.png" alt=""></a>
-                  <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-ytb.png" alt=""></a>
-                  <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-sky.png" alt=""></a>
-                  <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-wb.png" alt=""></a>
                 </div>
               </div>
               <div class="copy">LVTV-the inventor of live egaming system Copyright © 2017-2018 System All Rights Reserved</div>
@@ -51,8 +55,17 @@
       // height: 220px;
       .footer-logo{
         flex:2;
-        img{
+        display:flex;
+        .ftlogo{
           width:120px;
+        }
+        .share{
+          margin-left:50px;display:flex;align-items: center;
+          a{
+            display:block;
+            height: 33px;
+            margin-right:10px;
+          }
         }
       }
       .footer-nav{
@@ -61,11 +74,12 @@
           display:flex;
           align-items: center;
           font-size:0;
+          text-align: right;
         }
         a{
           color:#fff;
           font-size:14px;
-          margin-right: 20px;
+          margin-left: 20px;
           display:inline-block;
           &:hover{
             color:#FFE95C;

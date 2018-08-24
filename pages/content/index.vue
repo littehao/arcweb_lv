@@ -240,7 +240,7 @@
                                             <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">最专业的经纪团队为您开创广阔机遇</p>
                                             <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">最顶尖的制作团队为您量身定制作品</p>
                                             <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">最豪华的明星阵容带您走向璀璨之路</p>
-                        
+                                        <div class="signing"><nuxt-link to="/signing">申请加入</nuxt-link></div>
                                     </div>
                                     <div class="right">
                                         <img class="img1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="~assets/images/content/zxtd_3.png" alt="">
@@ -249,7 +249,7 @@
                                         <img class="img4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="~assets/images/content/zxtd_2.png" alt="">
                                     </div>
                                 </div>
-                                <div class="signing"><nuxt-link to="/signing">申请加入</nuxt-link></div>
+                                
                         </div>
                     </Container>
                 </div>
@@ -405,10 +405,21 @@
             margin-bottom:53px;
             margin-top:5%;
         }
-        @media screen and (max-width:1679px) {
+        @media screen and (max-width:1680px) {
             .title{
                 margin-top:0;
                 font-size:24px;
+            }
+        }
+        @media screen and (max-width:1440px) and (min-width:1367px)  {
+            .title{
+                margin-top:0;
+                font-size:24px;
+            }
+        }
+        @media screen and (max-width:1366px)  {
+            .title{
+                margin-bottom:20px;
             }
         }
         .star-list{
@@ -434,9 +445,20 @@
                         transition: all 0.3s linear;
                     }
                 }
-                @media screen and (max-width:1679px) {
+                @media screen and (max-width:1680px) {
+                    .avatar{
+                        height:250px;
+                    }
+                }
+                @media screen and (max-width:1440px) {
                     .avatar{
                         height:200px;
+                    }
+                }
+                @media screen and (max-width:1366px) {
+                    .avatar{
+                        height:170px;
+                        width:180px;
                     }
                 }
                 .intro{
@@ -494,13 +516,18 @@
                 width: 90%;
             }
         }
-        @media screen and (max-width:1440px) {
+        @media screen and (max-width:1440px) and (min-width:1367px) {
             .celebrity-title{
                 margin-top:100px;
                 font-size:24px;
             }
             img{
                 width: 75%;
+            }
+        }
+        @media screen and (max-width:1366px) {
+            img{
+                width: 60%;
             }
         }
       }
@@ -520,10 +547,17 @@
             margin-bottom:100px;
             margin-top:10%;
         }
-        @media screen and (max-width:1680px) {
+        @media screen and (max-width:1680px) and (min-width:1441px) {
             .title{
                margin-top: 80px;
+            //    margin-bottom: 50px;
+            }
+        }
+        @media screen and (max-width:1440px) {
+            .title{
+               margin-top: 50px;
                margin-bottom: 50px;
+               font-size:20px;
             }
         }
         .channel-list{
@@ -692,7 +726,7 @@
             background: url(~assets/images/content/nrzz_wzbj.png) no-repeat 180px 150px  #0d0d11;
             overflow:hidden;
             .signing{
-                text-align: center;
+                text-align: left;
                 margin-top:50px;
                 a{
                     display:inline-block;
@@ -703,9 +737,10 @@
                     height:50px;
                     line-height: 50px;
                     border-radius:50px;
+                    text-align: center;
                 }
             }
-            @media screen and (max-width:1680px) {
+            @media screen and (max-width:1680px) and (min-width: 1441px) {
                 .signing{
                     margin-top:50px;
                     a{
@@ -715,13 +750,24 @@
                     }
                 }
             }
-            @media screen and (max-width:1440px) {
+            @media screen and (max-width:1440px) and (min-width: 1367px) {
                 .signing{
                     margin-top:20px;
                     a{
                         height:40px;
                         line-height: 40px;
                         font-size:16px;
+                    }
+                }
+            }
+            @media screen and (max-width:1366px) {
+                .signing{
+                    margin-top:20px;
+                    a{
+                        height:35px;
+                        line-height: 35px;
+                        font-size:14px;
+                        width:150px;
                     }
                 }
             }
@@ -744,6 +790,19 @@
                 @media screen and (max-width:1440px) {
                     p{
                         margin:10% 0;
+                    }
+                }
+                @media screen and (max-width:1440px) and (min-width:1367px) {
+                    p{
+                        margin:10% 0;
+                    }
+                }
+                @media screen and (max-width:1366px) {
+                    h2{
+                        font-size:24px;
+                    }
+                    p{
+                        margin:5% 0;
                     }
                 }
                 .link{
@@ -835,7 +894,16 @@
                  margin-top:20px;
              }
         }
-        @media screen and (max-width:1440px) {
+        @media screen and (max-width:1440px) and (min-width: 1367px) {
+            .title{
+                margin-top:10px;
+                font-size:24px;
+            }
+        }
+        @media screen and (max-width:1366px) {
+            .lv-starteam-content{
+                margin-top:20px;
+            }
             .title{
                 margin-top:10px;
                 font-size:24px;

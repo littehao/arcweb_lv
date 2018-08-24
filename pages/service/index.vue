@@ -225,7 +225,7 @@
             text-align: center;
             font-weight:400;
         }
-        @media screen and (max-width:1679px) {
+        @media screen and (max-width:1680px) {
             h3{
                 font-size:24px;
             }
@@ -234,11 +234,6 @@
             display:flex;
             flex-wrap: wrap;
             margin-top:55px;
-            // @media screen and (max-width:1680px) {
-            //     .item{
-            //        margin-bottom:30px;
-            //     }
-            // }
             .item{
                 width:33.3%;
                 margin-bottom:100px;
@@ -261,6 +256,18 @@
                         width:80%;
                         height:200px;
                         margin:0 auto;
+                    }
+                }
+                @media screen and (max-width:1366px) {
+                    h3{
+                        font-size:20px;
+                    }
+                    .program{
+                        height:180px;
+                        padding:30px 0;
+                        img{
+                            width:50px;
+                        }
                     }
                 }
                 .program_info{
@@ -297,8 +304,20 @@
                 .program_info .time i{font-size:14px;color:#13DF81;line-height:20px;font-style: normal;}
                 .program:hover .program_info{height:110%;opacity: 1;}
             }
+            @media screen and (max-width:1366px) {
+                .item{
+                    margin-bottom:50px;
+                }
+            }
         }
+        @media screen and (max-width:1366px) {
+            .lv-service-ul{
+                margin-top:30px;
+            }
+        }
+        
     }
+    
 }
 @keyframes wave {
     0%,100% {

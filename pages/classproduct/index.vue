@@ -158,7 +158,7 @@
                                     </div>
                                 </div>
                                 <div class="classproduct-right ani" swiper-animate-effect="fadeInRight"  swiper-animate-delay="0.1s">
-                                    <img src="~assets/images/classproduct/yxfl_5.png" alt="">
+                                    <img style="width:80%;" src="~assets/images/classproduct/yxfl_5.png" alt="">
                                 </div>
                             </div>
                         </Container>

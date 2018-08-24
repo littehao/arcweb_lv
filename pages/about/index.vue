@@ -184,6 +184,17 @@
                 right:20%;
             }
         }
+        @media screen and (max-width:1366px) {
+            .lv-introduction-content{
+                h3{
+                    margin-top:20px;
+                    font-size:18px;
+                }
+                .text{
+                    font-size:12px;
+                }
+            }
+        }
     }
     .lv-livevideo{
         width:100%;
