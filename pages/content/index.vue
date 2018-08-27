@@ -240,7 +240,6 @@
                                             <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">最专业的经纪团队为您开创广阔机遇</p>
                                             <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">最顶尖的制作团队为您量身定制作品</p>
                                             <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">最豪华的明星阵容带您走向璀璨之路</p>
-                                        <div class="signing"><nuxt-link to="/signing">申请加入</nuxt-link></div>
                                     </div>
                                     <div class="right">
                                         <img class="img1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="~assets/images/content/zxtd_3.png" alt="">
@@ -249,7 +248,7 @@
                                         <img class="img4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="~assets/images/content/zxtd_2.png" alt="">
                                     </div>
                                 </div>
-                                
+                                <div class="signing"><nuxt-link to="/signing">申请加入</nuxt-link></div>
                         </div>
                     </Container>
                 </div>
@@ -726,7 +725,7 @@
             background: url(~assets/images/content/nrzz_wzbj.png) no-repeat 180px 150px  #0d0d11;
             overflow:hidden;
             .signing{
-                text-align: left;
+                text-align: center;
                 margin-top:50px;
                 a{
                     display:inline-block;
@@ -802,7 +801,7 @@
                         font-size:24px;
                     }
                     p{
-                        margin:5% 0;
+                        margin:9% 0;
                     }
                 }
                 .link{
