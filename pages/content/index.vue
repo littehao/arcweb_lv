@@ -739,6 +739,12 @@
                     text-align: center;
                 }
             }
+            @media screen and (max-width:1920px) and (max-height: 1080px) {
+                .signing{
+                    margin-top:30px;
+                    
+                }
+            }
             @media screen and (max-width:1680px) and (min-width: 1441px) {
                 .signing{
                     margin-top:50px;
