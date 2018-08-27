@@ -25,7 +25,7 @@
                   <a target="_blank" href="https://www.solantec.net">演示站</a>
                 </div>
               </div>
-              <div class="copy">LVTV-the inventor of live egaming system Copyright © 2017-2018 System All Rights Reserved</div>
+              <div class="copy">Copyright © 2017-2018 System All Rights Reserved</div>
             </div>
         </div>
     </Container>
@@ -89,7 +89,7 @@
           margin-top:15px;
           color:#506a84;
           font-size:14px;
-          text-align: left;
+          text-align: right;
         }
       }
     }

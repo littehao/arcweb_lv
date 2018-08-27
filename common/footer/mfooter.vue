@@ -6,7 +6,7 @@
       <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-sky.png" alt=""></a>
       <a href="javascrip:void(0);"><img src="~assets/images/footer/footer-wb.png" alt=""></a>
     </div>
-    <p>LVTV-the inventor of live egaming system Copyright © 2017-2018 System All Rights Reserved</p>
+    <p>Copyright © 2017-2018 System All Rights Reserved</p>
    </footer>
 </template>
 
