@@ -8,7 +8,7 @@ module.exports = {
         { title: 'ABOUT', name: 'about' }, //  关于我们
         { title: 'COOPERATION', name: 'contactus' } //  合作联系
       ],
-      nav_try:{ title: 'Demo', name: 'demo' },
+      nav_try:{ title: 'DEMO', name: 'demo' },
       home:{
         banner_text:'The pioneer of one stop live stream gaming system ',
         content:[
