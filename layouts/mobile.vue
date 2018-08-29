@@ -15,7 +15,8 @@
         },
         computed:{
             show(){
-                if(this.$route.name == 'index'){
+                console.log(this.$route)
+                if(this.$route.path == '/' || this.$route.path == '/en/' || this.$route.path == '/zhf/'){
                     return true;
                 }else{
                     return false;

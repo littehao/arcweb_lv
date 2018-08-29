@@ -5,7 +5,36 @@
             <button type="button" class="button" @click="downShow"></button>
             <div class="menu-down" :class="{active:show}">
                 <ul>
-                    <li v-for="item in nav" :key="item.title"><nuxt-link :to="item.path">{{item.title}}</nuxt-link></li>
+                    <li class="item" :class="{active:activeindex == 0}">
+                        <nuxt-link class="nav-link" :to="getLocalizedRoute('index')">{{ $t('nav_labels[0].title') }}</nuxt-link>
+                    </li>
+                    <li class="item" :class="{active:activeindex == 1}">
+                        <nuxt-link class="nav-link"  :to="getLocalizedRoute('mclassproduct')">{{ $t('nav_labels[1].title') }}</nuxt-link>
+                    </li>
+                    <li class="item" :class="{active:activeindex == 2}">
+                        <nuxt-link class="nav-link"  :to="getLocalizedRoute('mcontent')">{{ $t('nav_labels[2].title') }}</nuxt-link>
+                    </li>
+                    <li class="item" :class="{active:activeindex == 3}">
+                        <nuxt-link class="nav-link"  :to="getLocalizedRoute('mservice')">{{ $t('nav_labels[3].title') }}</nuxt-link>
+                    </li>
+                    <li class="item" :class="{active:activeindex == 4}">
+                        <nuxt-link class="nav-link"  :to="getLocalizedRoute('mabout')">{{ $t('nav_labels[4].title') }}</nuxt-link>
+                    </li>
+                    <li class="item" :class="{active:activeindex == 5}">
+                        <nuxt-link class="nav-link"  :to="getLocalizedRoute('mcontactus')">{{ $t('nav_labels[5].title') }}</nuxt-link>
+                    </li>
+                    <li class="item language">
+                        <span class="language_text" v-for ="locale in locales" :key="locale.code" v-if="locale.code === $i18n.locale" @click="active = !active">{{ locale.name }}</span>
+                        <div class="change_down" :class="{active:active}">
+                        <nuxt-link
+                        v-for="locale in locales"
+                        :to="getSwitchLocaleRoute(locale.code)"
+                        :key="locale.code">
+                        {{ locale.name }}
+                        </nuxt-link>
+                        </div>
+                    </li>
+                    <!-- <li v-for="item in nav" :key="item.title"><nuxt-link :to="item.path">{{item.title}}</nuxt-link></li> -->
                     <li><a class="nav-link" href="https://m.katoong.com" target="_blank">演示站</a></li>
                 </ul>
             </div>
@@ -19,6 +48,8 @@
       data(){
         return {
             show:false,
+            activeindex:0,
+            active:false,
             nav:[
             {
               title:'首页',
@@ -99,8 +130,10 @@
              width:100%;
              height:0px;
              overflow: hidden;
+             opacity: 0;
+             z-index: -1;
              background:#1c1c23;
-             transition: height 0.3s linear;
+             transition: all 0.3s linear;
              li{
                  width:100%;
                  height:45px;
@@ -111,6 +144,29 @@
                      color:#fff;
                      font-size:14px;
                      padding:0 20px;
+                 }
+             }
+             .language{
+                 color:#fff;
+                 height:auto;
+                 span{
+                     display:block;
+                     padding:0 20px;
+                     font-size:14px;
+                     border-bottom:1px solid #3a3a3a;
+                 }
+                 .change_down{
+                     line-height: 35px;
+                     height:0;
+                     overflow: hidden;
+                     transition: all 0.2s linear;
+                     a{
+                         color:#a7a7a7;
+                     }
+                     padding-left:20px;
+                 }
+                 .change_down.active{
+                     height:105px;
                  }
              }
              li:last-of-type{
@@ -130,7 +186,9 @@
              }
          }
          .active{
-             height:320px;
+            height:auto;
+            opacity: 1;
+            z-index: 1;
          }
      }
  }

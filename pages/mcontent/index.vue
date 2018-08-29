@@ -7,8 +7,8 @@
                         <div class="lv-slide-content">
                             <div class="img"><img src="~assets/images/content/nrzz_rw_1.png" alt="" style="width:80%;"></div>
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">生态造星计划</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">挖掘潜力超新星，星光大道等您来</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">{{$t('content.banner[0].title')}}</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">{{$t('content.banner[0].text')}}</p>
                             </div>
                         </div>
                     </div>
@@ -16,8 +16,8 @@
                         <div class="lv-slide-content">
                             <div class="img"><img src="~assets/images/content/nrzz_rw_2.png" alt=""></div>
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">内容为王，娱乐至上</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">娱乐内容与粉丝经济领域的先行者</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">{{$t('content.banner[1].title')}}</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">{{$t('content.banner[1].text')}}</p>
                             </div>
                         </div>
                     </div>
@@ -25,8 +25,8 @@
                         <div class="lv-slide-content">
                             <div class="img"><img src="~assets/images/content/nrzz_rw_3.png" alt=""></div>
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">明星艺人养成</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">素人主播大蜕变，红人跃升大明星</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">{{$t('content.banner[2].title')}}</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">{{$t('content.banner[2].text')}}</p>
                             </div>
                         </div>
                     </div>
@@ -34,8 +34,8 @@
                         <div class="lv-slide-content">
                             <div class="img"><img src="~assets/images/content/nrzz_rw_4.png" alt=""></div>
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">专业PGC节目频道</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">专业导演团队倾情巨制，多元节目内容舞台无限</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">{{$t('content.banner[3].title')}}</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">{{$t('content.banner[3].text')}}</p>
                             </div>
                         </div>
                     </div>
@@ -43,8 +43,8 @@
                         <div class="lv-slide-content">
                             <div class="img"><img src="~assets/images/content/nrzz_rw_5.png" alt=""></div>
                             <div class="text">
-                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">梦幻级导师团队倾力打造</h3>
-                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">梦幻导师量身打造，专业培训神级飞跃</p>
+                                <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">{{$t('content.banner[4].title')}}</h3>
+                                <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">{{$t('content.banner[4].text')}}</p>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
       </div>
       <div class="lv-content-star">
           <div>
-              <h3 class="title">LV特约明星艺人</h3>
+              <h3 class="title">{{$t('content.part[0].title')}}</h3>
               <div class="star-list">
                   <div class="item">
                     <div>
@@ -150,13 +150,13 @@
       </div>
        <div class="lv-celebrity">
            <div class="lv-celebrity-section">
-            <h3 class="celebrity-title">LV签约网红主持人</h3>
+            <h3 class="celebrity-title">{{$t('content.part[1].title')}}</h3>
             <img style="width:100%;" src="../../assets/images/content/mforce.png" alt="">
             <!--<Force :height="660" :width="1200" :nodes="nodes" :edges="edges"></Force>-->
           </div>
       </div>
       <div class="lv-channel">
-        <h3 class="title">LVTV官方节目频道，开启娱乐节目互动直播新潮流</h3>
+        <h3 class="title">{{$t('content.part[2].title')}}</h3>
         <div class="channel-list">
             <div class="item">
                 <div class="item-t">
@@ -234,7 +234,7 @@
       </div>
       <div class="lv-starteam">
          <div class="lv-starteam-bg">
-            <h3 class="title">专业的造星团队</h3>
+            <h3 class="title">{{$t('content.part[3].title')}}</h3>
             <div class="lv-starteam-content">
                 <div class="right">
                     <img class="img1" src="~assets/images/content/zxtd_3.png" alt="">
@@ -243,17 +243,17 @@
                     <img class="img4" src="~assets/images/content/zxtd_2.png" alt="">
                 </div>
                 <div class="left">
-                    <h2>全渠道+全明星+工业化=星途璀璨</h2>
-                        <p>最顶级的培训导师带您开启追梦之旅</p>
-                        <p>最专业的经纪团队为您开创广阔机遇</p>
-                        <p>最顶尖的制作团队为您量身定制作品</p>
-                        <p>最豪华的明星阵容带您走向璀璨之路</p>
+                    <h2>{{$t('content.part[3].text')}}</h2>
+                        <p>{{$t('content.part[3].info1')}}</p>
+                        <p>{{$t('content.part[3].info2')}}</p>
+                        <p>{{$t('content.part[3].info3')}}</p>
+                        <p>{{$t('content.part[3].info4')}}</p>
                         <!--<p>如果您想实现梦想</p>-->
                         <!--<p>请与我们联络</p>-->
                         <!-- <div class="link"><nuxt-link to="/mcontactus">申请加入LV</nuxt-link></div> -->
                 </div>
             </div>
-            <div class="signing"><nuxt-link to="/msigning">申请加入</nuxt-link></div>
+            <div class="signing"><nuxt-link :to="getLocalizedRoute('msigning')">{{$t('content.part[3].button_text')}}</nuxt-link></div>
         </div>
       </div>
     </div>

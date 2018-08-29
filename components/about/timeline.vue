@@ -2,8 +2,8 @@
     <div class="lv-about-timeline">
         <Container class="timeTile">
         <div class="rightext">
-            <div class="text1">我们的故事</div>
-            <div class="text2">面向未来</div>
+            <div class="text1">{{$t('about.timeline.mintitle')}}</div>
+            <div class="text2">{{$t('about.timeline.maxtitle')}}</div>
         </div>
         </Container>
         <div id='timeline-20227' class=" timeline-block" data-display="hide">
@@ -42,8 +42,12 @@ export default {
             },1000)
         }
     },
+    destroyed(){
+        $("#timeline").remove();
+    },
     methods:{
         timeline(){
+            let that = this;
             function hideshow() {
                 var width = $(document).width();
                 if (width <= 992) {
@@ -59,7 +63,7 @@ export default {
                                 "day":'01'
                             },
                             "text": {
-                                "headline": "创立于菲律宾马尼拉",
+                                "headline": that.$t('about.timeline.linetext[0].text1'),
                                 "text": "2008"
                             },
                         }, {
@@ -68,7 +72,7 @@ export default {
                                 "month": "05",
                             },
                             "text": {
-                                "headline": "推出第一代PHP彩票1.0系统",
+                                "headline":that.$t('about.timeline.linetext[1].text2'),
                                 "text": "2011"
                             },
                         }, {
@@ -77,7 +81,7 @@ export default {
                                 "month": "07",
                             },
                             "text": {
-                                "headline": "推行出创新的数字彩票1.0系统",
+                                "headline":that.$t('about.timeline.linetext[2].text3'),
                                 "text": "2012"
                             },
                         }, {
@@ -86,7 +90,7 @@ export default {
                                 "month": "08",
                             },
                             "text": {
-                                "headline": "发布第二代PHP彩票2.0版",
+                                "headline":that.$t('about.timeline.linetext[3].text4'),
                                 "text": "2013"
                             },
                         }, {
@@ -95,7 +99,7 @@ export default {
                                 "month": "03",
                             },
                             "text": {
-                                "headline": "发行专门彩票平台包网服务",
+                                "headline":that.$t('about.timeline.linetext[4].text5'),
                                 "text": "2014"
                             },
                         }, {
@@ -104,7 +108,7 @@ export default {
                                 "month": "09",
                             },
                             "text": {
-                                "headline": "在英国马恩岛成立新事业部并开始申请多个国家的博彩牌照",
+                                "headline":that.$t('about.timeline.linetext[5].text6'),
                                 "text": "2015"
                             },
                         }, {
@@ -113,7 +117,7 @@ export default {
                                 "month": "06",
                             },
                             "text": {
-                                "headline": "延揽顶尖直播互动系统团队钻研直播视讯领域",
+                                "headline":that.$t('about.timeline.linetext[6].text7'),
                                 "text": "2016"
                             },
                         }, {
@@ -122,7 +126,7 @@ export default {
                                 "month": "04",
                             },
                             "text": {
-                                "headline": "直播相关设备及场所建置包含摄影棚及直播间",
+                                "headline":that.$t('about.timeline.linetext[7].text8'),
                                 "text": "2017"
                             },
                         }, {
@@ -131,7 +135,7 @@ export default {
                                 "month": "08",
                             },
                             "text": {
-                                "headline": "在美国硅谷成立技术服务中心",
+                                "headline":that.$t('about.timeline.linetext[8].text9'),
                                 "text": "2017"
                             },
                         }, {
@@ -140,7 +144,7 @@ export default {
                                 "month": "12",
                             },
                             "text": {
-                                "headline": "在纽西兰成立技术服务中心",
+                                "headline": that.$t('about.timeline.linetext[9].text10'),
                                 "text": "2017"
                             },
                         }, {
@@ -149,7 +153,7 @@ export default {
                                 "month": "04",
                             },
                             "text": {
-                                "headline": "在欧洲成立马耳他分公司开拓欧洲市场",
+                                "headline":that.$t('about.timeline.linetext[10].text11'),
                                 "text": "2018"
                             },
                         }]

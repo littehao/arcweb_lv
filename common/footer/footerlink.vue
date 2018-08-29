@@ -16,13 +16,13 @@
             <div class="footer-nav">
               <div class="nuxtnav">
                 <div style="text-align: right;width:100%;">
-                  <nuxt-link  target="_blank" to="/">首页</nuxt-link>
-                  <nuxt-link  target="_blank" to="/classproduct">产品种类</nuxt-link>
-                  <nuxt-link  target="_blank" to="/content">内容制作</nuxt-link>
-                  <nuxt-link  target="_blank" to="/service">服务支持</nuxt-link>
-                  <nuxt-link  target="_blank" to="/about">关于我们</nuxt-link>
-                  <nuxt-link  target="_blank" to="/contactus">合作联系</nuxt-link>
-                  <a target="_blank" href="https://www.solantec.net">演示站</a>
+                  <nuxt-link class="nav-link" :to="getLocalizedRoute('index')">{{ $t('nav_labels[0].title') }}</nuxt-link>
+                  <nuxt-link class="nav-link" :to="getLocalizedRoute('classproduct')">{{ $t('nav_labels[1].title') }}</nuxt-link>
+                  <nuxt-link class="nav-link" :to="getLocalizedRoute('content')">{{ $t('nav_labels[2].title') }}</nuxt-link>
+                  <nuxt-link class="nav-link" :to="getLocalizedRoute('service')">{{ $t('nav_labels[3].title') }}</nuxt-link>
+                  <nuxt-link class="nav-link" :to="getLocalizedRoute('about')">{{ $t('nav_labels[4].title') }}</nuxt-link>
+                  <nuxt-link class="nav-link" :to="getLocalizedRoute('contactus')">{{ $t('nav_labels[5].title') }}</nuxt-link>
+                  <a target="_blank" href="https://www.solantec.net">{{ $t('nav_try.title') }}</a>
                 </div>
               </div>
               <div class="copy">Copyright © 2017-2018 System All Rights Reserved</div>

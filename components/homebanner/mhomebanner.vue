@@ -3,7 +3,7 @@
         <div class="m-banner-logo">
             <img class="logo animated fadeInUp" src="~assets/images/home/lv.png" alt="">
             <div class="title animated fadeInUp">Live Video</div>
-            <div class="info animated fadeInUp">一站式娱乐游戏直播系统的开创者</div>
+            <div class="info animated fadeInUp">{{$t('home.banner_text')}}</div>
         </div>
         <div class="m-banner-img">
             <div class="left">

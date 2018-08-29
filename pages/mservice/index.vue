@@ -5,17 +5,17 @@
             <div class="lv-service-content">
                 <div>
                     <h3 class="animated fadeInUp">LIVE VIDEO</h3>
-                    <p class="animated fadeInUp" >引流新潮流，缔造新时代</p>
+                    <p class="animated fadeInUp" >{{$t('service.banner_text')}}</p>
                     <div class="line"></div>
-                    <p class="animated fadeInUp">为每位客户提供最专业与最高品质的服务是我们的目标。您的满意，即是我们继续往前的最大动力。</p>
+                    <p class="animated fadeInUp">{{$t('service.mbanner_text')}}</p>
                     <dl class="text animated fadeInUp">
-                        <dt>优质服务</dt>
-                        <dd>API放线</dd>
-                        <dd>直播+系统包网</dd>
-                        <dd>直播+游戏 系统包网</dd>
-                        <dd>LV游戏接口+直播</dd>
-                        <dd>LV直播系统接口+游戏</dd>
-                        <dd>直播服务+解决方案</dd>
+                        <dt>{{$t('service.mservice_mintitle')}}</dt>
+                        <dd>{{$t('service.content[0].title')}}</dd>
+                        <dd>{{$t('service.content[1].title')}}</dd>
+                        <dd>{{$t('service.content[2].title')}}</dd>
+                        <dd>{{$t('service.content[3].title')}}</dd>
+                        <dd>{{$t('service.content[4].title')}}</dd>
+                        <dd>{{$t('service.content[5].title')}}</dd>
                     </dl>
                 </div>
             </div>
@@ -26,62 +26,62 @@
             </div>
         </div>
         <div class="lv-service-list">
-            <h3>我们的服务支持</h3>
+            <h3>{{$t('service.service_title')}}</h3>
                 <ul class="lv-service-ul">
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_api.png" alt=""></div>
-                        <div class="t">LV品牌API接入</div>
+                        <div class="t">{{$t('service.content[0].title')}}</div>
                     </div>
                     <div class="info">
-                      为平台和商户提供完整的或独立的LV直播游戏系统API接入，完美支持PC端,手机H5，原生SDK接入。
+                      {{$t('service.content[0].intro')}}
                     </div>
                 </li>
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_zbbw.png" alt=""></div>
-                        <div class="t">直播+游戏系统包网</div>
+                        <div class="t">{{$t('service.content[1].title')}}</div>
                     </div>
                     <div class="info">
-                      为品牌客户提供功能齐全的直播+游戏系统，上百款精品游戏任您挑选，并提供线上系统一条龙服务。
+                      {{$t('service.content[1].intro')}}
                     </div>
                 </li>
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_zbyx.png" alt=""></div>
-                        <div class="t">视频直播系统包网</div>
+                        <div class="t">{{$t('service.content[2].title')}}</div>
                     </div>
                     <div class="info">
-                      为品牌客户提供健全的直播系统包网方案，为客户提供直播+媒体，教育，电竞，体育，社交娱乐，电商等直播包网服务。
+                      {{$t('service.content[2].intro')}}
                     </div>
                 </li>
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_yxzb.png" alt=""></div>
-                        <div class="t">“直播+” 娱乐游戏服务</div>
+                        <div class="t">{{$t('service.content[3].title')}}</div>
                     </div>
                     <div class="info">
-                      为线上游戏供应商提供直播+基础服务，详情请联系。
+                      {{$t('service.content[3].intro')}}
                     </div>
                 </li>
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_jkyx.png" alt=""></div>
-                        <div class="t">“游戏+”视频直播服务
+                        <div class="t">{{$t('service.content[4].title')}}
                         </div>
                     </div>
                     <div class="info">
-                      为线上直播平台提供全渠道游戏+服务，详情请联系。
+                      {{$t('service.content[4].intro')}}
                     </div>
                 </li>
                 <li class="item">
                     <div class="title">
                         <div class="img"><img src="~assets/images/service/fwzc_icon_zbjj.png" alt=""></div>
-                        <div class="t">直播+技术解决方案
+                        <div class="t">{{$t('service.content[5].title')}}
                         </div>
                     </div>
                     <div class="info">
-                      为广大客户提供视频直播云服务，详情请联系。
+                      {{$t('service.content[5].intro')}}
                     </div>
                 </li>
             </ul>

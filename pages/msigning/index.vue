@@ -1,16 +1,16 @@
 <template>
     <div class="contactus">
         <div class="contactus-content">
-            <h1 class="form-title  ">申请加入造星计划</h1>
-            <p class="form-info">请在以下填写您的个人资料，提交完成后我们会尽快与您联系！</p>
+            <h1 class="form-title  ">{{$t('signing.title')}}</h1>
+            <p class="form-info">{{$t('signing.intro')}}</p>
             <div class="form">
               <Form :model="formTop" label-position="top">
                 <FormItem >
-                  <p name="label" class="form-item-label">姓名<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">{{$t('signing.name')}}<span class="form-item-required">*</span></p>
                   <Input v-model="formTop.name" type="text"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">区号+电话号码<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">{{$t('signing.tel')}}<span class="form-item-required">*</span></p>
                   <Input v-model="formTop.mobile" type="text" :number="true"></Input>
                 </FormItem>
                 <FormItem >
@@ -22,7 +22,7 @@
                   <Input v-model="formTop.ins" type="text"></Input>
                 </FormItem>
                 <FormItem >
-                    <p name="label" class="form-item-label">近期照片三张<span class="form-item-required">*</span></p>
+                    <p name="label" class="form-item-label">{{$t('signing.pic')}}<span class="form-item-required">*</span></p>
                     <div class="imgInputer">
                         <div class="item">
                             <imgInputer v-model="formTop.avatar" accept="image/*" placeholder="大头照"></imgInputer>
@@ -36,7 +36,7 @@
                     </div>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">自我介绍<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">{{$t('signing.msg')}}<span class="form-item-required">*</span></p>
                   <Input v-model="formTop.introduction" type="textarea" :rows="rows" :autosize="false"></Input>
                 </FormItem>
                   <Button  class="form-btn" @click="submit">{{submittext}}</Button>
@@ -72,7 +72,7 @@
                   full_body_photo:'',
                 },
                 http:'',
-                submittext:'提交',
+                submittext:this.$t('signing.button_text'),
                 disabled:true,
             }
         },
@@ -105,14 +105,14 @@
                 param.append('half_length_photo',this.formTop.half_length_photo);
                 param.append('full_body_photo',this.formTop.full_body_photo);
                 let that=this;
-                this.submittext = '提交中...'
+                this.submittext = this.$t('signing.prompt1')
                 axios.post(`${this.http}/OpenAPI/v1/Anchor/guestToAnthor`,param,config)
                 .then(res=>{
                     console.log(res)
-                    this.submittext = '提交'
+                    this.submittext = this.$t('signing.button_text')
                     this.disabled = true;
                     if(res.data.code == 0){
-                        this.$Message.success('上传成功！')
+                        this.$Message.success(this.$t('signing.prompt2'))
                         this.formTop.name = '';
                         this.formTop.mobile = '';
                         this.formTop.facebook = '';
@@ -130,18 +130,18 @@
             if(this.disabled){
                 this.disabled = false;
                 if(!this.formTop.name || !this.formTop.mobile  ||  !this.formTop.introduction){
-                this.$Message.error('*为必填内容')
+                this.$Message.error(this.$t('signing.prompt3'))
                 return;
                 }
                 if(!this.formTop.avatar || !this.formTop.half_length_photo || !this.formTop.full_body_photo){
-                    this.$Message.error('照片要上传三张哟')
+                    this.$Message.error(this.$t('signing.prompt4'))
                     return;
                 }
                 var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
                 let mobile = this.formTop.mobile;
                     mobile = mobile.toString();
                 if(!myreg.test(mobile) && mobile.length < 5){
-                    this.$Message.error('手机号格式不正确')
+                    this.$Message.error(this.$t('signing.prompt5'))
                     return ;
                 }
                 this.updata();

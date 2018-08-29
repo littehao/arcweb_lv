@@ -1,53 +1,53 @@
 <template>
     <div class="contactus">
         <div class="contactus-content">
-            <h1 class="form-title">联系我们</h1>
-            <p class="form-info">如您有兴趣进一步了解Live Video 的服务支援或产品，请填妥下方表格，将有专人尽速与您联系。</p>
+            <h1 class="form-title">{{$t('contactus.title')}}</h1>
+            <p class="form-info">{{$t('contactus.intro')}}</p>
             <div class="form">
               <Form :model="formTop" label-position="top">
                 <FormItem >
-                  <p name="label" class="form-item-label">姓名<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">{{$t('contactus.name')}}<span class="form-item-required">*</span></p>
                   <Input v-model="formTop.name" type="text"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">电话号码<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">{{$t('contactus.tel')}}<span class="form-item-required">*</span></p>
 
                   <Input v-model="formTop.tel" type="text" :number="true"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">电子邮件<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">{{$t('contactus.email')}}<span class="form-item-required">*</span></p>
 
                   <Input v-model="formTop.email" type="email"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">其他联系方式</p>
+                  <p name="label" class="form-item-label">{{$t('contactus.other')}}</p>
 
                   <Input v-model="formTop.othercall" type="text"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">公司网站地址<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">{{$t('contactus.address')}}<span class="form-item-required">*</span></p>
                   <Input v-model="formTop.address" type="text"></Input>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">合作方案<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">{{$t('contactus.programtitle')}}<span class="form-item-required">*</span></p>
                   <div class="form-check">
                     <CheckboxGroup  v-model="formTop.program">
-                      <Checkbox label="LV品牌API接入"></Checkbox>
-                      <Checkbox label="“直播+游戏” 系统包网"></Checkbox>
-                      <Checkbox label="“直播+” 系统包网"></Checkbox>
-                      <Checkbox label="“直播+” 游戏服务"></Checkbox>
-                      <Checkbox label="“游戏+”直播服务"></Checkbox>
-                      <Checkbox label="“直播+”解决方案"></Checkbox>
-                      <Checkbox label="其他"></Checkbox>
+                      <Checkbox :label="$t('contactus.program[0]')"></Checkbox>
+                      <Checkbox :label="$t('contactus.program[1]')"></Checkbox>
+                      <Checkbox :label="$t('contactus.program[2]')"></Checkbox>
+                      <Checkbox :label="$t('contactus.program[3]')"></Checkbox>
+                      <Checkbox :label="$t('contactus.program[4]')"></Checkbox>
+                      <Checkbox :label="$t('contactus.program[5]')"></Checkbox>
+                      <Checkbox :label="$t('contactus.program[6]')"></Checkbox>
                     </CheckboxGroup>
                   </div>
                 </FormItem>
                 <FormItem >
-                  <p name="label" class="form-item-label">留言<span class="form-item-required">*</span></p>
+                  <p name="label" class="form-item-label">{{$t('contactus.msg')}}<span class="form-item-required">*</span></p>
                   <Input v-model="formTop.message" type="textarea" :autosize="{minRows: 5,maxRows: 8}"></Input>
                 </FormItem>
                 <FormItem >
-                  <Button  class="form-btn" @click="submit">提交</Button>
+                  <Button  class="form-btn" @click="submit">{{$t('contactus.button_text')}}</Button>
                 </FormItem>
               </Form>
             </div>
@@ -94,7 +94,7 @@
         },
         methods:{
          getData(){
-            console.log(`${this.http}/OpenAPI/v1/Config/contactUs?${this.formTop}`)
+           
             this.$jsonp(`${this.http}/OpenAPI/v1/Config/contactUs`,this.formTop)
             .then( res => {
               console.log(res)
@@ -102,7 +102,8 @@
                     if(res.code == 1){
                         this.$Message.error(res.msg)
                     }else{
-                        this.$Message.success('提交成功');
+                        let that = this;
+                        this.$Message.success(that.$t('contactus.prompt1'));
                         this.formTop.name = '';
                         this.formTop.email = '';
                         this.formTop.tel = '';
@@ -112,22 +113,26 @@
                         this.formTop.othercall = '';
                     }
               }else{
-                this.$Message.success('接口请求错误');
+                let that = this;
+                this.$Message.success(that.$t('contactus.prompt2'));
               }
             })
           },
           submit(){
             if(!this.formTop.name || !this.formTop.tel || !this.formTop.email || !this.formTop.program || !this.formTop.address ||  !this.formTop.message){
-              this.$Message.error('*为必填内容')
+              let that = this;
+              this.$Message.success(that.$t('contactus.prompt3'));
               return;
             }
             if(isNaN(this.formTop.tel)){
-                this.$Message.error('手机号必须是数字')
+                let that = this;
+                this.$Message.success(that.$t('contactus.prompt4'));
                 return;
             }
             let reg = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/;
             if(this.formTop.email &&!reg.test(this.formTop.email)){
-              this.$Message.error('邮箱格式不正确')
+              let that = this;
+              this.$Message.success(that.$t('contactus.prompt5'));
               return;
             }
             this.getData();

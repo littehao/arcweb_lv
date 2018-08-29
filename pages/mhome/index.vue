@@ -7,10 +7,10 @@
                     <!-- <img class="img2" src="~assets/images/home/sy_sj_1.png" alt=""> -->
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
-                   <h3 class="title">全球领先的娱乐游戏直播系统</h3>
+                   <h3 class="title">{{$t('home.content[0].title')}}</h3>
                    <div class="lv">Live Video</div>
                    <div class="intro">
-                     我们深耕网络视频直播服务行业多年，始终为致力于打造安全，稳定，流畅，高性能和高并发的直播系统而不断努力。多年的娱乐游戏行业经验，专业多元的游戏开发经验让我们成为全球最领先的“直播+游戏”技术提供商。匠心巨制，倾情推出全球最领先的综合娱乐游戏直播系统。
+                     {{$t('home.content[0].text')}}
                    </div>
                </div>
             </div>
@@ -22,10 +22,10 @@
                   <img src="~assets/images/avatar/tx_4.png" class="avatar tx4 revealOnScroll" data-animation="fadeInUp" alt="">
                </div>
                <div class="info">
-                   <h3 class="title revealOnScroll" data-animation="fadeInUp">内容媒体粉丝经济领域的先行者</h3>
+                   <h3 class="title revealOnScroll" data-animation="fadeInUp">{{$t('home.content[1].title')}}</h3>
                    <div class="lv revealOnScroll" data-animation="fadeInUp">Live Video</div>
                    <div class="intro revealOnScroll" data-animation="fadeInUp">
-                     移动互联时代，内容成为粉丝经济的核心驱动力，视频直播正在改变整个世界的互动社交方式。而全球泛娱乐产业正在高速发展，并与人们的生活不断融合。视频直播+娱乐游戏+粉丝经济，将开启下一个内容媒体大时代，LV始终是这个行业的先导者。
+                     {{$t('home.content[1].text')}}
                    </div>
                </div>
             </div>
@@ -35,10 +35,10 @@
                     <!-- <img class="img1" style="position:absolute;left:20%;top:30px;" src="~assets/images/home/screen.png" alt=""> -->
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
-                   <h3 class="title">定义娱乐游戏新时代</h3>
+                   <h3 class="title">{{$t('home.content[2].title')}}</h3>
                    <div class="lv">Live Video</div>
                    <div class="intro">
-                     娱乐即是生活，游戏即是人生。娱乐游戏正在成为我们每个人不可或缺的重要一部分。而视频直播互动下的娱乐游戏，将完全重新定义娱乐的多元性和高粘性，正在改变着未来和世界。更多更优质的内容，更多的互动玩法，更多的粉丝打赏和利润分红，即开即玩即时享乐的人生法则，将引导LV定义娱乐游戏行业新时代。
+                     {{$t('home.content[2].text')}}
                    </div>
                </div>
             </div>
@@ -48,10 +48,10 @@
                     <img class="img3" style="width:90%;" src="~assets/images/home/sy_sj_3.png" alt="">
                </div>
                <div class="info revealOnScroll" data-animation="fadeInUp">
-                   <h3 class="title">定制您专属的“直播+”和“游戏+”</h3>
+                   <h3 class="title">{{$t('home.content[3].title')}}</h3>
                    <div class="lv">Live Video</div>
                    <div class="intro">
-                     我们拥有成熟完善的视频直播系统和功能，且拥有性能优越的高并发架构技术，坚实的技术团队全面保障系统的稳定和安全。产品服务接口达到了每天数亿的调用量，经验就是一切，强大的直播互动整合技术可以为您定制任何您想要的专属产品。
+                     {{$t('home.content[3].text')}}
                    </div>
                </div>
             </div>
@@ -80,15 +80,15 @@ export default {
         let tt = document.documentElement.clientHeight;
         let that = this;
         let win_height_padded = tt * 1.1;
-        window.addEventListener('scroll',function(){
-            var t = document.documentElement.scrollTop || document.body.scrollTop;
-            that.revealOnScroll(tt,t);
-        },false)
+        // window.addEventListener('scroll',function(){
+        //     var t = document.documentElement.scrollTop || document.body.scrollTop;
+        //     that.revealOnScroll(tt,t);
+        // },false)
     },
     beforeDestroy(){
-        if (window.removeEventListener) {
-            window.removeEventListener("scroll",this,false);
-        }
+        // if (window.removeEventListener) {
+        //     window.removeEventListener("scroll",this,false);
+        // }
     },
     methods:{
         revealOnScroll(tt,t){

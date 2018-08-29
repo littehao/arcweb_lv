@@ -7,7 +7,7 @@
                 </div>
                 <div class="swiper-slide lv-content-star">
                     <Container class="addbg">
-                        <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LV特约明星艺人</h3>
+                        <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">{{$t('content.part[0].title')}}</h3>
                         <div class="star-list">
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div>
@@ -104,7 +104,7 @@
                 <celebrity></celebrity>
                 <div class="swiper-slide lv-channel">
                     <Container class="addbg">
-                        <h3 class="title" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LVTV官方节目频道，开启娱乐节目互动直播新潮流</h3>
+                        <h3 class="title" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">{{$t('content.part[2].title')}}</h3>
                         <div class="channel-list">
                             <div class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                                 <div class="item-t">
@@ -232,14 +232,14 @@
                 <div class="swiper-slide lv-starteam">
                     <Container>
                         <div class="lv-starteam-bg">
-                            <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">专业的造星团队</h3>
+                            <h3 class="title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">{{$t('content.part[3].title')}}</h3>
                                 <div class="lv-starteam-content clearfix">
                                     <div class="left">
-                                        <h2 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">全渠道+全明星+工业化=星途璀璨</h2>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">最顶级的培训导师带您开启追梦之旅</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">最专业的经纪团队为您开创广阔机遇</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">最顶尖的制作团队为您量身定制作品</p>
-                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">最豪华的明星阵容带您走向璀璨之路</p>
+                                        <h2 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s" style="word-break:break-all;">{{$t('content.part[3].text')}}</h2>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">{{$t('content.part[3].info1')}}</p>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s">{{$t('content.part[3].info2')}}</p>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">{{$t('content.part[3].info3')}}</p>
+                                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s">{{$t('content.part[3].info4')}}</p>
                                     </div>
                                     <div class="right">
                                         <img class="img1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s" src="~assets/images/content/zxtd_3.png" alt="">
@@ -248,7 +248,7 @@
                                         <img class="img4 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s" src="~assets/images/content/zxtd_2.png" alt="">
                                     </div>
                                 </div>
-                                <div class="signing"><nuxt-link to="/signing">申请加入</nuxt-link></div>
+                                <div class="signing"><nuxt-link :to="getLocalizedRoute('signing')">{{$t('content.part[3].button_text')}}</nuxt-link></div>
                         </div>
                     </Container>
                 </div>

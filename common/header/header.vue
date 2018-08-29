@@ -8,10 +8,39 @@
           </div>
           <nav class="nav">
             <ul class="nav-list">
-              <li class="item "  :class="{active:active==index}" v-for="(item,index) of router" :key="index">
-                <nuxt-link class="nav-link"  :to="item.path">{{item.title}}</nuxt-link>
+              <!-- <li class="item "  :class="{active:active==index}" v-for="(item,index) of nav_labels" :key="index">
+                <nuxt-link class="nav-link"  :to="getLocalizedRoute({name:item.name})">{{item.title}}</nuxt-link>
+              </li> -->
+              <li class="item" :class="{active:activeindex == 0}">
+                <nuxt-link class="nav-link" :to="getLocalizedRoute('index')">{{ $t('nav_labels[0].title') }}</nuxt-link>
               </li>
-              <li class="item active-a"><a class="nav-link " href="https://www.solantec.net" target="_blank">演示站</a></li>
+              <li class="item" :class="{active:activeindex == 1}">
+                <nuxt-link class="nav-link"  :to="getLocalizedRoute('classproduct')">{{ $t('nav_labels[1].title') }}</nuxt-link>
+              </li>
+              <li class="item" :class="{active:activeindex == 2}">
+                <nuxt-link class="nav-link"  :to="getLocalizedRoute('content')">{{ $t('nav_labels[2].title') }}</nuxt-link>
+              </li>
+              <li class="item" :class="{active:activeindex == 3}">
+                <nuxt-link class="nav-link"  :to="getLocalizedRoute('service')">{{ $t('nav_labels[3].title') }}</nuxt-link>
+              </li>
+              <li class="item" :class="{active:activeindex == 4}">
+                <nuxt-link class="nav-link"  :to="getLocalizedRoute('about')">{{ $t('nav_labels[4].title') }}</nuxt-link>
+              </li>
+              <li class="item" :class="{active:activeindex == 5}">
+                <nuxt-link class="nav-link"  :to="getLocalizedRoute('contactus')">{{ $t('nav_labels[5].title') }}</nuxt-link>
+              </li>
+              <li class="item language">
+                <span class="language_text" v-for ="locale in locales" :key="locale.code" v-if="locale.code === $i18n.locale">{{ locale.name }}</span>
+                <div class="change_down">
+                  <nuxt-link
+                  v-for="locale in locales"
+                  :to="getSwitchLocaleRoute(locale.code)"
+                  :key="locale.code">
+                  {{ locale.name }}
+                </nuxt-link>
+                </div>
+              </li>
+              <li class="item active-a"><a class="nav-link " href="https://www.solantec.net" target="_blank">{{ $t('nav_try.title') }}</a></li>
             </ul>
           </nav>
         </div>
@@ -25,48 +54,36 @@
     export default {
       data(){
         return {
-          active:0,
-          router:[
-            {
-              title:'首页',
-              path:'/'
-            },
-            {
-              title:'直播游戏',
-              path:'/classproduct'
-            },
-            {
-              title:'内容媒体',
-              path:'/content'
-            },
-            {
-              title:'服务支援',
-              path:'/service'
-            },
-            {
-              title:'关于我们',
-              path:'/about'
-            },
-            {
-              title:'合作联系',
-              path:'/contactus'
-            },
-            // {
-            //   title:'演示站',
-            //   path:'https://www.solantec.net/home'
-            // },
-          ],
+          nav_labels:this.$t('nav_labels'),
+          activeindex:0,
           bgstatus:false
         }
       },
       methods:{
-        mapRouter(){
-          let path=this.$route.path;
-         let test= this.router.findIndex((item,index)=>{
-           return path==item.path
-
-          })
-          this.active=test
+        getactive(){
+          let str = this.$route.path;
+          var index = str .lastIndexOf("\/");  
+          str  = str .substring(index + 1, str .length);
+          switch(str){
+            case '':
+             this.activeindex = 0;
+            break;
+            case 'classproduct':
+             this.activeindex = 1;
+            break;
+            case 'content':
+             this.activeindex = 2;
+            break;
+            case 'service':
+             this.activeindex = 3;
+            break;
+            case 'about':
+             this.activeindex = 4;
+            break;
+            case 'contactus':
+             this.activeindex = 5;
+            break;
+          }
         },
         change(status){
           this.bgstatus=status
@@ -74,28 +91,14 @@
         }
       },
       mounted(){
-        this.mapRouter()
+        this.getactive();
         let tt = document.documentElement.clientHeight;
         let datel = 0;
-        // window.addEventListener('scroll',function(){
-        //     var t = document.documentElement.scrollTop || document.body.scrollTop;
-        //     var top_div = document.getElementById( "header" );
-        //     if( t >= tt ) {
-        //         top_div.style.background = "#27272E";
-        //     } else {
-        //         top_div.style.background = "transparent";
-        //     }
-        //     if(t > datel){
-        //       // console.log('向下')
-        //     }else{
-        //       // console.log('向上')
-        //     }
-        //     datel = t;
-        // },false)
       },
       watch:{
         '$route.path':function () {
-          this.mapRouter()
+          console.log(this.$i18n.locale)
+          this.getactive();
         }
       }
     }
@@ -157,12 +160,76 @@
        .nav-link{
          display: inline-block;
          height: 40px;
-         min-width: 100px;
+         padding:0 25px;
          line-height: 40px;
          text-align: center;
          font-size: $font-size-large;
          color: $text-color-white;
        }
+      }
+      .language{
+        font-size:$font-size-large;
+        color:#fff;
+        min-width: 100px;
+        position: relative;
+        cursor: pointer;
+        margin-right:20px;
+        padding-left:10px;
+        display: flex;
+        align-items: center;
+        .language_text{
+          // letter-spacing: 2px;
+          display: inline-block;
+          height:40px;
+          line-height: 40px;
+          margin-top:-4px;
+        }
+        .change_down{
+          background:rgba(255,255,255,0.3);
+          position: absolute;
+          top:70px;
+          left:8px;
+          width:100%;
+          border-radius: 3px;
+          text-align: center;
+          display:none;
+          a{
+            line-height: 35px;
+            display:block;
+            color:#fff;
+            // letter-spacing:1px;
+            &:hover{
+              color:#FFE95C;
+            }
+          }
+          &:before{
+            position: absolute;
+            top:-16px;
+            left:38%;
+            display:block;
+            content:"";
+            width:0;
+            height:0;
+            border-style:solid;
+            border-width: 8px;
+            border-color: transparent transparent rgba(255,255,255,0.3); 
+          }
+        }
+        &:after{
+            position: absolute;
+            top:43%;
+            right:0;
+            display:block;
+            content:"";
+            width:0;
+            height:0;
+            border-style:solid;
+            border-width: 8px;
+            border-color: #fff transparent transparent; 
+        }
+        &:hover .change_down{
+          display: block;
+        }
       }
       .item.active {
           &:after {

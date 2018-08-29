@@ -1,5 +1,6 @@
 const pkg = require('./package')
 const resolve = require('path').resolve
+const { generateRoutes } = require('./utils/router')
 module.exports = {
   //mode: 'spa',
   //server
@@ -16,7 +17,12 @@ module.exports = {
   ** Headers of the page
   */
  router: {
-  middleware: 'check-auth',
+  middleware: ['check-auth','i18n'],
+  extendRoutes (routes) {
+    const newRoutes = generateRoutes(routes)
+    routes.splice(0, routes.length)
+    routes.unshift(...newRoutes)
+  }
  },
   head: {
     title:'Live Video',
@@ -70,6 +76,13 @@ module.exports = {
     {
       src: '~/plugins/index',
       ssr: true
+    },
+    { 
+      src: '~/plugins/global-mixin.js' 
+    },
+    { 
+      src: '~/plugins/vue-i18n.js',
+      injectAs: 'i18n'
     }
   ],
 

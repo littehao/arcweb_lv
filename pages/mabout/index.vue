@@ -1,23 +1,23 @@
 <template>
     <div class="m-about">
         <div class="m-banner">
-            <h3> 关于LIVE VIDEO</h3>
+            <h3> {{$t('about.banner.title')}}</h3>
         </div>
         <div class="m-about-intro">
-            <h3>关于Live Video</h3>
+            <h3>{{$t('about.banner.mtitle')}}</h3>
             <div class="info">
-              LIVE VIDEO是全球领先的一站式娱乐游戏直播系统供应服务商，我们定义直播+娱乐游戏+内容媒体，深度探索粉丝经济的运用，并于2018年5月份率先推出全球首个娱乐游戏直播系统，同时启动API接入服务。
+              {{$t('about.banner.info1')}}
             </div>
           <div class="info">
-            LIVE VIDEO拥有棋牌竞技，街机电玩，老虎机，数字彩票，抓抓乐，推推乐，体育游戏，电竞游戏等品类的游戏，自主研发数十款游戏，致力于打造全球娱乐游戏直播领域标杆，LV在不断钻研其视频直播技术的同时，不断的研发多品类的受大众追捧的热门游戏，并将最优质的互动游戏内容提供给广告用户。
+            {{$t('about.banner.info2')}}
           </div>
         </div>
         <div class="m-about-group">
-            <h3>背景介绍</h3>
+            <h3>{{$t('about.bgintro.title')}}</h3>
             <div class="intro">
-              LIVE VIDEO于2014年成立于美国硅谷，团队前身为传统PC直播的技术服务商，团队90%由视频直播领域的技术专家组成，我们不断钻研和攻克视频直播核心技术，并率先在移动直播和H5直播领域取得领先突破，并成功搭建了上百个直播平台，取得骄人成绩。为了有效增强平台竞争力，为客户抢占市场，LIVE VIDEO于2016年在台北成立了分公司，加强在直播+电商，直播+游戏，直播+VR，私密直播等多领域的尝试探索，并于2016年底率先推出游戏直播间并运用于市场。LIVE VIDEO深度探索娱乐游戏行业，经过两年的努力，成功突破多个行业壁垒实现跨界融合，并于2017年成功上线首个娱乐游戏直播系统，系统拥有十余款游戏，并投放于市场，取得一致好评。为迎合市场发展，公司决定于2018年4月份推出LV品牌直播游戏系统，为广大客户提供API接入，系统包网，技术解决方案等服务。
-
-              <br/>  未来已来，风口已至。我们定义娱乐游戏直播行业新时代，同时我们将坚持创新，不断创造,专注，专业，专一的打造出更好的产品回馈给客户。
+              {{$t('about.bgintro.info1')}}
+              <br/>{{$t('about.bgintro.info2')}}
+              <br/>{{$t('about.bgintro.info3')}}
             </div>
             <img class="grop1" src="~assets/images/about/about1.png" alt="">
             <img class="grop2" src="~assets/images/about/about2.png" alt="">
@@ -27,51 +27,51 @@
             <div class="time-list">
                 <div class="time time1">
                     <div class="top">
-                        <div class="text1">我们的故事</div>
-                        <div class="text2">面向未来</div>
+                        <div class="text1">{{$t('about.timeline.mintitle')}}</div>
+                        <div class="text2">{{$t('about.timeline.maxtitle')}}</div>
                     </div>
                     <div class="center"><span class="year">2018</span><span class="month">.04</span></div>
-                    <div class="bottom">在欧洲成立马耳他分公司<br>开拓欧洲市场</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[10].text11')}}</div>
                 </div>
                 <div class="time time2" style="margin-top:100px;">
                     <div class="center"><span class="month">2017.12</span></div>
-                    <div class="bottom">在纽西兰成立技术服务中心</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[9].text10')}}</div>
                 </div>
                 <div class="time time2">
                     <div class="center"><span class="month">2017.8</span></div>
-                    <div class="bottom">在美国硅谷成立技术服务中心</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[8].text9')}}</div>
                 </div>
                 <div class="time time2">
                     <div class="center"><span class="month">2017.4</span></div>
-                    <div class="bottom">直播相关设备及场所建置包含摄影棚及直播间</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[7].text8')}}</div>
                 </div>
                 <div class="time time2">
                     <div class="center"><span class="month">2016.6</span></div>
-                    <div class="bottom">延揽顶尖直播互动系统团队钻研直播视讯领域</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[6].text7')}}</div>
                 </div>
                 <div class="time time2">
                     <div class="center"><span class="month">2015.9</span></div>
-                    <div class="bottom">在英国马恩岛成立新事业部并开始申请多个国家的博彩牌照</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[5].text6')}}</div>
                 </div>
                 <div class="time time2">
                     <div class="center"><span class="month">2014.3</span></div>
-                    <div class="bottom">发行专门彩票平台包网服务</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[4].text5')}}</div>
                 </div>
                 <div class="time time2">
                     <div class="center"><span class="month">2013.8</span></div>
-                    <div class="bottom">发布第二代PHP彩票2.0版</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[3].text4')}}</div>
                 </div>
                 <div class="time time2">
                     <div class="center"><span class="month">2012.7</span></div>
-                    <div class="bottom">推行出创新的数字彩票1.0系统</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[2].text3')}}</div>
                 </div>
                 <div class="time time2">
                     <div class="center"><span class="month">2011.5</span></div>
-                    <div class="bottom">推出第一代PHP彩票1.0系统</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[1].text2')}}</div>
                 </div>
                 <div class="time time2">
                     <div class="center"><span class="month">2009.8</span></div>
-                    <div class="bottom">创立于菲律宾马尼拉</div>
+                    <div class="bottom">{{$t('about.timeline.linetext[0].text1')}}</div>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@
                     <div class="lv-service-content">
                         <div>
                             <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">LIVE VIDEO</h3>
-                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">引流新潮流，缔造新时代</p>
+                            <p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">{{$t('service.banner_text')}}</p>
                         </div>
                     </div>
                     <div class="control-down" @click="controldown">
@@ -18,16 +18,16 @@
             </div>
             <div class="swiper-slide lv-service-list">
                 <Container>
-                    <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">我们的服务支持</h3>
+                    <h3 class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0s">{{$t('service.service_title')}}</h3>
                     <ul class="lv-service-ul">
                         <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                             <div class="program">
                                 <img src="~assets/images/service/fwzc_icon_api.png" alt="">
-                                <h3>LV品牌API接入</h3>
+                                <h3>{{$t('service.content[0].title')}}</h3>
                                 <div class="program_info">
                                     <div>
-                                        <h3>LV品牌API接入</h3>
-                                        <p>为平台和商户提供完整的或独立的LV直播游戏系统API接入，完美支持PC端,手机H5，原生SDK接入。</p>
+                                        <h3>{{$t('service.content[0].title')}}</h3>
+                                        <p>{{$t('service.content[0].intro')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -35,11 +35,11 @@
                         <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                             <div class="program">
                                 <img src="~assets/images/service/fwzc_icon_zbbw.png" alt="">
-                                <h3>视频直播系统包网</h3>
+                                <h3>{{$t('service.content[1].title')}}</h3>
                                 <div class="program_info">
                                     <div>
-                                        <h3>视频直播系统包网</h3>
-                                        <p>为品牌客户提供健全的直播系统包网方案，为客户提供直播+媒体，教育，电竞，体育，社交娱乐，电商等直播包网服务。</p>
+                                        <h3>{{$t('service.content[1].title')}}</h3>
+                                        <p>{{$t('service.content[1].intro')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -47,11 +47,11 @@
                         <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                             <div class="program">
                                 <img src="~assets/images/service/fwzc_icon_zbyx.png" alt="">
-                                <h3>直播+游戏系统包网</h3>
+                                <h3>{{$t('service.content[2].title')}}</h3>
                                 <div class="program_info">
                                     <div>
-                                        <h3>直播+游戏系统包网</h3>
-                                        <p>为品牌客户提供功能齐全的直播+游戏系统，上百款精品游戏任您挑选，并提供线上系统一条龙服务。</p>
+                                        <h3>{{$t('service.content[2].title')}}</h3>
+                                        <p>{{$t('service.content[2].intro')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -59,11 +59,11 @@
                         <li class="item ani"  swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                             <div class="program">
                                 <img src="~assets/images/service/fwzc_icon_yxzb.png" alt="">
-                                <h3>“直播+” 娱乐游戏服务</h3>
+                                <h3>{{$t('service.content[3].title')}}</h3>
                                 <div class="program_info">
                                     <div>
-                                        <h3>“直播+” 娱乐游戏服务</h3>
-                                        <p>为线上游戏供应商提供直播+基础服务，详情请联系。</p>
+                                        <h3>{{$t('service.content[3].title')}}</h3>
+                                        <p>{{$t('service.content[3].intro')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -71,11 +71,11 @@
                         <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                             <div class="program">
                                 <img src="~assets/images/service/fwzc_icon_jkyx.png" alt="">
-                                <h3>“游戏+”视频直播服务</h3>
+                                <h3>{{$t('service.content[4].title')}}</h3>
                                 <div class="program_info">
                                     <div>
-                                        <h3>“游戏+”视频直播服务</h3>
-                                        <p>为线上直播平台提供全渠道游戏+服务，详情请联系。</p>
+                                        <h3>{{$t('service.content[4].title')}}</h3>
+                                        <p>{{$t('service.content[4].intro')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -83,11 +83,11 @@
                         <li class="item ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                             <div class="program">
                                 <img src="~assets/images/service/fwzc_icon_zbjj.png" alt="">
-                                <h3>直播+技术解决方案</h3>
+                                <h3>{{$t('service.content[5].title')}}</h3>
                                 <div class="program_info">
                                     <div>
-                                        <h3>直播+技术解决方案</h3>
-                                        <p>为广大客户提供视频直播云服务，详情请联系。</p>
+                                        <h3>{{$t('service.content[5].title')}}</h3>
+                                        <p>{{$t('service.content[5].intro')}}</p>
                                     </div>
                                 </div>
                             </div>

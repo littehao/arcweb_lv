@@ -20,7 +20,7 @@
                 </div>
                 <div class="lv-banner-title">
                     <h3 class="animated fadeInUp">Live Video</h3>
-                    <p class="animated fadeInUp">一站式娱乐游戏直播系统的开创者</p>
+                    <p class="animated fadeInUp">{{$t('home.banner_text')}}</p>
                 </div>
                 <slot></slot>
             </div>
