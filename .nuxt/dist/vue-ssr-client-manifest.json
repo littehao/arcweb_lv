@@ -142,15 +142,15 @@
     "16.157fd59d2ba3839d86e9.js",
     "17.ab1af992e249cc58ec7f.js",
     "vendor.a03f0f7e85cccbcc57f3.js",
-    "app.7992ed41b20adcba9d8a.js",
-    "manifest.d12e4b0f6db7c0e9b4b5.js",
+    "app.4499c984e205d609c2b8.js",
+    "manifest.2a56615ee011a02ca5c2.js",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.d12e4b0f6db7c0e9b4b5.js",
+    "manifest.2a56615ee011a02ca5c2.js",
     "vendor.a03f0f7e85cccbcc57f3.js",
-    "app.7992ed41b20adcba9d8a.js"
+    "app.4499c984e205d609c2b8.js"
   ],
   "async": [
     "0.6a5fc7f445c372a1313b.js",
