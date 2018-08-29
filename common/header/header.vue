@@ -97,7 +97,6 @@
       },
       watch:{
         '$route.path':function () {
-          console.log(this.$i18n.locale)
           this.getactive();
         }
       }
