@@ -77,7 +77,15 @@
                       </p>
                     </div>
                     <div class="card-info-right img-content card-pic">
-                      <img class=" ani" swiper-animate-effect="fadeInRight"  src="../../assets/images/home/Screen1.png" alt="">
+                      <div class="ani img" swiper-animate-effect="fadeInRight">
+                        <h3>{{$t('home.content[2].title2')}}</h3>
+                        <div class="screen_list">
+                          <span class="color1">{{$t('home.content[2].span1')}}</span>
+                          <span class="color2">{{$t('home.content[2].span2')}}</span>
+                          <span class="color3">{{$t('home.content[2].span3')}}</span>
+                          <span class="color4">{{$t('home.content[2].span4')}}</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -104,7 +112,7 @@
                 </div>
                 <div class="section-btn" style="padding-bottom:60px;">
                     <Container>
-                    <button class="btn" type="button" onclick="window.open('https://www.solantec.net/','_blank')">立即体验</button>
+                    <button class="btn" type="button" onclick="window.open('https://www.solantec.net/','_blank')">{{$t('home.button_text')}}</button>
                     </Container>
                 </div>
               </div>
@@ -431,10 +439,53 @@ export default {
       }
       .card-pic{
         text-align: center;
-
-        img{
+        .img{
           position: relative;
-
+          width:467px;
+          height:350px;
+          display:inline-block;
+          background:url(../../assets/images/home/screenbg.png) no-repeat center;
+          background-size:100%;
+        }
+        h3{
+          color:#fff;
+          font-size:20px;
+          text-align: left;
+          padding-top:55px;
+          padding-left:46px;
+        }
+        .screen_list{
+          color:#fff;
+          font-size:14px;
+          text-align: left;
+          padding-left: 46px;
+          padding-top:50px;
+          span{
+            display:inline-block;
+            padding:5px 15px;
+            border-radius: 50px;
+            margin-bottom:20px;
+          }
+          .color1{
+            border:1px solid #4ED0E5;
+            color:#4ED0E5;
+            margin-right: 15px;
+          }
+          .color2{
+            border:1px solid #D166A1;
+            color:#D166A1;
+          }
+          .color3{
+            border:1px solid #D8D360;
+            color:#D8D360;
+            margin-right: 15px;
+            padding:5px 10px;
+          }
+          .color4{
+            border:1px solid #A864CA;
+            color:#A864CA;
+            padding:5px 10px;
+          }
         }
       }
 

@@ -22,7 +22,12 @@ module.exports = {
             },
             {
                 title:'Redefine the new era of gaming ',
-                text:'Entertament is the essence in our life. The live stream gaming could redefine the entertament completely, which increase its diversity and customer stickiness.For more high-quality games, interative bet types, bonus and etc, LV redine the new era of gaming industry.'
+                text:'Entertament is the essence in our life. The live stream gaming could redefine the entertament completely, which increase its diversity and customer stickiness.For more high-quality games, interative bet types, bonus and etc, LV redine the new era of gaming industry.',
+                title2:'The new era of Live Video',
+                span1:'Premium content',
+                span2:'New era of new play',
+                span3:'Enjoy reward or bonus',
+                span4:'Easy bet on the note',
             },
             {
                 title:'Customized your own "live stream+" and " gaming+"',
