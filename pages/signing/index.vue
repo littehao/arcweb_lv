@@ -173,7 +173,7 @@
 <style  lang="scss">
  .contactus{
    width: 100%;
-   background: url("../../assets/images/signing/signingbg.png") no-repeat center;
+   background: url("../../assets/images/signing/signingbg.jpg") no-repeat center;
    background-size:cover;
    .contactus-content{
      height: auto;
