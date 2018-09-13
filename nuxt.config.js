@@ -114,7 +114,7 @@ module.exports = {
     extend(config, ctx ) {
       // Run ESLint on sav
       if (ctx.isClient) {
-        config.devtool = '#eval-source-map'
+        config.devtool = '#cheap-module-source-map'
       }
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
