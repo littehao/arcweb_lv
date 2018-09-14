@@ -143,8 +143,8 @@
     "16.157fd59d2ba3839d86e9.js",
     "17.ab1af992e249cc58ec7f.js",
     "vendor.a03f0f7e85cccbcc57f3.js",
-    "app.2ad4353dd998cf89a91d.js",
-    "manifest.24226dcb0a38711d813b.js",
+    "app.0702467e9644aac12bbc.js",
+    "manifest.a07b61c0d726fdd80941.js",
     "LICENSES",
     "0.73175a771a468ddd501a.js.map",
     "1.438de787122282a704d3.js.map",
@@ -165,15 +165,15 @@
     "16.157fd59d2ba3839d86e9.js.map",
     "17.ab1af992e249cc58ec7f.js.map",
     "vendor.a03f0f7e85cccbcc57f3.js.map",
-    "app.2ad4353dd998cf89a91d.js.map",
-    "manifest.24226dcb0a38711d813b.js.map",
+    "app.0702467e9644aac12bbc.js.map",
+    "manifest.a07b61c0d726fdd80941.js.map",
     "index.spa.html",
     "index.ssr.html"
   ],
   "initial": [
-    "manifest.24226dcb0a38711d813b.js",
+    "manifest.a07b61c0d726fdd80941.js",
     "vendor.a03f0f7e85cccbcc57f3.js",
-    "app.2ad4353dd998cf89a91d.js"
+    "app.0702467e9644aac12bbc.js"
   ],
   "async": [
     "0.73175a771a468ddd501a.js",
