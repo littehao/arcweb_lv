@@ -126,7 +126,7 @@
                 param.append('email',this.formTop.email);
                 param.append('facebook',this.formTop.facebook);
                 param.append('ins',this.formTop.ins);
-                param.append('account',this.formTop.account);
+                param.append('user_id',this.formTop.account);
                 param.append('introduction',this.formTop.introduction);
                 param.append('avatar',this.formTop.avatar);
                 param.append('half_length_photo',this.formTop.half_length_photo);
