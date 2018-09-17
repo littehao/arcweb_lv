@@ -165,17 +165,14 @@ module.exports = {
             mintitle:'History',
             maxtitle:'',
             linetext:[
-                {text1:'Empire Group established in Manila, Philippines'},
-                {text2:'Php lottery system v1.0 '},
-                {text3:'Lottery gaming revised edition v2.0'},
-                {text4:'Php lottery system v2.0 '},
-                {text5:'Professional service for building lottery platform'},
-                {text6:'International finance and global strategy departments established in Isle of Man, UK for applying legal licenses'},
-                {text7:'Live Video team established which includes various experts in livestream area'},
-                {text8:'LV livestream studio established'},
-                {text9:'IT service center established in Silicon Valley, USA'},
-                {text10:'IT service center established in New Zealand'},
-                {text11:'Branch office established in Malta for developing EU market'},
+                {text1:'成立于美国硅谷，为传统PC直播技术服务商'},
+                {text2:'提供技术服务的同时，成功为客户搭建网络直播平台。'},
+                {text3:'成功搭建并服务了上百个直播平台'},
+                {text4:'成立了台湾分公司，加强直播电商，直播游戏等领域的探索。'},
+                {text5:'成功上线首个娱乐游戏直播系统，并投放于市场，备受欢迎'},
+                {text6:'推出LV品牌娱乐游戏直播系统，为广大客户提供API接入'},
+                {text7:'参加2018澳门G2E国际娱乐展会'},
+                {text8:'参加2018南非ICE国际游戏展会'}
             ]
         },
 

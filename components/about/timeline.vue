@@ -58,93 +58,47 @@ export default {
                     var timeline_json = {
                         "events": [{
                             "start_date": {
-                                "year": "2008",
-                                "month": "08",
-                                "day":'01'
-                            },
-                            "text": {
-                                "headline": that.$t('about.timeline.linetext[0].text1'),
-                                "text": "2008"
-                            },
-                        }, {
-                            "start_date": {
-                                "year": "2011",
-                                "month": "05",
-                            },
-                            "text": {
-                                "headline":that.$t('about.timeline.linetext[1].text2'),
-                                "text": "2011"
-                            },
-                        }, {
-                            "start_date": {
-                                "year": "2012",
-                                "month": "07",
-                            },
-                            "text": {
-                                "headline":that.$t('about.timeline.linetext[2].text3'),
-                                "text": "2012"
-                            },
-                        }, {
-                            "start_date": {
-                                "year": "2013",
-                                "month": "08",
-                            },
-                            "text": {
-                                "headline":that.$t('about.timeline.linetext[3].text4'),
-                                "text": "2013"
-                            },
-                        }, {
-                            "start_date": {
                                 "year": "2014",
                                 "month": "03",
                             },
                             "text": {
-                                "headline":that.$t('about.timeline.linetext[4].text5'),
+                                "headline": that.$t('about.timeline.linetext[0].text1'),
                                 "text": "2014"
                             },
                         }, {
                             "start_date": {
                                 "year": "2015",
-                                "month": "09",
+                                "month": "02",
                             },
                             "text": {
-                                "headline":that.$t('about.timeline.linetext[5].text6'),
+                                "headline":that.$t('about.timeline.linetext[1].text2'),
+                                "text": "2015"
+                            },
+                        }, {
+                            "start_date": {
+                                "year": "2015",
+                                "month": "12",
+                            },
+                            "text": {
+                                "headline":that.$t('about.timeline.linetext[2].text3'),
                                 "text": "2015"
                             },
                         }, {
                             "start_date": {
                                 "year": "2016",
-                                "month": "06",
+                                "month": "03",
                             },
                             "text": {
-                                "headline":that.$t('about.timeline.linetext[6].text7'),
+                                "headline":that.$t('about.timeline.linetext[3].text4'),
                                 "text": "2016"
                             },
                         }, {
                             "start_date": {
                                 "year": "2017",
-                                "month": "04",
+                                "month": "05",
                             },
                             "text": {
-                                "headline":that.$t('about.timeline.linetext[7].text8'),
-                                "text": "2017"
-                            },
-                        }, {
-                            "start_date": {
-                                "year": "2017",
-                                "month": "08",
-                            },
-                            "text": {
-                                "headline":that.$t('about.timeline.linetext[8].text9'),
-                                "text": "2017"
-                            },
-                        }, {
-                            "start_date": {
-                                "year": "2017",
-                                "month": "12",
-                            },
-                            "text": {
-                                "headline": that.$t('about.timeline.linetext[9].text10'),
+                                "headline":that.$t('about.timeline.linetext[4].text5'),
                                 "text": "2017"
                             },
                         }, {
@@ -153,7 +107,25 @@ export default {
                                 "month": "04",
                             },
                             "text": {
-                                "headline":that.$t('about.timeline.linetext[10].text11'),
+                                "headline":that.$t('about.timeline.linetext[5].text6'),
+                                "text": "2018"
+                            },
+                        }, {
+                            "start_date": {
+                                "year": "2018",
+                                "month": "05",
+                            },
+                            "text": {
+                                "headline":that.$t('about.timeline.linetext[6].text7'),
+                                "text": "2018"
+                            },
+                        }, {
+                            "start_date": {
+                                "year": "2018",
+                                "month": "10",
+                            },
+                            "text": {
+                                "headline":that.$t('about.timeline.linetext[7].text8'),
                                 "text": "2018"
                             },
                         }]
