@@ -221,11 +221,16 @@ export default {
         display:inline-block;
         position: absolute;
         left:69%;
-        top:60%;
+        bottom:20%;
         max-width:400px;
         text-align:left;
         line-height: 50px;
         font-weight: 400;
+    }
+    @media screen and (max-height:710px){
+        .tl-text h2.tl-headline-title, .tl-text h2.tl-headline{
+            bottom:0;
+        }
     }
     .tl-text .tl-headline-date, .tl-text h3.tl-headline-date{
         color:#fff;
@@ -249,6 +254,9 @@ export default {
     }
     .tl-slide .tl-slide-content-container{
         height:100%;
+    }
+    .tl-slide .tl-slide-scrollable-container{
+        overflow: hidden;
     }
     #tl-jbfngg,.tl-text-content-container{
         height:100%;
