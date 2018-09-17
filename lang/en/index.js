@@ -165,14 +165,14 @@ module.exports = {
             mintitle:'History',
             maxtitle:'',
             linetext:[
-                {text1:'成立于美国硅谷，为传统PC直播技术服务商'},
-                {text2:'提供技术服务的同时，成功为客户搭建网络直播平台。'},
-                {text3:'成功搭建并服务了上百个直播平台'},
-                {text4:'成立了台湾分公司，加强直播电商，直播游戏等领域的探索。'},
-                {text5:'成功上线首个娱乐游戏直播系统，并投放于市场，备受欢迎'},
-                {text6:'推出LV品牌娱乐游戏直播系统，为广大客户提供API接入'},
-                {text7:'参加2018澳门G2E国际娱乐展会'},
-                {text8:'参加2018南非ICE国际游戏展会'}
+                 {text1: 'Founded in Silicon Valley, USA, is a traditional PC live broadcast technology service provider'},
+                 {text2:' While providing technical services, we have successfully built a webcast platform for our customers. '},
+                 {text3: 'Successfully built and served hundreds of live broadcast platforms'},
+                 {text4: 'The establishment of a Taiwan branch to strengthen the field of live e-commerce, live games and other areas of exploration. '},
+                 {text5: 'Successfully launched the first entertainment game live broadcast system, and put it on the market, it is popular'},
+                 {text6: 'Launch LV brand entertainment game live broadcast system, provide API access for our customers'},
+                 {text7: 'Participate in the 2018 Macau G2E International Entertainment Exhibition'},
+                 {text8: 'Participate in the 2018 South Africa ICE International Game Show'}
             ]
         },
 
