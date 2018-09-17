@@ -203,6 +203,7 @@ module.exports = {
         intro:'Please left your personnal information and we will reach you for soon',
         name:'Name',
         tel:'Tel',
+        account:'Account ',
         pic:'Latest 3 photos',
         msg:'Tell us more about you',
         button_text:'Submit',

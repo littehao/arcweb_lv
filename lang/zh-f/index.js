@@ -202,6 +202,7 @@ module.exports = {
         intro:'請在以下填寫您的個人資料，提交完成後我們會盡快與您聯系！',
         name:'姓名',
         tel:'區號+電話號碼',
+        account:'賬號',
         pic:'近期照片三張',
         msg:'自我介紹',
         button_text:'提交',
