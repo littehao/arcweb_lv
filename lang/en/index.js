@@ -165,14 +165,14 @@ module.exports = {
             mintitle:'History',
             maxtitle:'',
             linetext:[
-                 {text1: 'Founded in Silicon Valley, USA, is a traditional PC live broadcast technology service provider'},
-                 {text2:' While providing technical services, we have successfully built a webcast platform for our customers. '},
-                 {text3: 'Successfully built and served hundreds of live broadcast platforms'},
-                 {text4: 'The establishment of a Taiwan branch to strengthen the field of live e-commerce, live games and other areas of exploration. '},
-                 {text5: 'Successfully launched the first entertainment game live broadcast system, and put it on the market, it is popular'},
-                 {text6: 'Launch LV brand entertainment game live broadcast system, provide API access for our customers'},
-                 {text7: 'Participate in the 2018 Macau G2E International Entertainment Exhibition'},
-                 {text8: 'Participate in the 2018 South Africa ICE International Game Show'}
+                 {text1: 'March 2014, Live Video (LV) founded in Silicon Valley, USA. Begins serving live streaming technology for PC companies.'},
+                 {text2:' February 2015, Builds the first live streaming platform successfully for customers.'},
+                 {text3: 'December 2015, Builds 100+ live streaming platforms and owns 100+ business partners.'},
+                 {text4: 'March 2016, Opens The oversea branch in Taiwan for expanding live e-commerce, live games and other related business.'},
+                 {text5: 'May 2017, Releases the first live streaming gaming system and are warmly greeted by the market.'},
+                 {text6: 'April 2018, Launches LV own-brand live streaming gaming system and provides API service for wide-range customers.'},
+                 {text7: 'May 2018, Participates 2018 G2E Asia (Macau).'},
+                 {text8: 'October 2018, Participates in ICE South Africa 2018.'}
             ]
         },
 
