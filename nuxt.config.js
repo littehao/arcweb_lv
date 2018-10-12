@@ -4,6 +4,7 @@ const { generateRoutes } = require('./utils/router')
 module.exports = {
   //mode: 'spa',
   //server
+  dev: (process.env.NODE_ENV !== 'production'),
   server: {
     port: 8000,
     host: '0.0.0.0'
@@ -77,10 +78,10 @@ module.exports = {
       src: '~/plugins/index',
       ssr: true
     },
-    { 
-      src: '~/plugins/global-mixin.js' 
+    {
+      src: '~/plugins/global-mixin.js'
     },
-    { 
+    {
       src: '~/plugins/vue-i18n.js',
       injectAs: 'i18n'
     }
@@ -114,7 +115,7 @@ module.exports = {
     extend(config, ctx ) {
       // Run ESLint on sav
       if (ctx.isClient) {
-        config.devtool = '#cheap-module-source-map'
+        config.devtool = '#source-map'
       }
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
