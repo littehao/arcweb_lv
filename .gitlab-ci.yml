@@ -12,7 +12,7 @@ DeployToProduction:
 
  script:
    - cd /opt/www/arcweb_lv && git checkout . && git pull origin Production && chown -R www-data:www-data *
-   - docker exec -t $(docker ps | grep node  | awk '{print $1}') ash -c "pm2 reload 0"
+   - docker exec -t $(docker ps | grep node  | awk '{print $1}') ash -c "pm2 restart 0"
 
 
 variables:
