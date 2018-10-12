@@ -2,7 +2,6 @@
     <div class="lv-home">
         <Mhome v-if="currentView == 'mobile'"></Mhome>
 
-
         <Lhome v-else-if="currentView == 'default'"></Lhome>
     </div>
 </template>
