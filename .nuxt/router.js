@@ -3,22 +3,22 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _6d3e4f42 = () => import('../pages/mcontactus/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _0c02a12a = () => import('../pages/signing/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _21b02349 = () => import('../pages/mclassproduct/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _78b210b1 = () => import('../pages/mhome/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _3ed8e0c4 = () => import('../pages/content/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _acf9a45e = () => import('../pages/mabout/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _3c6fc8b9 = () => import('../pages/mservice/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _ed29dc70 = () => import('../pages/classproduct/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _55c6e309 = () => import('../pages/msigning/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _2a57d17d = () => import('../pages/mcontent/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _72a6ee30 = () => import('../pages/home/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _51ed5e16 = () => import('../pages/demostation/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _1aa8f24c = () => import('../pages/service/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _23abff9c = () => import('../pages/about/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _f8f9edba = () => import('../pages/contactus/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
-const _056203b4 = () => import('../pages/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _7beb29a8 = () => import('../pages/mcontactus/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _a5c7c500 = () => import('../pages/signing/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _1614871f = () => import('../pages/mclassproduct/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _24eaaaf2 = () => import('../pages/mhome/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _fca5e818 = () => import('../pages/content/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _6084628a = () => import('../pages/mabout/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _82f451ba = () => import('../pages/mservice/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _48c0499c = () => import('../pages/classproduct/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _50461d1a = () => import('../pages/msigning/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _a7244032 = () => import('../pages/mcontent/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _2bee7ccc = () => import('../pages/home/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _d2b68128 = () => import('../pages/demostation/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _d875f9a0 = () => import('../pages/service/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _63029a08 = () => import('../pages/about/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _442ec7f9 = () => import('../pages/contactus/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
+const _705f93ec = () => import('../pages/index.vue' /* webpackChunkName: "" */).then(m => m.default || m)
 
 
 
@@ -80,242 +80,242 @@ export function createRouter () {
     routes: [
 		{
 			path: "/en/mcontactus",
-			component: _6d3e4f42,
+			component: _7beb29a8,
 			name: "mcontactus-en"
 		},
 		{
 			path: "/mcontactus",
-			component: _6d3e4f42,
+			component: _7beb29a8,
 			name: "mcontactus-zhj"
 		},
 		{
 			path: "/zhf/mcontactus",
-			component: _6d3e4f42,
+			component: _7beb29a8,
 			name: "mcontactus-zhf"
 		},
 		{
 			path: "/en/signing",
-			component: _0c02a12a,
+			component: _a5c7c500,
 			name: "signing-en"
 		},
 		{
 			path: "/signing",
-			component: _0c02a12a,
+			component: _a5c7c500,
 			name: "signing-zhj"
 		},
 		{
 			path: "/zhf/signing",
-			component: _0c02a12a,
+			component: _a5c7c500,
 			name: "signing-zhf"
 		},
 		{
 			path: "/en/mclassproduct",
-			component: _21b02349,
+			component: _1614871f,
 			name: "mclassproduct-en"
 		},
 		{
 			path: "/mclassproduct",
-			component: _21b02349,
+			component: _1614871f,
 			name: "mclassproduct-zhj"
 		},
 		{
 			path: "/zhf/mclassproduct",
-			component: _21b02349,
+			component: _1614871f,
 			name: "mclassproduct-zhf"
 		},
 		{
 			path: "/en/mhome",
-			component: _78b210b1,
+			component: _24eaaaf2,
 			name: "mhome-en"
 		},
 		{
 			path: "/mhome",
-			component: _78b210b1,
+			component: _24eaaaf2,
 			name: "mhome-zhj"
 		},
 		{
 			path: "/zhf/mhome",
-			component: _78b210b1,
+			component: _24eaaaf2,
 			name: "mhome-zhf"
 		},
 		{
 			path: "/en/content",
-			component: _3ed8e0c4,
+			component: _fca5e818,
 			name: "content-en"
 		},
 		{
 			path: "/content",
-			component: _3ed8e0c4,
+			component: _fca5e818,
 			name: "content-zhj"
 		},
 		{
 			path: "/zhf/content",
-			component: _3ed8e0c4,
+			component: _fca5e818,
 			name: "content-zhf"
 		},
 		{
 			path: "/en/mabout",
-			component: _acf9a45e,
+			component: _6084628a,
 			name: "mabout-en"
 		},
 		{
 			path: "/mabout",
-			component: _acf9a45e,
+			component: _6084628a,
 			name: "mabout-zhj"
 		},
 		{
 			path: "/zhf/mabout",
-			component: _acf9a45e,
+			component: _6084628a,
 			name: "mabout-zhf"
 		},
 		{
 			path: "/en/mservice",
-			component: _3c6fc8b9,
+			component: _82f451ba,
 			name: "mservice-en"
 		},
 		{
 			path: "/mservice",
-			component: _3c6fc8b9,
+			component: _82f451ba,
 			name: "mservice-zhj"
 		},
 		{
 			path: "/zhf/mservice",
-			component: _3c6fc8b9,
+			component: _82f451ba,
 			name: "mservice-zhf"
 		},
 		{
 			path: "/en/classproduct",
-			component: _ed29dc70,
+			component: _48c0499c,
 			name: "classproduct-en"
 		},
 		{
 			path: "/classproduct",
-			component: _ed29dc70,
+			component: _48c0499c,
 			name: "classproduct-zhj"
 		},
 		{
 			path: "/zhf/classproduct",
-			component: _ed29dc70,
+			component: _48c0499c,
 			name: "classproduct-zhf"
 		},
 		{
 			path: "/en/msigning",
-			component: _55c6e309,
+			component: _50461d1a,
 			name: "msigning-en"
 		},
 		{
 			path: "/msigning",
-			component: _55c6e309,
+			component: _50461d1a,
 			name: "msigning-zhj"
 		},
 		{
 			path: "/zhf/msigning",
-			component: _55c6e309,
+			component: _50461d1a,
 			name: "msigning-zhf"
 		},
 		{
 			path: "/en/mcontent",
-			component: _2a57d17d,
+			component: _a7244032,
 			name: "mcontent-en"
 		},
 		{
 			path: "/mcontent",
-			component: _2a57d17d,
+			component: _a7244032,
 			name: "mcontent-zhj"
 		},
 		{
 			path: "/zhf/mcontent",
-			component: _2a57d17d,
+			component: _a7244032,
 			name: "mcontent-zhf"
 		},
 		{
 			path: "/en/home",
-			component: _72a6ee30,
+			component: _2bee7ccc,
 			name: "home-en"
 		},
 		{
 			path: "/home",
-			component: _72a6ee30,
+			component: _2bee7ccc,
 			name: "home-zhj"
 		},
 		{
 			path: "/zhf/home",
-			component: _72a6ee30,
+			component: _2bee7ccc,
 			name: "home-zhf"
 		},
 		{
 			path: "/en/demostation",
-			component: _51ed5e16,
+			component: _d2b68128,
 			name: "demostation-en"
 		},
 		{
 			path: "/demostation",
-			component: _51ed5e16,
+			component: _d2b68128,
 			name: "demostation-zhj"
 		},
 		{
 			path: "/zhf/demostation",
-			component: _51ed5e16,
+			component: _d2b68128,
 			name: "demostation-zhf"
 		},
 		{
 			path: "/en/service",
-			component: _1aa8f24c,
+			component: _d875f9a0,
 			name: "service-en"
 		},
 		{
 			path: "/service",
-			component: _1aa8f24c,
+			component: _d875f9a0,
 			name: "service-zhj"
 		},
 		{
 			path: "/zhf/service",
-			component: _1aa8f24c,
+			component: _d875f9a0,
 			name: "service-zhf"
 		},
 		{
 			path: "/en/about",
-			component: _23abff9c,
+			component: _63029a08,
 			name: "about-en"
 		},
 		{
 			path: "/about",
-			component: _23abff9c,
+			component: _63029a08,
 			name: "about-zhj"
 		},
 		{
 			path: "/zhf/about",
-			component: _23abff9c,
+			component: _63029a08,
 			name: "about-zhf"
 		},
 		{
 			path: "/en/contactus",
-			component: _f8f9edba,
+			component: _442ec7f9,
 			name: "contactus-en"
 		},
 		{
 			path: "/contactus",
-			component: _f8f9edba,
+			component: _442ec7f9,
 			name: "contactus-zhj"
 		},
 		{
 			path: "/zhf/contactus",
-			component: _f8f9edba,
+			component: _442ec7f9,
 			name: "contactus-zhf"
 		},
 		{
 			path: "/en/",
-			component: _056203b4,
+			component: _705f93ec,
 			name: "index-en"
 		},
 		{
 			path: "/",
-			component: _056203b4,
+			component: _705f93ec,
 			name: "index-zhj"
 		},
 		{
 			path: "/zhf/",
-			component: _056203b4,
+			component: _705f93ec,
 			name: "index-zhf"
 		}
     ],

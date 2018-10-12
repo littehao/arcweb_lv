@@ -164,7 +164,7 @@
                 }
                 this.updata();
             }
-            
+
           },
         }
     }
@@ -173,7 +173,7 @@
 <style  lang="scss">
  .contactus{
    width: 100%;
-   background: url("../../assets/images/signing/signingbg.png") no-repeat center;
+   background: url("../../assets/images/signing/signingbg.jpg") no-repeat center;
    background-size:cover;
    .contactus-content{
      height: auto;
@@ -210,7 +210,7 @@
                margin:0 13px;
            }
            .img-inputer__icon{
-               background:url(~assets/images/signing/signingadd.png) no-repeat center;
+               background:url("../../assets/images/signing/signingadd.png") no-repeat center;
                color:#f0f0f0;
                background-size:20px;
                width:30px;
