@@ -1,7 +1,8 @@
 module.exports = {
   apps : [{
     name      : 'app',
-    script    : 'server/index.js',
+    script    : 'npm',
+    args: "run start",
     node_args : "--harmony",
     "error_file"      : "logs/err.log",
     "out_file"        : "logs/out.log",

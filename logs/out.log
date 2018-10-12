@@ -1,1 +1,11 @@
 2018-10-12 21:59 +08:00: Server listening on http://0.0.0.0:3000
+2018-10-12 22:37 +08:00: 
+2018-10-12 22:37 +08:00: > arcweb_ssr_lv@1.0.0 start /Users/peter/Documents/arcweb_ssr_lv
+2018-10-12 22:37 +08:00: > cross-env HOST=0.0.0.0 PORT=3000 NODE_ENV=production nuxt start
+2018-10-12 22:37 +08:00: 
+2018-10-12 22:37 +08:00: 
+2018-10-12 22:37 +08:00:  OPEN  http://0.0.0.0:3000
+2018-10-12 22:37 +08:00: 
+2018-10-12 22:37 +08:00: [10:37:49 PM] [NUXT:PROXY] [HPM] Proxy created: /OpenAPI  ->  https://api.katoong.com
+2018-10-12 22:37 +08:00: [10:37:49 PM] [NUXT:AXIOS] baseURL: http://0.0.0.0:3000
+2018-10-12 22:37 +08:00: [10:37:49 PM] [NUXT:AXIOS] browserBaseURL: /
