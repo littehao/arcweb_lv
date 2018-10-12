@@ -15,12 +15,20 @@
                   <Input v-model="formTop.mobile" type="text" :number="true"></Input>
                 </FormItem>
                 <FormItem >
+                  <p name="label" class="form-item-label">Email<span class="form-item-required">*</span></p>
+                  <Input v-model="formTop.email" type="text"></Input>
+                </FormItem>
+                <FormItem >
                   <p name="label" class="form-item-label">Facebook</p>
                   <Input v-model="formTop.facebook" type="text"></Input>
                 </FormItem>
                 <FormItem >
                   <p name="label" class="form-item-label">Instagram</p>
                   <Input v-model="formTop.ins" type="text"></Input>
+                </FormItem>
+                <FormItem >
+                  <p name="label" class="form-item-label">{{$t('signing.account')}}ID</p>
+                  <Input v-model="formTop.account" type="text"></Input>
                 </FormItem>
                 <FormItem >
                     <p name="label" class="form-item-label">{{$t('signing.pic')}}<span class="form-item-required">*</span></p>
@@ -67,8 +75,10 @@
                 formTop: {
                   name: '',//姓名
                   mobile: '',//电话
+                  email:'',
                   facebook: '',//fachbook
                   ins:'',//instagram
+                  account:'',//平台id
                   introduction:'',//留言
                   avatar: '',
                   half_length_photo: '',
@@ -116,8 +126,10 @@
                 let param = new FormData(); //创建form对象
                 param.append('name',this.formTop.name);//断点传输
                 param.append('mobile',this.formTop.mobile);
+                param.append('email',this.formTop.email);
                 param.append('facebook',this.formTop.facebook);
                 param.append('ins',this.formTop.ins);
+                param.append('user_id',this.formTop.account);
                 param.append('introduction',this.formTop.introduction);
                 param.append('avatar',this.formTop.avatar);
                 param.append('half_length_photo',this.formTop.half_length_photo);
@@ -133,8 +145,10 @@
                         this.$Message.success(this.$t('signing.prompt2'))
                         this.formTop.name = '';
                         this.formTop.mobile = '';
+                        this.formTop.email = '';
                         this.formTop.facebook = '';
                         this.formTop.ins = '';
+                        this.formTop.account = '';
                         this.formTop.introduction = '';
                         this.formTop.avatar = '';
                         this.formTop.half_length_photo = '';
@@ -147,12 +161,20 @@
           submit(){
             if(this.disabled){
                 this.disabled = false;
-                if(!this.formTop.name || !this.formTop.mobile  ||  !this.formTop.introduction){
+                if(!this.formTop.name || !this.formTop.mobile || !this.formTop.email  ||  !this.formTop.introduction){
                 this.$Message.error(this.$t('signing.prompt3'))
+                this.disabled = true;
+                return;
+                }
+                let reg = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/;
+                if(this.formTop.email && !reg.test(this.formTop.email)){
+                this.$Message.error(this.$t('contactus.prompt5'))
+                this.disabled = true;
                 return;
                 }
                 if(!this.formTop.avatar || !this.formTop.half_length_photo || !this.formTop.full_body_photo){
                     this.$Message.error(this.$t('signing.prompt4'))
+                    this.disabled = true;
                     return;
                 }
                 var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
@@ -160,6 +182,7 @@
                     mobile = mobile.toString();
                 if(!myreg.test(mobile) && mobile.length < 5){
                     this.$Message.error(this.$t('signing.prompt5'))
+                    this.disabled = true;
                     return ;
                 }
                 this.updata();

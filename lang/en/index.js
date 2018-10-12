@@ -165,17 +165,14 @@ module.exports = {
             mintitle:'History',
             maxtitle:'',
             linetext:[
-                {text1:'Empire Group established in Manila, Philippines'},
-                {text2:'Php lottery system v1.0 '},
-                {text3:'Lottery gaming revised edition v2.0'},
-                {text4:'Php lottery system v2.0 '},
-                {text5:'Professional service for building lottery platform'},
-                {text6:'International finance and global strategy departments established in Isle of Man, UK for applying legal licenses'},
-                {text7:'Live Video team established which includes various experts in livestream area'},
-                {text8:'LV livestream studio established'},
-                {text9:'IT service center established in Silicon Valley, USA'},
-                {text10:'IT service center established in New Zealand'},
-                {text11:'Branch office established in Malta for developing EU market'},
+                 {text1: 'March 2014, Live Video (LV) founded in Silicon Valley, USA. Begins serving live streaming technology for PC companies.'},
+                 {text2:' February 2015, Builds the first live streaming platform successfully for customers.'},
+                 {text3: 'December 2015, Builds 100+ live streaming platforms and owns 100+ business partners.'},
+                 {text4: 'March 2016, Opens The oversea branch in Taiwan for expanding live e-commerce, live games and other related business.'},
+                 {text5: 'May 2017, Releases the first live streaming gaming system and are warmly greeted by the market.'},
+                 {text6: 'April 2018, Launches LV own-brand live streaming gaming system and provides API service for wide-range customers.'},
+                 {text7: 'May 2018, Participates 2018 G2E Asia (Macau).'},
+                 {text8: 'October 2018, Participates in ICE South Africa 2018.'}
             ]
         },
 
@@ -203,6 +200,7 @@ module.exports = {
         intro:'Please left your personnal information and we will reach you for soon',
         name:'Name',
         tel:'Tel',
+        account:'Account ',
         pic:'Latest 3 photos',
         msg:'Tell us more about you',
         button_text:'Submit',

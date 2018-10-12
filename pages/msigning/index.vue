@@ -14,12 +14,20 @@
                   <Input v-model="formTop.mobile" type="text" :number="true"></Input>
                 </FormItem>
                 <FormItem >
+                  <p name="label" class="form-item-label">Email<span class="form-item-required">*</span></p>
+                  <Input v-model="formTop.email" type="text"></Input>
+                </FormItem>
+                <FormItem >
                   <p name="label" class="form-item-label">Facebook</p>
                   <Input v-model="formTop.facebook" type="text"></Input>
                 </FormItem>
                 <FormItem >
                   <p name="label" class="form-item-label">Instagram</p>
                   <Input v-model="formTop.ins" type="text"></Input>
+                </FormItem>
+                <FormItem >
+                  <p name="label" class="form-item-label">{{$t('signing.account')}}ID</p>
+                  <Input v-model="formTop.account" type="text"></Input>
                 </FormItem>
                 <FormItem >
                     <p name="label" class="form-item-label">{{$t('signing.pic')}}<span class="form-item-required">*</span></p>
@@ -57,15 +65,17 @@
         },
         data(){
             return {
-                rows:5,
+                rows:8,
                 style:{
                     height:0,
                 },
                 formTop: {
                   name: '',//姓名
                   mobile: '',//电话
+                  email:'',
                   facebook: '',//fachbook
                   ins:'',//instagram
+                  account:'',//平台id
                   introduction:'',//留言
                   avatar: '',
                   half_length_photo: '',
@@ -82,13 +92,28 @@
             ])
         },
         mounted(){
-            let NODE_ENV=process.env.NODE_ENV=='development';
-            let hosttest=location.host=='node.testfordemo.com';
-            this.http = NODE_ENV?'https://api.testfordemo.com':hosttest?'https://api.testfordemo.com':'https://api.katoong.com';
-            if(this.getAgent == 'default'){
+            let hosttest=window.location.host=='www.katoong.com';
+            this.http = hosttest?'https://api.katoong.com':'https://api.testfordemo.com';
+            if(this.getAgent == 'mobile'){
                 window.location.href = '/'
             }
             this.style.height = document.documentElement.clientHeight + 'px';
+
+            let tt = document.documentElement.clientHeight;
+            window.addEventListener('scroll',function(){
+                var t = document.documentElement.scrollTop || document.body.scrollTop;
+                var top_div = document.getElementById( "header" );
+                if( t >= 80 ) {
+                    top_div.style.background = "#27272E";
+                } else {
+                    top_div.style.background = "transparent";
+                }
+            },false)
+        },
+        beforeDestroy(){
+            if (window.removeEventListener) {
+                window.removeEventListener("scroll",this,false);
+            }
         },
         methods:{
           updata(){
@@ -98,8 +123,10 @@
                 let param = new FormData(); //创建form对象
                 param.append('name',this.formTop.name);//断点传输
                 param.append('mobile',this.formTop.mobile);
+                param.append('email',this.formTop.email);
                 param.append('facebook',this.formTop.facebook);
                 param.append('ins',this.formTop.ins);
+                param.append('user_id',this.formTop.account);
                 param.append('introduction',this.formTop.introduction);
                 param.append('avatar',this.formTop.avatar);
                 param.append('half_length_photo',this.formTop.half_length_photo);
@@ -115,8 +142,10 @@
                         this.$Message.success(this.$t('signing.prompt2'))
                         this.formTop.name = '';
                         this.formTop.mobile = '';
+                        this.formTop.email = '';
                         this.formTop.facebook = '';
                         this.formTop.ins = '';
+                        this.formTop.account = '';
                         this.formTop.introduction = '';
                         this.formTop.avatar = '';
                         this.formTop.half_length_photo = '';
@@ -129,12 +158,20 @@
           submit(){
             if(this.disabled){
                 this.disabled = false;
-                if(!this.formTop.name || !this.formTop.mobile  ||  !this.formTop.introduction){
+                if(!this.formTop.name || !this.formTop.mobile || !this.formTop.email  ||  !this.formTop.introduction){
                 this.$Message.error(this.$t('signing.prompt3'))
+                this.disabled = true;
+                return;
+                }
+                let reg = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/;
+                if(this.formTop.email && !reg.test(this.formTop.email)){
+                this.$Message.error(this.$t('contactus.prompt5'))
+                this.disabled = true;
                 return;
                 }
                 if(!this.formTop.avatar || !this.formTop.half_length_photo || !this.formTop.full_body_photo){
                     this.$Message.error(this.$t('signing.prompt4'))
+                    this.disabled = true;
                     return;
                 }
                 var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
@@ -142,6 +179,7 @@
                     mobile = mobile.toString();
                 if(!myreg.test(mobile) && mobile.length < 5){
                     this.$Message.error(this.$t('signing.prompt5'))
+                    this.disabled = true;
                     return ;
                 }
                 this.updata();
