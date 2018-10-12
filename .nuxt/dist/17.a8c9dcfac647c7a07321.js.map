@@ -1,0 +1,1 @@
+{"version":3,"file":"17.a8c9dcfac647c7a07321.js","sources":["pages/demostation/index.vue"],"sourcesContent":["<template>\n    <div>\n       演示站\n    </div>\n</template>\n\n<script>\n    export default {\n        name: \"index\"\n    }\n</script>\n\n<style scoped>\n\n</style>\n\n\n\n// WEBPACK FOOTER //\n// pages/demostation/index.vue"],"mappings":"AAOA","sourceRoot":""}

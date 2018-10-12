@@ -40,7 +40,7 @@
                 </nuxt-link>
                 </div>
               </li>
-              <li class="item active-a"><a class="nav-link " href="https://www.solantec.net" target="_blank">{{ $t('nav_try.title') }}</a></li>
+              <li class="item active-a"><a class="nav-link " href="https://demo.livevideo.com" target="_blank">{{ $t('nav_try.title') }}</a></li>
             </ul>
           </nav>
         </div>
@@ -62,7 +62,7 @@
       methods:{
         getactive(){
           let str = this.$route.path;
-          var index = str .lastIndexOf("\/");  
+          var index = str .lastIndexOf("\/");
           str  = str .substring(index + 1, str .length);
           switch(str){
             case '':
@@ -211,7 +211,7 @@
             height:0;
             border-style:solid;
             border-width: 8px;
-            border-color: transparent transparent rgba(255,255,255,0.3); 
+            border-color: transparent transparent rgba(255,255,255,0.3);
           }
         }
         &:after{
@@ -224,7 +224,7 @@
             height:0;
             border-style:solid;
             border-width: 8px;
-            border-color: #fff transparent transparent; 
+            border-color: #fff transparent transparent;
         }
         &:hover .change_down{
           display: block;
