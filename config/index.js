@@ -18,7 +18,7 @@ const LOCALES = [
   {
     code: 'zhf',
     iso: 'zh-f',
-    name: '中文繁体'
+    name: '中文繁體'
   }
 ]
 const DEFAULT_LOCALE = 'zhj'

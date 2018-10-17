@@ -34,13 +34,13 @@
                     <p name="label" class="form-item-label">{{$t('signing.pic')}}<span class="form-item-required">*</span></p>
                     <div class="imgInputer">
                         <div class="item">
-                            <imgInputer v-model="formTop.avatar" accept="image/*" placeholder="大头照"></imgInputer>
+                            <imgInputer v-model="formTop.avatar" accept="image/*" :placeholder="$t('signing.pic1')"></imgInputer>
                         </div>
                         <div class="item">
-                            <imgInputer v-model="formTop.half_length_photo" accept="image/*" placeholder="半身照"></imgInputer>
+                            <imgInputer v-model="formTop.half_length_photo" accept="image/*" :placeholder="$t('signing.pic2')"></imgInputer>
                         </div>
                         <div class="item">
-                            <imgInputer v-model="formTop.full_body_photo" accept="image/*" placeholder="全身照"></imgInputer>
+                            <imgInputer v-model="formTop.full_body_photo" accept="image/*" :placeholder="$t('signing.pic3')"></imgInputer>
                         </div>
                     </div>
                 </FormItem>

@@ -14,7 +14,7 @@
                                     <div class="avatar"><img src="~assets/images/content/lvty_star1.jpg" alt=""></div>
                                     <div class="intro">
                                         <span class="name">瑩瑩</span>
-                                        <span class="info">网红歌手</span>
+                                        <span class="info">{{$t('content.part[0]["anchorList"][0]["label"]')}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -23,7 +23,7 @@
                                     <div class="avatar"><img src="~assets/images/content/lvty_star2.jpg" alt=""></div>
                                     <div class="intro">
                                         <span class="name">小可兒</span>
-                                        <span class="info">网红主播</span>
+                                        <span class="info">{{$t('content.part[0]["anchorList"][1]["label"]')}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -32,7 +32,7 @@
                                     <div class="avatar"><img src="~assets/images/content/lvty_star3.jpg" alt=""></div>
                                     <div class="intro">
                                         <span class="name">香緹Chante</span>
-                                        <span class="info">网红主播</span>
+                                        <span class="info">{{$t('content.part[0]["anchorList"][2]["label"]')}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@
                                     <div class="avatar"><img src="~assets/images/content/lvty_star4.jpg" alt=""></div>
                                     <div class="intro">
                                         <span class="name">禔娜</span>
-                                        <span class="info">网红主播</span>
+                                        <span class="info">{{$t('content.part[0]["anchorList"][3]["label"]')}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@
                                     <div class="avatar"><img src="~assets/images/content/lvty_star5.jpg" alt=""></div>
                                     <div class="intro">
                                         <span class="name">妮妮</span>
-                                        <span class="info">网红主播</span>
+                                        <span class="info">{{$t('content.part[0]["anchorList"][4]["label"]')}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +59,7 @@
                                     <div class="avatar"><img src="~assets/images/content/lvty_star6.jpg" alt=""></div>
                                     <div class="intro">
                                         <span class="name">小晶滢</span>
-                                        <span class="info">网红歌手</span>
+                                        <span class="info">{{$t('content.part[0]["anchorList"][5]["label"]')}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                                     <div class="avatar"><img src="~assets/images/content/lvty_star7.jpg" alt=""></div>
                                     <div class="intro">
                                         <span class="name">薇夏</span>
-                                        <span class="info">网红歌手</span>
+                                        <span class="info">{{$t('content.part[0]["anchorList"][6]["label"]')}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
                                     <div class="avatar"><img src="~assets/images/content/lvty_star8.jpg" alt=""></div>
                                     <div class="intro">
                                         <span class="name">Meggie</span>
-                                        <span class="info">网红歌手</span>
+                                        <span class="info">{{$t('content.part[0]["anchorList"][7]["label"]')}}</span>
                                     </div>
                                 </div>
                             </div>

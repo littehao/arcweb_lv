@@ -96,7 +96,17 @@ module.exports = {
         ],
         part:[
             {
-                title:'LV特约明星艺人'
+                title:'LV特约明星艺人',
+                anchorList:[
+                    {name:'瑩瑩',label:'网红歌手'},
+                    {name:'小可兒',label:'网红主播'},
+                    {name:'香緹Chante',label:'网红主播'},
+                    {name:'禔娜',label:'网红主播'},
+                    {name:'妮妮',label:'网红主播'},
+                    {name:'小晶滢',label:'网红歌手'},
+                    {name:'薇夏',label:'网红歌手'},
+                    {name:'Meggie',label:'网红歌手'},
+                ]
             },
             {
                 title:'LV独家签约网红主播人数超过千人'
@@ -208,5 +218,8 @@ module.exports = {
         prompt3:'*为必填内容',
         prompt4:'照片要上传三张哟',
         prompt5:'手机号格式不正确',
+        pic1:'大头照',
+        pic2:'半身照',
+        pic3:'全身照',
     }
 }

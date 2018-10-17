@@ -140,6 +140,12 @@
                     },
                     slideChangeTransitionEnd: function(){
                         swiperAni.swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                        var top_div = document.getElementById( "header" );
+                        if(this.activeIndex == 1){
+                            top_div.style.background = "#27272E";
+                        }else{
+                            top_div.style.background = "transparent";
+                        }
                     }
                 }
             });

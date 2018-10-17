@@ -97,7 +97,17 @@ module.exports = {
         ],
         part:[
             {
-                title:'LV invited superstars/idols'
+                title:'LV invited superstars/idols',
+                anchorList:[
+                    {name:'瑩瑩',label:'网红歌手'},
+                    {name:'小可兒',label:'网红主播'},
+                    {name:'香緹Chante',label:'网红主播'},
+                    {name:'禔娜',label:'网红主播'},
+                    {name:'妮妮',label:'网红主播'},
+                    {name:'小晶滢',label:'网红歌手'},
+                    {name:'薇夏',label:'网红歌手'},
+                    {name:'Meggie',label:'网红歌手'},
+                ]
             },
             {
                 title:'Thousands of LV exclusive signed hosts'
@@ -209,5 +219,8 @@ module.exports = {
         prompt3:'*Required',
         prompt4:'At least 3 photos',
         prompt5:'Incorrect format',
+        pic1: 'Big head shot',
+        pic2: 'Half-length photo',
+        pic3: 'Full body photo',
     }
 }
