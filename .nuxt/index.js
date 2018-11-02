@@ -16,6 +16,7 @@ import nuxt_plugin_axios_5b33b96a from 'nuxt_plugin_axios_5b33b96a' // Source: .
 import nuxt_plugin_index_348e71c8 from 'nuxt_plugin_index_348e71c8' // Source: ../plugins/index
 import nuxt_plugin_globalmixin_5f4f028a from 'nuxt_plugin_globalmixin_5f4f028a' // Source: ../plugins/global-mixin.js
 import nuxt_plugin_vuei18n_5a00aec8 from 'nuxt_plugin_vuei18n_5a00aec8' // Source: ../plugins/vue-i18n.js
+import nuxt_plugin_ga_34d435b2 from 'nuxt_plugin_ga_34d435b2' // Source: ../plugins/ga.js
 
 
 // Component: <no-ssr>
@@ -158,6 +159,7 @@ async function createApp (ssrContext) {
   if (typeof nuxt_plugin_index_348e71c8 === 'function') await nuxt_plugin_index_348e71c8(app.context, inject)
   if (typeof nuxt_plugin_globalmixin_5f4f028a === 'function') await nuxt_plugin_globalmixin_5f4f028a(app.context, inject)
   if (typeof nuxt_plugin_vuei18n_5a00aec8 === 'function') await nuxt_plugin_vuei18n_5a00aec8(app.context, inject)
+  if (typeof nuxt_plugin_ga_34d435b2 === 'function') await nuxt_plugin_ga_34d435b2(app.context, inject)
   
 
   // If server-side, wait for async component to be resolved first

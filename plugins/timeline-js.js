@@ -14,7 +14,6 @@
 /*!
 	TL
 */
-var TL = {};
 
 (function (root) {
     root.TL = {
@@ -42,7 +41,7 @@ TL.Bind = function (/*Function*/ fn, /*Object*/ obj) /*-> Object*/ {
 
 /* Trace (console.log)
 ================================================== */
-var trace = function( msg ) {
+trace = function( msg ) {
     if (TL.debug) {
         if (window.console) {
             console.log(msg);
@@ -640,8 +639,8 @@ TL.Util = {
         str = TL.Util.trim(str);
         str = str.toLowerCase();
 
-        // remove accents, swap �簣 for n, etc
-        var from = "�瞿� �癒�瞻�瞽獺繙翻�穡�穢�竄�穠�竅�簫�簪�簧�繕�簡�糧�繞�織�繒�繙�翹�罈�簣�禮�繚/_,:;";
+        // remove accents, swap 锟界埃 for n, etc
+        var from = "锟界灴锟� 锟界檼锟界灮锟界灲鐛虹箼缈伙拷绌★拷绌拷绔勶拷绌狅拷绔咃拷绨拷绨拷绨э拷绻曪拷绨★拷绯э拷绻烇拷绻旓拷绻掞拷绻欙拷缈癸拷缃堬拷绨ｏ拷绂拷绻�/_,:;";
         var to   = "aaaaaeeeeeiiiiooooouuuunc------";
         for (var i=0, l=from.length ; i<l ; i++) {
             str = str.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
@@ -2717,10 +2716,10 @@ TL.LoadIt = (function (doc) {
         pollCount = 0,
 
         // Queued requests.
-        queue = {css: [], js: []};
+        queue = {css: [], js: []},
 
         // Reference to the browser's list of stylesheets.
-        // styleSheets = doc.styleSheets;
+        styleSheets = doc.styleSheets;
 
     // -- Private Methods --------------------------------------------------------
 
@@ -3676,7 +3675,7 @@ TL.TimelineConfig = TL.Class.extend({
 
 TL.Language = function(options) {
     // borrowed from http://stackoverflow.com/a/14446414/102476
-    for (var k in TL.Language.languages.en) {
+    for (k in TL.Language.languages.en) {
         this[k] = TL.Language.languages.en[k];
     }
     if (options && options.language && typeof(options.language) == 'string' && options.language != 'en') {
@@ -3928,7 +3927,7 @@ TL.Language.languages = {
             time_scale_scale_err:           "Don't know how to get date from time for scale",
             axis_helper_no_options_err:     "Axis helper must be configured with options",
             axis_helper_scale_err:          "No AxisHelper available for scale",
-            invalid_integer_option:       	"Invalid option valueÃ¢â‚¬â€must be a whole number."
+            invalid_integer_option:       	"Invalid option value脙垄芒鈥毬⑩偓聺must be a whole number."
         },
         date: {
             month: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
@@ -8628,7 +8627,8 @@ TL.Media.Text = TL.Class.extend({
     },
 
     addDateText: function(str) {
-        this._el.date.innerHTML = str;
+        var str2 = str.replace(/(\d+|\s+|,|锛�)/g,"")
+        this._el.date.innerHTML = str2;
     },
 
     /*	Events
@@ -13449,6 +13449,3 @@ TL.Timeline.source_path = (function() {
     var src = script_tags[script_tags.length-1].src;
     return src.substr(0,src.lastIndexOf('/'));
 })();
-
-
-export default TL;

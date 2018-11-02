@@ -34,6 +34,9 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {src: 'https://hm.baidu.com/hm.js?df905337d332638b9e51d2f7fc8d3898'},/*引入百度统计的js*/
     ]
   },
 
@@ -84,6 +87,9 @@ module.exports = {
     {
       src: '~/plugins/vue-i18n.js',
       injectAs: 'i18n'
+    },
+    {
+      src:'~/plugins/ga.js'
     }
   ],
 

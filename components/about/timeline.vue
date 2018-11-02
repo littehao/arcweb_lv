@@ -26,6 +26,7 @@ export default {
     //     }
     // },
     mounted(){
+        
         if($("#timeline").length == 0){
             var theHead = document.getElementsByTagName('head').item(0);
             //创建脚本的dom对象实例
