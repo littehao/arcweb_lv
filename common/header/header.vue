@@ -40,7 +40,7 @@
                 </nuxt-link>
                 </div>
               </li>
-              <li class="item active-a"><a class="nav-link " href="https://demo.livevideo.com" target="_blank">{{ $t('nav_try.title') }}</a></li>
+              <li class="item active-a"><a class="nav-link " href="https://api.katoong.com/test/merchant_login_test.php?demo=1" target="_blank">{{ $t('nav_try.title') }}</a></li>
             </ul>
           </nav>
         </div>
