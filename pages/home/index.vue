@@ -112,7 +112,7 @@
                 </div>
                 <div class="section-btn" style="padding-bottom:60px;">
                     <Container>
-                    <button class="btn" type="button" onclick="window.open('https://www.solantec.net/','_blank')">{{$t('home.button_text')}}</button>
+                    <button class="btn" type="button" onclick="window.open('https://api.katoong.com/test/merchant_login_test.php?demo=1','_blank')">{{$t('home.button_text')}}</button>
                     </Container>
                 </div>
               </div>

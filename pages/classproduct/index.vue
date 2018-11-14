@@ -4,7 +4,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide lv-classproduct-content1">
                     <div class="lv-classproduct-banner" :class="{enbg:$i18n.locale == 'en'}">
-                        <div class="productbtn"><a target="_blank" href="https://www.solantec.net/" :class="{enbg:$i18n.locale == 'en'}"></a></div>
+                        <div class="productbtn"><a target="_blank" href="https://api.katoong.com/test/merchant_login_test.php?demo=1" :class="{enbg:$i18n.locale == 'en'}"></a></div>
                     </div>
                 </div>
                 <div class="swiper-slide lv-classproduct-content2">
